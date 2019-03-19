@@ -6,7 +6,10 @@ A Raspberry Pi 3 with raspbian and [wiringPi](http://wiringpi.com/) installed.
 
 ## Getting Started
 
-Download and unpack the archive on your raspberry.
+Download flash_cc2531 on your raspberry:
+```bash
+git clone https://github.com/jmichault/flash_cc2531.git
+```
 Connect the following pins of the debug port to the GPIO port :
 pin 1 (GND)	-->	pin 39 (GND)
 pin 7 (reset)	-->	pin 35 (GPIO24)
@@ -17,6 +20,7 @@ and insert the usb dongle in a port.
 
 test by running :
 ```bash
+cd flash_cc2531
 ./cc_chipid
 ```
 it should returns :
