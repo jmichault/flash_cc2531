@@ -23,7 +23,7 @@ test by running :
 cd flash_cc2531
 ./cc_chipid
 ```
-it should returns :
+it should return :
 ```
   ID = b524.
 ```
