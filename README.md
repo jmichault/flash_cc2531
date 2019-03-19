@@ -34,7 +34,7 @@ To save the content of the flash to save.hex file :
 ```bash
 ./cc_read save.hex
 ```
-(takes around 2 minutes).
+(takes around 1 minute).
 
 To erase the flash :
 ```bash
