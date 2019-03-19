@@ -11,10 +11,10 @@ Download flash_cc2531 on your raspberry:
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
 Connect the following pins of the debug port to the GPIO port :
-pin 1 (GND)	-->	pin 39 (GND)
-pin 7 (reset)	-->	pin 35 (GPIO24)
-pin 3 (DC)	-->	pin 35 (GPIO27)
-pin 4 (DD)	-->	pin 35 (GPIO28)
+1. pin 1 (GND)	  -->	pin 39 (GND)
+2. pin 7 (reset)	-->	pin 35 (GPIO24)
+3. pin 3 (DC)	  -->	pin 35 (GPIO27)
+4. pin 4 (DD)	  -->	pin 35 (GPIO28)
 
 and insert the usb dongle in a port.
 
