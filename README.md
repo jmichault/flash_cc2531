@@ -12,9 +12,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 ```
 Connect the following pins of the debug port to the GPIO port :
 1. pin 1 (GND)	  -->	pin 39 (GND)
-2. pin 7 (reset)	-->	pin 35 (GPIO24)
-3. pin 3 (DC)	  -->	pin 35 (GPIO27)
-4. pin 4 (DD)	  -->	pin 35 (GPIO28)
+2. pin 7 (reset)	-->	pin 35 (GPIO24, BCM19)
+3. pin 3 (DC)	  -->	pin 36 (GPIO27, BCM16)
+4. pin 4 (DD)	  -->	pin 38 (GPIO28, BCM20)
 
 and insert the usb dongle in a port.
 
