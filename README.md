@@ -18,6 +18,10 @@ Connect the following pins of the debug port to the GPIO port :
 
 and insert the usb dongle in a port.
 
+A downloader cable CC and 4 Dupont line Female to Female are perfect for this purpose :
+
+![](https://github.com/jmichault/files/blob/master/Raspberry-CC2531.jpg)
+
 test by running :
 ```bash
 cd flash_cc2531
