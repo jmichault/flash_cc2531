@@ -70,7 +70,7 @@ void readPage(int page,uint8_t *buf)
   uint32_t offset = ((page&0xf)<<11) + Pages[page].minoffset;
   // Setup DPTR
   cc_execi( 0x90, 0x8000+offset ); // MOV DPTR,#data16
-  for(int i=0 ; i<2048 ;i++)
+  for(int i=Pages[page].minoffset ; i<=Pages[page].maxoffset ;i++)
   {
     res = cc_exec  ( 0xE0 ); // MOVX A,@DPTR
     buf[i] = res;
@@ -88,7 +88,7 @@ int verifPage(int page)
     readPage(page,verif1);
     readPage(page,verif2);
   } while (memcmp(verif1,verif2,2048));
-  for(int i=Pages[page].minoffset ; i<Pages[page].maxoffset ;i++)
+  for(int i=Pages[page].minoffset ; i<=Pages[page].maxoffset ;i++)
   {
     if(verif1[i] != Pages[page].datas[i])
     {
@@ -108,11 +108,15 @@ int writePage(int page)
   res = (res & 0xF8) | (bank & 0x07);
   res = cc_exec3(0x75, 0xC7, res); // MOV direct,#data
   // calculer l'adresse de destination
+  // round minoffset because FADDR is a word address
+  Pages[page].minoffset = (Pages[page].minoffset & 0xfffffffc);
+  // round maxoffset to write entire words
+  Pages[page].maxoffset = (Pages[page].maxoffset |0x3);
   uint32_t offset = ((page&0xf)<<11) + Pages[page].minoffset;
 
   uint32_t len = Pages[page].maxoffset-Pages[page].minoffset+1;
   //FIXME : sometimes incorrect length is wrote
-  if(len&0xf && (Pages[page].minoffset+len<2032)) len= (len&0x7f0)+16;
+  //if(len&0xf && (Pages[page].minoffset+len<2032)) len= (len&0x7f0)+16;
   // configure DMA-0 pour DEBUG --> RAM
   uint8_t dma_desc0[8];
   dma_desc0[0] = 0x62;// src[15:8]
@@ -182,7 +186,7 @@ int writePage(int page)
   res &= ~2;
   cc_exec3(0x75,0xD6,res);
   // écrire l'adresse de destination dans FADDRH FADDRL
-  offset = page<<11 + Pages[page].minoffset;
+  offset = ((page&0xff)<<11) + Pages[page].minoffset;
   res=(offset>>2)&0xff;
   writeXDATA( 0x6271, &res,1);
   res=(offset>>10)&0xff;
@@ -283,7 +287,6 @@ int main(int argc,char **argv)
     uint16_t start=(sla+addr)&0x7ff;
     if(start+len> 2048) // some datas are for next page
     { //copy end of datas to next page
-printf("copy to next page %d\n",page+1);
       if (page+1>maxpage) maxpage=page+1;
       memcpy(&Pages[page+1].datas[0]
 		,data+2048-start,(start+len-2048));
