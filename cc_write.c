@@ -111,7 +111,8 @@ int writePage(int page)
   uint32_t offset = ((page&0xf)<<11) + Pages[page].minoffset;
 
   uint32_t len = Pages[page].maxoffset-Pages[page].minoffset+1;
-  if(len&0xf) len= (len&0x7f0)+16;
+  //FIXME : sometimes incorrect length is wrote
+  if(len&0xf && (Pages[page].minoffset+len<2032)) len= (len&0x7f0)+16;
   // configure DMA-0 pour DEBUG --> RAM
   uint8_t dma_desc0[8];
   dma_desc0[0] = 0x62;// src[15:8]
@@ -282,6 +283,7 @@ int main(int argc,char **argv)
     uint16_t start=(sla+addr)&0x7ff;
     if(start+len> 2048) // some datas are for next page
     { //copy end of datas to next page
+printf("copy to next page %d\n",page+1);
       if (page+1>maxpage) maxpage=page+1;
       memcpy(&Pages[page+1].datas[0]
 		,data+2048-start,(start+len-2048));
