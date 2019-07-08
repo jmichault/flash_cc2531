@@ -40,7 +40,8 @@ uint8_t datas[2048];
 void readXDATA(uint16_t offset,uint8_t *bytes, int len)
 {
   cc_execi(0x90, offset ); //MOV DPTR,#data16
-  for ( int i=0 ; i<len;i++)
+  int i;
+  for (i=0 ; i<len;i++)
   {
     bytes[i] = cc_exec(0xE0);	//MOVX A,@DPTR
     cc_exec(0xA3);	// INC DPTR
@@ -50,7 +51,8 @@ void readXDATA(uint16_t offset,uint8_t *bytes, int len)
 void writeXDATA(uint16_t offset,uint8_t *bytes, int len)
 {
   cc_execi(0x90,offset); //MOV DPTR,#data16
-  for ( int i=0 ; i<len;i++)
+  int i;
+  for (i=0 ; i<len;i++)
   {
     cc_exec2(0x74,bytes[i]); // MOV A,#data
     cc_exec(0xF0);	//MOVX @DPTR,A
@@ -70,7 +72,8 @@ void readPage(int page,uint8_t *buf)
   uint32_t offset = ((page&0xf)<<11) + Pages[page].minoffset;
   // Setup DPTR
   cc_execi( 0x90, 0x8000+offset ); // MOV DPTR,#data16
-  for(int i=Pages[page].minoffset ; i<=Pages[page].maxoffset ;i++)
+  int i;
+  for(i=Pages[page].minoffset ; i<=Pages[page].maxoffset ;i++)
   {
     res = cc_exec  ( 0xE0 ); // MOVX A,@DPTR
     buf[i] = res;
@@ -88,7 +91,8 @@ int verifPage(int page)
     readPage(page,verif1);
     readPage(page,verif2);
   } while (memcmp(verif1,verif2,2048));
-  for(int i=Pages[page].minoffset ; i<=Pages[page].maxoffset ;i++)
+  int i;
+  for(i=Pages[page].minoffset ; i<=Pages[page].maxoffset ;i++)
   {
     if(verif1[i] != Pages[page].datas[i])
     {
@@ -167,7 +171,8 @@ int writePage(int page)
   // transfert de données en mode burst
   cc_write(0x80|( (len>>8)&0x7) );
   cc_write(len&0xff);
-  for(int i=0 ; i<len ;i++)
+  int i;
+  for(i=0 ; i<len ;i++)
     cc_write(Pages[page].datas[i+Pages[page].minoffset]);
   // wait DMA end :
   do
@@ -230,8 +235,8 @@ int main(int argc,char **argv)
   uint16_t ID;
   ID = cc_getChipID();
   printf("  ID = %04x.\n",ID);
-
-  for (int page=0 ; page<128 ; page++)
+  int page;
+  for (page=0 ; page<128 ; page++)
   {
     memset(Pages[page].datas,0xff,2048);
     Pages[page].minoffset=0xffff;
@@ -307,7 +312,7 @@ int main(int argc,char **argv)
   conf &= ~0x4;
   cc_setConfig(conf);
 
-  for (int page=0 ; page <= maxpage ; page++)
+  for (intage=0 ; page <= maxpage ; page++)
   {
     if(Pages[page].maxoffset<Pages[page].minoffset) continue;
     printf("\rwriting page %3d/%3d.",page+1,maxpage+1);
@@ -317,7 +322,7 @@ int main(int argc,char **argv)
   printf("\n");
   // lire les données et les vérifier
   int badPage=0;
-  for (int page=0 ; page <= maxpage ; page++)
+  for (page=0 ; page <= maxpage ; page++)
   {
     if(Pages[page].maxoffset<Pages[page].minoffset) continue;
     printf("\rverifying page %3d/%3d.",page+1,maxpage+1);

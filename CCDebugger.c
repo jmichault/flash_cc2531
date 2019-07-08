@@ -751,7 +751,8 @@ uint8_t cc_chipErase()
 uint8_t cc_updateInstructionTable( uint8_t newTable[16] )
 {
   // Copy table entries
-  for (uint8_t i=0; i<16; i++)
+  uint8_t i;
+  for (i=0; i<16; i++)
     instr[i] = newTable[i];
   // Return the new version
   return instr[INSTR_VERSION];

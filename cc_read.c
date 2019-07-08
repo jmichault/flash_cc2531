@@ -25,13 +25,13 @@
 
 void writeHexLine(FILE * fic,uint8_t *buf, int len,int offset)
 {
-int i=0;
+  int i=0;
   for(i=0 ; i<len ; i++)
     if(buf[i] != 0xff) break;
   if(i==len) return;
   int sum=len+(offset&0xff)+((offset>>8)&0xff);
   fprintf(fic,":%02X%04X00",len,offset);
-  for(int i=0 ; i<len;i++)
+  for(i=0 ; i<len;i++)
   {
     fprintf(fic,"%02X",buf[i]);
     sum += buf[i];
@@ -51,7 +51,8 @@ void read1k(int bank,uint16_t offset,uint8_t * buf)
     res = cc_exec3(0x75, 0xC7, res); // MOV direct,#data
     // Setup DPTR
     cc_execi( 0x90, 0x8000+offset ); // MOV DPTR,#data16
-    for(int i=0 ; i<1024 ;i++)
+    int i;
+    for(i=0 ; i<1024 ;i++)
     {
       res = cc_exec  ( 0xE0 ); // MOVX A,@DPTR
       buf[i] = res;
@@ -87,14 +88,16 @@ int main(int argc,char **argv)
     offset=0;
     int len=0;
     uint8_t buf[17];
-    for ( uint16_t i=0 ; i<32 ; i++ )
+    uint16_t i;
+    for ( i=0 ; i<32 ; i++ )
     {
       do
       {
         read1k(bank,i*1024, buf1);
         read1k(bank,i*1024, buf2);
       } while(memcmp(buf1,buf2,1024));
-      for(uint16_t j=0 ; j<64 ; j++)
+      uint16_t j;
+      for(j=0 ; j<64 ; j++)
 	writeHexLine(ficout,buf1+j*16, 16,(bank&1)*32*1024+ i*1024+j*16);
       printf("\r reading %dk/256k",progress++);fflush(stdout);
     }
