@@ -65,7 +65,7 @@ int main(int argc,char **argv)
   FILE * ficout = fopen(argv[1],"w");
   if(!ficout) { fprintf(stderr," Can't open file %s.\n",argv[1]); exit(1); }
   //  initialize GPIO ports
-  cc_init(24,27,28);
+  cc_init();
   // enter debug mode
   cc_enter();
   // get ChipID :

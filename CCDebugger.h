@@ -7,8 +7,11 @@
 #define CC_ERROR_NOT_DEBUGGING  2
 #define CC_ERROR_NOT_WIRED      3
 
+#define PIN_RST 24
+#define PIN_DC  27
+#define PIN_DD  28
 
-  int cc_init( int pinRST, int pinDC, int pinDD );
+  int cc_init();
   void cc_delay( unsigned char d );
 
   uint8_t cc_error();
