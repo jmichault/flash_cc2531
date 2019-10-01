@@ -76,6 +76,7 @@ int main(int argc,char **argv)
   uint16_t offset=0;
   uint8_t bank=0;
   int progress=1;
+  // int nbread=0;
   for( bank=0 ; bank<8 ; bank++)
   {
     printf(".");fflush(stdout);
@@ -93,12 +94,14 @@ int main(int argc,char **argv)
       {
         read1k(bank,i*1024, buf1);
         read1k(bank,i*1024, buf2);
+        // nbread++;
       } while(memcmp(buf1,buf2,1024));
       for(uint16_t j=0 ; j<64 ; j++)
 	writeHexLine(ficout,buf1+j*16, 16,(bank&1)*32*1024+ i*1024+j*16);
       printf("\r reading %dk/256k",progress++);fflush(stdout);
     }
   }
+  // fprintf(stderr,"nbread=%d\n",nbread);
   fprintf(ficout,":00000001FF\n");
   // exit from debug 
   cc_setActive(false);

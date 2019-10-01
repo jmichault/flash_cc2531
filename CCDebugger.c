@@ -69,12 +69,14 @@
 #define I_GET_BM    14
 #define I_BURST_WRITE    15
 
+void cc_delay_calibrate( );
 int cc_init( int pRST, int pDC, int pDD )
 {
   if(wiringPiSetup() == -1){
     printf("no wiring pi detected\n");
     return 0;
   }
+  cc_delay_calibrate();
 
   pinRST=pRST;
   pinDC=pDC;
@@ -172,13 +174,27 @@ uint8_t cc_error()
  * Delay a particular number of cycles
  */
 struct timespec tp={0,0};
+static int cc_delay_mult=50;
 void cc_delay( unsigned char d )
 {
-  volatile unsigned char i = 50*d;
+  volatile unsigned int i = cc_delay_mult*d;
   while( i-- );
 //tp.tv_nsec=40*d;
 //nanosleep(&tp,NULL);
 
+}
+
+/* provas konsideri la rapidecon de la procesoro */
+void cc_delay_calibrate( )
+{
+  long time0=micros();
+  cc_delay(200);
+  cc_delay(200);
+  cc_delay(200);
+  cc_delay(200);
+  cc_delay(200);
+  long time1=micros();
+  cc_delay_mult=cc_delay_mult*200/(time1-time0);
 }
 
 /**
