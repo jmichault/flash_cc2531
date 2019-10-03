@@ -44,6 +44,7 @@ To erase the flash :
 ```bash
 ./cc_erase
 ```
+**Note :** You **must** erase before writing.
 
 To flash file to cc2531 :
 ```bash
