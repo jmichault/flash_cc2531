@@ -217,13 +217,45 @@ int writePage(int page)
   
 }
 
-int main(int argc,char **argv)
+void helpo()
 {
-  if( argc <2 ) { fprintf(stderr,"usage : %s file_to_flash\n",argv[0]); exit(1); }
- FILE * ficin = fopen(argv[1],"r");
-  if(!ficin) { fprintf(stderr," Can't open file %s.\n",argv[1]); exit(1); }
+  fprintf(stderr,"usage : cc_write [-d pin_DD] [-c pin_DC] [-r pin_reset] file_to_flash\n"); 
+  fprintf(stderr,"	-c : change pin_DC (default 27)\n");
+  fprintf(stderr,"	-d : change pin_DD (default 28)\n");
+  fprintf(stderr,"	-r : change reset pin (default 24)\n");
+}
+
+int main(int argc,char *argv[])
+{
+  int opt;
+  int rePin=24;
+  int dcPin=27;
+  int ddPin=28;
+  while( (opt=getopt(argc,argv,"d:c:r:h?")) != -1)
+  {
+    switch(opt)
+    {
+     case 'd' : // DD pinglo
+      ddPin=atoi(optarg);
+      break;
+     case 'c' : // DC pinglo
+      dcPin=atoi(optarg);
+      break;
+     case 'r' : // restarigi pinglo
+      rePin=atoi(optarg);
+      break;
+     case 'h' : // helpo
+     case '?' : // helpo
+      helpo();
+      exit(0);
+      break;
+    }
+  }
+  if( optind >= argc ) { helpo(); exit(1); }
+ FILE * ficin = fopen(argv[optind],"r");
+  if(!ficin) { fprintf(stderr," Can't open file %s.\n",argv[optind]); exit(1); }
   // on initialise les ports GPIO et le debugger
-  cc_init(24,27,28);
+  cc_init(rePin,dcPin,ddPin);
   // entrée en mode debug
   cc_enter();
   // envoi de la commande getChipID :

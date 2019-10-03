@@ -20,13 +20,46 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdint.h>
+#include <unistd.h>
 
 #include "CCDebugger.h"
 
-int main()
+void helpo()
 {
+  fprintf(stderr,"usage : cc_erase [-d pin_DD] [-c pin_DC] [-r pin_reset]\n"); 
+  fprintf(stderr,"	-c : change pin_DC (default 27)\n");
+  fprintf(stderr,"	-d : change pin_DD (default 28)\n");
+  fprintf(stderr,"	-r : change reset pin (default 24)\n");
+}
+
+int main(int argc,char *argv[])
+{
+  int opt;
+  int rePin=-1;
+  int dcPin=-1;
+  int ddPin=-1;
+  while( (opt=getopt(argc,argv,"d:c:r:h?")) != -1)
+  {
+    switch(opt)
+    {
+     case 'd' : // DD pinglo
+      ddPin=atoi(optarg);
+      break;
+     case 'c' : // DC pinglo
+      dcPin=atoi(optarg);
+      break;
+     case 'r' : // restarigi pinglo
+      rePin=atoi(optarg);
+      break;
+     case 'h' : // helpo
+     case '?' : // helpo
+      helpo();
+      exit(0);
+      break;
+    }
+  }
   // initialize GPIO and debugger
-  cc_init(24,27,28);
+  cc_init(rePin,dcPin,ddPin);
   // enter debug mode
   cc_enter();
   // get ChipID :

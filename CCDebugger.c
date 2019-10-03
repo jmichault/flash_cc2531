@@ -39,9 +39,9 @@
   /**
    * Local properties
    */
-  int       pinRST=24;
-  int       pinDC=28;
-  int       pinDD=29;
+  int       pinRST= PIN_RST;
+  int       pinDC= PIN_DC;
+  int       pinDD= PIN_DD;
   uint8_t      errorFlag=0;
   uint8_t      ddIsOutput=false;
   uint8_t      inDebugMode=false;
@@ -72,15 +72,15 @@
 void cc_delay_calibrate( );
 int cc_init( int pRST, int pDC, int pDD )
 {
+  if(pRST>=0) pinRST=pRST;
+  if(pDC>=0) pinDC=pDC;
+  if(pDD>=0) pinDD=pDD;
+
   if(wiringPiSetup() == -1){
     printf("no wiring pi detected\n");
     return 0;
   }
   cc_delay_calibrate();
-
-  pinRST=pRST;
-  pinDC=pDC;
-  pinDD=pDD;
 
   // Prepare CC Pins
   pinMode(pinDC,        OUTPUT);

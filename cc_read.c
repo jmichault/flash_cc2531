@@ -20,6 +20,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdint.h>
+#include <unistd.h>
 
 #include "CCDebugger.h"
 
@@ -59,13 +60,45 @@ void read1k(int bank,uint16_t offset,uint8_t * buf)
     }
 }
 
-int main(int argc,char **argv)
+void helpo()
 {
-  if( argc <2 ) { fprintf(stderr,"usage : %s outfile\n",argv[0]); exit(1); }
-  FILE * ficout = fopen(argv[1],"w");
-  if(!ficout) { fprintf(stderr," Can't open file %s.\n",argv[1]); exit(1); }
+  fprintf(stderr,"usage : cc_read [-d pin_DD] [-c pin_DC] [-r pin_reset] out_file\n"); 
+  fprintf(stderr,"	-c : change pin_DC (default 27)\n");
+  fprintf(stderr,"	-d : change pin_DD (default 28)\n");
+  fprintf(stderr,"	-r : change reset pin (default 24)\n");
+}
+
+int main(int argc,char *argv[])
+{
+  int opt;
+  int rePin=-1;
+  int dcPin=-1;
+  int ddPin=-1;
+  while( (opt=getopt(argc,argv,"d:c:r:h?")) != -1)
+  {
+    switch(opt)
+    {
+     case 'd' : // DD pinglo
+      ddPin=atoi(optarg);
+      break;
+     case 'c' : // DC pinglo
+      dcPin=atoi(optarg);
+      break;
+     case 'r' : // restarigi pinglo
+      rePin=atoi(optarg);
+      break;
+     case 'h' : // helpo
+     case '?' : // helpo
+      helpo();
+      exit(0);
+      break;
+    }
+  }
+  if( optind >= argc ) { helpo(); exit(1); }
+  FILE * ficout = fopen(argv[optind],"w");
+  if(!ficout) { fprintf(stderr," Can't open file %s.\n",argv[optind]); exit(1); }
   //  initialize GPIO ports
-  cc_init(24,27,28);
+  cc_init(rePin,dcPin,ddPin);
   // enter debug mode
   cc_enter();
   // get ChipID :

@@ -12,9 +12,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 ```
 Connect the following pins of the debug port to the GPIO port :
 1. pin 1 (GND)	  -->	pin 39 (GND)
-2. pin 7 (reset)	-->	pin 35 (GPIO24, BCM19)
-3. pin 3 (DC)	  -->	pin 36 (GPIO27, BCM16)
-4. pin 4 (DD)	  -->	pin 38 (GPIO28, BCM20)
+2. pin 7 (reset)	-->	pin 35 (wPi 24, BCM19)
+3. pin 3 (DC)	  -->	pin 36 (wPi 27, BCM16)
+4. pin 4 (DD)	  -->	pin 38 (wPi 28, BCM20)
 
 and insert the usb dongle in a port.
 
@@ -51,6 +51,30 @@ To flash file to cc2531 :
 ```
 (takes around 3 minutes).
 
+## Using other pins
+all commands accept following arguments :
+	-c pin : change pin_DC (default 27)
+	-d pin : change pin_DD (default 28)
+	-r pin : change reset pin (default 24)
+
+the pin numbering used is that of wiringPi. Use "gpio readall" to have the layout on your pi (wPi column).
+
+example, if you want to use pins 3, 11 and 13 : 
+Connect the following pins of the debug port to the GPIO port :
+1. pin 1 (GND)	  -->	pin 14 (GND)
+2. pin 7 (reset)	-->	pin 3 (wPi 8, BCM2)
+3. pin 3 (DC)	  -->	pin 11 (wPi 0, BCM17)
+4. pin 4 (DD)	  -->	pin 13 (wPi 2, BCM27)
+
+and now you can read chip id, save flash content, erase flash, and write flash with following commands :
+```bash
+./cc_chipid -r 8 -c 0 -d 2
+./cc_read -r 8 -c 0 -d 2 save.hex
+./cc_erase -r 8 -c 0 -d 2
+./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Pro.hex
+```
+
+You can also change default values in CCDebugger.h and recompile executables with make.
 
 ## License
 
