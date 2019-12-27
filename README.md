@@ -81,11 +81,17 @@ You can also change default values in CCDebugger.h and recompile executables wit
 
 ## what to try if it doesn't work?
 1. stop all other programs before flash.
-2. use the -m option to increase time delays used. Example :
+2. fix the cpu speed before flash. Example :
+```bash
+sudo bash
+echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+exit
+```
+3. use the -m option to increase time delays used. Example :
 ```bash
 ./cc_write -m 300 CC2531ZNP-Pro.hex
 ```
-3. executables are compiled on my raspbian distribition, you can try to recompile for your distribution with make.
+4. executables are compiled on my raspbian distribition, you can try to recompile for your distribution with make.
 
 ## License
 
