@@ -22,8 +22,11 @@
 
   int cc_init( int pinRST, int pinDC, int pinDD );
   void cc_delay( unsigned char d );
+  void cc_setmult(int mult);
 
   uint8_t cc_error();
+
+  void cc_reset();
 
   ////////////////////////////
   // High-Level interaction

@@ -66,6 +66,7 @@ void helpo()
   fprintf(stderr,"	-c : change pin_DC (default 27)\n");
   fprintf(stderr,"	-d : change pin_DD (default 28)\n");
   fprintf(stderr,"	-r : change reset pin (default 24)\n");
+  fprintf(stderr,"	-m : change multiplier for time delay (default auto)\n");
 }
 
 int main(int argc,char *argv[])
@@ -74,10 +75,14 @@ int main(int argc,char *argv[])
   int rePin=-1;
   int dcPin=-1;
   int ddPin=-1;
-  while( (opt=getopt(argc,argv,"d:c:r:h?")) != -1)
+  int setMult=-1;
+  while( (opt=getopt(argc,argv,"m:d:c:r:h?")) != -1)
   {
     switch(opt)
     {
+     case 'm' : 
+      setMult=atoi(optarg);
+      break;
      case 'd' : // DD pinglo
       ddPin=atoi(optarg);
       break;
@@ -99,6 +104,7 @@ int main(int argc,char *argv[])
   if(!ficout) { fprintf(stderr," Can't open file %s.\n",argv[optind]); exit(1); }
   //  initialize GPIO ports
   cc_init(rePin,dcPin,ddPin);
+  if(setMult>0) cc_setmult(setMult);
   // enter debug mode
   cc_enter();
   // get ChipID :
@@ -128,6 +134,8 @@ int main(int argc,char *argv[])
         read1k(bank,i*1024, buf1);
         read1k(bank,i*1024, buf2);
         // nbread++;
+        //if(memcmp(buf1,buf2,1024))
+	//  {printf("x");fflush(stdout);}
       } while(memcmp(buf1,buf2,1024));
       for(uint16_t j=0 ; j<64 ; j++)
 	writeHexLine(ficout,buf1+j*16, 16,(bank&1)*32*1024+ i*1024+j*16);
@@ -138,6 +146,8 @@ int main(int argc,char *argv[])
   fprintf(ficout,":00000001FF\n");
   // exit from debug 
   cc_setActive(false);
+  // reboot
+  cc_reset();
   fclose(ficout);
 
 }

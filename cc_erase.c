@@ -30,6 +30,7 @@ void helpo()
   fprintf(stderr,"	-c : change pin_DC (default 27)\n");
   fprintf(stderr,"	-d : change pin_DD (default 28)\n");
   fprintf(stderr,"	-r : change reset pin (default 24)\n");
+  fprintf(stderr,"	-m : change multiplier for time delay (default auto)\n");
 }
 
 int main(int argc,char *argv[])
@@ -38,10 +39,14 @@ int main(int argc,char *argv[])
   int rePin=-1;
   int dcPin=-1;
   int ddPin=-1;
-  while( (opt=getopt(argc,argv,"d:c:r:h?")) != -1)
+  int setMult=-1;
+  while( (opt=getopt(argc,argv,"m:d:c:r:h?")) != -1)
   {
     switch(opt)
     {
+     case 'm' : 
+      setMult=atoi(optarg);
+      break;
      case 'd' : // DD pinglo
       ddPin=atoi(optarg);
       break;
@@ -60,6 +65,7 @@ int main(int argc,char *argv[])
   }
   // initialize GPIO and debugger
   cc_init(rePin,dcPin,ddPin);
+  if(setMult>0) cc_setmult(setMult);
   // enter debug mode
   cc_enter();
   // get ChipID :

@@ -223,6 +223,7 @@ void helpo()
   fprintf(stderr,"	-c : change pin_DC (default 27)\n");
   fprintf(stderr,"	-d : change pin_DD (default 28)\n");
   fprintf(stderr,"	-r : change reset pin (default 24)\n");
+  fprintf(stderr,"	-m : change multiplier for time delay (default auto)\n");
 }
 
 int main(int argc,char *argv[])
@@ -231,10 +232,14 @@ int main(int argc,char *argv[])
   int rePin=24;
   int dcPin=27;
   int ddPin=28;
-  while( (opt=getopt(argc,argv,"d:c:r:h?")) != -1)
+  int setMult=-1;
+  while( (opt=getopt(argc,argv,"m:d:c:r:h?")) != -1)
   {
     switch(opt)
     {
+     case 'm' : 
+      setMult=atoi(optarg);
+      break;
      case 'd' : // DD pinglo
       ddPin=atoi(optarg);
       break;
@@ -256,6 +261,7 @@ int main(int argc,char *argv[])
   if(!ficin) { fprintf(stderr," Can't open file %s.\n",argv[optind]); exit(1); }
   // on initialise les ports GPIO et le debugger
   cc_init(rePin,dcPin,ddPin);
+  if(setMult>0) cc_setmult(setMult);
   // entrée en mode debug
   cc_enter();
   // envoi de la commande getChipID :
@@ -364,6 +370,8 @@ int main(int argc,char *argv[])
 
   // sortie du mode debug et désactivation :
   cc_setActive(false);
+  // reboot
+  cc_reset();
   fclose(ficin);
 
 }

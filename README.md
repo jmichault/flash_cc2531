@@ -57,6 +57,7 @@ all commands accept following arguments :
 	-c pin : change pin_DC (default 27)
 	-d pin : change pin_DD (default 28)
 	-r pin : change reset pin (default 24)
+  	-m : change multiplier for time delay (default auto)
 
 the pin numbering used is that of wiringPi. Use "gpio readall" to have the layout on your pi (wPi column).
 
@@ -76,6 +77,14 @@ and now you can read chip id, save flash content, erase flash, and write flash w
 ```
 
 You can also change default values in CCDebugger.h and recompile executables with make.
+
+## what to try if it doesn't work?
+### stop all other programs before flash.
+### use the -m option to increase time delays used. Example :
+```bash
+./cc_write -m 300 CC2531ZNP-Pro.hex
+```
+### executables are compiled on my raspbian distribition, you can try to recompile for your distribution with make.
 
 ## License
 

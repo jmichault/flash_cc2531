@@ -174,7 +174,7 @@ uint8_t cc_error()
  * Delay a particular number of cycles
  */
 struct timespec tp={0,0};
-static int cc_delay_mult=50;
+static int cc_delay_mult=80;
 void cc_delay( unsigned char d )
 {
   volatile unsigned int i = cc_delay_mult*d;
@@ -182,6 +182,11 @@ void cc_delay( unsigned char d )
 //tp.tv_nsec=40*d;
 //nanosleep(&tp,NULL);
 
+}
+
+void cc_setmult(int mult)
+{
+  cc_delay_mult=mult;
 }
 
 /* provas konsideri la rapidecon de la procesoro */
@@ -194,7 +199,7 @@ void cc_delay_calibrate( )
   cc_delay(200);
   cc_delay(200);
   long time1=micros();
-  cc_delay_mult=cc_delay_mult*200/(time1-time0);
+  cc_delay_mult=cc_delay_mult*400/(time1-time0);
 }
 
 /**
@@ -404,6 +409,17 @@ void cc_setDDDirection( uint8_t direction )
     digitalWrite(pinDD, LOW); // Don't use output pull-up
   }
 
+}
+
+void cc_reset()
+{
+  pinMode(pinDC, INPUT);
+  pinMode(pinDD, INPUT);
+  pinMode(pinRST, OUTPUT);
+  cc_delay(200);
+  pinMode(pinRST, LOW);
+  cc_delay(500);
+  pinMode(pinRST, INPUT);
 }
 
 /////////////////////////////////////////////////////////////////////
