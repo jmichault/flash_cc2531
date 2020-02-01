@@ -92,7 +92,7 @@ exit
 ```bash
 ./cc_write -m 300 CC2531ZNP-Pro.hex
 ```
-4. executables are compiled on my raspbian distribition, you can try to recompile for your distribution with make.
+4. executables are compiled on my raspbian distribution, you can try to recompile for your distribution with make.
 
 ## License
 
