@@ -49,7 +49,7 @@ To erase the flash :
 
 To flash file to cc2531 :
 ```bash
-./cc_write CC2531ZNP-Pro.hex
+./cc_write CC2531ZNP-Prod.hex
 ```
 (takes around 3 minutes).
 
@@ -75,7 +75,7 @@ and now you can read chip id, save flash content, erase flash, and write flash w
 ./cc_chipid -r 8 -c 0 -d 2
 ./cc_read -r 8 -c 0 -d 2 save.hex
 ./cc_erase -r 8 -c 0 -d 2
-./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Pro.hex
+./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex
 ```
 
 You can also change default values in CCDebugger.h and recompile executables with make.
@@ -90,7 +90,7 @@ exit
 ```
 3. use the -m option to increase time delays used. Example :
 ```bash
-./cc_write -m 300 CC2531ZNP-Pro.hex
+./cc_write -m 300 CC2531ZNP-Prod.hex
 ```
 4. executables are compiled on my raspbian distribution, you can try to recompile for your distribution with make.
 
