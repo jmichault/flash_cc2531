@@ -1,4 +1,4 @@
-LDLIBS=-lwiringPi
+LDLIBS=-lwiringPi -lcrypt -lm -lrt
 CFLAGS=-g
 LDFLAGS=-g
 
