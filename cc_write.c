@@ -286,7 +286,7 @@ int main(int argc,char *argv[])
    int sum=0,cksum,type;
    uint32_t addr,len;
     line++;
-    if(line%10==0) { printf("\r  reading line %d.");fflush(stdout); }
+    if(line%10==0) { printf("\r  reading line %d.",line);fflush(stdout); }
     if(buffer[0] != ':') { fprintf(stderr,"incorrect hex file ( : missing)\n"); exit(1); }
     if(strlen(buffer)<3 ) { fprintf(stderr,"incorrect hex file ( incomplete line)\n"); exit(1); }
     if(!sscanf(buffer+1,"%02x",&len)) { fprintf(stderr,"incorrect hex file (incorrect length\n"); exit(1); }
@@ -295,7 +295,7 @@ int main(int argc,char *argv[])
     if(!sscanf(buffer+7,"%02x",&type)) { fprintf(stderr,"incorrect hex file (incorrect record type\n"); exit(1); }
     if(type == 4)
     {
-      if(!sscanf(buffer+9,"%04x",&ela)) { fprintf(stderr,"incorrect hex file (incorrect extended addr)\n"); exit(1); }
+      if(!sscanf(buffer+9,"%04hx",&ela)) { fprintf(stderr,"incorrect hex file (incorrect extended addr)\n"); exit(1); }
       sla=ela<<16;
       continue;
     }
@@ -314,7 +314,7 @@ int main(int argc,char *argv[])
     int i;
     for( i=0 ; i<len ; i++)
     {
-      if(!sscanf(buffer+9+2*i,"%02x",&data[i])) { fprintf(stderr,"incorrect hex file (incorrect data)\n"); exit(1); }
+      if(!sscanf(buffer+9+2*i,"%02hhx",&data[i])) { fprintf(stderr,"incorrect hex file (incorrect data)\n"); exit(1); }
       sum+=data[i];
     }
     if(!sscanf(buffer+9+2*i,"%02x",&cksum)) { fprintf(stderr,"incorrect hex file line %d (incorrect checksum)\n",line); exit(1); }

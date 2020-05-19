@@ -175,7 +175,7 @@ uint8_t cc_error()
  */
 struct timespec tp={0,0};
 static int cc_delay_mult=80;
-void cc_delay( unsigned char d )
+void cc_delay( unsigned int d )
 {
   volatile unsigned int i = cc_delay_mult*d;
   while( i-- );
