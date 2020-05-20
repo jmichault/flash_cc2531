@@ -2,7 +2,8 @@
 flash CC2531 USB dongle from your Raspberry, without Arduino nor CC Debugger.
 
 ## prerequisites
-You need a Raspberry with [wiringPi](http://wiringpi.com/) installed.  
+You need a Raspberry or an Odroid-c2.  
+[WiringPi](http://wiringpi.com/) must be installed (if it is not preinstalled, you can usually install it with `sudo apt-install install wiringpi`).  
 I have designed flash_cc2531 on a Raspberry Pi 3 with raspbian, but successful flashes have been reported on pi 1 and pi 2 : see sections [use other pins](#use-other-pins) and [what to try if it doesn't work](#what-to-try-if-it-doesnt-work).
 
 ## Getting Started
