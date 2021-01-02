@@ -1,0 +1,618 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-01-02 16:05+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: index.md:1
+#, no-wrap
+msgid "eo"
+msgstr "pa"
+
+#. type: YAML Front Matter: lang-niv
+#: index.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: index.md:1
+#, no-wrap
+msgid "001-ĉefa-afero"
+msgstr "001-ĉefa-afero"
+
+#. type: YAML Front Matter: layout
+#: index.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: slug
+#: index.md:1
+#, no-wrap
+msgid "La esenca!"
+msgstr "ਜ਼ਰੂਰੀ!"
+
+#. type: YAML Front Matter: title
+#: index.md:1
+#, fuzzy, no-wrap
+msgid "La ĉefa afero"
+msgstr "ਮੁੱਖ ਗੱਲ"
+
+#. type: Title #
+#: index.md:10
+#, fuzzy, no-wrap
+msgid "_flash\\_cc2531_"
+msgstr "_flash\\_cc2531_"
+
+#. type: Plain text
+#: index.md:12
+#, no-wrap
+#, fuzzy
+msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
+msgstr " _flash\\_cc2531_ ਤੁਹਾਨੂੰ _Arduino_ ਜਾਂ _CC Debugger_ਦੀ ਜ਼ਰੂਰਤ ਤੋਂ ਬਗੈਰ, ਤੁਹਾਡੇ _Raspberry_ਤੋਂ ਤੁਹਾਡੇ CC2531 USB ਸਟਿਕ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ.\n"
+
+#. type: Title ##
+#: index.md:13
+#, fuzzy, no-wrap
+msgid "Antaŭkondiĉoj"
+msgstr "ਜਰੂਰੀ ਹੈ"
+
+#. type: Plain text
+#: index.md:14
+#, fuzzy, no-wrap
+msgid "Vi bezonas aŭ _Raspberry_ aŭ _Odroid-c2_.  \n"
+msgstr "ਤੁਹਾਨੂੰ ਜਾਂ ਤਾਂ _Raspberry_ ਜਾਂ _Odroid-c2_ਦੀ ਜ਼ਰੂਰਤ ਹੈ.  \n"
+
+#. type: Plain text
+#: index.md:16
+#, no-wrap
+#, fuzzy
+msgid ""
+"Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
+"[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
+msgstr "ਤੁਹਾਨੂੰ ਕੀ ਚਾਹੀਦਾ ਹੈ ਕਿ ਕੁੰਜੀ ਦੇ ਡੀਬੱਗ ਪੋਰਟ ਨੂੰ _GPIO_ (zZ3) ਦੇ ਪੋਰਟਾਂ ਨਾਲ ਜੋੜਨਾ ਹੈ, ਉਦਾਹਰਣ ਲਈ ਕੇਬਲ _CC_ ਅਤੇ ਚਾਰ ਲਾਈਨਾਂ _Dupont_ (ਅੱਗੇ ਵੇਖੋ).   \n[ਵਾਇਰਿੰਗਪੀ](http://wiringpi.com/) ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ ਸਥਾਪਤ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ (ਜੇ ਇਹ ਪਹਿਲਾਂ ਤੋਂ ਸਥਾਪਤ ਨਹੀਂ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਆਮ ਤੌਰ' ਤੇ ਇਸ ਨੂੰ `sudo apt install wiringpi`ਨਾਲ ਸਥਾਪਤ ਕਰ ਸਕਦੇ ਹੋ, ਨਹੀਂ ਤਾਂ ਵੈਬਸਾਈਟ [ _ਗੋਰਡਨ_](http://wiringpi.com/) ਜਾਂ [ਇਸ ਨੂੰ ਵੇਖੋ. ਉਹ ਵਿਕਲਪਕ ਸਾਈਟ](https://github.com/WiringPi/WiringPi)).  \n"
+
+#. type: Plain text
+#: index.md:19
+#, no-wrap
+#, fuzzy
+msgid ""
+"Mi projektis _flash\\_cc2531_ sur a _Raspberry Pi 3_ kun _raspbian_, sed pri sukcesaj programoj oni raportis pri aliaj modeloj:\n"
+"* sur pi 4, vi bezonos version 2.52 de (zzz10 ):  [instalu _drataron Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  \n"
+msgstr "ਮੈਂ ਇੱਕ _flash\\_cc2531_ ਤੇ _flash\\_cc2531_ ਤੇ _raspbian_ਦਾ ਅਨੁਮਾਨ ਲਾਇਆ ਹੈ, ਪਰ ਸਫਲ ਪ੍ਰੋਗਰਾਮਾਂ ਲਈ ਹੋਰ ਮਾਡਲਾਂ ਦੀ ਰਿਪੋਰਟ ਕੀਤੀ ਗਈ ਹੈ: ) _ਵਾਇਰਿੰਗ ਪਾਈ_ 2.52 _ਗੋਰਡਨ ਦੀ ਵੈਬਸਾਈਟ_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  ਤੋਂ ਸਥਾਪਤ ਕਰੋ.\n"
+
+#. type: Bullet: '* '
+#: index.md:20
+#, no-wrap
+#, fuzzy
+msgid "sur pi 1 kaj pi 2 vi bezonos[uzi aliajn pinglojn](#uzu_aliajn_pinglojn).  \n"
+msgstr "pi 1 ਅਤੇ pi 2 'ਤੇ ਤੁਹਾਨੂੰ ਹੋਰ ਪਿੰਨ](#uzu_aliajn_pinglojn)ਵਰਤਣ ਲਈ[ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ.  \n"
+
+#. type: Bullet: '* '
+#: index.md:25
+#, no-wrap
+#, fuzzy
+msgid "ĉiuokaze vi probable bezonos agordi la tempan bazan opcion ( _\"-m\"_ ).\n"
+msgstr "ਵੈਸੇ ਵੀ ਤੁਹਾਨੂੰ ਸ਼ਾਇਦ ਟਾਈਮ ਬੇਸ ਵਿਕਲਪ ( _\"-m\"_ )ਨਿਰਧਾਰਤ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ.\n"
+
+#. type: Title ##
+#: index.md:29
+#, fuzzy, no-wrap
+msgid "Preparado"
+msgstr "ਤਿਆਰ ਕੀਤਾ"
+
+#. type: Plain text
+#: index.md:32
+#, fuzzy, no-wrap
+msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_:\n"
+msgstr "ਆਪਣੇ _raspberry_ਤੇ _flash\\_cc2531_ ਡਾਉਨਲੋਡ ਕਰੋ:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:32
+#, no-wrap
+msgid "git clone https://github.com/jmichault/flash_cc2531.git\n"
+msgstr "git clone https://github.com/jmichault/flash_cc2531.git\n"
+
+#. type: Plain text
+#: index.md:36
+#, fuzzy, no-wrap
+msgid "Konektu la jenajn pinglojn de la debug-haveno al la GPIO-haveno:\n"
+msgstr "ਡੀਬੱਗ ਪੋਰਟ ਤੋਂ ਹੇਠ ਲਿਖੀਆਂ ਪਿੰਨਾਂ ਨੂੰ ਜੀਪੀਆਈਓ ਪੋਰਟ ਨਾਲ ਜੋੜੋ:\n"
+
+#. type: Bullet: '1. '
+#: index.md:38
+#, fuzzy, no-wrap
+msgid "pinglo 1 ( _GND_ ) -> pinglo 39 ( _GND_ )\n"
+msgstr "ਪਿੰਨ 1 ( _GND_ ) -> ਪਿੰਨ 39 ( _GND_ )\n"
+
+#. type: Bullet: '2. '
+#: index.md:40
+#, fuzzy, no-wrap
+msgid "pinglo 7 ( _reset_ ) -> pinglo 35 ( _wPi 24, BCM19_ )\n"
+msgstr "ਪਿੰਨ 7 ( _reset_ ) -> ਪਿੰਨ 35 ( _wPi 24, BCM19_ )\n"
+
+#. type: Bullet: '3. '
+#: index.md:42
+#, fuzzy, no-wrap
+msgid "pinglo 3 ( _DC_ ) -> pinglo 36 ( _wPi 27, BCM16_ )\n"
+msgstr "ਪਿੰਨ 3 ( _DC_ ) -> ਪਿੰਨ 36 ( _wPi 27, BCM16_ )\n"
+
+#. type: Bullet: '4. '
+#: index.md:44
+#, fuzzy, no-wrap
+msgid "pinglo 4 ( _DD_ ) -> pinglo 38 ( _wPi 28, BCM20_ )\n"
+msgstr "ਪਿੰਨ 4 ( _DD_ ) -> ਪਿੰਨ 38 ( _wPi 28, BCM20_ )\n"
+
+#. type: Plain text
+#: index.md:47
+#, fuzzy, no-wrap
+msgid "kaj enmetu la USB-ŝlosilon en havenon.\n"
+msgstr "ਅਤੇ ਇੱਕ ਪੋਰਟ ਵਿੱਚ USB ਕੁੰਜੀ ਪਾਓ.\n"
+
+#. type: Plain text
+#: index.md:51
+#, no-wrap
+msgid ""
+"Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet:\n"
+"![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+"C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+msgstr ""
+"Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet:\n"
+"![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+"C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+
+#. type: Plain text
+#: index.md:54
+#, no-wrap
+#, fuzzy
+msgid "provu per ĉi tio:\n"
+msgstr "ਇਸ ਨੂੰ ਅਜ਼ਮਾਓ:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:54
+#, no-wrap
+msgid ""
+"cd flash_cc2531\n"
+"./cc_chipid\n"
+msgstr ""
+"cd flash_cc2531\n"
+"./cc_chipid\n"
+
+#. type: Plain text
+#: index.md:59
+#, no-wrap
+msgid "Ça doit retourner:\n"
+msgstr "Ça doit retourner:\n"
+
+#. type: Fenced code block
+#: index.md:59
+#, no-wrap
+msgid "  ID = b524.\n"
+msgstr "  ID = b524.\n"
+
+#. type: Plain text
+#: index.md:66
+#, no-wrap
+msgid ""
+"Si vous voyez 0000 ou ffff quelque chose ne va pas:\n"
+"* vérifiez d'abord votre câblage.\n"
+"* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
+"* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
+msgstr ""
+"Si vous voyez 0000 ou ffff quelque chose ne va pas:\n"
+"* vérifiez d'abord votre câblage.\n"
+"* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
+"* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
+
+#. type: Title ##
+#: index.md:68
+#, fuzzy, no-wrap
+msgid "uzi"
+msgstr "ਵਰਤਣ"
+
+#. type: Plain text
+#: index.md:70
+#, fuzzy, no-wrap
+msgid "Pour enregistrer le contenu de la mémoire flash dans le fichier save.hex:\n"
+msgstr "ਫਲੈਸ਼ ਮੈਮੋਰੀ ਦੇ ਭਾਗਾਂ ਨੂੰ ਸੇਵ.ਹੇਕਸ ਫਾਈਲ ਵਿੱਚ ਸੇਵ ਕਰਨ ਲਈ:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:70
+#, no-wrap
+msgid "./cc_read save.hex\n"
+msgstr "./cc_read save.hex\n"
+
+#. type: Plain text
+#: index.md:74
+#, no-wrap
+msgid "(dure environ 1 minute).\n"
+msgstr "(dure environ 1 minute).\n"
+
+#. type: Plain text
+#: index.md:76
+#, fuzzy, no-wrap
+msgid "Por viŝi flash-memoron:\n"
+msgstr "ਫਲੈਸ਼ ਮੈਮੋਰੀ ਨੂੰ ਮਿਟਾਉਣ ਲਈ:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:76
+#, no-wrap
+msgid "./cc_erase\n"
+msgstr "./cc_erase\n"
+
+#. type: Plain text
+#: index.md:80
+#, no-wrap
+msgid "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).\n"
+msgstr "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).\n"
+
+#. type: Plain text
+#: index.md:82
+#, no-wrap
+#, fuzzy
+msgid "Por programi la dosieron sur la ŝlosilo _CC2531_:\n"
+msgstr "ਕੁੰਜੀ 'ਤੇ ਫਾਈਲ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਲਈ _CC2531_:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:82
+#, no-wrap
+msgid "./cc_write CC2531ZNP-Prod.hex\n"
+msgstr "./cc_write CC2531ZNP-Prod.hex\n"
+
+#. type: Plain text
+#: index.md:86
+#, no-wrap
+msgid "(dure environ 3 minutes).\n"
+msgstr "(dure environ 3 minutes).\n"
+
+#. type: Plain text
+#: index.md:88
+#, fuzzy, no-wrap
+msgid "<a id =\"uzu_aliajn_pinglojn\"></ a>\n"
+msgstr "<ਇੱਕ id =\"ਵਰਤੋਂ_aliajn_ਪਿੰਨ\"></ a>\n"
+
+#. type: Title ##
+#: index.md:88
+#, fuzzy, no-wrap
+msgid "Uzu aliajn pinglojn"
+msgstr "ਹੋਰ ਪਿੰਨ ਦੀ ਵਰਤੋਂ ਕਰੋ"
+
+#. type: Plain text
+#: index.md:94
+#, no-wrap
+#, fuzzy
+msgid ""
+"ĉiuj komandoj akceptas la jenajn argumentojn:\n"
+"* _-c_ pinglo: ŝanĝi pinglon _DC_ (defaŭlte 27)\n"
+"* _-d_ pinglo: ŝanĝi pinglon _DD_ )(defaŭlta 28)\n"
+"* _-r_ pinglo: ŝanĝi pinglon _reset_ (defaŭlte 24)\n"
+"* _-m_ : ŝanĝi la multiplikanton de la malfruo, kaj do la baza tempo (defaŭlte: aŭtomata ĝustigo)\n"
+msgstr "ਸਾਰੀਆਂ ਕਮਾਂਡਾਂ ਹੇਠ ਲਿਖੀਆਂ ਦਲੀਲਾਂ ਨੂੰ ਸਵੀਕਾਰਦੀਆਂ ਹਨ:\n* _-c_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ _DC_ (ਮੂਲ 27)\n* _-d_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ _DD_ )(ਡਿਫਾਲਟ 28)\n* _-r_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ _reset_ (ਡਿਫਾਲਟ 24)\n* _-m_ : ਦੇਰੀ ਦੇ ਗੁਣਕ ਨੂੰ ਬਦਲੋ, ਅਤੇ ਇਸ ਲਈ ਮੁ theਲਾ ਟਾਈਮ (ਡਿਫੌਲਟ: ਆਟੋਮੈਟਿਕ ਐਡਜਸਟਮੈਂਟ)\n"
+
+#. type: Plain text
+#: index.md:96
+#, no-wrap
+#, fuzzy
+msgid "la pingla numerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
+msgstr "ਵਰਤੀ ਜਾਂਦੀ ਪਿੰਨ ਨੰਬਰਿੰਗ _wiringPi_ਦੀ ਹੈ. ਆਪਣੇ _Raspberry_ (ਕਾਲਮ _wPi_)ਵਿੱਚ ਖਾਕਾ ਲੈਣ ਲਈ `gpio readall` ਵਰਤੋ.\n"
+
+#. type: Plain text
+#: index.md:103
+#, no-wrap
+#, fuzzy
+msgid ""
+"Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13: \n"
+"Konektu la jenajn pinglojn de debughaveno al pordego _GPIO_:\n"
+"1.pino 1 ( _GND_ ) ) -> pinglo 14 ( _GND_ )\n"
+"2. pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
+"3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
+"4.pin 4 ( _DD_ ) -> pinglo 13 ( )_wPi 2, BCM27_ )\n"
+msgstr "ਉਦਾਹਰਣ ਦੇ ਲਈ, ਜੇ ਤੁਸੀਂ ਪਿੰਨਸ 3, 11 ਅਤੇ 13 ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ: \nਹੇਠਾਂ ਦਿੱਤੇ ਪਿੰਨ ਨੂੰ ਡੀਬੱਗ ਪੋਰਟ ਤੋਂ ਗੇਟ _GPIO_ਨਾਲ ਜੋੜੋ:\n1.ਪਿਨ 1 ( _GND_ ) ) -> ) ਪਿੰਨ 14 ( _GND_ )\n2. ਪਿੰਨ 7 ( _reset_ ) -> ਪਿੰਨ 3 ( _wPi 8, BCM2_ )\n3. ਪਿੰਨ 3 ( _DC_ ) -> ਪਿੰਨ 11 ( _wPi 0, BCM17_ )\n4.pin 4 ( _DD_ ) -> ਪਿੰਨ 13 ( ( zzz42) ਡਬਲਯੂਪੀਆਈ 2, ਬੀਸੀਐਮ 27_ )\n"
+
+#. type: Plain text
+#: index.md:105
+#, no-wrap
+#, fuzzy
+msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi flash-memoron per la jenaj komandoj:\n"
+msgstr "ਅਤੇ ਹੁਣ ਤੁਸੀਂ ਹੇਠਾਂ ਦਿੱਤੀਆਂ ਕਮਾਂਡਾਂ ਨਾਲ ID ਨੂੰ ਪੜ੍ਹ ਸਕਦੇ ਹੋ, ਸੇਵ ਕਰ ਸਕਦੇ ਹੋ, ਡਿਲੀਟ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਫਲੈਸ਼ ਮੈਮੋਰੀ ਲਿਖ ਸਕਦੇ ਹੋ:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:105
+#, no-wrap
+msgid ""
+"./cc_chipid -r 8 -c 0 -d 2\n"
+"./cc_read -r 8 -c 0 -d 2 save.hex\n"
+"./cc_erase -r 8 -c 0 -d 2\n"
+"./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex\n"
+msgstr ""
+"./cc_chipid -r 8 -c 0 -d 2\n"
+"./cc_read -r 8 -c 0 -d 2 save.hex\n"
+"./cc_erase -r 8 -c 0 -d 2\n"
+"./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex\n"
+
+#. type: Plain text
+#: index.md:113
+#, no-wrap
+msgid "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.\n"
+msgstr "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.\n"
+
+#. type: Title ##
+#: index.md:114
+#, fuzzy, no-wrap
+msgid "kio se ĝi ne funkcias?"
+msgstr "ਕੀ ਜੇ ਇਹ ਕੰਮ ਨਹੀਂ ਕਰਦਾ?"
+
+#. type: Bullet: '1. '
+#: index.md:117
+#, no-wrap
+#, fuzzy
+msgid "ĉesu ĉiujn aliajn programojn.\n"
+msgstr "ਹੋਰ ਸਾਰੇ ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ ਰੋਕੋ.\n"
+
+#. type: Bullet: '2. '
+#: index.md:118
+#, no-wrap
+#, fuzzy
+msgid "agordi la rapidon de la procesoro antaŭ programado. Ekzemplo:  \n"
+msgstr "ਪ੍ਰੋਗਰਾਮਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਪ੍ਰੋਸੈਸਰ ਦੀ ਗਤੀ ਨਿਰਧਾਰਤ ਕਰੋ. ਉਦਾਹਰਣ:  \n"
+
+#. type: Fenced code block (bash)
+#: index.md:120
+#, no-wrap
+msgid "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+msgstr "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+
+#. type: Bullet: '3. '
+#: index.md:123
+#, no-wrap
+msgid "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
+msgstr "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
+
+#. type: Fenced code block (bash)
+#: index.md:125
+#, no-wrap
+msgid "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+msgstr "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+
+#. type: Bullet: '4. '
+#: index.md:129
+#, no-wrap
+msgid "recompilez le logiciel avec `make`.\n"
+msgstr "recompilez le logiciel avec `make`.\n"
+
+#. type: Title ##
+#: index.md:131
+#, fuzzy, no-wrap
+msgid "Permesilo"
+msgstr "ਲਾਇਸੈਂਸ"
+
+#. type: Plain text
+#: index.md:133
+#, fuzzy, no-wrap
+msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_).\n"
+msgstr "ਇਹ ਪ੍ਰੋਜੈਕਟ GPL v3 (ਦੇਖੋ _COPYING_)ਦੇ ਅਧੀਨ ਲਾਇਸੰਸਸ਼ੁਦਾ ਹੈ.\n"
+
+#, fuzzy
+#~ msgid "ĉefa afero!"
+#~ msgstr "ਮੁੱਖ ਚੀਜ਼!"
+
+#, fuzzy
+#~ msgid ""
+#~ " _flash\\_cc2531_ permesas al vi programi vian CC2531-USB-ŝlosilon de via "
+#~ "_Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
+#~ msgstr ""
+#~ " _flash\\_cc2531_ ਤੁਹਾਨੂੰ _Arduino_ ਜਾਂ _CC Debugger_ਦੀ ਜ਼ਰੂਰਤ ਤੋਂ ਬਿਨਾਂ, ਤੁਹਾਡੇ "
+#~ "_Raspberry_ਤੋਂ ਆਪਣੀ CC2531 USB ਕੁੰਜੀ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Vi bezonas ion por konekti la elpurigan havenon de la ŝlosilo al la "
+#~ "havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj 4 linioj _Dupont_ "
+#~ "(vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ne "
+#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
+#~ "wiringpi`, alie vidu [retejon de _Gordon (zzz20 ) aŭ [ĉi tiu alternativa "
+#~ "retejo](https://github.com/WiringPi/WiringPi)).  \n"
+#~ msgstr ""
+#~ "ਤੁਹਾਨੂੰ ਕੁੰਜੀ ਦੇ ਡੀਬੱਗ ਪੋਰਟ ਨੂੰ _GPIO_  _Raspberry_ਦੇ ਪੋਰਟਾਂ _Raspberry_ਨਾਲ ਜੋੜਨ ਲਈ ਕੁਝ "
+#~ "ਚਾਹੀਦਾ ਹੈ, ਉਦਾਹਰਣ ਵਜੋਂ ਕੇਬਲ _CC_ ਅਤੇ 4 ਲਾਈਨਾਂ _Dupont_ (ਅੱਗੇ ਵੇਖੋ).   \n"
+#~ "[ਵਾਇਰਿੰਗਪੀ](http://wiringpi.com/) ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ ਸਥਾਪਤ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ (ਜੇ ਪਹਿਲਾਂ "
+#~ "ਤੋਂ ਸਥਾਪਤ ਨਹੀਂ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਆਮ ਤੌਰ' ਤੇ ਇਸ ਨੂੰ `sudo apt install wiringpi`ਨਾਲ ਸਥਾਪਤ "
+#~ "ਕਰ ਸਕਦੇ ਹੋ, ਨਹੀਂ ਤਾਂ [ਗੋਰਡਨ ਦੀ ਵੈਬਸਾਈਟ _zzz20 ) ਜਾਂ ( zzz22) ਇਹ ਵਿਕਲਪਕ ਸਾਈਟ]"
+#~ "(https://github.com/WiringPi/WiringPi)).  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Mi projektis _flash\\_cc2531_ sur a _Raspberry Pi 3_ kun _raspbian_, sed "
+#~ "sukcesaj programoj estis raportitaj pri aliaj modeloj:\n"
+#~ "* sur pi 4, vi bezonos version 2.52 de _wiringpi_ :  [instalu _cableado_ "
+#~ "2.52 de _la retejo de Gordon_](http://wiringpi.com/wiringpi-updated-"
+#~ "to-2-52-for-the-raspberry-pi-4b/)  \n"
+#~ msgstr ""
+#~ "ਮੈਂ ਇੱਕ _flash\\_cc2531_ ਤੇ _flash\\_cc2531_ ਤੇ _raspbian_ਦਾ ਅਨੁਮਾਨ ਲਾਇਆ ਹੈ, ਪਰ "
+#~ "ਸਫਲ ਪ੍ਰੋਗਰਾਮਾਂ ਦੀ ਰਿਪੋਰਟ ਦੂਜੇ ਮਾਡਲਾਂ ਤੇ ਦਿੱਤੀ ਗਈ ਹੈ:\n"
+#~ "* pi 4 ਤੇ, ਤੁਹਾਨੂੰ _wiringpi_ ਦੇ ਸੰਸਕਰਣ 2.52 ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ:  [ਇੰਸਟੌਲ _ _ਗੋਰਡਨ ਦੀ "
+#~ "ਵੈਬਸਾਈਟ_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-"
+#~ "pi-4b/)  ਤੋਂ ਵਾਇਰਿੰਗ_ 2.52\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "sur pi 1 kaj pi 2 vi bezonos [uzi aliajn pinglojn]"
+#~ "(#uzu_aliajn_pinglojn).  \n"
+#~ msgstr ""
+#~ "pi 1 ਅਤੇ pi 2 'ਤੇ ਤੁਹਾਨੂੰ ਹੋਰ ਪਿੰਨ](#uzu_aliajn_pinglojn)ਵਰਤਣ ਲਈ [ਦੀ ਜ਼ਰੂਰਤ "
+#~ "ਹੋਏਗੀ.  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "ĉiuokaze vi probable bezonos ĝustigi la opcion pri tempobazo ( _\"-m"
+#~ "\"_).\n"
+#~ msgstr "ਵੈਸੇ ਵੀ ਤੁਹਾਨੂੰ ਸ਼ਾਇਦ ਟਾਈਮ ਬੇਸ ਵਿਕਲਪ ( _\"-m\"_)ਨੂੰ ਅਨੁਕੂਲ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle "
+#~ "sont parfaits à cet effet:\n"
+#~ msgstr ""
+#~ "ਇੱਕ ਡਾਉਨਲੋਡ ਕੇਬਲ _CC_ ਅਤੇ 4 ਲਾਈਨਾਂ _Dupont_ toਰਤ ਤੋਂ Femaleਰਤ ਇਸ ਉਦੇਸ਼ ਲਈ ਸੰਪੂਰਨ "
+#~ "ਹਨ:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "![bildo de la ŝlosilo kaj de la _frambo_](https://github.com/jmichault/"
+#~ "files/raw/master/Raspberry-CC2531.jpg)\n"
+#~ "Tiel mi preferas, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte "
+#~ "luti la kablojn ( zzz8) sur la ŝlosilo: vidu ekzemple la retejon "
+#~ "[ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-"
+#~ "using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_](https://"
+#~ "notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ msgstr ""
+#~ "![ਦੀ ਕੁੰਜੀ ਦੀ ਤਸਵੀਰ ਅਤੇ _ਰਸਬੇਰੀ_](https://github.com/jmichault/files/raw/"
+#~ "master/Raspberry-CC2531.jpg)\n"
+#~ "ਇਸ ਲਈ ਮੈਂ ਤਰਜੀਹ ਦਿੰਦਾ ਹਾਂ, ਪਰ ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਕੇਬਲ _CC_ ਨਹੀਂ ਹੈ ਤਾਂ ਤੁਸੀਂ ਸਿੱਧੇ ਤੌਰ ਤੇ ਕੁੰਜੀ ਤੇ "
+#~ "ਕੇਬਲਸ ( zzz8) ਨੂੰ ਵੀ ਸੌਲਡ ਕਰ ਸਕਦੇ ਹੋ. : ਉਦਾਹਰਣ ਲਈ ਵੈਬਸਾਈਟ [ _mariva.com_]"
+#~ "(https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-"
+#~ "pi-without-cc-debugger) ਜਾਂ [ _notenoughtech.com_](https://notenoughtech."
+#~ "com/home-automation/flashing-cc2531-without-cc-debugger/)ਵੇਖੋ\n"
+
+#, fuzzy
+#~ msgid "provo per rulado:\n"
+#~ msgstr "ਰੋਲਿੰਗ ਟੈਸਟ:\n"
+
+#, fuzzy
+#~ msgid "ĝi devas reveni:\n"
+#~ msgstr "ਵਾਪਸ ਆਉਣਾ ਚਾਹੀਦਾ ਹੈ:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Se vi vidas 0000 aŭ ffff io fiaskas:\n"
+#~ "* unue kontrolu vian drataron.\n"
+#~ "* tiam provu pli altan bazan tempon, ekzemple per `./cc_chipid -m 100`, "
+#~ "aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
+#~ "* se neniu el ĉi tio funkcias, provu rekompili kun `make`.\n"
+#~ msgstr ""
+#~ "ਜੇ ਤੁਸੀਂ ਵੇਖਦੇ ਹੋ ਕਿ 0000 ਜਾਂ ffff ਕੁਝ ਗਲਤ ਹੈ:\n"
+#~ "* ਪਹਿਲਾਂ ਆਪਣੀ ਵਾਇਰਿੰਗ ਦੀ ਜਾਂਚ ਕਰੋ.\n"
+#~ "* ਫਿਰ ਉੱਚ ਬੇਸ ਟਾਈਮ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ, ਉਦਾਹਰਣ ਵਜੋਂ `./cc_chipid -m 100`, ਜਾਂ `./"
+#~ "cc_chipid -m 160` ਜਾਂ `./cc_chipid -m 300`ਨਾਲ.\n"
+#~ "* ਜੇ ਇਸ ਵਿੱਚੋਂ ਕੋਈ ਵੀ ਕੰਮ ਨਹੀਂ ਕਰਦਾ, `make`ਨਾਲ ਮੁੜ ਕੰਪਾਇਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ.\n"
+
+#, fuzzy
+#~ msgid "(daŭras ĉirkaŭ 1 minuton).\n"
+#~ msgstr "(ਤਕਰੀਬਨ 1 ਮਿੰਟ)ਤਕ ਚਲਦਾ ਹੈ.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "**Noto:** Vi **devas** forviŝi antaŭ ol skribi (krom se vi vere scias, "
+#~ "kion vi faros).\n"
+#~ msgstr ""
+#~ "**ਨੋਟ:** ਤੁਹਾਨੂੰ **ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ** ਮਿਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ (ਜਦ ਤੱਕ ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ ਪਤਾ ਨਹੀਂ "
+#~ "ਹੁੰਦਾ ਕਿ ਤੁਸੀਂ ਕੀ ਕਰਨ ਜਾ ਰਹੇ ਹੋ).\n"
+
+#, fuzzy
+#~ msgid "Pour programmer le fichier vers la clé _cc2531_:\n"
+#~ msgstr "ਫਾਈਲ ਨੂੰ ਕੁੰਜੀ _cc2531_ਤੇ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਲਈ:\n"
+
+#, fuzzy
+#~ msgid "(daŭras ĉirkaŭ 3 minutojn).\n"
+#~ msgstr "(ਲਗਭਗ 3 ਮਿੰਟ)ਤਕ ਚਲਦਾ ਹੈ.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "ĉiuj komandoj akceptas la jenajn argumentojn:\n"
+#~ "* _-c_ pinglo: ŝanĝi pinglon _DC_ (defaŭlte 27)\n"
+#~ "* _-d_ pinglo: ŝanĝi pinglon (zzz13 )(defaŭlta 28)\n"
+#~ "* _-r_ pinglo: ŝanĝi pinglon _reset_ (defaŭlte 24)\n"
+#~ "* _-m_ : ŝanĝi la multiplikanton de la malfruo, kaj do la baza tempo "
+#~ "(aŭtomate defaŭlte)\n"
+#~ msgstr ""
+#~ "ਸਾਰੀਆਂ ਕਮਾਂਡਾਂ ਹੇਠ ਲਿਖੀਆਂ ਦਲੀਲਾਂ ਨੂੰ ਸਵੀਕਾਰਦੀਆਂ ਹਨ:\n"
+#~ "* _-c_ ਪਿੰਨ: ਪਿੰਨ ਬਦਲੋ _DC_ (ਮੂਲ 27)\n"
+#~ "* _-d_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ (zzz13 )() ਡਿਫਾਲਟ 28)\n"
+#~ "* _-r_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ _reset_ (ਡਿਫਾਲਟ 24)\n"
+#~ "* _-m_ : ਦੇਰੀ ਦਾ ਗੁਣਕ ਬਦਲੋ, ਅਤੇ ਇਸ ਤਰ੍ਹਾਂ ਬੇਸ ਟਾਈਮ (ਆਪਣੇ ਆਪ ਡਿਫੌਲਟ)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "la pingla numerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por "
+#~ "havi la aranĝon en via pi (kolumno _wPi_).\n"
+#~ msgstr ""
+#~ "ਵਰਤੀ ਜਾਂਦੀ ਪਿੰਨ ਨੰਬਰਿੰਗ _wiringPi_ਦੀ ਹੈ. ਆਪਣੇ pi (ਕਾਲਮ _wPi_)ਵਿੱਚ ਖਾਕਾ ਲੈਣ ਲਈ "
+#~ "`gpio readall` ਵਰਤੋ.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13: \n"
+#~ "Konektu la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:\n"
+#~ "1.pino 1 ( _GND_ ) - ( zzz9) pinglo 14 ( _GND_ )\n"
+#~ "2. pin 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
+#~ "3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
+#~ "4. pinglo 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
+#~ msgstr ""
+#~ "ਉਦਾਹਰਣ ਦੇ ਲਈ, ਜੇ ਤੁਸੀਂ ਪਿੰਨਸ 3, 11 ਅਤੇ 13 ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ: \n"
+#~ "ਹੇਠਾਂ ਦਿੱਤੇ ਪਿੰਨ ਨੂੰ ਡੀਬੱਗਿੰਗ ਪੋਰਟ ਤੋਂ ਇੱਕ ਦਰਵਾਜ਼ੇ _GPIO_ਨਾਲ ਜੋੜੋ:\n"
+#~ "1.ਪਿਨ 1 ( _GND_ ) - ( zzz9 . ਪਿੰਨ 3 ( _DC_ ) -> ਪਿੰਨ 11 ( _wPi 0, BCM17_ )\n"
+#~ "4. ਪਿੰਨ 4 ( _DD_ ) -> ਪਿੰਨ 13 ( )_wPi 2, BCM27_ )\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "et maintenant vous pouvez lire l'identifiant, enregistrer le contenu, "
+#~ "effacer et écrire la mémoire flash avec les commandes suivantes:\n"
+#~ msgstr ""
+#~ "ਅਤੇ ਹੁਣ ਤੁਸੀਂ ਆਈਡੀ ਪੜ੍ਹ ਸਕਦੇ ਹੋ, ਸਮੱਗਰੀ ਨੂੰ ਸੇਵ ਕਰ ਸਕਦੇ ਹੋ, ਅਤੇ ਹੇਠ ਲਿਖੀਆਂ ਕਮਾਂਡਾਂ ਨਾਲ ਫਲੈਸ਼ "
+#~ "ਮੈਮੋਰੀ ਲਿਖ ਸਕਦੇ ਹੋ:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Vi ankaŭ povas ŝanĝi la defaŭltojn en _CCDebugger.h_ kaj kompili la "
+#~ "plenumeblajn per `make`.\n"
+#~ msgstr ""
+#~ "ਤੁਸੀਂ ਡਿਫਾਲਟਸ ਨੂੰ _CCDebugger.h_ ਵਿੱਚ ਵੀ ਬਦਲ ਸਕਦੇ ਹੋ ਅਤੇ ਡਿਫੌਲਟਸ ਨੂੰ `make`ਨਾਲ ਕੰਪਾਇਲ "
+#~ "ਕਰ ਸਕਦੇ ਹੋ.\n"
+
+#, fuzzy
+#~ msgid "ĉesu ĉiujn aliajn programojn antaŭ ekbrili.  \n"
+#~ msgstr "ਫਲੈਸ਼ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਹੋਰ ਸਾਰੇ ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ ਰੋਕ ਦਿਓ.  \n"
+
+#, fuzzy
+#~ msgid "fixez la vitesse du processeur avant la programmation. Exemple :  \n"
+#~ msgstr "ਪ੍ਰੋਗਰਾਮਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਪ੍ਰੋਸੈਸਰ ਦੀ ਗਤੀ ਨਿਰਧਾਰਤ ਕਰੋ. ਉਦਾਹਰਣ:  \n"
+
+#, fuzzy
+#~ msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:  \n"
+#~ msgstr "ਸਮੇਂ ਦੀ ਸੀਮਾ ਨੂੰ ਵਧਾਉਣ ਲਈ -m ਵਿਕਲਪ ਦੀ ਵਰਤੋਂ ਕਰੋ. ਉਦਾਹਰਣ:  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "La plenumeblaj kompilaĵoj estas ĉe mia raspbian-distribuo, vi povas provi "
+#~ "rekompili vian distribuon per `make`.\n"
+#~ msgstr ""
+#~ "ਐਗਜ਼ੀਕਿilaਟੇਬਲ ਕੰਪਾਇਲੇਸ਼ਨਸ ਮੇਰੇ ਰਸਬੀਅਨ ਡਿਸਟਰੀਬਿ .ਸ਼ਨ ਤੇ ਹਨ, ਤੁਸੀਂ ਆਪਣੀ ਡਿਸਟਰੀਬਿ .ਸ਼ਨ "
+#~ "`make`ਨਾਲ ਦੁਬਾਰਾ ਕੰਪਾਈਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਸਕਦੇ ਹੋ.\n"
+
+#~ msgid "fonto"
+#~ msgstr "auto"
+
+#~ msgid "indekso"
+#~ msgstr "indekso"
+
+#~ msgid "index"
+#~ msgstr "index"
+
+#, fuzzy
+#~ msgid "Plej novaj afiŝoj"
+#~ msgstr "ਤਾਜ਼ਾ ਪੋਸਟਾਂ"

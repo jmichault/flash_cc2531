@@ -1,0 +1,627 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-01-02 16:06+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: index.md:1
+#, no-wrap
+msgid "eo"
+msgstr "ru"
+
+#. type: YAML Front Matter: lang-niv
+#: index.md:1
+#, no-wrap
+msgid "auto"
+msgstr "auto"
+
+#. type: YAML Front Matter: lang-ref
+#: index.md:1
+#, no-wrap
+msgid "001-ĉefa-afero"
+msgstr "001-ĉefa-afero"
+
+#. type: YAML Front Matter: layout
+#: index.md:1
+#, no-wrap
+msgid "page"
+msgstr "page"
+
+#. type: YAML Front Matter: slug
+#: index.md:1
+#, no-wrap
+msgid "La esenca!"
+msgstr "Жизненноважный!"
+
+#. type: YAML Front Matter: title
+#: index.md:1
+#, fuzzy, no-wrap
+msgid "La ĉefa afero"
+msgstr "Главное"
+
+#. type: Title #
+#: index.md:10
+#, fuzzy, no-wrap
+msgid "_flash\\_cc2531_"
+msgstr "_flash\\_cc2531_"
+
+#. type: Plain text
+#: index.md:12
+#, no-wrap
+#, fuzzy
+msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
+msgstr " _flash\\_cc2531_ позволяет вам программировать USB-накопитель CC2531 с вашего _Raspberry_без необходимости _Arduino_ или _CC Debugger_.\n"
+
+#. type: Title ##
+#: index.md:13
+#, fuzzy, no-wrap
+msgid "Antaŭkondiĉoj"
+msgstr "Предпосылки"
+
+#. type: Plain text
+#: index.md:14
+#, fuzzy, no-wrap
+msgid "Vi bezonas aŭ _Raspberry_ aŭ _Odroid-c2_.  \n"
+msgstr "Вам понадобится _Raspberry_ или _Odroid-c2_.  \n"
+
+#. type: Plain text
+#: index.md:16
+#, no-wrap
+#, fuzzy
+msgid ""
+"Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
+"[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
+msgstr "Вам нужно, что бы подключить порт отладки ключа к портам _GPIO_ из _Raspberry_, например кабель _CC_ и четыре линии _Dupont_ (см. Далее).   \n[WiringPi](http://wiringpi.com/) должен быть установлен (, если он не предустановлен, вы обычно можете установить его с помощью `sudo apt install wiringpi`, в противном случае см. веб-сайт [ _Gordon_](http://wiringpi.com/) или [this этот альтернативный сайт](https://github.com/WiringPi/WiringPi)).  \n"
+
+#. type: Plain text
+#: index.md:19
+#, no-wrap
+#, fuzzy
+msgid ""
+"Mi projektis _flash\\_cc2531_ sur a _Raspberry Pi 3_ kun _raspbian_, sed pri sukcesaj programoj oni raportis pri aliaj modeloj:\n"
+"* sur pi 4, vi bezonos version 2.52 de (zzz10 ):  [instalu _drataron Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  \n"
+msgstr "Я проецировал _flash\\_cc2531_ на _Raspberry Pi 3_ с помощью _raspbian_, но сообщалось о других моделях для успешных программ:\n* на pi 4, вам понадобится версия 2.52 из (zzz10 ):  [) install _wiring Pi_ 2.52 с _сайта Гордона_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  \n"
+
+#. type: Bullet: '* '
+#: index.md:20
+#, no-wrap
+#, fuzzy
+msgid "sur pi 1 kaj pi 2 vi bezonos[uzi aliajn pinglojn](#uzu_aliajn_pinglojn).  \n"
+msgstr "на pi 1 и pi 2 вам понадобится[для использования других контактов](#uzu_aliajn_pinglojn).  \n"
+
+#. type: Bullet: '* '
+#: index.md:25
+#, no-wrap
+#, fuzzy
+msgid "ĉiuokaze vi probable bezonos agordi la tempan bazan opcion ( _\"-m\"_ ).\n"
+msgstr "в любом случае вам, вероятно, потребуется установить опцию временной развертки ( _\"-m\"_ ).\n"
+
+#. type: Title ##
+#: index.md:29
+#, fuzzy, no-wrap
+msgid "Preparado"
+msgstr "Подготовлено"
+
+#. type: Plain text
+#: index.md:32
+#, fuzzy, no-wrap
+msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_:\n"
+msgstr "Загрузите _flash\\_cc2531_ на свой _raspberry_:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:32
+#, no-wrap
+msgid "git clone https://github.com/jmichault/flash_cc2531.git\n"
+msgstr "git clone https://github.com/jmichault/flash_cc2531.git\n"
+
+#. type: Plain text
+#: index.md:36
+#, fuzzy, no-wrap
+msgid "Konektu la jenajn pinglojn de la debug-haveno al la GPIO-haveno:\n"
+msgstr "Подключите следующие контакты от порта отладки к порту GPIO:\n"
+
+#. type: Bullet: '1. '
+#: index.md:38
+#, fuzzy, no-wrap
+msgid "pinglo 1 ( _GND_ ) -> pinglo 39 ( _GND_ )\n"
+msgstr "контакт 1 ( _GND_ ) -> контакт 39 ( _GND_ )\n"
+
+#. type: Bullet: '2. '
+#: index.md:40
+#, fuzzy, no-wrap
+msgid "pinglo 7 ( _reset_ ) -> pinglo 35 ( _wPi 24, BCM19_ )\n"
+msgstr "контакт 7 ( _reset_ ) -> контакт 35 ( _wPi 24, BCM19_ )\n"
+
+#. type: Bullet: '3. '
+#: index.md:42
+#, fuzzy, no-wrap
+msgid "pinglo 3 ( _DC_ ) -> pinglo 36 ( _wPi 27, BCM16_ )\n"
+msgstr "контакт 3 ( _DC_ ) -> контакт 36 ( _wPi 27, BCM16_ )\n"
+
+#. type: Bullet: '4. '
+#: index.md:44
+#, fuzzy, no-wrap
+msgid "pinglo 4 ( _DD_ ) -> pinglo 38 ( _wPi 28, BCM20_ )\n"
+msgstr "контакт 4 ( _DD_ ) -> контакт 38 ( _wPi 28, BCM20_ )\n"
+
+#. type: Plain text
+#: index.md:47
+#, fuzzy, no-wrap
+msgid "kaj enmetu la USB-ŝlosilon en havenon.\n"
+msgstr "и вставьте USB-ключ в порт.\n"
+
+#. type: Plain text
+#: index.md:51
+#, no-wrap
+msgid ""
+"Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet:\n"
+"![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+"C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+msgstr ""
+"Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet:\n"
+"![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+"C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+
+#. type: Plain text
+#: index.md:54
+#, no-wrap
+#, fuzzy
+msgid "provu per ĉi tio:\n"
+msgstr "попробуйте это:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:54
+#, no-wrap
+msgid ""
+"cd flash_cc2531\n"
+"./cc_chipid\n"
+msgstr ""
+"cd flash_cc2531\n"
+"./cc_chipid\n"
+
+#. type: Plain text
+#: index.md:59
+#, no-wrap
+msgid "Ça doit retourner:\n"
+msgstr "Ça doit retourner:\n"
+
+#. type: Fenced code block
+#: index.md:59
+#, no-wrap
+msgid "  ID = b524.\n"
+msgstr "  ID = b524.\n"
+
+#. type: Plain text
+#: index.md:66
+#, no-wrap
+msgid ""
+"Si vous voyez 0000 ou ffff quelque chose ne va pas:\n"
+"* vérifiez d'abord votre câblage.\n"
+"* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
+"* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
+msgstr ""
+"Si vous voyez 0000 ou ffff quelque chose ne va pas:\n"
+"* vérifiez d'abord votre câblage.\n"
+"* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
+"* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
+
+#. type: Title ##
+#: index.md:68
+#, fuzzy, no-wrap
+msgid "uzi"
+msgstr "использовать"
+
+#. type: Plain text
+#: index.md:70
+#, fuzzy, no-wrap
+msgid "Pour enregistrer le contenu de la mémoire flash dans le fichier save.hex:\n"
+msgstr "Чтобы сохранить содержимое флэш-памяти в файл save.hex:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:70
+#, no-wrap
+msgid "./cc_read save.hex\n"
+msgstr "./cc_read save.hex\n"
+
+#. type: Plain text
+#: index.md:74
+#, no-wrap
+msgid "(dure environ 1 minute).\n"
+msgstr "(dure environ 1 minute).\n"
+
+#. type: Plain text
+#: index.md:76
+#, fuzzy, no-wrap
+msgid "Por viŝi flash-memoron:\n"
+msgstr "Чтобы стереть флэш-память:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:76
+#, no-wrap
+msgid "./cc_erase\n"
+msgstr "./cc_erase\n"
+
+#. type: Plain text
+#: index.md:80
+#, no-wrap
+msgid "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).\n"
+msgstr "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).\n"
+
+#. type: Plain text
+#: index.md:82
+#, no-wrap
+#, fuzzy
+msgid "Por programi la dosieron sur la ŝlosilo _CC2531_:\n"
+msgstr "Чтобы запрограммировать файл на ключ _CC2531_:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:82
+#, no-wrap
+msgid "./cc_write CC2531ZNP-Prod.hex\n"
+msgstr "./cc_write CC2531ZNP-Prod.hex\n"
+
+#. type: Plain text
+#: index.md:86
+#, no-wrap
+msgid "(dure environ 3 minutes).\n"
+msgstr "(dure environ 3 minutes).\n"
+
+#. type: Plain text
+#: index.md:88
+#, fuzzy, no-wrap
+msgid "<a id =\"uzu_aliajn_pinglojn\"></ a>\n"
+msgstr "<a id =\"использовать_aliajn_контакты\"></ a>\n"
+
+#. type: Title ##
+#: index.md:88
+#, fuzzy, no-wrap
+msgid "Uzu aliajn pinglojn"
+msgstr "Используйте другие булавки"
+
+#. type: Plain text
+#: index.md:94
+#, no-wrap
+#, fuzzy
+msgid ""
+"ĉiuj komandoj akceptas la jenajn argumentojn:\n"
+"* _-c_ pinglo: ŝanĝi pinglon _DC_ (defaŭlte 27)\n"
+"* _-d_ pinglo: ŝanĝi pinglon _DD_ )(defaŭlta 28)\n"
+"* _-r_ pinglo: ŝanĝi pinglon _reset_ (defaŭlte 24)\n"
+"* _-m_ : ŝanĝi la multiplikanton de la malfruo, kaj do la baza tempo (defaŭlte: aŭtomata ĝustigo)\n"
+msgstr "все команды принимают следующие аргументы:\n* _-c_ pin: изменить вывод _DC_ (по умолчанию 27)\n* _-d_ pin: сменить вывод _DD_ )(по умолчанию 28)\n* _-r_ pin: изменить вывод _reset_ (default 24)\n* _-m_ : изменить множитель задержки, и, следовательно, основной время (по умолчанию: автоматическая настройка)\n"
+
+#. type: Plain text
+#: index.md:96
+#, no-wrap
+#, fuzzy
+msgid "la pingla numerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
+msgstr "Используемая нумерация выводов соответствует _wiringPi_. Используйте `gpio readall` , чтобы разместить макет в столбце _Raspberry_ ( _wPi_).\n"
+
+#. type: Plain text
+#: index.md:103
+#, no-wrap
+#, fuzzy
+msgid ""
+"Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13: \n"
+"Konektu la jenajn pinglojn de debughaveno al pordego _GPIO_:\n"
+"1.pino 1 ( _GND_ ) ) -> pinglo 14 ( _GND_ )\n"
+"2. pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
+"3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
+"4.pin 4 ( _DD_ ) -> pinglo 13 ( )_wPi 2, BCM27_ )\n"
+msgstr "Например, если вы хотите использовать контакты 3, 11 и 13: \nПодключите следующие контакты от порта отладки к шлюзу _GPIO_:\n1.pin 1 ( _GND_ ) ) -> ) контакт 14 ( _GND_ )\n2. контакт 7 ( _reset_ ) -> контакт 3 ( _wPi 8, BCM2_ )\n3. контакт 3 ( _DC_ ) -> контакт 11 ( _wPi 0, BCM17_ )\n4. контакт 4 ( _DD_ ) -> контакт 13 ( ( zzz42) wPi 2, BCM27_ )\n"
+
+#. type: Plain text
+#: index.md:105
+#, no-wrap
+#, fuzzy
+msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi flash-memoron per la jenaj komandoj:\n"
+msgstr "и теперь вы можете читать ID, сохранять, удалять и записывать флеш-память с помощью следующих команд:\n"
+
+#. type: Fenced code block (bash)
+#: index.md:105
+#, no-wrap
+msgid ""
+"./cc_chipid -r 8 -c 0 -d 2\n"
+"./cc_read -r 8 -c 0 -d 2 save.hex\n"
+"./cc_erase -r 8 -c 0 -d 2\n"
+"./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex\n"
+msgstr ""
+"./cc_chipid -r 8 -c 0 -d 2\n"
+"./cc_read -r 8 -c 0 -d 2 save.hex\n"
+"./cc_erase -r 8 -c 0 -d 2\n"
+"./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex\n"
+
+#. type: Plain text
+#: index.md:113
+#, no-wrap
+msgid "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.\n"
+msgstr "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.\n"
+
+#. type: Title ##
+#: index.md:114
+#, fuzzy, no-wrap
+msgid "kio se ĝi ne funkcias?"
+msgstr "что если это не сработает?"
+
+#. type: Bullet: '1. '
+#: index.md:117
+#, no-wrap
+#, fuzzy
+msgid "ĉesu ĉiujn aliajn programojn.\n"
+msgstr "остановите все другие программы.\n"
+
+#. type: Bullet: '2. '
+#: index.md:118
+#, no-wrap
+#, fuzzy
+msgid "agordi la rapidon de la procesoro antaŭ programado. Ekzemplo:  \n"
+msgstr "перед программированием установите скорость процессора. Пример:  \n"
+
+#. type: Fenced code block (bash)
+#: index.md:120
+#, no-wrap
+msgid "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+msgstr "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+
+#. type: Bullet: '3. '
+#: index.md:123
+#, no-wrap
+msgid "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
+msgstr "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
+
+#. type: Fenced code block (bash)
+#: index.md:125
+#, no-wrap
+msgid "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+msgstr "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+
+#. type: Bullet: '4. '
+#: index.md:129
+#, no-wrap
+msgid "recompilez le logiciel avec `make`.\n"
+msgstr "recompilez le logiciel avec `make`.\n"
+
+#. type: Title ##
+#: index.md:131
+#, fuzzy, no-wrap
+msgid "Permesilo"
+msgstr "Лицензия"
+
+#. type: Plain text
+#: index.md:133
+#, fuzzy, no-wrap
+msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_).\n"
+msgstr "Этот проект находится под лицензией GPL v3 (см. _COPYING_).\n"
+
+#, fuzzy
+#~ msgid "ĉefa afero!"
+#~ msgstr "главное!"
+
+#, fuzzy
+#~ msgid ""
+#~ " _flash\\_cc2531_ permesas al vi programi vian CC2531-USB-ŝlosilon de via "
+#~ "_Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
+#~ msgstr ""
+#~ " _flash\\_cc2531_ позволяет вам запрограммировать USB-ключ CC2531 с "
+#~ "вашего _Raspberry_без необходимости _Arduino_ или _CC Debugger_.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Vi bezonas ion por konekti la elpurigan havenon de la ŝlosilo al la "
+#~ "havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj 4 linioj _Dupont_ "
+#~ "(vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ne "
+#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
+#~ "wiringpi`, alie vidu [retejon de _Gordon (zzz20 ) aŭ [ĉi tiu alternativa "
+#~ "retejo](https://github.com/WiringPi/WiringPi)).  \n"
+#~ msgstr ""
+#~ "Вам нужно что-то, чтобы подключить порт отладки ключа к портам _GPIO_ из "
+#~ "_Raspberry_, например кабель _CC_ и 4 линии _Dupont_ (см. Далее).   \n"
+#~ "[WiringPi](http://wiringpi.com/) должен быть установлен (, если он не "
+#~ "установлен заранее, вы обычно можете установить его с помощью `sudo apt "
+#~ "install wiringpi`, в противном случае см. [веб-сайт Гордона _zzz20 ) или "
+#~ "( zzz22) этот альтернативный сайт](https://github.com/WiringPi/"
+#~ "WiringPi)).  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Mi projektis _flash\\_cc2531_ sur a _Raspberry Pi 3_ kun _raspbian_, sed "
+#~ "sukcesaj programoj estis raportitaj pri aliaj modeloj:\n"
+#~ "* sur pi 4, vi bezonos version 2.52 de _wiringpi_ :  [instalu _cableado_ "
+#~ "2.52 de _la retejo de Gordon_](http://wiringpi.com/wiringpi-updated-"
+#~ "to-2-52-for-the-raspberry-pi-4b/)  \n"
+#~ msgstr ""
+#~ "Я проецировал _flash\\_cc2531_ на _Raspberry Pi 3_ с _raspbian_, но "
+#~ "сообщалось об успешных программах на других моделях:\n"
+#~ "* на pi 4, вам понадобится версия 2.52 из _wiringpi_ :  [install "
+#~ "_проводка_ 2.52 с _сайта Гордона_](http://wiringpi.com/wiringpi-updated-"
+#~ "to-2-52-for-the-raspberry-pi-4b/)  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "sur pi 1 kaj pi 2 vi bezonos [uzi aliajn pinglojn]"
+#~ "(#uzu_aliajn_pinglojn).  \n"
+#~ msgstr ""
+#~ "на pi 1 и pi 2 вам понадобится [для использования других контактов]"
+#~ "(#uzu_aliajn_pinglojn).  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "ĉiuokaze vi probable bezonos ĝustigi la opcion pri tempobazo ( _\"-m"
+#~ "\"_).\n"
+#~ msgstr ""
+#~ "в любом случае вам, вероятно, потребуется настроить параметр временной "
+#~ "развертки ( _\"-m\"_).\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle "
+#~ "sont parfaits à cet effet:\n"
+#~ msgstr ""
+#~ "Кабель загрузки _CC_ и 4 линии _Dupont_ от женщины к женщине идеально "
+#~ "подходят для этой цели:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "![bildo de la ŝlosilo kaj de la _frambo_](https://github.com/jmichault/"
+#~ "files/raw/master/Raspberry-CC2531.jpg)\n"
+#~ "Tiel mi preferas, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte "
+#~ "luti la kablojn ( zzz8) sur la ŝlosilo: vidu ekzemple la retejon "
+#~ "[ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-"
+#~ "using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_](https://"
+#~ "notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ msgstr ""
+#~ "![изображение ключа и _raspberry_](https://github.com/jmichault/files/raw/"
+#~ "master/Raspberry-CC2531.jpg)\n"
+#~ "Я предпочитаю, но если у вас нет кабеля _CC_ , вы также можете напрямую "
+#~ "припаять кабели ( zzz8) к ключу : см., например, веб-сайт [ _mariva.com_]"
+#~ "(https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-"
+#~ "pi-without-cc-debugger) или [ _notenoughtech.com_](https://notenoughtech."
+#~ "com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+
+#, fuzzy
+#~ msgid "provo per rulado:\n"
+#~ msgstr "испытание на качение:\n"
+
+#, fuzzy
+#~ msgid "ĝi devas reveni:\n"
+#~ msgstr "должен вернуть:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Se vi vidas 0000 aŭ ffff io fiaskas:\n"
+#~ "* unue kontrolu vian drataron.\n"
+#~ "* tiam provu pli altan bazan tempon, ekzemple per `./cc_chipid -m 100`, "
+#~ "aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
+#~ "* se neniu el ĉi tio funkcias, provu rekompili kun `make`.\n"
+#~ msgstr ""
+#~ "Если вы видите 0000 или ffff, что-то не так:\n"
+#~ "* сначала проверьте проводку.\n"
+#~ "* затем попробуйте более высокое базовое время, например, с `./cc_chipid -"
+#~ "m 100`, или `./cc_chipid -m 160` или `./cc_chipid -m 300`.\n"
+#~ "* если ничего из этого не работает, попробуйте перекомпилировать с "
+#~ "помощью `make`.\n"
+
+#, fuzzy
+#~ msgid "(daŭras ĉirkaŭ 1 minuton).\n"
+#~ msgstr "(длится около 1 минуты).\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "**Noto:** Vi **devas** forviŝi antaŭ ol skribi (krom se vi vere scias, "
+#~ "kion vi faros).\n"
+#~ msgstr ""
+#~ "**Примечание:** Вы **должны** удалить перед записью (, если вы "
+#~ "действительно не знаете, что собираетесь делать).\n"
+
+#, fuzzy
+#~ msgid "Pour programmer le fichier vers la clé _cc2531_:\n"
+#~ msgstr "Чтобы запрограммировать файл на ключ _cc2531_:\n"
+
+#, fuzzy
+#~ msgid "(daŭras ĉirkaŭ 3 minutojn).\n"
+#~ msgstr "(длится около 3 минут).\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "ĉiuj komandoj akceptas la jenajn argumentojn:\n"
+#~ "* _-c_ pinglo: ŝanĝi pinglon _DC_ (defaŭlte 27)\n"
+#~ "* _-d_ pinglo: ŝanĝi pinglon (zzz13 )(defaŭlta 28)\n"
+#~ "* _-r_ pinglo: ŝanĝi pinglon _reset_ (defaŭlte 24)\n"
+#~ "* _-m_ : ŝanĝi la multiplikanton de la malfruo, kaj do la baza tempo "
+#~ "(aŭtomate defaŭlte)\n"
+#~ msgstr ""
+#~ "все команды принимают следующие аргументы:\n"
+#~ "* _-c_ pin: изменить вывод _DC_ (по умолчанию 27)\n"
+#~ "* _-d_ pin: изменить вывод (zzz13 (zzz14 ) по умолчанию 28)\n"
+#~ "* _-r_ pin: изменить вывод _reset_ (default 24)\n"
+#~ "* _-m_ : изменить множитель задержки, и поэтому базовое время "
+#~ "(автоматически устанавливается по умолчанию)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "la pingla numerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por "
+#~ "havi la aranĝon en via pi (kolumno _wPi_).\n"
+#~ msgstr ""
+#~ "Используемая нумерация выводов соответствует _wiringPi_. Используйте "
+#~ "`gpio readall` , чтобы разместить макет в столбце pi ( _wPi_).\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13: \n"
+#~ "Konektu la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:\n"
+#~ "1.pino 1 ( _GND_ ) - ( zzz9) pinglo 14 ( _GND_ )\n"
+#~ "2. pin 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
+#~ "3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
+#~ "4. pinglo 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
+#~ msgstr ""
+#~ "Например, если вы хотите использовать контакты 3, 11 и 13: \n"
+#~ "Подключите следующие контакты от порта отладки к двери _GPIO_:\n"
+#~ "1.pin 1 ( _GND_ ) - ( zzz9) контакт 14 ( _GND_ )\n"
+#~ "2. контакт 7 ( _reset_ ) -> контакт 3 ( _wPi 8, BCM2_ )\n"
+#~ "3. контакт 3 ( _DC_ ) -> контакт 11 ( _wPi 0, BCM17_ )\n"
+#~ "4. контакт 4 ( _DD_ ) -> контакт 13 ( )_wPi 2, BCM27_ )\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "et maintenant vous pouvez lire l'identifiant, enregistrer le contenu, "
+#~ "effacer et écrire la mémoire flash avec les commandes suivantes:\n"
+#~ msgstr ""
+#~ "и теперь вы можете прочитать идентификатор, сохранить содержимое, "
+#~ "очистить и записать флэш-память с помощью следующих команд:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Vi ankaŭ povas ŝanĝi la defaŭltojn en _CCDebugger.h_ kaj kompili la "
+#~ "plenumeblajn per `make`.\n"
+#~ msgstr ""
+#~ "Вы также можете изменить значения по умолчанию на _CCDebugger.h_ и "
+#~ "скомпилировать значения по умолчанию с помощью `make`.\n"
+
+#, fuzzy
+#~ msgid "ĉesu ĉiujn aliajn programojn antaŭ ekbrili.  \n"
+#~ msgstr "остановите все другие программы перед перепрошивкой.  \n"
+
+#, fuzzy
+#~ msgid "fixez la vitesse du processeur avant la programmation. Exemple :  \n"
+#~ msgstr "перед программированием установите скорость процессора. Пример:  \n"
+
+#, fuzzy
+#~ msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:  \n"
+#~ msgstr ""
+#~ "используйте опцию -m, чтобы увеличить используемые временные ограничения. "
+#~ "Пример:  \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "La plenumeblaj kompilaĵoj estas ĉe mia raspbian-distribuo, vi povas provi "
+#~ "rekompili vian distribuon per `make`.\n"
+#~ msgstr ""
+#~ "Исполняемые компиляции находятся в моем дистрибутиве raspbian, вы можете "
+#~ "попробовать перекомпилировать свой дистрибутив с помощью `make`.\n"
+
+#~ msgid "fonto"
+#~ msgstr "auto"
+
+#~ msgid "indekso"
+#~ msgstr "indekso"
+
+#~ msgid "index"
+#~ msgstr "index"
+
+#, fuzzy
+#~ msgid "Plej novaj afiŝoj"
+#~ msgstr "Последние записи"
