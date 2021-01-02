@@ -6,7 +6,7 @@ permalink:        pretty
 
 # Setup
 title:            Ĝi estas Blogo
-baseurl:          ""
+baseurl:          "/flash_cc2531"
 auxtoro: Jean Michault
 
 exclude: [ _locale , _scripts , "*.backup", "*.bak" ]
