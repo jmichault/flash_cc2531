@@ -1,6 +1,7 @@
 *.log
 *.jar
 *.bak
+*.backup
 *.po~
 *.pot~
 *.old

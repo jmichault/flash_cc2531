@@ -8,51 +8,38 @@ title: 'ਮੁੱਖ ਗੱਲ'
 ---
 
 # _flash\_cc2531_
- _flash\_cc2531_ ਤੁਹਾਨੂੰ _Arduino_ ਜਾਂ _CC Debugger_ਦੀ ਜ਼ਰੂਰਤ ਤੋਂ ਬਗੈਰ, ਤੁਹਾਡੇ _Raspberry_ਤੋਂ ਤੁਹਾਡੇ CC2531 USB ਸਟਿਕ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ.
+ _flash\_cc2531_ ਤੁਹਾਨੂੰ _Arduino_ ਜਾਂ _CC Debugger_ਦੀ ਲੋੜ ਤੋਂ ਬਗੈਰ, ਤੁਹਾਡੇ _Raspberry_ਤੋਂ ਆਪਣੇ ਸੀਸੀ 2531 USB ਸਟਿਕ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ.
 
 ## ਜਰੂਰੀ ਹੈ
 ਤੁਹਾਨੂੰ ਜਾਂ ਤਾਂ _Raspberry_ ਜਾਂ _Odroid-c2_ਦੀ ਜ਼ਰੂਰਤ ਹੈ.  
-ਤੁਹਾਨੂੰ ਕੀ ਚਾਹੀਦਾ ਹੈ ਕਿ ਕੁੰਜੀ ਦੇ ਡੀਬੱਗ ਪੋਰਟ ਨੂੰ _GPIO_ (zZ3) ਦੇ ਪੋਰਟਾਂ ਨਾਲ ਜੋੜਨਾ ਹੈ, ਉਦਾਹਰਣ ਲਈ ਕੇਬਲ _CC_ ਅਤੇ ਚਾਰ ਲਾਈਨਾਂ _Dupont_ (ਅੱਗੇ ਵੇਖੋ).   
-[ਵਾਇਰਿੰਗਪੀ](http://wiringpi.com/) ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ ਸਥਾਪਤ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ (ਜੇ ਇਹ ਪਹਿਲਾਂ ਤੋਂ ਸਥਾਪਤ ਨਹੀਂ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਆਮ ਤੌਰ' ਤੇ ਇਸ ਨੂੰ `sudo apt install wiringpi`ਨਾਲ ਸਥਾਪਤ ਕਰ ਸਕਦੇ ਹੋ, ਨਹੀਂ ਤਾਂ ਵੈਬਸਾਈਟ [ _ਗੋਰਡਨ_](http://wiringpi.com/) ਜਾਂ [ਇਸ ਨੂੰ ਵੇਖੋ. ਉਹ ਵਿਕਲਪਕ ਸਾਈਟ](https://github.com/WiringPi/WiringPi)).  
+ਤੁਹਾਨੂੰ ਕੀ ਚਾਹੀਦਾ ਹੈ ਕਿ ਕੀ ਦੇ ਡੀਬੱਗ ਪੋਰਟ ਨੂੰ _Raspberry_ਦੇ ਪੋਰਟਾਂ _GPIO_ ਨਾਲ ਜੋੜਨਾ ਹੈ, ਉਦਾਹਰਣ ਵਜੋਂ ਕੇਬਲ _CC_ ਅਤੇ ਚਾਰ ਲਾਈਨਾਂ _Dupont_ (ਹੋਰ ਵੇਖੋ).   
+[ਵਾਇਰਿੰਗਪੀ](http://wiringpi.com/) ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ ਸਥਾਪਤ ਕੀਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ (be 15 °) ਜੇ ਇਹ ਪਹਿਲਾਂ ਤੋਂ ਸਥਾਪਤ ਨਹੀਂ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਆਮ ਤੌਰ' ਤੇ ਇਸ ਨੂੰ `sudo apt install wiringpi`ਨਾਲ ਸਥਾਪਤ ਕਰ ਸਕਦੇ ਹੋ, ਨਹੀਂ ਤਾਂ ਵੈਬਸਾਈਟ [ ਦੇਖੋ._ਗੋਰਡਨ_](http://wiringpi.com/) ਜਾਂ [ਇਹ ਵਿਕਲਪਕ ਸਾਈਟ](https://github.com/WiringPi/WiringPi)).  
 
-ਮੈਂ ਇੱਕ _flash\_cc2531_ ਤੇ _flash\_cc2531_ ਤੇ _raspbian_ਦਾ ਅਨੁਮਾਨ ਲਾਇਆ ਹੈ, ਪਰ ਸਫਲ ਪ੍ਰੋਗਰਾਮਾਂ ਲਈ ਹੋਰ ਮਾਡਲਾਂ ਦੀ ਰਿਪੋਰਟ ਕੀਤੀ ਗਈ ਹੈ: ) _ਵਾਇਰਿੰਗ ਪਾਈ_ 2.52 _ਗੋਰਡਨ ਦੀ ਵੈਬਸਾਈਟ_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  ਤੋਂ ਸਥਾਪਤ ਕਰੋ.
-* pi 1 ਅਤੇ pi 2 'ਤੇ ਤੁਹਾਨੂੰ ਹੋਰ ਪਿੰਨ](#uzu_aliajn_pinglojn)ਵਰਤਣ ਲਈ[ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ.  
+ਮੈਂ _raspbian_ਦੇ ਨਾਲ (° 1 with) _flash\_cc2531_ ਦਾ ਅਨੁਮਾਨ ਲਾਇਆ, ਪਰ ਦੂਜੇ ਮਾਡਲਾਂ ਤੇ ਸਫਲ ਪ੍ਰੋਗਰਾਮਿੰਗ ਦੀ ਰਿਪੋਰਟ ਕੀਤੀ ਗਈ:
+* ਪੀਆਈ 4 ਤੇ, ਤੁਹਾਨੂੰ (° version ਦੇ ਵਰਜ਼ਨ 2.52 ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ 10 °):  [ਗਾਰਡਨ ਦੀ ਵੈਬਸਾਈਟ_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  ਤੋਂ _ਵਾਇਰਿੰਗ ਪਾਈ_ 2.52 ਸਥਾਪਤ ਕਰੋ
+* ਪਾਈ 1 ਅਤੇ ਪਾਈ 2 'ਤੇ ਤੁਹਾਨੂੰ ਹੋਰ ਪਿੰਨ](#uzi_aliajn_pinglojn)ਵਰਤਣ ਲਈ [ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ.  
 
-
-
-
-* ਵੈਸੇ ਵੀ ਤੁਹਾਨੂੰ ਸ਼ਾਇਦ ਟਾਈਮ ਬੇਸ ਵਿਕਲਪ ( _"-m"_ )ਨਿਰਧਾਰਤ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ.
-
-
+* ਹਾਲਾਂਕਿ, ਤੁਹਾਨੂੰ ਸ਼ਾਇਦ ਟਾਈਮ ਬੇਸ ਵਿਕਲਪ ( _"-m"_ )ਨਿਰਧਾਰਤ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ.
 
 
 
 ## ਤਿਆਰ ਕੀਤਾ
 
-ਆਪਣੇ _raspberry_ਤੇ _flash\_cc2531_ ਡਾਉਨਲੋਡ ਕਰੋ:
+ਆਪਣੇ _raspberry_ਤੇ _flash\_cc2531_ ਡਾ Downloadਨਲੋਡ ਕਰੋ:
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
-ਡੀਬੱਗ ਪੋਰਟ ਤੋਂ ਹੇਠ ਲਿਖੀਆਂ ਪਿੰਨਾਂ ਨੂੰ ਜੀਪੀਆਈਓ ਪੋਰਟ ਨਾਲ ਜੋੜੋ:
-
+ਡੀਬੱਗਿੰਗ ਪੋਰਟ ਤੋਂ ਹੇਠ ਲਿਖੀਆਂ ਪਿੰਨਾਂ ਨੂੰ ਜੀਪੀਆਈਓ ਪੋਰਟ ਨਾਲ ਜੋੜੋ: (
 1. ਪਿੰਨ 1 ( _GND_ ) -> ਪਿੰਨ 39 ( _GND_ )
-
-
-2. ਪਿੰਨ 7 ( _reset_ ) -> ਪਿੰਨ 35 ( _wPi 24, BCM19_ )
-
-
-3. ਪਿੰਨ 3 ( _DC_ ) -> ਪਿੰਨ 36 ( _wPi 27, BCM16_ )
-
-
-4. ਪਿੰਨ 4 ( _DD_ ) -> ਪਿੰਨ 38 ( _wPi 28, BCM20_ )
-
-
+ਦੂਜਾ ਪਿੰਨ 7 ( _reset_ ) -> ਪਿੰਨ 35 ( _wPi 24, BCM19_ ))
+3. ਸਪਿੰਡਲ 3 ( _DC_ ) -> ਪਿੰਨ 36 ( _wPi 27, BCM16_ )
+4. ਸਪਿੰਡਲ 4 ( _DD_ ) -> ਸਪਿੰਡਲ 38 ( _wPi 28, BCM20_ )
 
 ਅਤੇ ਇੱਕ ਪੋਰਟ ਵਿੱਚ USB ਕੁੰਜੀ ਪਾਓ.
 
-Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet:
-![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)
-C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+ਡਾਉਨਲੋਡ ਕੇਬਲ _CC_ ਅਤੇ 4 ਲਾਈਨਾਂ _Dupont_ toਰਤ ਤੋਂ Femaleਰਤ ਇਸ ਉਦੇਸ਼ ਲਈ ਸਹੀ ਹਨ:
+![ਕੁੰਜੀ ਦੀ ਫੋਟੋ ਅਤੇ _ਰਸਬੇਰੀ_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)
+ਇਹ ਮੇਰੀ ਪਸੰਦੀਦਾ ਚੋਣ ਹੈ, ਪਰ ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਕੇਬਲ _CC_ ਨਹੀਂ ਹੈ ਤਾਂ ਤੁਸੀਂ ਕੁੰਜੀ ਤੇ ਕੇਬਲ _Dupont_ ਨੂੰ ਸਿੱਧੇ ਤੌਰ 'ਤੇ ਵੀ ਸੌਲਡਰ ਕਰ ਸਕਦੇ ਹੋ: ਉਦਾਹਰਣ ਲਈ ਵੈਬਸਾਈਟ [ ਦੇਖੋ )_mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ਜਾਂ [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 ਇਸ ਨੂੰ ਅਜ਼ਮਾਓ:
@@ -60,53 +47,53 @@ C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez
 cd flash_cc2531
 ./cc_chipid
 ```
-Ça doit retourner:
+ਇਹ ਵਾਪਸ ਆਉਣਾ ਚਾਹੀਦਾ ਹੈ:
 ```
   ID = b524.
 ```
-Si vous voyez 0000 ou ffff quelque chose ne va pas:
-* vérifiez d'abord votre câblage.
-* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.
-* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.
+ਜੇ ਤੁਸੀਂ ਵੇਖਦੇ ਹੋ ਕਿ 0000 ਜਾਂ ffff ਕੁਝ ਗਲਤ ਹੈ:
+* ਪਹਿਲਾਂ ਆਪਣੀ ਵਾਇਰਿੰਗ ਦੀ ਜਾਂਚ ਕਰੋ.
+* ਫਿਰ ਉੱਚ ਬੇਸ ਟਾਈਮ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ, ਉਦਾਹਰਣ ਵਜੋਂ `./cc_chipid -m 100`, ਜਾਂ `./cc_chipid -m 160` ਜਾਂ `./cc_chipid -m 300`ਨਾਲ.
+* ਜੇ ਇਸ ਵਿੱਚੋਂ ਕੋਈ ਵੀ ਕੰਮ ਨਹੀਂ ਕਰਦਾ ਹੈ, `make`ਨਾਲ ਦੁਬਾਰਾ ਕੰਪਾਇਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ.
 
 
 ## ਵਰਤਣ
-ਫਲੈਸ਼ ਮੈਮੋਰੀ ਦੇ ਭਾਗਾਂ ਨੂੰ ਸੇਵ.ਹੇਕਸ ਫਾਈਲ ਵਿੱਚ ਸੇਵ ਕਰਨ ਲਈ:
+ਸੇਲ.ਹੇਕਸ ਫਾਈਲ ਵਿਚ ਫਲੈਸ਼ ਮੈਮੋਰੀ ਦੇ ਭਾਗਾਂ ਨੂੰ ਬਚਾਉਣ ਲਈ:
 ```bash
 ./cc_read save.hex
 ```
-(dure environ 1 minute).
+(ਤਕਰੀਬਨ 1 ਮਿੰਟ)ਰਹਿੰਦਾ ਹੈ.
 
 ਫਲੈਸ਼ ਮੈਮੋਰੀ ਨੂੰ ਮਿਟਾਉਣ ਲਈ:
 ```bash
 ./cc_erase
 ```
-**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).
+**ਨੋਟ:** ਤੁਹਾਨੂੰ** ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ** ਮਿਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ (ਜਦ ਤੱਕ ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ ਪਤਾ ਨਹੀਂ ਹੁੰਦਾ ਕਿ ਤੁਸੀਂ ਕੀ ਕਰਨ ਜਾ ਰਹੇ ਹੋ).
 
-ਕੁੰਜੀ 'ਤੇ ਫਾਈਲ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਲਈ _CC2531_:
+ਕੁੰਜੀ ਉੱਤੇ ਫਾਈਲ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਲਈ (° 1 program):
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```
-(dure environ 3 minutes).
+(ਲਗਭਗ 3 ਮਿੰਟ)ਰਹਿੰਦੀ ਹੈ.
 
-<ਇੱਕ id ="ਵਰਤੋਂ_aliajn_ਪਿੰਨ"></ a>
+<ਇੱਕ ਆਈਡੀ ="ਵਰਤੋਂ_aliajn_ਪਿੰਨ"></ ਏ>
 ## ਹੋਰ ਪਿੰਨ ਦੀ ਵਰਤੋਂ ਕਰੋ
 ਸਾਰੀਆਂ ਕਮਾਂਡਾਂ ਹੇਠ ਲਿਖੀਆਂ ਦਲੀਲਾਂ ਨੂੰ ਸਵੀਕਾਰਦੀਆਂ ਹਨ:
-* _-c_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ _DC_ (ਮੂਲ 27)
-* _-d_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ _DD_ )(ਡਿਫਾਲਟ 28)
-* _-r_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ _reset_ (ਡਿਫਾਲਟ 24)
-* _-m_ : ਦੇਰੀ ਦੇ ਗੁਣਕ ਨੂੰ ਬਦਲੋ, ਅਤੇ ਇਸ ਲਈ ਮੁ theਲਾ ਟਾਈਮ (ਡਿਫੌਲਟ: ਆਟੋਮੈਟਿਕ ਐਡਜਸਟਮੈਂਟ)
+* _-c_ ਪਿੰਨ: ਪਿੰਨ _DC_ (ਨੂੰ ਮੂਲ ਰੂਪ ਵਿੱਚ 27)
+* _-d_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ _DD_ )(ਮੂਲ 28)
+* _-r_ ਪਿੰਨ: ਬਦਲੋ ਪਿੰਨ (° 21 default)(ਮੂਲ ਰੂਪ ਵਿੱਚ 24)
+* _-m_ : ਦੇਰੀ ਦਾ ਗੁਣਕ ਬਦਲੋ, ਅਤੇ ਇਸਲਈ ਮੂਲ ਸਮਾਂ (ਮੂਲ ਰੂਪ ਵਿੱਚ: ਆਟੋਮੈਟਿਕ ਵਿਵਸਥਾ)
 
-ਵਰਤੀ ਜਾਂਦੀ ਪਿੰਨ ਨੰਬਰਿੰਗ _wiringPi_ਦੀ ਹੈ. ਆਪਣੇ _Raspberry_ (ਕਾਲਮ _wPi_)ਵਿੱਚ ਖਾਕਾ ਲੈਣ ਲਈ `gpio readall` ਵਰਤੋ.
+ਵਰਤੀ ਜਾਂਦੀ ਪਿੰਨ ਨੰਬਰਿੰਗ _wiringPi_ਦੀ ਹੈ. ਆਪਣੇ _Raspberry_ (ਕਾਲਮ _wPi_)ਵਿਚ ਲੇਆਉਟ ਪਾਉਣ ਲਈ `gpio readall` ਵਰਤੋ.
 
-ਉਦਾਹਰਣ ਦੇ ਲਈ, ਜੇ ਤੁਸੀਂ ਪਿੰਨਸ 3, 11 ਅਤੇ 13 ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ: 
-ਹੇਠਾਂ ਦਿੱਤੇ ਪਿੰਨ ਨੂੰ ਡੀਬੱਗ ਪੋਰਟ ਤੋਂ ਗੇਟ _GPIO_ਨਾਲ ਜੋੜੋ:
-1.ਪਿਨ 1 ( _GND_ ) ) -> ) ਪਿੰਨ 14 ( _GND_ )
+ਉਦਾਹਰਣ ਦੇ ਲਈ, ਜੇ ਤੁਸੀਂ ਪਿੰਨ 3, 11 ਅਤੇ 13 ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ:  
+ਡੀਬੱਗਿੰਗ ਪੋਰਟ ਤੋਂ ਹੇਠ ਦਿੱਤੇ ਪਿੰਨ ਨੂੰ ਇੱਕ ਗੇਟ _GPIO_ਨਾਲ ਜੋੜੋ:
+1. ਪਿੰਨ 1 ( _GND_ ) -> ਪਿੰਨ 14 ( )_GND_ )
 2. ਪਿੰਨ 7 ( _reset_ ) -> ਪਿੰਨ 3 ( _wPi 8, BCM2_ )
 3. ਪਿੰਨ 3 ( _DC_ ) -> ਪਿੰਨ 11 ( _wPi 0, BCM17_ )
-4.pin 4 ( _DD_ ) -> ਪਿੰਨ 13 ( ( zzz42) ਡਬਲਯੂਪੀਆਈ 2, ਬੀਸੀਐਮ 27_ )
+4. ਪਿੰਨ 4 ( _DD_ ) -> ਪਿੰਨ 13 ( )_ਡਬਲਯੂਪੀਆਈ 2, ਬੀਸੀਐਮ 27_ )
 
-ਅਤੇ ਹੁਣ ਤੁਸੀਂ ਹੇਠਾਂ ਦਿੱਤੀਆਂ ਕਮਾਂਡਾਂ ਨਾਲ ID ਨੂੰ ਪੜ੍ਹ ਸਕਦੇ ਹੋ, ਸੇਵ ਕਰ ਸਕਦੇ ਹੋ, ਡਿਲੀਟ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਫਲੈਸ਼ ਮੈਮੋਰੀ ਲਿਖ ਸਕਦੇ ਹੋ:
+ਅਤੇ ਹੁਣ ਤੁਸੀਂ ਹੇਠਾਂ ਦਿੱਤੀਆਂ ਕਮਾਂਡਾਂ ਨਾਲ ID ਪੜ੍ਹ ਸਕਦੇ ਹੋ, ਸੇਵ ਕਰ ਸਕਦੇ ਹੋ, ਡਿਲੀਟ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਫਲੈਸ਼ ਮੈਮੋਰੀ ਲਿਖ ਸਕਦੇ ਹੋ:
 ```bash
 ./cc_chipid -r 8 -c 0 -d 2
 ./cc_read -r 8 -c 0 -d 2 save.hex
@@ -114,29 +101,26 @@ Si vous voyez 0000 ou ffff quelque chose ne va pas:
 ./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex
 ```
 
-Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.
+ਤੁਸੀਂ ਮੂਲ ਮੁੱਲ ਨੂੰ _CCDebugger.h_ ਵਿੱਚ ਵੀ ਬਦਲ ਸਕਦੇ ਹੋ ਅਤੇ ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ `make`ਨਾਲ ਕੰਪਾਈਲ ਕਰ ਸਕਦੇ ਹੋ.
 
 ## ਕੀ ਜੇ ਇਹ ਕੰਮ ਨਹੀਂ ਕਰਦਾ?
 
 1. ਹੋਰ ਸਾਰੇ ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ ਰੋਕੋ.
 
-
-2. ਪ੍ਰੋਗਰਾਮਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਪ੍ਰੋਸੈਸਰ ਦੀ ਗਤੀ ਨਿਰਧਾਰਤ ਕਰੋ. ਉਦਾਹਰਣ:  
-
+2. ਪ੍ਰੋਗਰਾਮਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਪ੍ਰੋਸੈਸਰ ਦੀ ਗਤੀ ਤਹਿ ਕਰੋ. ਉਦਾਹਰਣ:  
 
 ```bash
 sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 ```
-3. utilisez l'option -m pour augmenter les délais utilisés. Exemple:  
-
+3. ਸਮੇਂ ਦੀ ਸੀਮਾ ਨੂੰ ਵਧਾਉਣ ਲਈ -m ਵਿਕਲਪ ਦੀ ਵਰਤੋਂ ਕਰੋ. ਉਦਾਹਰਣ:  
 
 ```bash
 ./cc_write -m 300 CC2531ZNP-Prod.hex
 ```
-4. recompilez le logiciel avec `make`.
+4. (rec 1 °) ਨਾਲ ਪ੍ਰੋਗਰਾਮ ਦੁਬਾਰਾ ਕੰਪਾਈਲ ਕਰੋ.
 
 
 
 ## ਲਾਇਸੈਂਸ
 
-ਇਹ ਪ੍ਰੋਜੈਕਟ GPL v3 (ਦੇਖੋ _COPYING_)ਦੇ ਅਧੀਨ ਲਾਇਸੰਸਸ਼ੁਦਾ ਹੈ.
+ਇਹ ਪ੍ਰੋਜੈਕਟ ਜੀਪੀਐਲ ਵੀ 3 (ਦੇ ਅਧੀਨ ਲਾਇਸੈਂਸਸ਼ੁਦਾ ਹੈ (ਦੇਖੋ 2 °).

@@ -13,47 +13,33 @@ title: 重要なこと
 ## 前提条件
  _Raspberry_ または _Odroid-c2_のいずれかが必要です。  
 キーのデバッグポートを _Raspberry_のポート _GPIO_ に接続するものが必要です。たとえば、ケーブル _CC_ と4本の線 _Dupont_ (を参照してください)。   
-[WiringPi](http://wiringpi.com/) が事前にインストールされていない場合は、インストールする必要があります (。通常は `sudo apt install wiringpi`を使用してインストールできます。それ以外の場合は、Webサイト [ _Gordon_](http://wiringpi.com/) または [を参照してください。その代替サイト](https://github.com/WiringPi/WiringPi))。  
+[WiringPi](http://wiringpi.com/) が事前にインストールされていない場合はインストールする必要があります (、通常は `sudo apt install wiringpi`でインストールできます。それ以外の場合はWebサイト [ を参照してください_ゴードン_](http://wiringpi.com/) または [この代替サイト](https://github.com/WiringPi/WiringPi))。  
 
- _flash\_cc2531_ を _raspbian_で _Raspberry Pi 3_ に投影しましたが、成功したプログラムについて他のモデルが報告されています：pi 4の
-* ：（ zzz10）zzz10 )のバージョン2.52が必要です：（zzz12 ） _ゴードンのウェブサイト_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  から _配線Pi_ 2.52をインストールします
-* pi1とpi2では、他のピン](#uzu_aliajn_pinglojn)を使用するために[が必要になります。  
+ _flash\_cc2531_ を _raspbian_で _Raspberry Pi 3_ に投影しましたが、他のモデルでプログラミングの成功が報告されました：pi 4では
+* （°のバージョン2.52が必要です10°）:  [取り付け _配線Pi_ 2.52 _ゴードンのウェブサイト_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  
+* pi1とpi2では、他のピン](#uzi_aliajn_pinglojn)を使用するために [が必要になります。  
 
-
-
-
-* とにかく、おそらくタイムベースオプション ( _"-m"_ )を設定する必要があります。
-
-
+* ただし、おそらくタイムベースオプション ( _"-m"_ )を設定する必要があります。
 
 
 
 ## 準備
 
- _flash\_cc2531_ を _raspberry_にダウンロードします：
+ _flash\_cc2531_ をあなたの _raspberry_にダウンロードします：
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
 次のピンをデバッグポートからGPIOポートに接続します。
-
-1. ピン1 ( _GND_ ) -> ピン39 ( _GND_ )
-
-
-2. ピン7 ( _reset_ ) -> ピン35 ( _wPi 24, BCM19_ )
-
-
-3. ピン3 ( _DC_ ) -> ピン36 ( _wPi 27, BCM16_ )
-
-
-4. ピン4 ( _DD_ ) -> ピン38 ( _wPi 28, BCM20_ )
-
-
+1。ピン1 ( _GND_ ) -> ピン39 ( _GND_ )
+2番目のピン7 ( _reset_ ) -> ピン35 ( _wPi 24, BCM19_ ）)
+3。スピンドル3 ( _DC_ ) -> ピン36 ( _wPi 27, BCM16_ )
+4。スピンドル4 ( _DD_ ) -> スピンドル38 ( _wPi 28, BCM20_ )
 
 USBキーをポートに挿入します。
 
-Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet:
-![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)
-C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+ダウンロードケーブル _CC_ と4本の線 _Dupont_ メスからメスはこの目的に最適です：
+![キーと _ラズベリー_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)の写真°）
+これは私のお気に入りの選択ですが、ケーブル _CC_ がない場合は、キーにケーブル _Dupont_ を直接はんだ付けすることもできます。たとえば、Webサイト [ を参照してください。 ）_mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) または [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 これを試してください：
@@ -61,14 +47,14 @@ C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez
 cd flash_cc2531
 ./cc_chipid
 ```
-Ça doit retourner:
+戻らなければなりません：
 ```
   ID = b524.
 ```
-Si vous voyez 0000 ou ffff quelque chose ne va pas:
-* vérifiez d'abord votre câblage.
-* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.
-* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.
+0000またはffffが表示された場合は、何か問題があります。
+* 最初に配線を確認してください。
+* 次に、たとえば `./cc_chipid -m 100`、 `./cc_chipid -m 160` 、または `./cc_chipid -m 300`を使用して、より高い基準時間を試してください。
+* これでうまくいかない場合は、 `make`で再コンパイルしてみてください。
 
 
 ## 使用する
@@ -76,36 +62,36 @@ Si vous voyez 0000 ou ffff quelque chose ne va pas:
 ```bash
 ./cc_read save.hex
 ```
-(dure environ 1 minute).
+(は約1分)続きます。
 
 フラッシュメモリを消去するには：
 ```bash
 ./cc_erase
 ```
-**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).
+**注：** あなた **は、あなたが何をしようとしているのか)を本当に理解していない限り、書く前に** 削除する必要があります (。
 
-キー _CC2531_でファイルをプログラムするには：
+キーにファイルをプログラムするには _CC2531_:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```
-(dure environ 3 minutes).
+(は約3分)続きます。
 
-<a id ="use_aliajn_pins"></ a>
+<a id ="使用_aliajn_ピン"></ a>
 ## 他のピンを使用する
 すべてのコマンドは次の引数を受け入れます：
-* _-c_ ピン：ピンの変更 _DC_ (デフォルト27)
-* _-d_ ピン：ピンの変更 _DD_ )(デフォルト28)
-* _-r_ ピン：ピンの変更 _reset_ (デフォルト24)
-* _-m_ ：遅延の乗数を変更するため、基本時間 (デフォルト：自動調整)
+* _-c_ ピン：デフォルトでピン _DC_ (を変更27)
+* _-d_ ピン：変更ピン _DD_ )(デフォルト28)
+* _-r_ ピン：変更ピン _reset_ (デフォルトで24)
+* _-m_ ：遅延の乗数を変更し、デフォルトでベースタイム (を変更します：自動調整)
 
-使用されるピン番号は _wiringPi_のピン番号です。 `gpio readall` を使用して、 _Raspberry_ (列 _wPi_)にレイアウトを配置します。
+使用されるピン番号は _wiringPi_の番号です。 `gpio readall` を使用して、 _Raspberry_ (列 _wPi_)にレイアウトを配置します。
 
-たとえば、ピン3、11、および13を使用する場合： 
+たとえば、ピン3、11、13を使用する場合：  
 次のピンをデバッグポートからゲート _GPIO_に接続します。
-1。ピン1 ( _GND_ ) ) -> ）ピン14 ( _GND_ )
+1。ピン1 ( _GND_ ) -> ピン14 ( ）_GND_ )
 2。ピン7 ( _reset_ ) -> ピン3 ( _wPi 8, BCM2_ )
 3。ピン3 ( _DC_ ) -> ピン11 ( _wPi 0, BCM17_ )
-4。ピン4 ( _DD_ ) -> ピン13 ( （ zzz42）wPi 2、BCM27_ )
+4。ピン4 ( _DD_ ) -> ピン13 ( )_wPi 2 BCM27_ )
 
 これで、次のコマンドを使用して、IDの読み取り、保存、削除、およびフラッシュメモリの書き込みを行うことができます。
 ```bash
@@ -115,29 +101,26 @@ Si vous voyez 0000 ou ffff quelque chose ne va pas:
 ./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex
 ```
 
-Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.
+ _CCDebugger.h_ でデフォルト値を変更し、 `make`でプログラムをコンパイルすることもできます。
 
 ## それが機能しない場合はどうなりますか？
 
 1. 他のすべてのプログラムを停止します。
 
-
 2. プログラミングする前にプロセッサ速度を設定します。例：  
-
 
 ```bash
 sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 ```
-3. utilisez l'option -m pour augmenter les délais utilisés. Exemple:  
-
+3. -mオプションを使用して、使用する制限時間を増やします。例：  
 
 ```bash
 ./cc_write -m 300 CC2531ZNP-Prod.hex
 ```
-4. recompilez le logiciel avec `make`.
+4.  `make`でプログラムを再コンパイルします。
 
 
 
 ## ライセンス
 
-このプロジェクトは、GPL v3 (でライセンスされています（zzz2を参照）。
+このプロジェクトは、GPL v3 (でライセンスされています（2°を参照）。

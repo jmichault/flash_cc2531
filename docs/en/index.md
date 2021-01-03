@@ -13,18 +13,13 @@ title: 'The main thing'
 ## Prerequisites
 You need either _Raspberry_ or _Odroid-c2_.  
 You need what to connect the debug port of the key to the ports _GPIO_ of _Raspberry_, for example cable _CC_ and four lines _Dupont_ (see further).   
-[WiringPi](http://wiringpi.com/) must be installed (if it is not pre-installed, you can usually install it with `sudo apt install wiringpi`, otherwise see website [ _Gordon_](http://wiringpi.com/) or [this that alternative site](https://github.com/WiringPi/WiringPi)).  
+[WiringPi](http://wiringpi.com/) must be installed (if it is not pre-installed, you can usually install it with `sudo apt install wiringpi`, otherwise see website [ _Gordon_](http://wiringpi.com/) or [this alternative site](https://github.com/WiringPi/WiringPi)).  
 
-I projected _flash\_cc2531_ on a _Raspberry Pi 3_ with _raspbian_, but other models have been reported for successful programs:
-* on pi 4, you will need version 2.52 of (zzz10 ): (zzz12 ) install _wiring Pi_ 2.52 from _Gordon's website_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  
-* on pi 1 and pi 2 you will need[to use other pins](#uzu_aliajn_pinglojn).  
+I projected _flash\_cc2531_ on _Raspberry Pi 3_ with _raspbian_, but successful programming was reported on other models:
+* on pi 4, you will need version 2.52 of _wiringpi_ :  [install _wiring Pi_ 2.52 from _Gordon's website_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  
+* on pi 1 and pi 2 you will need [to use other pins](#uzi_aliajn_pinglojn).  
 
-
-
-
-* anyway you will probably need to set the time base option ( _"-m"_ ).
-
-
+* however, you will probably need to set the time base option ( _"-m"_ ).
 
 
 
@@ -34,26 +29,17 @@ Download _flash\_cc2531_ to your _raspberry_:
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
-Connect the following pins from the debug port to the GPIO port:
-
+Connect the following pins from the debugging port to the GPIO port:
 1. pin 1 ( _GND_ ) -> pin 39 ( _GND_ )
-
-
-2. pin 7 ( _reset_ ) -> pin 35 ( _wPi 24, BCM19_ )
-
-
-3. pin 3 ( _DC_ ) -> pin 36 ( _wPi 27, BCM16_ )
-
-
-4. pin 4 ( _DD_ ) -> pin 38 ( _wPi 28, BCM20_ )
-
-
+second pin 7 ( _reset_ ) -> pin 35 ( _wPi 24, BCM19_ ))
+3. spindle 3 ( _DC_ ) -> pin 36 ( _wPi 27, BCM16_ )
+4. spindle 4 ( _DD_ ) -> spindle 38 ( _wPi 28, BCM20_ )
 
 and insert the USB key into a port.
 
-Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet:
-![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)
-C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Download cable _CC_ and 4 lines _Dupont_ Female to Female are perfect for this purpose:
+![photo of the key and the _raspberry_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)
+This is my favorite choice, but if you don't have a cable _CC_ you can also directly solder the cables _Dupont_ on the key: see for example the website [ )_mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) or [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 try this:
@@ -61,14 +47,14 @@ try this:
 cd flash_cc2531
 ./cc_chipid
 ```
-Ça doit retourner:
+It must return:
 ```
   ID = b524.
 ```
-Si vous voyez 0000 ou ffff quelque chose ne va pas:
-* vérifiez d'abord votre câblage.
-* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.
-* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.
+If you see 0000 or ffff something is wrong:
+* first check your wiring.
+* then try a higher base time, for example with `./cc_chipid -m 100`, or `./cc_chipid -m 160` or `./cc_chipid -m 300`.
+* If none of this works, try recompiling with `make`.
 
 
 ## use
@@ -76,36 +62,36 @@ To save the contents of the flash memory to the save.hex file:
 ```bash
 ./cc_read save.hex
 ```
-(dure environ 1 minute).
+(lasts about 1 minute).
 
 To erase flash memory:
 ```bash
 ./cc_erase
 ```
-**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).
+**Note:** You **must** delete before writing (unless you really know what you are going to do).
 
 To program the file on the key _CC2531_:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```
-(dure environ 3 minutes).
+(lasts about 3 minutes).
 
 <a id ="use_aliajn_pins"></ a>
 ## Use other pins
 all commands accept the following arguments:
-* _-c_ pin: change pin _DC_ (default 27)
+* _-c_ pin: change pin _DC_ (by default 27)
 * _-d_ pin: change pin _DD_ )(default 28)
-* _-r_ pin: change pin _reset_ (default 24)
-* _-m_ : change the multiplier of the delay, and therefore the basic time (default: automatic adjustment)
+* _-r_ pin: change pin _reset_ (by default 24)
+* _-m_ : change the multiplier of the delay, and therefore the base time (by default: automatic adjustment)
 
 the pin numbering used is that of _wiringPi_. Use `gpio readall` to have the layout in your _Raspberry_ (column _wPi_).
 
-For example, if you want to use pins 3, 11 and 13: 
-Connect the following pins from debug port to gate _GPIO_:
-1.pin 1 ( _GND_ ) ) -> ) pin 14 ( _GND_ )
+For example, if you want to use pins 3, 11 and 13:  
+Connect the following pins from a debugging port to a gate _GPIO_:
+1. pin 1 ( _GND_ ) -> pin 14 ( )_GND_ )
 2. pin 7 ( _reset_ ) -> pin 3 ( _wPi 8, BCM2_ )
 3. pin 3 ( _DC_ ) -> pin 11 ( _wPi 0, BCM17_ )
-4.pin 4 ( _DD_ ) -> pin 13 ( ( zzz42) wPi 2, BCM27_ )
+4. pin 4 ( _DD_ ) -> pin 13 ( )_wPi 2, BCM27_ )
 
 and now you can read ID, save, delete and write flash memory with the following commands:
 ```bash
@@ -115,29 +101,26 @@ and now you can read ID, save, delete and write flash memory with the following 
 ./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex
 ```
 
-Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.
+You can also change the default values ​​to _CCDebugger.h_ and compile the programs with `make`.
 
 ## what if it doesn't work?
 
 1. stop all other programs.
 
-
 2. set the processor speed before programming. Example:  
-
 
 ```bash
 sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 ```
-3. utilisez l'option -m pour augmenter les délais utilisés. Exemple:  
-
+3. use the -m option to increase the time limits used. Example:  
 
 ```bash
 ./cc_write -m 300 CC2531ZNP-Prod.hex
 ```
-4. recompilez le logiciel avec `make`.
+4. recompile the program with `make`.
 
 
 
 ## License
 
-This project is licensed under the GPL v3 (see _COPYING_).
+This project is licensed under the GPL v3 ((see 2 °).

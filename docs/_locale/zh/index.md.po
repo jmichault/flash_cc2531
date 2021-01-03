@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-02 16:06+0100\n"
+"POT-Creation-Date: 2021-01-03 22:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgstr "page"
 
 #. type: YAML Front Matter: slug
 #: index.md:1
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "La esenca!"
 msgstr "重要的！"
 
@@ -60,10 +60,9 @@ msgstr "_flash\\_cc2531_"
 
 #. type: Plain text
 #: index.md:12
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
-msgstr " _flash\\_cc2531_ 允许您从 _Raspberry_编程CC2531 USB记忆棒，而无需 _Arduino_ 或 _CC Debugger_。\n"
+msgstr " _flash\\_cc2531_ 允许您从 _Raspberry_对CC2531 USB记忆棒进行编程，而无需 _Arduino_ 或 _CC Debugger_。\n"
 
 #. type: Title ##
 #: index.md:13
@@ -79,111 +78,90 @@ msgstr "您需要 _Raspberry_ 或 _Odroid-c2_。  \n"
 
 #. type: Plain text
 #: index.md:16
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid ""
 "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
 "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
-msgstr "您需要将密钥的调试端口连接到 _Raspberry_的端口 _GPIO_ 的设备，例如电缆 _CC_ 和四根线 _Dupont_ (，请参见)。   \n[必须预先安装（ringz15）WiringPi](http://wiringpi.com/) ，通常可以使用 `sudo apt install wiringpi`进行安装，否则请访问网站 [ _Gordon_](http://wiringpi.com/) 或 [该替代网站](https://github.com/WiringPi/WiringPi))。  \n"
+msgstr ""
+"您需要将钥匙的调试端口连接到 _Raspberry_的端口 _GPIO_ 的工具，例如电缆 _CC_ 和四根线 _Dupont_ (，请参见)。   \n"
+"[如果未预先安装，则必须安装WiringPi](http://wiringpi.com/)  (，通常可以用 `sudo apt install wiringpi`进行安装，否则请访问网站 [ _戈登_](http://wiringpi.com/) 或 [这个替代位置](https://github.com/WiringPi/WiringPi))。  \n"
 
 #. type: Plain text
 #: index.md:19
 #, no-wrap
 #, fuzzy
 msgid ""
-"Mi projektis _flash\\_cc2531_ sur a _Raspberry Pi 3_ kun _raspbian_, sed pri sukcesaj programoj oni raportis pri aliaj modeloj:\n"
-"* sur pi 4, vi bezonos version 2.52 de (zzz10 ):  [instalu _drataron Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  \n"
-msgstr "我将 _flash\\_cc2531_ 投影到具有 _raspbian_的 _Raspberry Pi 3_ 上，但是已经报告了成功执行程序的其他模型：pi 4上的\n* ，您将需要2.52版的 (zzz10 )：（zzz12 ）从 _Gordon网站_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  安装 _接线Pi_ 2.52\n"
+"Mi projektis _flash\\_cc2531_ sur _Raspberry Pi 3_ kun _raspbian_, sed sukcesa programado estis raportita pri aliaj modeloj:\n"
+"* sur pi 4, vi bezonos version 2.52 de _wiringpi_ :  [instalu _drataron Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  \n"
+msgstr "我将 _Raspberry Pi 3_ 与 _raspbian_投影在 _flash\\_cc2531_ 上，但是在其他型号上报告了成功的编程：在pi 4上的\n* ，您将需要版本2.52的 _wiringpi_ ：  [安装 _接线Pi_ 从 _2.52戈登网站_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  \n"
 
 #. type: Bullet: '* '
 #: index.md:20
 #, no-wrap
 #, fuzzy
-msgid "sur pi 1 kaj pi 2 vi bezonos[uzi aliajn pinglojn](#uzu_aliajn_pinglojn).  \n"
-msgstr "在pi 1和pi 2上，您需要[使用其他引脚](#uzu_aliajn_pinglojn)。  \n"
+msgid "sur pi 1 kaj pi 2 vi bezonos [por uzi aliajn pinglojn](#uzi_aliajn_pinglojn).  \n"
+msgstr "在pi 1和pi 2上，您需要 [使用其他引脚](#uzi_aliajn_pinglojn)。  \n"
 
 #. type: Bullet: '* '
-#: index.md:25
-#, no-wrap
-#, fuzzy
+#: index.md:22
+#, fuzzy, no-wrap
 msgid "ĉiuokaze vi probable bezonos agordi la tempan bazan opcion ( _\"-m\"_ ).\n"
-msgstr "无论如何，您可能需要设置时基选项 ( _\"-m\"_ )。\n"
+msgstr "但是，您可能需要设置时基选项 ( _\"-m\"_ )。\n"
 
 #. type: Title ##
-#: index.md:29
+#: index.md:24
 #, fuzzy, no-wrap
 msgid "Preparado"
 msgstr "准备好的"
 
 #. type: Plain text
-#: index.md:32
+#: index.md:27
 #, fuzzy, no-wrap
 msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_:\n"
 msgstr "将 _flash\\_cc2531_ 下载到您的 _raspberry_：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:32
+#: index.md:27
 #, no-wrap
 msgid "git clone https://github.com/jmichault/flash_cc2531.git\n"
 msgstr "git clone https://github.com/jmichault/flash_cc2531.git\n"
 
 #. type: Plain text
-#: index.md:36
-#, fuzzy, no-wrap
-msgid "Konektu la jenajn pinglojn de la debug-haveno al la GPIO-haveno:\n"
-msgstr "将以下引脚从调试端口连接到GPIO端口：\n"
-
-#. type: Bullet: '1. '
-#: index.md:38
-#, fuzzy, no-wrap
-msgid "pinglo 1 ( _GND_ ) -> pinglo 39 ( _GND_ )\n"
-msgstr "针1 ( _GND_ ) -> 针39 ( _GND_ )\n"
-
-#. type: Bullet: '2. '
-#: index.md:40
-#, fuzzy, no-wrap
-msgid "pinglo 7 ( _reset_ ) -> pinglo 35 ( _wPi 24, BCM19_ )\n"
-msgstr "针脚7 ( _reset_ ) -> 针脚35 ( _wPi 24, BCM19_ )\n"
-
-#. type: Bullet: '3. '
-#: index.md:42
-#, fuzzy, no-wrap
-msgid "pinglo 3 ( _DC_ ) -> pinglo 36 ( _wPi 27, BCM16_ )\n"
-msgstr "针3 ( _DC_ ) -> 针36 ( _wPi 27, BCM16_ )\n"
-
-#. type: Bullet: '4. '
-#: index.md:44
-#, fuzzy, no-wrap
-msgid "pinglo 4 ( _DD_ ) -> pinglo 38 ( _wPi 28, BCM20_ )\n"
-msgstr "针脚4 ( _DD_ ) -> 针脚38 ( _wPi 28, BCM20_ )\n"
+#: index.md:35
+#, no-wrap
+#, fuzzy
+msgid ""
+"Konektu la jenajn pinglojn de la elpurighaveno al la GPIO-pordo:\n"
+"1. pino 1 ( _GND_ ) -> pinglo 39 ( _GND_ )\n"
+"dua pinglo 7 ( _reset_ ) -> pinglo 35 ( _wPi 24, BCM19_ )\n"
+"3. spindelo 3 ( _DC_ ) -> pinglo 36 ( _wPi 27, BCM16_ )\n"
+"4. spindelo 4 ( _DD_ ) -> spindelo 38 ( _wPi 28, BCM20_ )\n"
+msgstr "将以下引脚从调试端口连接到GPIO端口：\n1.引脚1 ( _GND_ ) -> 引脚39 ( _GND_ )\n第二针7 ( _reset_ ) -> 针35 ( _wPi 24, BCM19_ ）)\n3.主轴3 ( _DC_ ) -> 销36 ( _wPi 27, BCM16_ )\n4.主轴4 ( _DD_ ) -> 主轴38 ( _wPi 28, BCM20_ )\n"
 
 #. type: Plain text
-#: index.md:47
+#: index.md:37
 #, fuzzy, no-wrap
 msgid "kaj enmetu la USB-ŝlosilon en havenon.\n"
 msgstr "并将USB密钥插入端口。\n"
 
 #. type: Plain text
-#: index.md:51
-#, no-wrap
-msgid ""
-"Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet:\n"
-"![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
-"C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
-msgstr ""
-"Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet:\n"
-"![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
-"C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
-
-#. type: Plain text
-#: index.md:54
+#: index.md:41
 #, no-wrap
 #, fuzzy
+msgid ""
+"Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
+"![foto de la ŝlosilo kaj la _frambo_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+"Ĉi tiu estas mia plej ŝatata elekto, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejo [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+msgstr "下载电缆 _CC_ 和4条线 _Dupont_ 母对母非常适合此目的：\n![键的照片和 _覆盆子_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°）\n这是我最喜欢的选择，但是如果没有电缆 _CC_ ，也可以直接在键上焊接电缆 _Dupont_ ：例如，参见网站 [ ）_mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) 或 [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+
+#. type: Plain text
+#: index.md:44
+#, fuzzy, no-wrap
 msgid "provu per ĉi tio:\n"
 msgstr "试试这个：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:54
+#: index.md:44
 #, no-wrap
 msgid ""
 "cd flash_cc2531\n"
@@ -193,145 +171,155 @@ msgstr ""
 "./cc_chipid\n"
 
 #. type: Plain text
-#: index.md:59
+#: index.md:49
 #, no-wrap
-msgid "Ça doit retourner:\n"
-msgstr "Ça doit retourner:\n"
+#, fuzzy
+msgid "Ĝi devas reveni:\n"
+msgstr "它必须返回：\n"
 
 #. type: Fenced code block
-#: index.md:59
+#: index.md:49
 #, no-wrap
 msgid "  ID = b524.\n"
 msgstr "  ID = b524.\n"
 
 #. type: Plain text
-#: index.md:66
+#: index.md:56
 #, no-wrap
+#, fuzzy
 msgid ""
-"Si vous voyez 0000 ou ffff quelque chose ne va pas:\n"
-"* vérifiez d'abord votre câblage.\n"
-"* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
-"* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
-msgstr ""
-"Si vous voyez 0000 ou ffff quelque chose ne va pas:\n"
-"* vérifiez d'abord votre câblage.\n"
-"* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
-"* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
+"Se vi vidas 0000 aŭ ffff io fiaskas:\n"
+"* unue kontrolu vian drataron.\n"
+"* tiam provu pli altan bazan tempon, ekzemple kun `./cc_chipid -m 100`, aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
+"* se neniu el ĉi tio funkcias, provu rekompili kun `make`.\n"
+msgstr "如果看到0000或ffff，则出问题了：\n* 首先检查接线。\n* ，然后尝试更高的基准时间，例如 `./cc_chipid -m 100`或 `./cc_chipid -m 160` 或 `./cc_chipid -m 300`。\n* 如果这些都不起作用，请尝试使用 `make`重新编译。\n"
 
 #. type: Title ##
-#: index.md:68
+#: index.md:58
 #, fuzzy, no-wrap
 msgid "uzi"
 msgstr "采用"
 
 #. type: Plain text
-#: index.md:70
-#, fuzzy, no-wrap
-msgid "Pour enregistrer le contenu de la mémoire flash dans le fichier save.hex:\n"
-msgstr "要将闪存的内容保存到save.hex文件：\n"
+#: index.md:60
+#, no-wrap
+#, fuzzy
+msgid "Por konservi la enhavon de la memoro flash en la dosiero save.hex:\n"
+msgstr "要将闪存的内容保存在save.hex文件中：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:70
+#: index.md:60
 #, no-wrap
 msgid "./cc_read save.hex\n"
 msgstr "./cc_read save.hex\n"
 
 #. type: Plain text
-#: index.md:74
+#: index.md:64
 #, no-wrap
-msgid "(dure environ 1 minute).\n"
-msgstr "(dure environ 1 minute).\n"
+#, fuzzy
+msgid "(daŭras ĉirkaŭ 1 minuton).\n"
+msgstr "(持续约1分钟)。\n"
 
 #. type: Plain text
-#: index.md:76
+#: index.md:66
 #, fuzzy, no-wrap
 msgid "Por viŝi flash-memoron:\n"
-msgstr "删除闪存：\n"
+msgstr "擦除闪存：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:76
+#: index.md:66
 #, no-wrap
 msgid "./cc_erase\n"
 msgstr "./cc_erase\n"
 
 #. type: Plain text
-#: index.md:80
-#, no-wrap
-msgid "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).\n"
-msgstr "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).\n"
-
-#. type: Plain text
-#: index.md:82
+#: index.md:70
 #, no-wrap
 #, fuzzy
+msgid "**Noto:** Vi **devas** forviŝi antaŭ skribado (krom se vi vere scias, kion vi faros).\n"
+msgstr "**注：** 除非 (，否则您 **必须** 删除，除非您真的知道要做什么)。\n"
+
+#. type: Plain text
+#: index.md:72
+#, fuzzy, no-wrap
 msgid "Por programi la dosieron sur la ŝlosilo _CC2531_:\n"
-msgstr "要对密钥 _CC2531_上的文件进行编程，请执行以下操作：\n"
+msgstr "要将文件编程在键上 _CC2531_：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:82
+#: index.md:72
 #, no-wrap
 msgid "./cc_write CC2531ZNP-Prod.hex\n"
 msgstr "./cc_write CC2531ZNP-Prod.hex\n"
 
 #. type: Plain text
-#: index.md:86
+#: index.md:76
 #, no-wrap
-msgid "(dure environ 3 minutes).\n"
-msgstr "(dure environ 3 minutes).\n"
+#, fuzzy
+msgid "(daŭras ĉirkaŭ 3 minutojn).\n"
+msgstr "(持续约3分钟)。\n"
 
 #. type: Plain text
-#: index.md:88
+#: index.md:78
 #, fuzzy, no-wrap
-msgid "<a id =\"uzu_aliajn_pinglojn\"></ a>\n"
-msgstr "<a id =\"使用_aliajn_引脚\"></一个>\n"
+msgid "<a id=\"uzi_aliajn_pinglojn\"></a>\n"
+msgstr "<id =\"使用_aliajn_销\"></ a>\n"
 
 #. type: Title ##
-#: index.md:88
-#, fuzzy, no-wrap
-msgid "Uzu aliajn pinglojn"
+#: index.md:78
+#, no-wrap
+#, fuzzy
+msgid "Uzi aliajn pinglojn"
 msgstr "使用其他别针"
 
 #. type: Plain text
-#: index.md:94
-#, no-wrap
-#, fuzzy
+#: index.md:84
+#, fuzzy, no-wrap
 msgid ""
 "ĉiuj komandoj akceptas la jenajn argumentojn:\n"
 "* _-c_ pinglo: ŝanĝi pinglon _DC_ (defaŭlte 27)\n"
 "* _-d_ pinglo: ŝanĝi pinglon _DD_ )(defaŭlta 28)\n"
 "* _-r_ pinglo: ŝanĝi pinglon _reset_ (defaŭlte 24)\n"
 "* _-m_ : ŝanĝi la multiplikanton de la malfruo, kaj do la baza tempo (defaŭlte: aŭtomata ĝustigo)\n"
-msgstr "所有命令均接受以下参数：\n* _-c_ 引脚：更改引脚 _DC_ (默认27)\n* _-d_ 引脚：更改引脚 _DD_ )(默认28)\n* _-r_ 引脚：更改引脚 _reset_ (默认24)\n* _-m_ ：更改延迟的乘数，因此基本时间 (默认值：自动调整)\n"
+msgstr ""
+"所有命令均接受以下参数：\n"
+"* _-c_ 插针：默认情况下更改插针 _DC_ (27)\n"
+"* _-d_ 引脚：更改引脚 _DD_ )(默认28)\n"
+"* _-r_ 引脚：更改引脚（°默认为21°）(24)\n"
+"* _-m_ ：更改延迟的乘数，因此默认为基准时间 (：自动调整)\n"
 
 #. type: Plain text
-#: index.md:96
+#: index.md:86
+#, fuzzy, no-wrap
+msgid "la pingla numerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
+msgstr "使用的针脚编号是 _wiringPi_。使用 `gpio readall` 将布局放在 _Raspberry_ (列 _wPi_)中。\n"
+
+#. type: Plain text
+#: index.md:87
 #, no-wrap
 #, fuzzy
-msgid "la pingla numerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
-msgstr "使用的引脚编号是 _wiringPi_的引脚编号。使用 `gpio readall` 在 _Raspberry_ (列 _wPi_)中具有布局。\n"
+msgid "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13:  \n"
+msgstr "例如，如果要使用引脚3、11和13：  \n"
 
 #. type: Plain text
-#: index.md:103
+#: index.md:93
 #, no-wrap
 #, fuzzy
 msgid ""
-"Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13: \n"
-"Konektu la jenajn pinglojn de debughaveno al pordego _GPIO_:\n"
-"1.pino 1 ( _GND_ ) ) -> pinglo 14 ( _GND_ )\n"
+"Konekti la jenajn pinglojn de elpurighaveno al pordego _GPIO_:\n"
+"1. pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
 "2. pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
 "3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
-"4.pin 4 ( _DD_ ) -> pinglo 13 ( )_wPi 2, BCM27_ )\n"
-msgstr "例如，如果要使用引脚3、11和13： \n将以下引脚从调试端口连接到门 _GPIO_：\n1.pin 1 ( _GND_ ) ) -> ）针14 ( _GND_ )\n2.针7 ( _reset_ ) -> 针3 ( _wPi 8, BCM2_ )\n3.针3 ( _DC_ ) -> 引脚11 ( _wPi 0, BCM17_ )\n4.pin 4 ( _DD_ ) -> 引脚13 ( （ zPi42）wPi 2，BCM27（bzzz43）（bzz44）（bzz45）\n"
+"4. pinglo 4 ( _DD_ ) -> pinglo 13 ( )_wPi 2, BCM27_ )\n"
+msgstr "将以下引脚从调试端口连接到门 _GPIO_：\n1.引脚1 ( _GND_ ) -> 引脚14 ( ）_GND_ )\n2.插针7 ( _reset_ ) -> 插针3 ( _wPi 8, BCM2_ )\n3.针脚3 ( _DC_ ) -> 针脚11 ( _wPi 0, BCM17_ )\n4.插针4 ( _DD_ ) -> 插针13 ( )_wPi 2， BCM27_ )\n"
 
 #. type: Plain text
-#: index.md:105
-#, no-wrap
-#, fuzzy
+#: index.md:95
+#, fuzzy, no-wrap
 msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi flash-memoron per la jenaj komandoj:\n"
-msgstr "现在，您可以使用以下命令读取ID，保存，删除和写入闪存：\n"
+msgstr "现在您可以使用以下命令读取ID，保存，删除和写入闪存：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:105
+#: index.md:95
 #, no-wrap
 msgid ""
 "./cc_chipid -r 8 -c 0 -d 2\n"
@@ -345,265 +333,199 @@ msgstr ""
 "./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex\n"
 
 #. type: Plain text
-#: index.md:113
+#: index.md:103
 #, no-wrap
-msgid "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.\n"
-msgstr "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.\n"
+#, fuzzy
+msgid "Vi ankaŭ povas ŝanĝi la defaŭltajn valorojn en _CCDebugger.h_ kaj kompili la programojn per `make`.\n"
+msgstr "您还可以将默认值更改为 _CCDebugger.h_ ，并使用 `make`编译程序。\n"
 
 #. type: Title ##
-#: index.md:114
+#: index.md:104
 #, fuzzy, no-wrap
 msgid "kio se ĝi ne funkcias?"
 msgstr "如果不起作用怎么办？"
 
 #. type: Bullet: '1. '
-#: index.md:117
-#, no-wrap
-#, fuzzy
+#: index.md:107
+#, fuzzy, no-wrap
 msgid "ĉesu ĉiujn aliajn programojn.\n"
 msgstr "停止所有其他程序。\n"
 
 #. type: Bullet: '2. '
-#: index.md:118
-#, no-wrap
-#, fuzzy
+#: index.md:107
+#, fuzzy, no-wrap
 msgid "agordi la rapidon de la procesoro antaŭ programado. Ekzemplo:  \n"
 msgstr "在编程之前设置处理器速度。示例：  \n"
 
 #. type: Fenced code block (bash)
-#: index.md:120
+#: index.md:108
 #, no-wrap
 msgid "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 msgstr "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 
 #. type: Bullet: '3. '
-#: index.md:123
+#: index.md:111
 #, no-wrap
-msgid "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
-msgstr "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
+#, fuzzy
+msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:  \n"
+msgstr "使用-m选项可以增加使用的时间限制。示例：  \n"
 
 #. type: Fenced code block (bash)
-#: index.md:125
+#: index.md:112
 #, no-wrap
 msgid "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 msgstr "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 
 #. type: Bullet: '4. '
-#: index.md:129
+#: index.md:116
 #, no-wrap
-msgid "recompilez le logiciel avec `make`.\n"
-msgstr "recompilez le logiciel avec `make`.\n"
+#, fuzzy
+msgid "rekompili la programon per `make`.\n"
+msgstr "用 `make`重新编译程序。\n"
 
 #. type: Title ##
-#: index.md:131
+#: index.md:118
 #, fuzzy, no-wrap
 msgid "Permesilo"
 msgstr "执照"
 
 #. type: Plain text
-#: index.md:133
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_).\n"
-msgstr "此项目已获得GPL v3 (许可，请参阅 _COPYING_)。\n"
-
-#, fuzzy
-#~ msgid "ĉefa afero!"
-#~ msgstr "主要的事！"
-
-#, fuzzy
-#~ msgid ""
-#~ " _flash\\_cc2531_ permesas al vi programi vian CC2531-USB-ŝlosilon de via "
-#~ "_Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
-#~ msgstr ""
-#~ " _flash\\_cc2531_ 允许您从 _Raspberry_编程CC2531 USB密钥，而无需 "
-#~ "_Arduino_ 或 _CC Debugger_。\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Vi bezonas ion por konekti la elpurigan havenon de la ŝlosilo al la "
-#~ "havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj 4 linioj _Dupont_ "
-#~ "(vidu plu).   \n"
-#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ne "
-#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
-#~ "wiringpi`, alie vidu [retejon de _Gordon (zzz20 ) aŭ [ĉi tiu alternativa "
-#~ "retejo](https://github.com/WiringPi/WiringPi)).  \n"
-#~ msgstr ""
-#~ "您需要一些东西来将密钥的调试端口连接到 _Raspberry_的端口 _GPIO_ ，例如电"
-#~ "缆 _CC_ 和4条线 _Dupont_ (，另请参见)。   \n"
-#~ "[必须预先安装（ringz15）WiringPi](http://wiringpi.com/) ，通常可以使用 "
-#~ "`sudo apt install wiringpi`进行安装，否则请访问 [Gordon网站 _zzz20 ) 或"
-#~ "（ zzz22）此替代网站](https://github.com/WiringPi/WiringPi))。  \n"
+msgstr "该项目已获得GPL v3许可 (（请参见2°）。\n"
 
 #, fuzzy
 #~ msgid ""
 #~ "Mi projektis _flash\\_cc2531_ sur a _Raspberry Pi 3_ kun _raspbian_, sed "
-#~ "sukcesaj programoj estis raportitaj pri aliaj modeloj:\n"
-#~ "* sur pi 4, vi bezonos version 2.52 de _wiringpi_ :  [instalu _cableado_ "
-#~ "2.52 de _la retejo de Gordon_](http://wiringpi.com/wiringpi-updated-"
+#~ "pri sukcesaj programoj oni raportis pri aliaj modeloj:\n"
+#~ "* sur pi 4, vi bezonos version 2.52 de _wiringpi_ :  [instalu _drataron "
+#~ "Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-"
 #~ "to-2-52-for-the-raspberry-pi-4b/)  \n"
 #~ msgstr ""
-#~ "我将 _flash\\_cc2531_ 投影到具有 _raspbian_的 _Raspberry Pi 3_ 上，但是在"
-#~ "其他型号上已经报告了成功的程序：pi 4上的\n"
-#~ "* ，您将需要2.52版的 _wiringpi_ ：  [安装 _接线_ 2.52来自 _Gordon网站_]"
+#~ "我将 _flash\\_cc2531_ 投影在 _Raspberry Pi 3_ 与 _raspbian_上，但是已经报"
+#~ "告了成功程序的其他模型：pi 4上的\n"
+#~ "* ，您将需要版本2.52 _wiringpi_ ：  [安装 _接线Pi_ 2.52 from _Gordon网站_]"
 #~ "(http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-"
 #~ "pi-4b/)  \n"
 
 #, fuzzy
 #~ msgid ""
-#~ "sur pi 1 kaj pi 2 vi bezonos [uzi aliajn pinglojn]"
-#~ "(#uzu_aliajn_pinglojn).  \n"
-#~ msgstr "在pi 1和pi 2上，您需要 [使用其他引脚](#uzu_aliajn_pinglojn)。  \n"
+#~ "sur pi 1 kaj pi 2 vi bezonos[uzi aliajn pinglojn]"
+#~ "(#uzi_aliajn_pinglojn).  \n"
+#~ msgstr "在pi 1和pi 2上，您需要[使用其他引脚](#uzi_aliajn_pinglojn)。  \n"
 
 #, fuzzy
-#~ msgid ""
-#~ "ĉiuokaze vi probable bezonos ĝustigi la opcion pri tempobazo ( _\"-m"
-#~ "\"_).\n"
-#~ msgstr "无论如何，您可能需要调整时基选项 ( _\"-m\"_)。\n"
+#~ msgid "Konektu la jenajn pinglojn de la debug-haveno al la GPIO-haveno:\n"
+#~ msgstr "将以下引脚从调试端口连接到GPIO端口：\n"
+
+#, fuzzy
+#~ msgid "pinglo 1 ( _GND_ ) -> pinglo 39 ( _GND_ )\n"
+#~ msgstr "针1 ( _GND_ ) -> 针39 ( _GND_ )\n"
+
+#, fuzzy
+#~ msgid "pinglo 7 ( _reset_ ) -> pinglo 35 ( _wPi 24, BCM19_ )\n"
+#~ msgstr "引脚7 ( _reset_ ) -> 引脚35 ( _wPi 24, BCM19_ )\n"
+
+#, fuzzy
+#~ msgid "pinglo 3 ( _DC_ ) -> pinglo 36 ( _wPi 27, BCM16_ )\n"
+#~ msgstr "引脚3 ( _DC_ ) -> 引脚36 ( _wPi 27, BCM16_ )\n"
+
+#, fuzzy
+#~ msgid "pinglo 4 ( _DD_ ) -> pinglo 38 ( _wPi 28, BCM20_ )\n"
+#~ msgstr "引脚4 ( _DD_ ) -> 引脚38 ( _wPi 28, BCM20_ )\n"
 
 #, fuzzy
 #~ msgid ""
 #~ "Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle "
 #~ "sont parfaits à cet effet:\n"
-#~ msgstr "一个下载电缆 _CC_ 和4条线 _Dupont_ 母对母非常适合此目的：\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "![bildo de la ŝlosilo kaj de la _frambo_](https://github.com/jmichault/"
+#~ "![photo de la clé et de la _framboise_](https://github.com/jmichault/"
 #~ "files/raw/master/Raspberry-CC2531.jpg)\n"
-#~ "Tiel mi preferas, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte "
-#~ "luti la kablojn ( zzz8) sur la ŝlosilo: vidu ekzemple la retejon "
-#~ "[ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-"
-#~ "using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_](https://"
-#~ "notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ "C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous "
+#~ "pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par "
+#~ "exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-"
+#~ "flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou "
+#~ "[ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-"
+#~ "cc2531-without-cc-debugger/)\n"
 #~ msgstr ""
-#~ "![按键的图片和 _覆盆子_](https://github.com/jmichault/files/raw/master/"
+#~ "一个下载电缆 _CC_ 和4条线 _Dupont_ 母对母非常适合此目的：\n"
+#~ "![键的照片和 _覆盆子_](https://github.com/jmichault/files/raw/master/"
 #~ "Raspberry-CC2531.jpg)\n"
-#~ "的图片，所以我更喜欢，但是如果您没有电缆 _CC_ ，也可以直接在按键上焊接电"
-#~ "缆 ( zzz8) ：例如参见网站 [ _mariva.com_](https://lemariva.com/"
+#~ "这是我最喜欢的选项，但是如果您没有电缆 _CC_ ，也可以将电缆 _Dupont_ 直接焊"
+#~ "接到钥匙上：例如参见网站 [ _mariva.com_](https://lemariva.com/"
 #~ "blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-"
 #~ "debugger) 或 [ _notenoughtech.com_](https://notenoughtech.com/home-"
 #~ "automation/flashing-cc2531-without-cc-debugger/)\n"
 
 #, fuzzy
-#~ msgid "provo per rulado:\n"
-#~ msgstr "滚动测试：\n"
-
-#, fuzzy
-#~ msgid "ĝi devas reveni:\n"
-#~ msgstr "必须返回：\n"
+#~ msgid "Ça doit retourner:\n"
+#~ msgstr "它必须返回：\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Se vi vidas 0000 aŭ ffff io fiaskas:\n"
-#~ "* unue kontrolu vian drataron.\n"
-#~ "* tiam provu pli altan bazan tempon, ekzemple per `./cc_chipid -m 100`, "
-#~ "aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
-#~ "* se neniu el ĉi tio funkcias, provu rekompili kun `make`.\n"
+#~ "Si vous voyez 0000 ou ffff quelque chose ne va pas:\n"
+#~ "* vérifiez d'abord votre câblage.\n"
+#~ "* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid "
+#~ "-m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
+#~ "* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
 #~ msgstr ""
-#~ "如果看到0000或ffff，则表示出现问题：\n"
+#~ "如果看到0000或ffff，则表示存在问题：\n"
 #~ "* 首先检查接线。\n"
-#~ "* ，然后尝试更高的基准时间，例如使用 `./cc_chipid -m 100`或 `./cc_chipid -"
-#~ "m 160` 或 `./cc_chipid -m 300`。\n"
+#~ "* ，然后尝试更高的基准时间，例如 `./cc_chipid -m 100`或 `./cc_chipid -m "
+#~ "160` 或 `./cc_chipid -m 300`。\n"
 #~ "* 如果这些都不起作用，请尝试使用 `make`重新编译。\n"
 
 #, fuzzy
-#~ msgid "(daŭras ĉirkaŭ 1 minuton).\n"
+#~ msgid ""
+#~ "Pour enregistrer le contenu de la mémoire flash dans le fichier save."
+#~ "hex:\n"
+#~ msgstr "要将闪存的内容保存到save.hex文件：\n"
+
+#, fuzzy
+#~ msgid "(dure environ 1 minute).\n"
 #~ msgstr "(持续约1分钟)。\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "**Noto:** Vi **devas** forviŝi antaŭ ol skribi (krom se vi vere scias, "
-#~ "kion vi faros).\n"
-#~ msgstr "**注意：** 您 **必须** 在写 (之前删除，除非您真的知道要做什么)。\n"
+#~ "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez "
+#~ "vraiment ce que vous allez faire).\n"
+#~ msgstr "**注：** 除非 (，否则 **必须** 删除，除非您真的知道要做什么)。\n"
 
 #, fuzzy
-#~ msgid "Pour programmer le fichier vers la clé _cc2531_:\n"
-#~ msgstr "要将文件编程为密钥 _cc2531_：\n"
-
-#, fuzzy
-#~ msgid "(daŭras ĉirkaŭ 3 minutojn).\n"
+#~ msgid "(dure environ 3 minutes).\n"
 #~ msgstr "(持续约3分钟)。\n"
 
 #, fuzzy
-#~ msgid ""
-#~ "ĉiuj komandoj akceptas la jenajn argumentojn:\n"
-#~ "* _-c_ pinglo: ŝanĝi pinglon _DC_ (defaŭlte 27)\n"
-#~ "* _-d_ pinglo: ŝanĝi pinglon (zzz13 )(defaŭlta 28)\n"
-#~ "* _-r_ pinglo: ŝanĝi pinglon _reset_ (defaŭlte 24)\n"
-#~ "* _-m_ : ŝanĝi la multiplikanton de la malfruo, kaj do la baza tempo "
-#~ "(aŭtomate defaŭlte)\n"
-#~ msgstr ""
-#~ "所有命令均接受以下参数：\n"
-#~ "* _-c_ 引脚：更改引脚 _DC_ (默认27)\n"
-#~ "* _-d_ 引脚：更改引脚 (zzz13 )(）默认28)\n"
-#~ "* _-r_ 引脚：更改引脚 _reset_ (默认24)\n"
-#~ "* _-m_ ：更改延迟的乘数，依此类推基本时间 (自动默认为)\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "la pingla numerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por "
-#~ "havi la aranĝon en via pi (kolumno _wPi_).\n"
-#~ msgstr ""
-#~ "使用的引脚编号是 _wiringPi_的引脚编号。使用 `gpio readall` 将布局放在pi "
-#~ "(列 _wPi_)中。\n"
+#~ msgid "Uzu aliajn pinglojn"
+#~ msgstr "使用其他别针"
 
 #, fuzzy
 #~ msgid ""
 #~ "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13: \n"
-#~ "Konektu la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:\n"
-#~ "1.pino 1 ( _GND_ ) - ( zzz9) pinglo 14 ( _GND_ )\n"
-#~ "2. pin 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
+#~ "Konektu la jenajn pinglojn de debughaveno al pordego _GPIO_:\n"
+#~ "1.pino 1 ( _GND_ ) ) -> pinglo 14 ( _GND_ )\n"
+#~ "2. pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
 #~ "3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. pinglo 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
+#~ "4.pin 4 ( _DD_ ) -> pinglo 13 ( )_wPi 2, BCM27_ )\n"
 #~ msgstr ""
 #~ "例如，如果要使用引脚3、11和13： \n"
-#~ "将以下引脚从调试端口连接到门 _GPIO_：\n"
-#~ "1.pin 1 ( _GND_ ) - ( zzz9) 引脚14 ( _GND_ )\n"
-#~ "2.引脚7 ( _reset_ ) -> 引脚3 ( _wPi 8, BCM2_ )\n"
-#~ "3。针脚3 ( _DC_ ) -> 针脚11 ( _wPi 0, BCM17_ )\n"
-#~ "4.针脚4 ( _DD_ ) -> 针脚13 ( ）_wPi 2, BCM27_ )\n"
+#~ "将以下引脚从端口连接到端口 _GPIO_：\n"
+#~ "1.引脚1 ( _GND_ ）) ) -> 针14 ( _GND_ )\n"
+#~ "2.针7 ( _reset_ ) -> 针3 ( _wPi 8, BCM2_ )\n"
+#~ "3.针3 ( _DC_ ) -> 插针11 ( _wPi 0, BCM17_ )\n"
+#~ "4.插针4 ( _DD_ ) -> 插针13 ( )_wPi 2，BCM27_ )\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "et maintenant vous pouvez lire l'identifiant, enregistrer le contenu, "
-#~ "effacer et écrire la mémoire flash avec les commandes suivantes:\n"
-#~ msgstr "现在，您可以使用以下命令读取ID，保存内容，清除和写入闪存：\n"
+#~ "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ "
+#~ "puis compiler les programmes avec `make`.\n"
+#~ msgstr "您还可以在 _CCDebugger.h_ 中更改默认值，然后使用 `make`编译程序。\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Vi ankaŭ povas ŝanĝi la defaŭltojn en _CCDebugger.h_ kaj kompili la "
-#~ "plenumeblajn per `make`.\n"
-#~ msgstr "您也可以将默认值更改为 _CCDebugger.h_ ，并使用 `make`编译默认值。\n"
+#~ "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
+#~ msgstr "使用-m选项可以增加使用时间。示例：  \n"
 
 #, fuzzy
-#~ msgid "ĉesu ĉiujn aliajn programojn antaŭ ekbrili.  \n"
-#~ msgstr "在闪烁之前停止所有其他程序。  \n"
-
-#, fuzzy
-#~ msgid "fixez la vitesse du processeur avant la programmation. Exemple :  \n"
-#~ msgstr "在编程之前设置处理器速度。示例：  \n"
-
-#, fuzzy
-#~ msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:  \n"
-#~ msgstr "使用-m选项可以增加使用的时间限制。示例：  \n"
-
-#, fuzzy
-#~ msgid ""
-#~ "La plenumeblaj kompilaĵoj estas ĉe mia raspbian-distribuo, vi povas provi "
-#~ "rekompili vian distribuon per `make`.\n"
-#~ msgstr ""
-#~ "可执行文件编译在我的raspbian发行版中，您可以尝试使用 `make`重新编译发行"
-#~ "版。\n"
-
-#~ msgid "fonto"
-#~ msgstr "auto"
-
-#~ msgid "indekso"
-#~ msgstr "indekso"
-
-#~ msgid "index"
-#~ msgstr "index"
-
-#, fuzzy
-#~ msgid "Plej novaj afiŝoj"
-#~ msgstr "最新的帖子"
+#~ msgid "recompilez le logiciel avec `make`.\n"
+#~ msgstr "用 `make`重新编译软件。\n"

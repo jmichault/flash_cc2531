@@ -1,7 +1,7 @@
 ---
 lang: fr
 lang-niv: fonto
-lang-ref: pri
+lang-ref: 999-pri
 layout: page
 title: "A propos de l'auteur"
 ---

@@ -4,8 +4,19 @@
 # Ni tiam eltranĉas la tradukenda tekston por forigi la elementojn de la sintakso ~ Markdown ~
 # hiperligoj, kodblokoj kaj teksto kursivigita per "_" ne estas tradukitaj.
 #
-# google web translate konservas  «(zzz99)».
+# google web translate konservas  «(°99°)».
 # 
+BEGIN {
+#  MARK1="(zzz";
+#  MARK2=")";
+#  MARKEXPR= " *[（\\(] *[zZ]{2,3} *[0-9]+ *[）\\)] *";
+#  if ( (dst == "bn") || (dst == "hi") || (dst == "ja") || (dst == "pa") || (dst == "zh") )
+#  {
+    MARK1="(°";
+    MARK2="°)";
+    MARKEXPR=" *[（\\(][ \\.。°0-9]*[°][ \\.。°0-9]*[）\\)] *";
+#  }
+}
 {
   if ( CONTMSG==1 && substr($1,1,1) != "\"")
   { # fino de plurlinia mesaĝo
@@ -51,6 +62,7 @@
         printf("msgstr \"\"\n");
         print $0;
         FUZZY=0;
+        MATTER="";
 	next;
       }
       if(MATTER == "lang")
@@ -99,7 +111,7 @@
 	  ##print "x = " x;	##
 	  if (SEPS[x] != "")
 	  {
-	    MSG0 = MSG0 " (zzz" x ") ";
+	    MSG0 = MSG0 " " MARK1 x MARK2 " ";
 	    # ne traduku hiperligon, kodon, kursivigita kun "_"
 	    if( match(SEPS[ x ] ,"^ *`") == 1 )
 	    { # kodo : ne traduku.
@@ -129,7 +141,7 @@
                 x++;
 		# FARENDA : prilabori la _ inter la [
 	        MSG0 = MSG0 MSGS[x] ;
-	        MSG0 = MSG0 " (zzz" x ") ";
+	        MSG0 = MSG0 " " MARK1 x MARK2 " ";
               }
               while( x<=MSGSLEN && ! match(SEPS[x] ," *\\] *"));
               ## print ("teksto hiperligo endo :" SEPS[ x ]);	##
@@ -155,7 +167,7 @@
         BASEDIR"/traduko.sh " src " " dst " \"" MSG0 "\"" |getline MSG
         ##print("MSG " MSG);		##
         ##print("MSGSLEN=" MSGSLEN);    ##
-	split(MSG, MSGS2," *[（\\(][zZ]{3}[0-9]+[）\\)] *",SEPS2);
+	split(MSG, MSGS2, MARKEXPR ,SEPS2);
 	MSGT="";
         DOSEPMAX=0;
         for (x=1 ; x<=length(MSGS2) ; x++)
@@ -163,8 +175,8 @@
 	  MSGT = MSGT MSGS2[x];
 	  if (SEPS2[x] != "")
 	  {
-	    match(SEPS2[x],"[zZ]{3}[0-9]+");
-	    x2 = substr(SEPS2[x],RSTART+3,RLENGTH-3);
+	    match(SEPS2[x],"[0-9]+");
+	    x2 = substr(SEPS2[x],RSTART,RLENGTH);
 	    ##print("x2=" x2);		##
 	    if (x2 == (MSGSLEN-1) && match(SEPS[x2]," *\\\\n" ))
               DOSEPMAX=1
@@ -176,10 +188,10 @@
           MSGT = MSGT SEPS[MSGSLEN-1];
         print(MSGT "\"");
       }
-      FUZZY=0;
-      MATTER="";
       print $0;
     }
+    FUZZY=0;
+    MATTER="";
   }
   else if (substr($0,1,28) == "#. type: YAML Front Matter: ")
   {

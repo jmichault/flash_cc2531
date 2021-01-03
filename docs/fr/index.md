@@ -15,14 +15,10 @@ Vous avez besoin d'un _Raspberry_ ou d'un _Odroid-c2_.
 Vous avez besoin de quoi connecter le port de débogage de la clé aux ports _GPIO_ du _Raspberry_, par exemple un câble _CC_ et quatre lignes _Dupont_ (voir plus loin).   
 [WiringPi](http://wiringpi.com/) doit être installé (s'il n'est pas pré-installé, vous pouvez généralement l'installer avec `sudo apt install wiringpi`, sinon voir [le site Web de _Gordon_](http://wiringpi.com/) ou [ce site alternatif](https://github.com/WiringPi/WiringPi)).  
 
-J'ai conçu _flash\_cc2531_ sur un _Raspberry Pi 3_ avec _raspbian_, mais des programmations réussies ont été signalés sur d'autres modèles:
+J'ai conçu _flash\_cc2531_ sur un _Raspberry Pi 3_ avec _raspbian_, mais des programmations réussies ont été signalées sur d'autres modèles:
 * sur pi 4, vous aurez besoin de la version 2.52 de _wiringpi_ :  [installer _wiringPi_ 2.52 depuis le site Web de _Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)  
-* sur pi 1 et pi 2, vous aurez besoin d'[utiliser d'autres broches](#uzu_aliajn_pinglojn).  
-
-
+* sur pi 1 et pi 2, vous devrez [utiliser d'autres broches](#uzi_aliajn_pinglojn).  
 * dans tous les cas, vous devrez probablement ajuster l'option de base de temps ( _"-m"_ ).
-
-
 
 ## Préparation
 
@@ -31,7 +27,6 @@ Téléchargez _flash\_cc2531_ sur votre _raspberry_:
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
 Connectez les broches suivantes du port de débogage au port GPIO:
-
 1. broche 1 ( _GND_ ) -> broche 39 ( _GND_ )
 2. broche 7 ( _reset_ ) -> broche 35 ( _wPi 24, BCM19_ )
 3. broche 3 ( _DC_ ) -> broche 36 ( _wPi 27, BCM16_ )
@@ -78,8 +73,8 @@ Pour programmer le fichier sur la clé _CC2531_:
 ```
 (dure environ 3 minutes).
 
-<a id="uzu_aliajn_pinglojn"></a>
-## Utilisez d'autres broches
+<a id="uzi_aliajn_pinglojn"></a>
+## Utiliser d'autres broches
 toutes les commandes acceptent les arguments suivants:
 * _-c_ broche : change la broche _DC_ (par défaut 27)
 * _-d_ broche : change la broche _DD_ (par défaut 28)
@@ -88,7 +83,7 @@ toutes les commandes acceptent les arguments suivants:
 
 la numérotation des broches utilisée est celle de _wiringPi_. Utilisez `gpio readall` pour avoir la disposition dans votre _Raspberry_ (colonne _wPi_).
 
-Par exemple, si vous souhaitez utiliser les broches 3, 11 et 13: 
+Par exemple, si vous souhaitez utiliser les broches 3, 11 et 13:  
 Connectez les broches suivantes d'un port de débogage à une porte _GPIO_:
 1. broche 1 ( _GND_ ) -> broche 14 ( _GND_ )
 2. broche 7 ( _reset_ ) -> broche 3 ( _wPi 8, BCM2_ )
