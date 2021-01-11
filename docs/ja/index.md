@@ -12,11 +12,11 @@ title: 重要なこと
 
 ## 前提条件
  _Raspberry_ または _Odroid-c2_のいずれかが必要です。  
-キーのデバッグポートを _Raspberry_のポート _GPIO_ に接続するものが必要です。たとえば、ケーブル _CC_ と4本の線 _Dupont_ (を参照してください)。   
-[WiringPi](http://wiringpi.com/) が事前にインストールされていない場合はインストールする必要があります (、通常は `sudo apt install wiringpi`でインストールできます。それ以外の場合はWebサイト [ を参照してください_ゴードン_](http://wiringpi.com/) または [この代替サイト](https://github.com/WiringPi/WiringPi))。  
+キーのデバッグポートを _Raspberry_のポート _GPIO_ に接続するものが必要です。たとえば、1本のケーブル _CC_ と4本の線 _Dupont_ (を参照してください(°10°）。   
+[ _WiringPi_ ](http://wiringpi.com/) が事前にインストールされていない場合はインストールする必要があります (、通常は `sudo apt install wiringpi`)でインストールできます。それ以外の場合は [ _Gordon_ ](http://wiringpi.com/) または [この代替サイト](https://github.com/WiringPi/WiringPi))のサイト。  
 
  _flash\_cc2531_ を _raspbian_で _Raspberry Pi 3_ に投影しましたが、他のモデルでプログラミングの成功が報告されました：  
- * pi 4では、バージョン2.52の _wiringpi_ が必要になります：  [インストール _配線Pi_ 2.52の _ゴードンのウェブサイト_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
+ * pi 4では、バージョン2.52の _wiringpi_ が必要になります：  [インストール _wiringPi_ 2.52の _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)ウェブサイト
 
 
 
@@ -29,7 +29,7 @@ title: 重要なこと
 
 ## 準備
 
- _flash\_cc2531_ をあなたの _raspberry_にダウンロードします：
+ _flash\_cc2531_ を _raspberry_ にダウンロード：
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
@@ -51,9 +51,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 
 USBキーをポートに挿入します。
 
-ダウンロードケーブル _CC_ と4本の線 _Dupont_ メスからメスはこの目的に最適です：
-![キーと _ラズベリー_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)の写真°）
-これは私のお気に入りの選択ですが、ケーブル _CC_ がない場合は、キーにケーブル _Dupont_ を直接はんだ付けすることもできます。たとえば、Webサイト [ を参照してください。 ）_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) または [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+ダウンロードケーブル _CC_ と4本の線 _Dupont_ のメスからメスはこの目的に最適です：
+![キーの写真と _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)）
+これは私のお気に入りのオプションですが、ケーブル _CC_ がない場合は、キーにケーブル _Dupont_ を直接はんだ付けすることもできます。たとえば、Webサイト [ を参照してください。_lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) または [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 これを試してください：
@@ -96,7 +96,8 @@ cd flash_cc2531
 ```
 (は約3分)続きます。
 
-<a id ="使用_aliajn_ピン"></ a>
+<a id="uzi_aliajn_pinglojn"></a>
+は約3分"続きます。_
 ## 他のピンを使用する
 
 すべてのコマンドは次の引数を受け入れます：
@@ -114,7 +115,7 @@ cd flash_cc2531
 
 
 
-使用されるピン番号は _wiringPi_の番号です。 `gpio readall` を使用して、 _Raspberry_ (列 _wPi_)にレイアウトを配置します。
+使用されるピン番号は _wiringPi_の番号です。 `gpio readall` を使用して、 _Raspberry_ (列 _wPi_ )にレイアウトを配置します。
 
 たとえば、ピン3、11、13を使用する場合：  
 次のピンをデバッグポートからドアに接続します _GPIO_:
@@ -147,22 +148,22 @@ cd flash_cc2531
 1. 他のすべてのプログラムを停止します。
 
 
-2. プログラミングする前にプロセッサ速度を設定します。例：  
+2. プログラミングする前にプロセッサ速度を設定します。例：
 
 
-```bash
-sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-3. -mオプションを使用して、使用する制限時間を増やします。例：  
+   ```bash
+   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+   ```
+3. -mオプションを使用して、使用する制限時間を増やします。例：
 
 
-```bash
-./cc_write -m 300 CC2531ZNP-Prod.hex
-```
+   ```bash
+   ./cc_write -m 300 CC2531ZNP-Prod.hex
+   ```
 4.  `make`でプログラムを再コンパイルします。
 
 
 
 ## ライセンス
 
-このプロジェクトは、GPL v3 (でライセンスされています（2°を参照）。
+このプロジェクトは、GPL v3 ( でライセンスされています _COPYING_ )を参照してください。

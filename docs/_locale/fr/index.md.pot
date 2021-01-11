@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-10 12:11+0100\n"
+"POT-Creation-Date: 2021-01-11 18:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Vous avez besoin de quoi connecter le port de débogage de la clé aux ports _GPIO_ du _Raspberry_, par exemple un câble _CC_ et quatre lignes _Dupont_ (voir plus loin).   \n"
-"[WiringPi](http://wiringpi.com/) doit être installé (s'il n'est pas pré-installé, vous pouvez généralement l'installer avec `sudo apt install wiringpi`, sinon voir [le site Web de _Gordon_](http://wiringpi.com/) ou [ce site alternatif](https://github.com/WiringPi/WiringPi)).  \n"
+"[ _WiringPi_ ](http://wiringpi.com/) doit être installé (s'il n'est pas pré-installé, vous pouvez généralement l'installer avec `sudo apt install wiringpi`, sinon voir [le site Web de _Gordon_ ](http://wiringpi.com/) ou [ce site alternatif](https://github.com/WiringPi/WiringPi)).  \n"
 msgstr ""
 
 #. type: Plain text
@@ -93,7 +93,7 @@ msgstr ""
 #. type: Bullet: ' * '
 #: index.md:20
 #, no-wrap
-msgid "sur pi 4, vous aurez besoin de la version 2.52 de _wiringpi_ :  [installer _wiringPi_ 2.52 depuis le site Web de _Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)\n"
+msgid "sur pi 4, vous aurez besoin de la version 2.52 de _wiringpi_ :  [installer _wiringPi_ 2.52 depuis le site Web de _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)\n"
 msgstr ""
 
 #. type: Bullet: ' * '
@@ -117,7 +117,7 @@ msgstr ""
 #. type: Plain text
 #: index.md:27
 #, no-wrap
-msgid "Téléchargez _flash\\_cc2531_ sur votre _raspberry_:\n"
+msgid "Téléchargez _flash\\_cc2531_ sur votre _raspberry_ :\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
@@ -167,8 +167,8 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet :\n"
-"![photo de la clé et de la _framboise_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
-"C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+"![photo de la clé et du _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+"C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
 msgstr ""
 
 #. type: Plain text
@@ -326,7 +326,7 @@ msgstr ""
 #. type: Plain text
 #: index.md:90
 #, no-wrap
-msgid "la numérotation des broches utilisée est celle de _wiringPi_. Utilisez `gpio readall` pour avoir la disposition dans votre _Raspberry_ (colonne _wPi_).\n"
+msgid "la numérotation des broches utilisée est celle de _wiringPi_. Utilisez `gpio readall` pour avoir la disposition dans votre _Raspberry_ (colonne _wPi_ ).\n"
 msgstr ""
 
 #. type: Plain text
@@ -394,33 +394,33 @@ msgid "et si ça ne marche pas?"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md:112
+#: index.md:113
 #, no-wrap
 msgid "arrêtez tous les autres programmes.\n"
 msgstr ""
 
 #. type: Bullet: '2. '
-#: index.md:112
+#: index.md:113
 #, no-wrap
-msgid "fixez la vitesse du processeur avant la programmation. Exemple:  \n"
+msgid "fixez la vitesse du processeur avant la programmation. Exemple:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
 #: index.md:113
 #, no-wrap
-msgid "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+msgid "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 msgstr ""
 
 #. type: Bullet: '3. '
-#: index.md:116
+#: index.md:117
 #, no-wrap
-msgid "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
+msgid "utilisez l'option -m pour augmenter les délais utilisés. Exemple:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
 #: index.md:117
 #, no-wrap
-msgid "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+msgid "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 msgstr ""
 
 #. type: Bullet: '4. '
@@ -438,5 +438,5 @@ msgstr ""
 #. type: Plain text
 #: index.md:124
 #, no-wrap
-msgid "Ce projet est sous licence GPL v3 (voir _COPYING_).\n"
+msgid "Ce projet est sous licence GPL v3 ( voir _COPYING_ ).\n"
 msgstr ""

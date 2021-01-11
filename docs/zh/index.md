@@ -12,11 +12,11 @@ title: 最主要的
 
 ## 先决条件
 您需要 _Raspberry_ 或 _Odroid-c2_。  
-您需要将钥匙的调试端口连接到 _Raspberry_的端口 _GPIO_ 的工具，例如电缆 _CC_ 和四根线 _Dupont_ (，请参见)。   
-[如果未预先安装，则必须安装WiringPi](http://wiringpi.com/)  (，通常可以用 `sudo apt install wiringpi`进行安装，否则请访问网站 [ _戈登_](http://wiringpi.com/) 或 [这个替代位置](https://github.com/WiringPi/WiringPi))。  
+您需要将钥匙的调试端口连接到 _Raspberry_的端口 _GPIO_ 的工具，例如一根电缆 _CC_ 和四根线 _Dupont_ (，请参见)。如果未预先安装   
+[ _WiringPi_ ](http://wiringpi.com/)  (，通常可以将其安装为 `sudo apt install wiringpi`)，否则请参见（° _Gordon_ ](http://wiringpi.com/) 或 [这个替代位置](https://github.com/WiringPi/WiringPi))的位置。  
 
 我将 _Raspberry Pi 3_ 与 _raspbian_投影在 _flash\_cc2531_ 上，但在其他型号上报告了成功的编程：  
- * 在pi 4上，您将需要2.52版 _wiringpi_ ：  [安装 _接线Pi_ 2.52 of _戈登的网站_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
+ * 在pi 4上，您将需要版本2.52 _wiringpi_ ：  [安装 _wiringPi_ 2.52 of _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)网站
 
 
 
@@ -29,14 +29,14 @@ title: 最主要的
 
 ## 准备好的
 
-将 _flash\_cc2531_ 下载到您的 _raspberry_：
+将 _flash\_cc2531_ 下载到您的 _raspberry_ ：
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
 
 将以下引脚从调试端口连接到GPIO端口：
 
- 1. 针1 ( _GND_ ) -> 针39 ( _GND_ )
+ 1. 引脚1 ( _GND_ ) -> 引脚39 ( _GND_ )
 
 
  2. 引脚7 ( _reset_ ) -> 引脚35 ( _wPi 24, BCM19_ )
@@ -45,15 +45,15 @@ git clone https://github.com/jmichault/flash_cc2531.git
  3. 引脚3 ( _DC_ ) -> 引脚36 ( _wPi 27, BCM16_ )
 
 
- 4. 引脚4 ( _DD_ ) -> 引脚38 ( _wPi 28, BCM20_ )
+ 4. 针脚4 ( _DD_ ) -> 针脚38 ( _wPi 28, BCM20_ )
 
 
 
 并将USB密钥插入端口。
 
-下载电缆 _CC_ 和4条线 _Dupont_ 母对母非常适合此目的：
-![键的照片和 _覆盆子_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°）
-这是我最喜欢的选择，但是如果没有电缆 _CC_ ，也可以直接在键上焊接电缆 _Dupont_ ：例如，参见网站 [ ）_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) 或 [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+下载电缆 _CC_ 和4线 _Dupont_ 母对母非常适合此目的：
+![按键照片和 _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)）
+这是我最喜欢的选项，但是如果没有电缆 _CC_ ，也可以直接在键上焊接电缆 _Dupont_ ：例如，参见网站 [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) 或 [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 试试这个：
@@ -88,7 +88,7 @@ cd flash_cc2531
 ```bash
 ./cc_erase
 ```
-**注：** 除非 (，否则您 **必须** 删除，除非您真的知道要做什么)。
+**注：** 除非 (，否则 **必须** 删除，除非您真的知道要做什么)。
 
 要将文件编程在键上 _CC2531_：
 ```bash
@@ -96,7 +96,8 @@ cd flash_cc2531
 ```
 (持续约3分钟)。
 
-<id ="使用_aliajn_销"></ a>
+<a id="uzi_aliajn_pinglojn"></a>
+持续约3分钟"。_
 ## 使用其他别针
 
 所有命令均接受以下参数：
@@ -114,7 +115,7 @@ cd flash_cc2531
 
 
 
-使用的针脚编号是 _wiringPi_。使用 `gpio readall` 将布局放在 _Raspberry_ (列 _wPi_)中。
+使用的针脚编号是 _wiringPi_。使用 `gpio readall` 将布局放在 _Raspberry_ (列 _wPi_ )中。
 
 例如，如果要使用引脚3、11和13：  
 将以下引脚从调试端口连接到门 _GPIO_：
@@ -147,22 +148,22 @@ cd flash_cc2531
 1. 停止所有其他程序。
 
 
-2. 在编程之前设置处理器速度。示例：  
+2. 在编程之前设置处理器速度。示例：
 
 
-```bash
-sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-3. 使用-m选项可以增加使用的时间限制。示例：  
+   ```bash
+   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+   ```
+3. 使用-m选项可以增加使用的时间限制。示例：
 
 
-```bash
-./cc_write -m 300 CC2531ZNP-Prod.hex
-```
+   ```bash
+   ./cc_write -m 300 CC2531ZNP-Prod.hex
+   ```
 4. 用 `make`重新编译程序。
 
 
 
 ## 执照
 
-该项目已获得GPL v3许可 (（请参见2°）。
+此项目已获得GPL v3许可 ( ，请参见 _COPYING_ )。

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-10 12:22+0100\n"
+"POT-Creation-Date: 2021-01-11 18:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,8 +60,7 @@ msgstr "_flash\\_cc2531_"
 
 #. type: Plain text
 #: index.md:12
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
 msgstr " _flash\\_cc2531_ membolehkan anda memprogram stik USB CC2531 anda dari anda _Raspberry_, tanpa memerlukan _Arduino_ atau _CC Debugger_.\n"
 
@@ -81,11 +80,11 @@ msgstr "Anda memerlukan _Raspberry_ atau _Odroid-c2_.  \n"
 #: index.md:16
 #, fuzzy, no-wrap
 msgid ""
-"Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
-"[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
+"Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple unu kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
+"[ _WiringPi_ ](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`), alie vidu [la retejon de _Gordon_ ](http://wiringpi.com/) aŭ [ĉi tiun alternativan retejon](https://github.com/WiringPi/WiringPi)).  \n"
 msgstr ""
-"Anda memerlukan apa yang menghubungkan port debug kunci ke port _GPIO_  _Raspberry_, misalnya kabel _CC_ dan empat baris _Dupont_ (lihat lebih jauh).   \n"
-"[WiringPi](http://wiringpi.com/) mesti dipasang (jika tidak dipasang sebelumnya, anda biasanya boleh memasangnya dengan `sudo apt install wiringpi`, jika tidak, lihat laman web [ _Gordon_](http://wiringpi.com/) atau [laman alternatif ini](https://github.com/WiringPi/WiringPi)).  \n"
+"Anda memerlukan apa yang hendak menghubungkan port debug kunci ke port _GPIO_  _Raspberry_, contohnya satu kabel _CC_ dan empat baris _Dupont_ (lihat lebih jauh).   \n"
+"[ _WiringPi_ ](http://wiringpi.com/) mesti dipasang (jika tidak dipasang sebelumnya, anda biasanya boleh memasangnya dengan `sudo apt install wiringpi`), jika tidak, lihat [tapak _Gordon_ ](http://wiringpi.com/) atau [tapak alternatif ini](https://github.com/WiringPi/WiringPi)).  \n"
 
 #. type: Plain text
 #: index.md:18
@@ -96,13 +95,12 @@ msgstr "Saya mengunjurkan _flash\\_cc2531_ pada _Raspberry Pi 3_ dengan _raspbia
 #. type: Bullet: ' * '
 #: index.md:20
 #, fuzzy, no-wrap
-msgid "sur pi 4 vi bezonos la version 2.52 de _wiringpi_ :  [instalu _drataron Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)\n"
-msgstr "pada pi 4 anda memerlukan versi 2.52 dari _wiringpi_ :  [memasang _pendawaian Pi_ 2.52 dari _laman web Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)\n"
+msgid "sur pi 4 vi bezonos version 2.52 de _wiringpi_ :  [instalu _wiringPi_ 2.52 de _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)retejo\n"
+msgstr "pada pi 4 anda memerlukan versi 2.52 dari _wiringpi_ :  [memasang _wiringPi_ 2.52 dari _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)laman web\n"
 
 #. type: Bullet: ' * '
 #: index.md:23
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "sur pi 1 kaj pi 2 vi bezonos [uzi aliajn pinglojn](#uzi_aliajn_pinglojn).\n"
 msgstr "pada pi 1 dan pi 2 anda memerlukan [untuk menggunakan pin lain](#uzi_aliajn_pinglojn).\n"
 
@@ -121,8 +119,8 @@ msgstr "Bersedia"
 #. type: Plain text
 #: index.md:30
 #, fuzzy, no-wrap
-msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_:\n"
-msgstr "Muat turun _flash\\_cc2531_ ke _raspberry_:\n"
+msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_ :\n"
+msgstr "Muat turun _flash\\_cc2531_ ke _raspberry_ anda:\n"
 
 #. type: Fenced code block (bash)
 #: index.md:30
@@ -168,15 +166,13 @@ msgstr "dan masukkan kekunci USB ke dalam port.\n"
 
 #. type: Plain text
 #: index.md:50
-#, fuzzy, no-wrap
+#, no-wrap
+#, fuzzy
 msgid ""
-"Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
-"![foto de la ŝlosilo kaj la _frambo_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
-"Ĉi tiu estas mia plej ŝatata elekto, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejo [ _lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
-msgstr ""
-"Muat turun kabel _CC_ dan 4 baris _Dupont_ Perempuan ke Wanita sangat sesuai untuk tujuan ini:\n"
-"![foto kunci dan raspberry __](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)\n"
-"Ini adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai kabel _CC_ anda juga boleh menyolder kabel secara langsung _Dupont_ pada kunci: lihat contohnya laman web [ )_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) atau [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+"Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi tiu celo:\n"
+"![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+"Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+msgstr "Muat turun kabel _CC_ dan 4 baris _Dupont_ wanita ke wanita sangat sesuai untuk tujuan ini:\n![foto kunci dan _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\nIni adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai kabel _CC_ , anda juga boleh menyolder kabel secara langsung _Dupont_ pada kunci: lihat misalnya laman web [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) atau [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
 
 #. type: Plain text
 #: index.md:53
@@ -208,43 +204,37 @@ msgstr "  ID = b524.\n"
 
 #. type: Plain text
 #: index.md:61
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Se vi vidas 0000 aŭ ffff io fiaskas:  \n"
 msgstr "Sekiranya anda melihat 0000 atau ffff sesuatu gagal:  \n"
 
 #. type: Bullet: ' * '
 #: index.md:63
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "unue kontrolu vian kabligon.\n"
 msgstr "periksa dahulu pendawaian anda.\n"
 
 #. type: Bullet: ' * '
 #: index.md:65
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "tiam provu pli altan bazan tempon, ekzemple kun `./cc_chipid -m 100`, aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
 msgstr "kemudian cuba masa asas yang lebih tinggi, misalnya dengan `./cc_chipid -m 100`, atau `./cc_chipid -m 160` atau `./cc_chipid -m 300`.\n"
 
 #. type: Bullet: ' * '
 #: index.md:67
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "se neniu el tio funkcias, provu rekompili kun `make`.\n"
 msgstr "jika tidak ada yang berfungsi, cuba kumpulkan semula dengan `make`.\n"
 
 #. type: Title ##
 #: index.md:70
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "uzado"
 msgstr "penggunaan"
 
 #. type: Plain text
 #: index.md:72
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Por konservi la enhavon de la fulmmemoro en la dosiero save.hex:\n"
 msgstr "Untuk menyimpan kandungan memori flash ke fail save.hex:\n"
 
@@ -262,8 +252,7 @@ msgstr "(berlangsung sekitar 1 minit).\n"
 
 #. type: Plain text
 #: index.md:78
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Por viŝi fulmmemoron:\n"
 msgstr "Untuk mengosongkan memori kilat:\n"
 
@@ -301,7 +290,9 @@ msgstr "(berlangsung sekitar 3 minit).\n"
 #: index.md:90
 #, fuzzy, no-wrap
 msgid "<a id=\"uzi_aliajn_pinglojn\"></a>\n"
-msgstr "<a id =\"menggunakan_aliajn_pin\"></ a>\n"
+msgstr ""
+"<a id=\"uzi_aliajn_pinglojn\"></a>\n"
+"berlangsung sekitar 3 minit\"._\n"
 
 #. type: Title ##
 #: index.md:90
@@ -311,36 +302,31 @@ msgstr "Gunakan pin lain"
 
 #. type: Plain text
 #: index.md:93
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "ĉiuj ordonoj akceptas la jenajn argumentojn:\n"
 msgstr "semua arahan menerima hujah berikut:\n"
 
 #. type: Bullet: ' * '
 #: index.md:95
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_-c_ pinglo: ŝanĝu la pinglon _DC_ (defaŭlte 27)\n"
 msgstr "Pin_-c_ : ubah pin _DC_ (secara lalai 27)\n"
 
 #. type: Bullet: ' * '
 #: index.md:97
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_-d_ pinglo: ŝanĝu la pinglon _DD_ (defaŭlte 28)\n"
 msgstr "Pin_-d_ : ubah pin _DD_ (secara lalai 28)\n"
 
 #. type: Bullet: ' * '
 #: index.md:99
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_-r_ pinglo: ŝanĝu la pinglon _reset_ (defaŭlte 24)\n"
 msgstr "Pin_-r_ : ubah pin _reset_ (secara lalai 24)\n"
 
 #. type: Bullet: ' * '
 #: index.md:101
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_-m_ : ŝanĝu la prokrastan multiplikaton, kaj do la bazan tempon (defaŭlte: aŭtomata ĝustigo)\n"
 msgstr "_-m_ : ubah pengganda kelewatan, dan oleh itu masa asas (secara lalai: pelarasan automatik)\n"
 
@@ -348,8 +334,8 @@ msgstr "_-m_ : ubah pengganda kelewatan, dan oleh itu masa asas (secara lalai: p
 #: index.md:104
 #, no-wrap
 #, fuzzy
-msgid "la numerado de pingloj uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
-msgstr "penomboran pin yang digunakan ialah _wiringPi_. Gunakan `gpio readall` untuk mempunyai susun atur di ruangan _Raspberry_ ( _wPi_).\n"
+msgid "la pinglonumerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).\n"
+msgstr "penomboran pin yang digunakan ialah _wiringPi_. Gunakan `gpio readall` untuk mempunyai susun atur di ruangan _Raspberry_ ( _wPi_ ).\n"
 
 #. type: Plain text
 #: index.md:105
@@ -359,43 +345,37 @@ msgstr "Contohnya, jika anda ingin menggunakan pin 3, 11 dan 13:  \n"
 
 #. type: Plain text
 #: index.md:107
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Konekti la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:\n"
 msgstr "Sambungkan pin berikut dari port debug ke pintu _GPIO_:\n"
 
 #. type: Bullet: ' 1. '
 #: index.md:109
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
 msgstr "pin 1 ( _GND_ ) -> pin 14 ( _GND_ )\n"
 
 #. type: Bullet: ' 2. '
 #: index.md:111
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
 msgstr "pin 7 ( _reset_ ) -> pin 3 ( _wPi 8, BCM2_ )\n"
 
 #. type: Bullet: ' 3. '
 #: index.md:113
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
 msgstr "pin 3 ( _DC_ ) -> pin 11 ( _wPi 0, BCM17_ )\n"
 
 #. type: Bullet: ' 4. '
 #: index.md:115
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pinglo 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
 msgstr "pin 4 ( _DD_ ) -> pin 13 ( _wPi 2, BCM27_ )\n"
 
 #. type: Plain text
 #: index.md:118
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi fulmmemoron per la jenaj komandoj:\n"
 msgstr "dan sekarang anda boleh membaca ID, menyimpan, memadam dan menulis memori kilat dengan arahan berikut:\n"
 
@@ -432,28 +412,30 @@ msgid "ĉesu ĉiujn aliajn programojn.\n"
 msgstr "hentikan semua program lain.\n"
 
 #. type: Bullet: '2. '
-#: index.md:131
-#, fuzzy, no-wrap
-msgid "agordi la rapidon de la procesoro antaŭ programado. Ekzemplo:  \n"
-msgstr "tetapkan kelajuan pemproses sebelum pengaturcaraan. Contoh:  \n"
+#: index.md:132
+#, no-wrap
+#, fuzzy
+msgid "agordu la rapidon de la procesoro antaŭ programado. Ekzemplo:\n"
+msgstr "tetapkan kelajuan pemproses sebelum pengaturcaraan. Contoh:\n"
 
 #. type: Fenced code block (bash)
 #: index.md:133
 #, no-wrap
-msgid "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
-msgstr "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+msgid "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+msgstr "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 
 #. type: Bullet: '3. '
-#: index.md:136
-#, fuzzy, no-wrap
-msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:  \n"
-msgstr "gunakan pilihan -m untuk meningkatkan had masa yang digunakan. Contoh:  \n"
+#: index.md:137
+#, no-wrap
+#, fuzzy
+msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:\n"
+msgstr "gunakan pilihan -m untuk meningkatkan had masa yang digunakan. Contoh:\n"
 
 #. type: Fenced code block (bash)
 #: index.md:138
 #, no-wrap
-msgid "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
-msgstr "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+msgid "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+msgstr "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 
 #. type: Bullet: '4. '
 #: index.md:142
@@ -470,120 +452,88 @@ msgstr "Lesen"
 #. type: Plain text
 #: index.md:146
 #, fuzzy, no-wrap
-msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_).\n"
-msgstr "Projek ini dilesenkan di bawah GPL v3 ((lihat 2 °).\n"
+msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 ( vidu _COPYING_ ).\n"
+msgstr "Projek ini dilesenkan di bawah GPL v3 ( lihat _COPYING_ ).\n"
 
 #~ msgid "auto"
 #~ msgstr "auto"
 
 #, fuzzy
-#~ msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
-#~ msgstr " _flash\\_cc2531_ membolehkan anda memprogram stik USB CC2531 anda dari _Raspberry_, tanpa memerlukan _Arduino_ atau _CC Debugger_.\n"
-
-#, fuzzy
 #~ msgid ""
-#~ "sur pi 1 kaj pi 2 vi bezonos [por uzi aliajn pinglojn]"
-#~ "(#uzi_aliajn_pinglojn).\n"
+#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
+#~ "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+#~ "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
 #~ msgstr ""
-#~ "pada pi 1 dan pi 2 anda memerlukan [untuk menggunakan pin lain]"
-#~ "(#uzi_aliajn_pinglojn).\n"
+#~ "Muat turun kabel _CC_ dan 4 baris _Dupont_ Perempuan ke Perempuan sangat sesuai untuk tujuan ini:\n"
+#~ "![foto kunci dan _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\n"
+#~ "Ini adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai kabel _CC_ , anda juga boleh menyolder kabel secara langsung _Dupont_ pada kunci: lihat misalnya laman web [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) atau [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+
+#, fuzzy
+#~ msgid "la numerado de la pingloj uzataj estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).\n"
+#~ msgstr "penomboran pin yang digunakan ialah _wiringPi_. Gunakan `gpio readall` untuk mempunyai susun atur di ruangan _Raspberry_ ( _wPi_ ).\n"
+
+#, fuzzy
+#~ msgid "agordi la rapidon de la procesoro antaŭ programado. Ekzemplo:  \n"
+#~ msgstr "tetapkan kelajuan pemproses sebelum pengaturcaraan. Contoh:  \n"
+
+#~ msgid "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+#~ msgstr "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+
+#, fuzzy
+#~ msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:  \n"
+#~ msgstr "gunakan pilihan -m untuk meningkatkan had masa yang digunakan. Contoh:  \n"
+
+#~ msgid "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+#~ msgstr "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Se vi vidas 0000 aŭ ffff io fiaskas:\n"
-#~ "* unue kontrolu vian drataron.\n"
-#~ "* tiam provu pli altan bazan tempon, ekzemple kun `./cc_chipid -m 100`, aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
-#~ "* se neniu el ĉi tio funkcias, provu rekompili kun `make`.\n"
+#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la "
+#~ "havenoj _GPIO_ de _Raspberry_, ekzemple unu kablo _CC_ kaj kvar linioj "
+#~ "_Dupont_ (vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas "
+#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
+#~ "wiringpi`, alie vidu [la retejo de _Gordon_ ](http://wiringpi.com/) aŭ "
+#~ "[ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
 #~ msgstr ""
-#~ "Sekiranya anda melihat 0000 atau ffff ada yang tidak kena:\n"
-#~ "* periksa dahulu pendawaian anda.\n"
-#~ "* kemudian cuba masa asas yang lebih tinggi, misalnya dengan `./cc_chipid -m 100`, atau `./cc_chipid -m 160` atau `./cc_chipid -m 300`.\n"
-#~ "* Sekiranya tidak ada yang berfungsi, cuba kumpulkan semula dengan `make`.\n"
-
-#, fuzzy
-#~ msgid "uzi"
-#~ msgstr "menggunakan"
-
-#, fuzzy
-#~ msgid "Por konservi la enhavon de la memoro flash en la dosiero save.hex:\n"
-#~ msgstr "Untuk menyimpan kandungan memori flash ke fail save.hex:\n"
-
-#, fuzzy
-#~ msgid "Por viŝi flash-memoron:\n"
-#~ msgstr "Untuk memadamkan memori kilat:\n"
+#~ "Anda memerlukan apa yang hendak menghubungkan port debug kunci ke port "
+#~ "_GPIO_  _Raspberry_, contohnya satu kabel _CC_ dan empat baris _Dupont_ "
+#~ "(lihat lebih jauh).   \n"
+#~ "[WiringPi](http://wiringpi.com/) mesti dipasang (jika tidak dipasang "
+#~ "sebelumnya, anda biasanya boleh memasangnya dengan `sudo apt install "
+#~ "wiringpi`, jika tidak, lihat [jaring _Gordon_ ](http://wiringpi.com/) "
+#~ "atau [jaring alternatif ini](https://github.com/WiringPi/WiringPi)).  \n"
 
 #, fuzzy
 #~ msgid ""
-#~ "ĉiuj komandoj akceptas la jenajn argumentojn:\n"
-#~ "* _-c_ pinglo: ŝanĝi pinglon _DC_ (defaŭlte 27)\n"
-#~ "* _-d_ pinglo: ŝanĝi pinglon _DD_ )(defaŭlta 28)\n"
-#~ "* _-r_ pinglo: ŝanĝi pinglon _reset_ (defaŭlte 24)\n"
-#~ "* _-m_ : ŝanĝi la multiplikanton de la malfruo, kaj do la baza tempo (defaŭlte: aŭtomata ĝustigo)\n"
+#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la "
+#~ "havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj "
+#~ "_Dupont_ (vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas "
+#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
+#~ "wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu "
+#~ "alternativa retejo](https://github.com/WiringPi/WiringPi) ).\n"
 #~ msgstr ""
-#~ "semua arahan menerima hujah berikut:\n"
-#~ "* _-c_ pin: pin perubahan _DC_ (secara lalai 27)\n"
-#~ "(° Pin 10 °)_-d_ : pin ubah _DD_ )(lalai 28)\n"
-#~ "* _-r_ pin: ubah pin _reset_ (secara lalai 24)\n"
-#~ "* _-m_ : ubah pengganda kelewatan, dan oleh itu masa asas (secara lalai: pelarasan automatik)\n"
-
-#, fuzzy
-#~ msgid "la pingla numerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
-#~ msgstr "penomboran pin yang digunakan ialah _wiringPi_. Gunakan `gpio readall` untuk mempunyai susun atur di ruangan _Raspberry_ ( _wPi_).\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Konekti la jenajn pinglojn de elpurighaveno al pordego _GPIO_:\n"
-#~ "1. pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
-#~ "2. pin 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. spindelo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. pin 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
-#~ msgstr ""
-#~ "Sambungkan pin berikut dari port debugging ke pintu _GPIO_:\n"
-#~ "1. pin 1 ( _GND_ ) -> pin 14 ( )_GND_ )\n"
-#~ "2. pin 7 ( _reset_ ) -> pin 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. gelendong 3 ( _DC_ ) -> pin 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. pin 4 ( _DD_ ) -> pin 13 ( _wPi 2, BCM27_ )\n"
-
-#, fuzzy
-#~ msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi flash-memoron per la jenaj komandoj:\n"
-#~ msgstr "dan sekarang anda boleh membaca ID, menyimpan, memadam dan menulis memori kilat dengan arahan berikut:\n"
+#~ "Anda memerlukan apa yang hendak menghubungkan port debug kunci ke port "
+#~ "_GPIO_  _Raspberry_, misalnya kabel _CC_ dan empat baris _Dupont_ (lihat "
+#~ "lebih jauh).   \n"
+#~ "[WiringPi](http://wiringpi.com/) mesti dipasang (jika tidak dipasang "
+#~ "sebelumnya, anda biasanya boleh memasangnya dengan `sudo apt install "
+#~ "wiringpi`, jika tidak, lihat laman web [ _Gordon_](atau [laman alternatif "
+#~ "ini](https://github.com/WiringPi/WiringPi) ).\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Mi projektis _flash\\_cc2531_ sur _Raspberry Pi 3_ kun _raspbian_, sed "
-#~ "sukcesa programado estis raportita pri aliaj modeloj:\n"
-#~ "* sur pi 4, vi bezonos version 2.52 de _wiringpi_ :  [instalu _drataron "
+#~ "sur pi 4 vi bezonos la version 2.52 de _wiringpi_ :  [instalu _drataron "
 #~ "Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-"
-#~ "to-2-52-for-the-raspberry-pi-4b/)  \n"
+#~ "to-2-52-for-the-raspberry-pi-4b/)\n"
 #~ msgstr ""
-#~ "Saya mengunjurkan _flash\\_cc2531_ pada _Raspberry Pi 3_ dengan "
-#~ "_raspbian_, tetapi pengaturcaraan yang berjaya dilaporkan pada model "
-#~ "lain:\n"
-#~ "* pada pi 4, anda memerlukan versi 2.52 dari _wiringpi_ :  [pasang _Pi "
-#~ "pendawaian_ 2.52 dari _laman web Gordon_](http://wiringpi.com/wiringpi-"
-#~ "updated-to-2-52-for-the-raspberry-pi-4b/)  \n"
+#~ "pada pi 4 anda memerlukan versi 2.52 dari _wiringpi_ :  [memasang "
+#~ "_drataron Pi_ 2.52 dari _retejo de Gordon_](\n"
 
 #, fuzzy
-#~ msgid ""
-#~ "sur pi 1 kaj pi 2 vi bezonos [por uzi aliajn pinglojn]"
-#~ "(#uzi_aliajn_pinglojn).  \n"
-#~ msgstr ""
-#~ "pada pi 1 dan pi 2 anda memerlukan [untuk menggunakan pin lain]"
-#~ "(#uzi_aliajn_pinglojn).  \n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Konektu la jenajn pinglojn de la elpurighaveno al la GPIO-pordo:\n"
-#~ "1. pino 1 ( _GND_ ) -> pinglo 39 ( _GND_ )\n"
-#~ "dua pinglo 7 ( _reset_ ) -> pinglo 35 ( _wPi 24, BCM19_ )\n"
-#~ "3. spindelo 3 ( _DC_ ) -> pinglo 36 ( _wPi 27, BCM16_ )\n"
-#~ "4. spindelo 4 ( _DD_ ) -> spindelo 38 ( _wPi 28, BCM20_ )\n"
-#~ msgstr ""
-#~ "Sambungkan pin berikut dari port debugging ke port GPIO:\n"
-#~ "1. pin 1 ( _GND_ ) -> pin 39 ( _GND_ )\n"
-#~ "pin kedua 7 ( _reset_ ) -> pin 35 ( _wPi 24, BCM19_ ))\n"
-#~ "3. gelendong 3 ( _DC_ ) -> pin 36 ( _wPi 27, BCM16_ )\n"
-#~ "4. gelendong 4 ( _DD_ ) -> gelendong 38 ( _wPi 28, BCM20_ )\n"
+#~ msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_:\n"
+#~ msgstr "Muat turun _flash\\_cc2531_ ke _raspberry_anda:\n"
 
 #, fuzzy
 #~ msgid ""
@@ -593,158 +543,53 @@ msgstr "Projek ini dilesenkan di bawah GPL v3 ((lihat 2 °).\n"
 #~ "raw/master/Raspberry-CC2531.jpg)\n"
 #~ "Ĉi tiu estas mia plej ŝatata elekto, sed se vi ne havas kablon _CC_ vi "
 #~ "ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple "
-#~ "la retejo [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-"
+#~ "la retejo [ _lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-"
 #~ "flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ "
 #~ "[ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-"
 #~ "cc2531-without-cc-debugger/)\n"
 #~ msgstr ""
-#~ "Muat turun kabel _CC_ dan 4 baris _Dupont_ Perempuan ke Wanita sangat "
+#~ "Muat turun kabel _CC_ dan 4 baris _Dupont_ Perempuan ke Perempuan sangat "
 #~ "sesuai untuk tujuan ini:\n"
-#~ "![foto kunci dan raspberry __](https://github.com/jmichault/files/raw/"
-#~ "master/Raspberry-CC2531.jpg)°)\n"
-#~ "Ini adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai kabel "
-#~ "_CC_ , anda juga boleh menyolder kabel secara langsung _Dupont_ pada "
-#~ "kunci: lihat misalnya laman web [ )_mariva.com_](https://lemariva.com/"
-#~ "blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-"
-#~ "debugger) atau [ _notenoughtech.com_](https://notenoughtech.com/home-"
-#~ "automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ "![foto kunci dan _frambo_](\n"
+#~ ") Ini adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai "
+#~ "kabel _CC_ , anda juga boleh menyolder kabel secara langsung _Dupont_ "
+#~ "pada kunci: lihat misalnya laman web [ _lemariva.com_](atau "
+#~ "[ _notenoughtech.com_](\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Konekti la jenajn pinglojn de elpurighaveno al pordego _GPIO_:\n"
-#~ "1. pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
-#~ "2. pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. pinglo 4 ( _DD_ ) -> pinglo 13 ( )_wPi 2, BCM27_ )\n"
+#~ "la numerado de pingloj uzata estas tiu de _wiringPi_. Uzu `gpio readall` "
+#~ "por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
 #~ msgstr ""
-#~ "Sambungkan pin berikut dari port debugging ke pintu _GPIO_:\n"
-#~ "1. pin 1 ( _GND_ ) -> pin 14 ( )_GND_ )\n"
-#~ "2. pin 7 ( _reset_ ) -> pin 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. pin 3 ( _DC_ ) -> pin 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. pin 4 ( _DD_ ) -> pin 13 ( )_wPi 2, BCM27_ )\n"
+#~ "penomboran pin yang digunakan ialah _wiringPi_. Gunakan `gpio readall` "
+#~ "untuk mempunyai susun atur di ruangan _Raspberry_ ( _wPi_).\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Mi projektis _flash\\_cc2531_ sur a _Raspberry Pi 3_ kun _raspbian_, sed "
-#~ "pri sukcesaj programoj oni raportis pri aliaj modeloj:\n"
-#~ "* sur pi 4, vi bezonos version 2.52 de _wiringpi_ :  [instalu _drataron "
-#~ "Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-"
-#~ "to-2-52-for-the-raspberry-pi-4b/)  \n"
+#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la "
+#~ "havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj "
+#~ "_Dupont_ (vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas "
+#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
+#~ "wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu "
+#~ "alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
 #~ msgstr ""
-#~ "Saya mengunjurkan _flash\\_cc2531_ pada _Raspberry Pi 3_ dengan "
-#~ "_raspbian_, tetapi model lain telah dilaporkan untuk program yang "
-#~ "berjaya:\n"
-#~ "* pada pi 4, anda memerlukan versi 2.52 dari _wiringpi_ :  [pasang _kabel "
-#~ "pendawaian Pi_ 2.52 dari _laman web Gordon_](http://wiringpi.com/wiringpi-"
-#~ "updated-to-2-52-for-the-raspberry-pi-4b/)  \n"
+#~ "Anda memerlukan apa yang hendak menghubungkan port debug kunci ke port "
+#~ "_GPIO_  _Raspberry_, misalnya kabel _CC_ dan empat baris _Dupont_ (lihat "
+#~ "lebih jauh).   \n"
+#~ "[WiringPi](http://wiringpi.com/) mesti dipasang (jika tidak dipasang "
+#~ "sebelumnya, anda biasanya boleh memasangnya dengan `sudo apt install "
+#~ "wiringpi`, jika tidak, lihat laman web [ _Gordon_](atau [laman alternatif "
+#~ "ini](https://github.com/WiringPi/WiringPi)).  \n"
 
 #, fuzzy
-#~ msgid ""
-#~ "sur pi 1 kaj pi 2 vi bezonos[uzi aliajn pinglojn]"
-#~ "(#uzi_aliajn_pinglojn).  \n"
-#~ msgstr ""
-#~ "pada pi 1 dan pi 2 anda memerlukan[untuk menggunakan pin lain]"
-#~ "(#uzi_aliajn_pinglojn).  \n"
+#~ msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_ ).\n"
+#~ msgstr "Projek ini dilesenkan di bawah GPL v3 (lihat _COPYING_ ).\n"
 
 #, fuzzy
-#~ msgid ""
-#~ "Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle "
-#~ "sont parfaits à cet effet:\n"
-#~ "![photo de la clé et de la _framboise_](https://github.com/jmichault/"
-#~ "files/raw/master/Raspberry-CC2531.jpg)\n"
-#~ "C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous "
-#~ "pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par "
-#~ "exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-"
-#~ "flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou "
-#~ "[ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-"
-#~ "cc2531-without-cc-debugger/)\n"
-#~ msgstr ""
-#~ "Kabel muat turun _CC_ dan 4 baris _Dupont_ Perempuan ke Wanita sangat "
-#~ "sesuai untuk tujuan ini:\n"
-#~ "![foto kunci dan raspberry __](https://github.com/jmichault/files/raw/"
-#~ "master/Raspberry-CC2531.jpg)\n"
-#~ "Ini adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai kabel "
-#~ "_CC_ anda juga boleh menyolder kabel _Dupont_ terus ke kunci: lihat "
-#~ "misalnya laman web [ _mariva.com_](https://lemariva.com/blog/2019/08/"
-#~ "zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) atau "
-#~ "[ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-"
-#~ "cc2531-without-cc-debugger/)\n"
+#~ msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_).\n"
+#~ msgstr "Projek ini dilesenkan di bawah GPL v3 ((lihat 2 °).\n"
 
 #, fuzzy
-#~ msgid "Ça doit retourner:\n"
-#~ msgstr "Ia mesti kembali:\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Si vous voyez 0000 ou ffff quelque chose ne va pas:\n"
-#~ "* vérifiez d'abord votre câblage.\n"
-#~ "* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid "
-#~ "-m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
-#~ "* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
-#~ msgstr ""
-#~ "Sekiranya anda melihat 0000 atau ffff ada yang tidak kena:\n"
-#~ "* periksa pendawaian anda terlebih dahulu.\n"
-#~ "* kemudian cuba waktu asas yang lebih tinggi, misalnya dengan `./"
-#~ "cc_chipid -m 100`, atau `./cc_chipid -m 160` atau `./cc_chipid -m 300`.\n"
-#~ "* Sekiranya tidak ada yang berfungsi, cuba kumpulkan semula dengan "
-#~ "`make`.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Pour enregistrer le contenu de la mémoire flash dans le fichier save."
-#~ "hex:\n"
-#~ msgstr "Untuk menyimpan kandungan memori flash ke fail save.hex:\n"
-
-#, fuzzy
-#~ msgid "(dure environ 1 minute).\n"
-#~ msgstr "(berlangsung sekitar 1 minit).\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez "
-#~ "vraiment ce que vous allez faire).\n"
-#~ msgstr ""
-#~ "**Catatan:** Anda **mesti** hapus sebelum menulis (kecuali anda benar-"
-#~ "benar tahu apa yang akan anda lakukan).\n"
-
-#, fuzzy
-#~ msgid "(dure environ 3 minutes).\n"
-#~ msgstr "(berlangsung sekitar 3 minit).\n"
-
-#, fuzzy
-#~ msgid "Uzu aliajn pinglojn"
-#~ msgstr "Gunakan pin lain"
-
-#, fuzzy
-#~ msgid ""
-#~ "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13: \n"
-#~ "Konektu la jenajn pinglojn de debughaveno al pordego _GPIO_:\n"
-#~ "1.pino 1 ( _GND_ ) ) -> pinglo 14 ( _GND_ )\n"
-#~ "2. pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
-#~ "4.pin 4 ( _DD_ ) -> pinglo 13 ( )_wPi 2, BCM27_ )\n"
-#~ msgstr ""
-#~ "Contohnya, jika anda ingin menggunakan pin 3, 11, dan 13: \n"
-#~ "Sambungkan pin berikut dari port ke port _GPIO_:\n"
-#~ "1. pin 1 ( _GND_ )) ) -> pin 14 ( _GND_ )\n"
-#~ "2. pin 7 ( _reset_ ) -> pin 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. pin 3 ( _DC_ ) -> pin 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. pin 4 ( _DD_ ) -> pin 13 ( )_wPi 2, BCM27_ )\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ "
-#~ "puis compiler les programmes avec `make`.\n"
-#~ msgstr ""
-#~ "Anda juga boleh mengubah nilai lalai dalam _CCDebugger.h_ dan kemudian "
-#~ "menyusun program dengan `make`.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
-#~ msgstr ""
-#~ "gunakan pilihan -m untuk meningkatkan masa yang digunakan. Contoh:  \n"
-
-#, fuzzy
-#~ msgid "recompilez le logiciel avec `make`.\n"
-#~ msgstr "kumpulkan semula perisian dengan `make`.\n"
+#~ msgid "Ĉi tiu projekto estas sub licenco GPL v3 \\(vidu _COPYING_).\n"
+#~ msgstr "Projek ini dilesenkan di bawah GPL v3 \\((lihat 2 °).\n"

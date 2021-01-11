@@ -12,11 +12,11 @@ title: 'La ĉefa afero'
 
 ## Antaŭkondiĉoj
 Vi bezonas aŭ _Raspberry_ aŭ _Odroid-c2_.  
-Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   
-[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  
+Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple unu kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   
+[ _WiringPi_ ](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`), alie vidu [la retejon de _Gordon_ ](http://wiringpi.com/) aŭ [ĉi tiun alternativan retejon](https://github.com/WiringPi/WiringPi)).  
 
 Mi projektis _flash\_cc2531_ sur _Raspberry Pi 3_ kun _raspbian_, sed sukcesa programado estis raportita pri aliaj modeloj:  
- * sur pi 4 vi bezonos la version 2.52 de _wiringpi_ :  [instalu _drataron Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
+ * sur pi 4 vi bezonos version 2.52 de _wiringpi_ :  [instalu _wiringPi_ 2.52 de _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)retejo
 
 
  * sur pi 1 kaj pi 2 vi bezonos [uzi aliajn pinglojn](#uzi_aliajn_pinglojn).
@@ -26,7 +26,7 @@ Mi projektis _flash\_cc2531_ sur _Raspberry Pi 3_ kun _raspbian_, sed sukcesa pr
 
 ## Preparado
 
-Elŝutu _flash\_cc2531_ al via _raspberry_:
+Elŝutu _flash\_cc2531_ al via _raspberry_ :
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
@@ -44,9 +44,9 @@ Konektu la jenajn pinglojn de la debug-haveno al la GPIO-haveno:
 
 kaj enmetu la USB-ŝlosilon en havenon.
 
-Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:
-![foto de la ŝlosilo kaj la _frambo_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)
-Ĉi tiu estas mia plej ŝatata elekto, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejo [ _lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi tiu celo:
+![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)
+Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 provu per ĉi tio:
@@ -100,7 +100,7 @@ Por programi la dosieron sur la ŝlosilo _CC2531_:
  * _-m_ : ŝanĝu la prokrastan multiplikaton, kaj do la bazan tempon (defaŭlte: aŭtomata ĝustigo)
 
 
-la numerado de pingloj uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).
+la pinglonumerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).
 
 Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13:  
 Konekti la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:
@@ -128,19 +128,19 @@ Vi ankaŭ povas ŝanĝi la defaŭltajn valorojn en _CCDebugger.h_ kaj kompili la
 
 1. ĉesu ĉiujn aliajn programojn.
 
-2. agordi la rapidon de la procesoro antaŭ programado. Ekzemplo:  
+2. agordu la rapidon de la procesoro antaŭ programado. Ekzemplo:
 
-```bash
-sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-3. uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:  
+   ```bash
+   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+   ```
+3. uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:
 
-```bash
-./cc_write -m 300 CC2531ZNP-Prod.hex
-```
+   ```bash
+   ./cc_write -m 300 CC2531ZNP-Prod.hex
+   ```
 4. rekompili la programon per `make`.
 
 
 ## Permesilo
 
-Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_).
+Ĉi tiu projekto estas rajtigita laŭ GPL v3 ( vidu _COPYING_ ).

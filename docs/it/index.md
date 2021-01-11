@@ -12,11 +12,11 @@ title: 'La stessa cosa'
 
 ## Prerequisiti
 È necessario _Raspberry_ o _Odroid-c2_.  
-È necessario cosa collegare la porta di debug della chiave alle porte _GPIO_ di _Raspberry_, ad esempio cavo _CC_ e quattro linee _Dupont_ (vedi oltre).   
-[CablaggioPi](http://wiringpi.com/) deve essere installato (se non è preinstallato, normalmente è possibile installarlo con `sudo apt install wiringpi`, altrimenti vedi sito web [ _Gordon_](http://wiringpi.com/) o [questo sito alternativo](https://github.com/WiringPi/WiringPi)).  
+Hai bisogno di cosa connettere la porta di debug della chiave alle porte _GPIO_ di _Raspberry_, ad esempio un cavo _CC_ e quattro linee _Dupont_ (vedi oltre).   
+[ _WiringPi_ ](http://wiringpi.com/) deve essere installato (se non è preinstallato, normalmente è possibile installarlo con `sudo apt install wiringpi`), altrimenti vedi [il sito di _Gordon_ ](http://wiringpi.com/) o [questo sito alternativo](https://github.com/WiringPi/WiringPi)).  
 
 Ho proiettato _flash\_cc2531_ su _Raspberry Pi 3_ con _raspbian_, ma la corretta programmazione è stata riportata su altri modelli:  
- * su pi 4 sarà necessaria la versione 2.52 di _wiringpi_ :  [installa _cablaggio Pi_ 2.52 del _sito web di Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
+ * su pi 4 sarà necessaria la versione 2.52 di _wiringpi_ :  [installa _wiringPi_ 2.52 del _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)sito web
 
 
 
@@ -29,7 +29,7 @@ Ho proiettato _flash\_cc2531_ su _Raspberry Pi 3_ con _raspbian_, ma la corretta
 
 ## Preparato
 
-Scarica _flash\_cc2531_ nel tuo _raspberry_:
+Scarica _flash\_cc2531_ nel tuo _raspberry_ :
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
@@ -51,9 +51,9 @@ Collega i seguenti pin dalla porta di debug alla porta GPIO:
 
 e inserire la chiave USB in una porta.
 
-Il cavo di download _CC_ e 4 linee _Dupont_ Femmina a Femmina sono perfette per questo scopo:
-![foto della chiave e _lampone_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)
-Questa è la mia scelta preferita, ma se non hai un cavo _CC_ puoi anche saldare i cavi _Dupont_ direttamente sulla chiave: vedi ad esempio il sito web [ )_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) o [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Il cavo di download _CC_ e le 4 linee _Dupont_ femmina a femmina sono perfette per questo scopo:
+![foto della chiave e _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
+Questa è la mia opzione preferita, ma se non hai un cavo _CC_ puoi anche saldare i cavi _Dupont_ direttamente sulla chiave: vedi ad esempio il sito web [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) o [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 prova questo:
@@ -96,7 +96,8 @@ Per programmare il file sulla chiave _CC2531_:
 ```
 (dura circa 3 minuti).
 
-<a id ="utilizzare_aliajn_perni"></ a>
+<a id="uzi_aliajn_pinglojn"></a>
+dura circa 3 minuti"._
 ## Usa altri pin
 
 tutti i comandi accettano i seguenti argomenti:
@@ -114,7 +115,7 @@ tutti i comandi accettano i seguenti argomenti:
 
 
 
-la numerazione dei pin utilizzata è quella di _wiringPi_. Usa `gpio readall` per avere il layout nella tua colonna _Raspberry_ ( _wPi_).
+la numerazione dei pin utilizzata è quella di _wiringPi_. Usa `gpio readall` per avere il layout nella tua colonna _Raspberry_ ( _wPi_ ).
 
 Ad esempio, se si desidera utilizzare i pin 3, 11 e 13:  
 Collegare i seguenti pin da una porta di debug a una porta _GPIO_:
@@ -147,22 +148,22 @@ e ora puoi leggere ID, salvare, cancellare e scrivere la memoria flash con i seg
 1. interrompere tutti gli altri programmi.
 
 
-2. impostare la velocità del processore prima della programmazione. Esempio:  
+2. impostare la velocità del processore prima della programmazione. Esempio:
 
 
-```bash
-sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-3. utilizzare l'opzione -m per aumentare i limiti di tempo utilizzati. Esempio:  
+   ```bash
+   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+   ```
+3. utilizzare l'opzione -m per aumentare i limiti di tempo utilizzati. Esempio:
 
 
-```bash
-./cc_write -m 300 CC2531ZNP-Prod.hex
-```
+   ```bash
+   ./cc_write -m 300 CC2531ZNP-Prod.hex
+   ```
 4. ricompilare il programma con `make`.
 
 
 
 ## Licenza
 
-Questo progetto ha la licenza GPL v3 ((vedi 2 °).
+Questo progetto è sotto licenza GPL v3 ( vedi _COPYING_ ).

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-10 12:22+0100\n"
+"POT-Creation-Date: 2021-01-11 18:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,8 +60,7 @@ msgstr "_flash\\_cc2531_"
 
 #. type: Plain text
 #: index.md:12
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
 msgstr " _flash\\_cc2531_ يسمح لك ببرمجة CC2531 USB stick الخاص بك _Raspberry_، دون الحاجة إلى _Arduino_ أو _CC Debugger_.\n"
 
@@ -81,11 +80,11 @@ msgstr "تحتاج إما _Raspberry_ أو _Odroid-c2_.  \n"
 #: index.md:16
 #, fuzzy, no-wrap
 msgid ""
-"Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
-"[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
+"Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple unu kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
+"[ _WiringPi_ ](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`), alie vidu [la retejon de _Gordon_ ](http://wiringpi.com/) aŭ [ĉi tiun alternativan retejon](https://github.com/WiringPi/WiringPi)).  \n"
 msgstr ""
-"أنت بحاجة إلى ما لتوصيل منفذ التصحيح الخاص بالمفتاح بالمنافذ _GPIO_ من _Raspberry_، على سبيل المثال الكبل _CC_ وأربعة خطوط _Dupont_ (انظر أيضًا10 درجة).   \n"
-"[يجب تثبيت WiringPi](http://wiringpi.com/)  (إذا لم يكن مثبتًا مسبقًا ، يمكنك عادةً تثبيته بـ `sudo apt install wiringpi`، وإلا انظر موقع الويب [ _Gordon_](http://wiringpi.com/) أو [هذا الموقع البديل](https://github.com/WiringPi/WiringPi)).  \n"
+"أنت بحاجة إلى ما لتوصيل منفذ التصحيح الخاص بالمفتاح بالمنافذ _GPIO_ من _Raspberry_، على سبيل المثال كابل واحد _CC_ وأربعة خطوط _Dupont_ (انظر أيضًا).   \n"
+"[ _WiringPi_ ](http://wiringpi.com/) يجب تثبيتها (إذا لم تكن مثبتة مسبقًا ، يمكنك عادةً تثبيتها بـ `sudo apt install wiringpi`)، وإلا انظر [موقع _Gordon_ ](http://wiringpi.com/) أو [هذا الموقع البديل](https://github.com/WiringPi/WiringPi)). (° 28 درجة)  \n"
 
 #. type: Plain text
 #: index.md:18
@@ -96,13 +95,12 @@ msgstr "لقد توقعت _flash\\_cc2531_ على _Raspberry Pi 3_ مع _raspbia
 #. type: Bullet: ' * '
 #: index.md:20
 #, fuzzy, no-wrap
-msgid "sur pi 4 vi bezonos la version 2.52 de _wiringpi_ :  [instalu _drataron Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)\n"
-msgstr "على pi 4 ، ستحتاج إلى الإصدار 2.52 من _wiringpi_ :  [تثبيت _الأسلاك Pi_ 2.52 من _موقع Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)(° 9 درجات)\n"
+msgid "sur pi 4 vi bezonos version 2.52 de _wiringpi_ :  [instalu _wiringPi_ 2.52 de _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)retejo\n"
+msgstr "في pi 4 ، ستحتاج إلى الإصدار 2.52 من _wiringpi_ :  [تثبيت _wiringPi_ 2.52 من _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)موقع ويب\n"
 
 #. type: Bullet: ' * '
 #: index.md:23
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "sur pi 1 kaj pi 2 vi bezonos [uzi aliajn pinglojn](#uzi_aliajn_pinglojn).\n"
 msgstr "في pi 1 و pi 2 ستحتاج [لاستخدام دبابيس أخرى](#uzi_aliajn_pinglojn).\n"
 
@@ -121,8 +119,8 @@ msgstr "أعدت"
 #. type: Plain text
 #: index.md:30
 #, fuzzy, no-wrap
-msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_:\n"
-msgstr "تنزيل _flash\\_cc2531_ إلى _raspberry_:\n"
+msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_ :\n"
+msgstr "تنزيل _flash\\_cc2531_ إلى _raspberry_ :\n"
 
 #. type: Fenced code block (bash)
 #: index.md:30
@@ -168,15 +166,13 @@ msgstr "وأدخل مفتاح USB في المنفذ.\n"
 
 #. type: Plain text
 #: index.md:50
-#, fuzzy, no-wrap
+#, no-wrap
+#, fuzzy
 msgid ""
-"Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
-"![foto de la ŝlosilo kaj la _frambo_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
-"Ĉi tiu estas mia plej ŝatata elekto, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejo [ _lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
-msgstr ""
-"تحميل كابل _CC_ و 4 خطوط _Dupont_ أنثى إلى أنثى مثالية لهذا الغرض:\n"
-"![صورة المفتاح و _التوت_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)\n"
-"هذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، فيمكنك أيضًا لحام الكابلات مباشرة _Dupont_ على المفتاح: انظر على سبيل المثال موقع الويب [ )_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) أو [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+"Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi tiu celo:\n"
+"![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+"Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+msgstr "تحميل الكابل _CC_ و 4 خطوط _Dupont_ للإناث للإناث مثالية لهذا الغرض:\n![صورة المفتاح و _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\nهذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، فيمكنك أيضًا لحام الكابلات مباشرة _Dupont_ على المفتاح: انظر على سبيل المثال موقع الويب [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) أو [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
 
 #. type: Plain text
 #: index.md:53
@@ -208,43 +204,37 @@ msgstr "  ID = b524.\n"
 
 #. type: Plain text
 #: index.md:61
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Se vi vidas 0000 aŭ ffff io fiaskas:  \n"
 msgstr "إذا رأيت 0000 أو ffff فشل شيء ما:  \n"
 
 #. type: Bullet: ' * '
 #: index.md:63
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "unue kontrolu vian kabligon.\n"
 msgstr "تحقق أولاً من الأسلاك الخاصة بك.\n"
 
 #. type: Bullet: ' * '
 #: index.md:65
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "tiam provu pli altan bazan tempon, ekzemple kun `./cc_chipid -m 100`, aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
 msgstr "ثم جرب وقت أساسي أعلى ، على سبيل المثال مع `./cc_chipid -m 100`أو `./cc_chipid -m 160` أو `./cc_chipid -m 300`.\n"
 
 #. type: Bullet: ' * '
 #: index.md:67
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "se neniu el tio funkcias, provu rekompili kun `make`.\n"
 msgstr "إذا لم ينجح أي من هذا ، فحاول إعادة التحويل البرمجي باستخدام `make`.\n"
 
 #. type: Title ##
 #: index.md:70
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "uzado"
 msgstr "الاستخدام"
 
 #. type: Plain text
 #: index.md:72
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Por konservi la enhavon de la fulmmemoro en la dosiero save.hex:\n"
 msgstr "لحفظ محتويات ذاكرة الفلاش في ملف save.hex:\n"
 
@@ -262,8 +252,7 @@ msgstr "(تدوم حوالي دقيقة واحدة).\n"
 
 #. type: Plain text
 #: index.md:78
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Por viŝi fulmmemoron:\n"
 msgstr "لمسح ذاكرة فلاش:\n"
 
@@ -301,7 +290,9 @@ msgstr "(تدوم حوالي 3 دقائق).\n"
 #: index.md:90
 #, fuzzy, no-wrap
 msgid "<a id=\"uzi_aliajn_pinglojn\"></a>\n"
-msgstr "<معرف =\"استخدم_aliajn_دبابيس\"></ a>\n"
+msgstr ""
+"<a id=\"uzi_aliajn_pinglojn\"></a>\n"
+"تدوم حوالي 3 دقائق\"._\n"
 
 #. type: Title ##
 #: index.md:90
@@ -311,36 +302,31 @@ msgstr "استخدم دبابيس أخرى"
 
 #. type: Plain text
 #: index.md:93
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "ĉiuj ordonoj akceptas la jenajn argumentojn:\n"
 msgstr "تقبل جميع الأوامر الوسيطات التالية:\n"
 
 #. type: Bullet: ' * '
 #: index.md:95
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_-c_ pinglo: ŝanĝu la pinglon _DC_ (defaŭlte 27)\n"
 msgstr "_-c_ دبوس: تغيير الدبوس _DC_ (افتراضيًا 27)\n"
 
 #. type: Bullet: ' * '
 #: index.md:97
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_-d_ pinglo: ŝanĝu la pinglon _DD_ (defaŭlte 28)\n"
 msgstr "_-d_ دبوس: قم بتغيير الدبوس _DD_ (افتراضيًا 28)\n"
 
 #. type: Bullet: ' * '
 #: index.md:99
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_-r_ pinglo: ŝanĝu la pinglon _reset_ (defaŭlte 24)\n"
 msgstr "_-r_ دبوس: قم بتغيير الدبوس _reset_ (افتراضيًا 24)\n"
 
 #. type: Bullet: ' * '
 #: index.md:101
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "_-m_ : ŝanĝu la prokrastan multiplikaton, kaj do la bazan tempon (defaŭlte: aŭtomata ĝustigo)\n"
 msgstr "_-m_ : قم بتغيير مضاعف التأخير ، وبالتالي الوقت الأساسي (افتراضيًا: الضبط التلقائي)\n"
 
@@ -348,8 +334,8 @@ msgstr "_-m_ : قم بتغيير مضاعف التأخير ، وبالتالي �
 #: index.md:104
 #, no-wrap
 #, fuzzy
-msgid "la numerado de pingloj uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
-msgstr "رقم التعريف الشخصي المستخدم هو _wiringPi_. استخدم `gpio readall` للحصول على التخطيط في العمود _Raspberry_ ( _wPi_).\n"
+msgid "la pinglonumerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).\n"
+msgstr "رقم التعريف الشخصي المستخدم هو _wiringPi_. استخدم `gpio readall` للحصول على التخطيط في العمود _Raspberry_ ( _wPi_ ).\n"
 
 #. type: Plain text
 #: index.md:105
@@ -359,43 +345,37 @@ msgstr "على سبيل المثال ، إذا كنت تريد استخدام ا
 
 #. type: Plain text
 #: index.md:107
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "Konekti la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:\n"
 msgstr "قم بتوصيل المسامير التالية من منفذ التصحيح بالباب _GPIO_:\n"
 
 #. type: Bullet: ' 1. '
 #: index.md:109
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
 msgstr "دبوس 1 ( _GND_ ) -> دبوس 14 ( _GND_ )\n"
 
 #. type: Bullet: ' 2. '
 #: index.md:111
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
 msgstr "دبوس 7 ( _reset_ ) -> دبوس 3 ( _wPi 8, BCM2_ )\n"
 
 #. type: Bullet: ' 3. '
 #: index.md:113
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
 msgstr "دبوس 3 ( _DC_ ) -> دبوس 11 ( _wPi 0, BCM17_ )\n"
 
 #. type: Bullet: ' 4. '
 #: index.md:115
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "pinglo 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
 msgstr "دبوس 4 ( _DD_ ) -> دبوس 13 ( _wPi 2, BCM27_ )\n"
 
 #. type: Plain text
 #: index.md:118
-#, no-wrap
-#, fuzzy
+#, fuzzy, no-wrap
 msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi fulmmemoron per la jenaj komandoj:\n"
 msgstr "والآن يمكنك قراءة المعرف وحفظ وحذف وكتابة ذاكرة فلاش بالأوامر التالية:\n"
 
@@ -417,7 +397,7 @@ msgstr ""
 #: index.md:126
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas ŝanĝi la defaŭltajn valorojn en _CCDebugger.h_ kaj kompili la programojn per `make`.\n"
-msgstr "يمكنك أيضًا تغيير القيم الافتراضية في _CCDebugger.h_ وتجميع البرامج بـ `make`.\n"
+msgstr "يمكنك أيضًا تغيير القيم الافتراضية إلى _CCDebugger.h_ وتجميع البرامج باستخدام `make`.\n"
 
 #. type: Title ##
 #: index.md:127
@@ -432,28 +412,30 @@ msgid "ĉesu ĉiujn aliajn programojn.\n"
 msgstr "وقف جميع البرامج الأخرى.\n"
 
 #. type: Bullet: '2. '
-#: index.md:131
-#, fuzzy, no-wrap
-msgid "agordi la rapidon de la procesoro antaŭ programado. Ekzemplo:  \n"
-msgstr "اضبط سرعة المعالج قبل البرمجة. مثال:  \n"
+#: index.md:132
+#, no-wrap
+#, fuzzy
+msgid "agordu la rapidon de la procesoro antaŭ programado. Ekzemplo:\n"
+msgstr "اضبط سرعة المعالج قبل البرمجة. مثال:\n"
 
 #. type: Fenced code block (bash)
 #: index.md:133
 #, no-wrap
-msgid "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
-msgstr "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+msgid "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+msgstr "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 
 #. type: Bullet: '3. '
-#: index.md:136
-#, fuzzy, no-wrap
-msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:  \n"
-msgstr "استخدم الخيار -m لزيادة الحدود الزمنية المستخدمة. مثال:  \n"
+#: index.md:137
+#, no-wrap
+#, fuzzy
+msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:\n"
+msgstr "استخدم الخيار -m لزيادة الحدود الزمنية المستخدمة. مثال:\n"
 
 #. type: Fenced code block (bash)
 #: index.md:138
 #, no-wrap
-msgid "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
-msgstr "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+msgid "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+msgstr "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 
 #. type: Bullet: '4. '
 #: index.md:142
@@ -470,128 +452,88 @@ msgstr "رخصة"
 #. type: Plain text
 #: index.md:146
 #, fuzzy, no-wrap
-msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_).\n"
-msgstr "هذا المشروع مُرخص بموجب GPL v3 ((انظر 2 °).\n"
+msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 ( vidu _COPYING_ ).\n"
+msgstr "هذا المشروع مُرخص بموجب GPL v3 ( انظر _COPYING_ ).\n"
 
 #~ msgid "auto"
 #~ msgstr "auto"
 
 #, fuzzy
-#~ msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
-#~ msgstr " _flash\\_cc2531_ يسمح لك ببرمجة CC2531 USB stick الخاص بك من _Raspberry_، دون الحاجة إلى _Arduino_ أو _CC Debugger_.\n"
-
-#, fuzzy
-#~ msgid "sur pi 1 kaj pi 2 vi bezonos [por uzi aliajn pinglojn](#uzi_aliajn_pinglojn).\n"
-#~ msgstr "في pi 1 و pi 2 ستحتاج [لاستخدام دبابيس أخرى](#uzi_aliajn_pinglojn).\n"
-
-#, fuzzy
 #~ msgid ""
-#~ "Se vi vidas 0000 aŭ ffff io fiaskas:\n"
-#~ "* unue kontrolu vian drataron.\n"
-#~ "* tiam provu pli altan bazan tempon, ekzemple kun `./cc_chipid -m 100`, aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
-#~ "* se neniu el ĉi tio funkcias, provu rekompili kun `make`.\n"
+#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
+#~ "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+#~ "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
 #~ msgstr ""
-#~ "إذا رأيت 0000 أو ffff ، هناك شيء خاطئ:\n"
-#~ "* تحقق أولاً من الأسلاك.\n"
-#~ "* ثم جرب وقت أساس أعلى ، على سبيل المثال مع `./cc_chipid -m 100`أو `./cc_chipid -m 160` أو `./cc_chipid -m 300`.\n"
-#~ "* إذا لم ينجح أي من ذلك ، فحاول إعادة التحويل البرمجي باستخدام `make`. (° 18 درجة)\n"
+#~ "تحميل كابل _CC_ و 4 خطوط _Dupont_ من أنثى إلى أنثى مثالية لهذا الغرض:\n"
+#~ "![صورة المفتاح و _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\n"
+#~ "هذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، فيمكنك أيضًا لحام الكابلات مباشرة _Dupont_ على المفتاح: انظر على سبيل المثال موقع الويب [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) أو [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
 
 #, fuzzy
-#~ msgid "uzi"
-#~ msgstr "استعمال"
+#~ msgid "la numerado de la pingloj uzataj estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).\n"
+#~ msgstr "ترقيم الدبابيس المستخدمة هو _wiringPi_. استخدم `gpio readall` للحصول على التخطيط في العمود _Raspberry_ ( _wPi_ ).\n"
 
 #, fuzzy
-#~ msgid "Por konservi la enhavon de la memoro flash en la dosiero save.hex:\n"
-#~ msgstr "لحفظ محتويات ذاكرة الفلاش في ملف save.hex:\n"
+#~ msgid "agordi la rapidon de la procesoro antaŭ programado. Ekzemplo:  \n"
+#~ msgstr "اضبط سرعة المعالج قبل البرمجة. مثال:  \n"
+
+#~ msgid "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
+#~ msgstr "sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 
 #, fuzzy
-#~ msgid "Por viŝi flash-memoron:\n"
-#~ msgstr "لمسح ذاكرة الفلاش:\n"
+#~ msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:  \n"
+#~ msgstr "استخدم الخيار -m لزيادة الحدود الزمنية المستخدمة. مثال:  \n"
+
+#~ msgid "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
+#~ msgstr "./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "ĉiuj komandoj akceptas la jenajn argumentojn:\n"
-#~ "* _-c_ pinglo: ŝanĝi pinglon _DC_ (defaŭlte 27)\n"
-#~ "* _-d_ pinglo: ŝanĝi pinglon _DD_ )(defaŭlta 28)\n"
-#~ "* _-r_ pinglo: ŝanĝi pinglon _reset_ (defaŭlte 24)\n"
-#~ "* _-m_ : ŝanĝi la multiplikanton de la malfruo, kaj do la baza tempo (defaŭlte: aŭtomata ĝustigo)\n"
+#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la "
+#~ "havenoj _GPIO_ de _Raspberry_, ekzemple unu kablo _CC_ kaj kvar linioj "
+#~ "_Dupont_ (vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas "
+#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
+#~ "wiringpi`, alie vidu [la retejo de _Gordon_ ](http://wiringpi.com/) aŭ "
+#~ "[ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
 #~ msgstr ""
-#~ "تقبل جميع الأوامر الوسيطات التالية:\n"
-#~ "* _-c_ دبوس: تغيير الدبوس _DC_ (افتراضيًا 27)\n"
-#~ "* _-d_ دبوس: تغيير الدبوس _DD_ )(الافتراضي 28)\n"
-#~ "* _-r_ دبوس: تغيير الدبوس _reset_ (بشكل افتراضي 24)\n"
-#~ "* _-m_ : قم بتغيير مضاعف التأخير ، وبالتالي الوقت الأساسي (افتراضيًا: الضبط التلقائي)\n"
-
-#, fuzzy
-#~ msgid "la pingla numerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
-#~ msgstr "رقم التعريف الشخصي المستخدم هو _wiringPi_. استخدم `gpio readall` للحصول على التخطيط في العمود _Raspberry_ ( _wPi_).\n"
+#~ "أنت بحاجة إلى ما لتوصيل منفذ التصحيح الخاص بالمفتاح بالمنافذ _GPIO_ من "
+#~ "_Raspberry_، على سبيل المثال كابل واحد _CC_ وأربعة خطوط _Dupont_ (انظر "
+#~ "أيضًا).   \n"
+#~ "[يجب تثبيت WiringPi](http://wiringpi.com/)  (إذا لم يكن مثبتًا مسبقًا ، "
+#~ "يمكنك عادةً تثبيته بـ `sudo apt install wiringpi`، وإلا انظر [شبكة من "
+#~ "_Gordon_ ](http://wiringpi.com/) أو [هذه الشبكة البديلة](https://github."
+#~ "com/WiringPi/WiringPi)).  \n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Konekti la jenajn pinglojn de elpurighaveno al pordego _GPIO_:\n"
-#~ "1. pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
-#~ "2. pin 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. spindelo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. pin 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
+#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la "
+#~ "havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj "
+#~ "_Dupont_ (vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas "
+#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
+#~ "wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu "
+#~ "alternativa retejo](https://github.com/WiringPi/WiringPi) ).\n"
 #~ msgstr ""
-#~ "قم بتوصيل المسامير التالية من منفذ تصحيح الأخطاء إلى بوابة _GPIO_:\n"
-#~ "1. دبوس 1 ( _GND_ ) -> دبوس 14 ( )_GND_ )\n"
-#~ "2. دبوس 7 ( _reset_ ) -> دبوس 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. المغزل 3 ( _DC_ ) -> دبوس 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. دبوس 4 ( _DD_ ) -> دبوس 13 ( _wPi 2, BCM27_ )\n"
-
-#, fuzzy
-#~ msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi flash-memoron per la jenaj komandoj:\n"
-#~ msgstr "والآن يمكنك قراءة المعرف وحفظ وحذف وكتابة ذاكرة فلاش بالأوامر التالية:\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Konekti la jenajn pinglojn de elpurighaveno al pordego _GPIO_:\n"
-#~ "1. pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
-#~ "2.pin 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. spindelo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
-#~ "4.pin 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
-#~ msgstr ""
-#~ "قم بتوصيل المسامير التالية من منفذ تصحيح الأخطاء إلى بوابة _GPIO_:\n"
-#~ "1. دبوس 1 ( _GND_ ) -> دبوس 14 ( )_GND_ )\n"
-#~ "2.pin 7 ( _reset_ ) -> دبوس 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. المغزل 3 ( _DC_ ) -> دبوس 11 ( _wPi 0, BCM17_ )\n"
-#~ "4.pin 4 ( _DD_ ) -> دبوس 13 ( _wPi 2, BCM27_ )\n"
+#~ "أنت بحاجة إلى ما لتوصيل منفذ التصحيح الخاص بالمفتاح بالمنافذ _GPIO_ من "
+#~ "_Raspberry_، على سبيل المثال الكبل _CC_ وأربعة خطوط _Dupont_ (انظر أيضًا10 "
+#~ "درجة).   \n"
+#~ "[يجب تثبيت WiringPi](http://wiringpi.com/)  (إذا لم يكن مثبتًا مسبقًا ، "
+#~ "يمكنك عادةً تثبيته بـ `sudo apt install wiringpi`، وإلا انظر موقع الويب "
+#~ "[ _Gordon_](أو [هذا الموقع البديل](https://github.com/WiringPi/"
+#~ "WiringPi) ).\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Mi projektis _flash\\_cc2531_ sur _Raspberry Pi 3_ kun _raspbian_, sed "
-#~ "sukcesa programado estis raportita pri aliaj modeloj:\n"
-#~ "* sur pi 4, vi bezonos version 2.52 de _wiringpi_ :  [instalu _drataron "
+#~ "sur pi 4 vi bezonos la version 2.52 de _wiringpi_ :  [instalu _drataron "
 #~ "Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-"
-#~ "to-2-52-for-the-raspberry-pi-4b/)  \n"
+#~ "to-2-52-for-the-raspberry-pi-4b/)\n"
 #~ msgstr ""
-#~ "لقد توقعت _flash\\_cc2531_ على _Raspberry Pi 3_ مع _raspbian_، ولكن تم "
-#~ "الإبلاغ عن البرمجة الناجحة في الطرز الأخرى:\n"
-#~ "* في pi 4 ، ستحتاج إلى الإصدار 2.52 من10 °):  [تثبيت _الأسلاك Pi_ 2.52 من "
-#~ "_موقع جوردون_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-"
-#~ "raspberry-pi-4b/)  \n"
+#~ "في pi 4 ، ستحتاج إلى الإصدار 2.52 من _wiringpi_ :  [تثبيت _drataron Pi_ "
+#~ "2.52 من _retejo de Gordon_](\n"
 
 #, fuzzy
-#~ msgid ""
-#~ "sur pi 1 kaj pi 2 vi bezonos [por uzi aliajn pinglojn]"
-#~ "(#uzi_aliajn_pinglojn).  \n"
-#~ msgstr ""
-#~ "في pi 1 و pi 2 ستحتاج [لاستخدام دبابيس أخرى](#uzi_aliajn_pinglojn).  \n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Konektu la jenajn pinglojn de la elpurighaveno al la GPIO-pordo:\n"
-#~ "1. pino 1 ( _GND_ ) -> pinglo 39 ( _GND_ )\n"
-#~ "dua pinglo 7 ( _reset_ ) -> pinglo 35 ( _wPi 24, BCM19_ )\n"
-#~ "3. spindelo 3 ( _DC_ ) -> pinglo 36 ( _wPi 27, BCM16_ )\n"
-#~ "4. spindelo 4 ( _DD_ ) -> spindelo 38 ( _wPi 28, BCM20_ )\n"
-#~ msgstr ""
-#~ "قم بتوصيل المسامير التالية من منفذ التصحيح بمنفذ GPIO:\n"
-#~ "1. pin 1 ( _GND_ ) -> pin 39 ( _GND_ )\n"
-#~ "دبوس ثاني 7 ( _reset_ ) -> دبوس 35 ( _wPi 24, BCM19_ ))\n"
-#~ "3. المغزل 3 ( _DC_ ) -> دبوس 36 ( _wPi 27, BCM16_ )\n"
-#~ "4. المغزل 4 ( _DD_ ) -> المغزل 38 ( _wPi 28, BCM20_ )(° 41 درجة)\n"
+#~ msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_:\n"
+#~ msgstr "تنزيل _flash\\_cc2531_ إلى _raspberry_:\n"
 
 #, fuzzy
 #~ msgid ""
@@ -601,151 +543,51 @@ msgstr "هذا المشروع مُرخص بموجب GPL v3 ((انظر 2 °).\n"
 #~ "raw/master/Raspberry-CC2531.jpg)\n"
 #~ "Ĉi tiu estas mia plej ŝatata elekto, sed se vi ne havas kablon _CC_ vi "
 #~ "ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple "
-#~ "la retejo [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-"
+#~ "la retejo [ _lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-"
 #~ "flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ "
 #~ "[ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-"
 #~ "cc2531-without-cc-debugger/)\n"
 #~ msgstr ""
-#~ "تحميل كابل _CC_ و 4 خطوط _Dupont_ أنثى إلى أنثى مثالية لهذا الغرض:\n"
-#~ "![صورة المفتاح و _التوت_](https://github.com/jmichault/files/raw/master/"
-#~ "Raspberry-CC2531.jpg)°)\n"
-#~ "هذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، فيمكنك أيضًا لحام "
+#~ "تحميل كابل _CC_ و 4 خطوط _Dupont_ من أنثى إلى أنثى مثالية لهذا الغرض:\n"
+#~ "![صورة المفتاح و _frambo_](\n"
+#~ ") هذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، يمكنك أيضًا لحام "
 #~ "الكابلات مباشرة _Dupont_ على المفتاح: انظر على سبيل المثال موقع الويب "
-#~ "[ )_mariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-"
-#~ "using-raspberry-pi-without-cc-debugger) أو [ _notenoughtech.com_](https://"
-#~ "notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ "[ _lemariva.com_](أو [ _notenoughtech.com_](\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Konekti la jenajn pinglojn de elpurighaveno al pordego _GPIO_:\n"
-#~ "1. pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
-#~ "2. pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. pinglo 4 ( _DD_ ) -> pinglo 13 ( )_wPi 2, BCM27_ )\n"
+#~ "la numerado de pingloj uzata estas tiu de _wiringPi_. Uzu `gpio readall` "
+#~ "por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
 #~ msgstr ""
-#~ "قم بتوصيل المسامير التالية من منفذ تصحيح الأخطاء إلى بوابة _GPIO_:\n"
-#~ "1. دبوس 1 ( _GND_ ) -> دبوس 14 ( )_GND_ )\n"
-#~ "2. دبوس 7 ( _reset_ ) -> دبوس 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. دبوس 3 ( _DC_ ) -> دبوس 11 ( _wPi 0, BCM17_ )\n"
-#~ "4. دبوس 4 ( _DD_ ) -> دبوس 13 ( )_wPi 2 ، BCM27_ )\n"
+#~ "رقم التعريف الشخصي المستخدم هو _wiringPi_. استخدم `gpio readall` للحصول "
+#~ "على التخطيط في العمود _Raspberry_ ( _wPi_).\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Mi projektis _flash\\_cc2531_ sur a _Raspberry Pi 3_ kun _raspbian_, sed "
-#~ "pri sukcesaj programoj oni raportis pri aliaj modeloj:\n"
-#~ "* sur pi 4, vi bezonos version 2.52 de _wiringpi_ :  [instalu _drataron "
-#~ "Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-"
-#~ "to-2-52-for-the-raspberry-pi-4b/)  \n"
+#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la "
+#~ "havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj "
+#~ "_Dupont_ (vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas "
+#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
+#~ "wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu "
+#~ "alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
 #~ msgstr ""
-#~ "لقد توقعت _flash\\_cc2531_ على _Raspberry Pi 3_ مع _raspbian_، ولكن في "
-#~ "البرامج الناجحة تم الإبلاغ عن نماذج أخرى:\n"
-#~ "* في pi 4 ، ستحتاج إلى الإصدار 2.52 من _wiringpi_ :  [تثبيت _الأسلاك Pi_ "
-#~ "2.52 من _موقع جوردون_](http://wiringpi.com/wiringpi-updated-to-2-52-for-"
-#~ "the-raspberry-pi-4b/)  \n"
+#~ "أنت بحاجة إلى ما لتوصيل منفذ التصحيح الخاص بالمفتاح بالمنافذ _GPIO_ من "
+#~ "_Raspberry_، على سبيل المثال الكبل _CC_ وأربعة خطوط _Dupont_ (انظر أيضًا10 "
+#~ "درجة).   \n"
+#~ "[يجب تثبيت WiringPi](http://wiringpi.com/)  (إذا لم يكن مثبتًا مسبقًا ، "
+#~ "يمكنك عادةً تثبيته بـ `sudo apt install wiringpi`، وإلا انظر موقع الويب "
+#~ "[ _Gordon_](أو [هذا الموقع البديل](https://github.com/WiringPi/"
+#~ "WiringPi)).  \n"
 
 #, fuzzy
-#~ msgid ""
-#~ "sur pi 1 kaj pi 2 vi bezonos[uzi aliajn pinglojn]"
-#~ "(#uzi_aliajn_pinglojn).  \n"
-#~ msgstr ""
-#~ "في pi 1 و pi 2 ستحتاج[لاستخدام دبابيس أخرى](#uzi_aliajn_pinglojn).  \n"
+#~ msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_ ).\n"
+#~ msgstr "هذا المشروع مُرخص بموجب GPL v3 (انظر _COPYING_ ).\n"
 
 #, fuzzy
-#~ msgid ""
-#~ "Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle "
-#~ "sont parfaits à cet effet:\n"
-#~ "![photo de la clé et de la _framboise_](https://github.com/jmichault/"
-#~ "files/raw/master/Raspberry-CC2531.jpg)\n"
-#~ "C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous "
-#~ "pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par "
-#~ "exemple le site [ _mariva.com_](https://lemariva.com/blog/2019/08/zigbee-"
-#~ "flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou "
-#~ "[ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-"
-#~ "cc2531-without-cc-debugger/)\n"
-#~ msgstr ""
-#~ "كابل التنزيل _CC_ و 4 خطوط _Dupont_ من أنثى إلى أنثى مثالية لهذا الغرض:\n"
-#~ "![صورة المفتاح و _التوت_](https://github.com/jmichault/files/raw/master/"
-#~ "Raspberry-CC2531.jpg)\n"
-#~ "هذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، فيمكنك أيضًا لحام "
-#~ "الكابلات _Dupont_ مباشرةً بالمفتاح: انظر على سبيل المثال الموقع [ _mariva."
-#~ "com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-"
-#~ "raspberry-pi-without-cc-debugger) أو [ _notenoughtech.com_](https://"
-#~ "notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_).\n"
+#~ msgstr "هذا المشروع مُرخص بموجب GPL v3 ((انظر 2 °).\n"
 
 #, fuzzy
-#~ msgid "Ça doit retourner:\n"
-#~ msgstr "يجب أن تعود:\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Si vous voyez 0000 ou ffff quelque chose ne va pas:\n"
-#~ "* vérifiez d'abord votre câblage.\n"
-#~ "* puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid "
-#~ "-m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
-#~ "* si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
-#~ msgstr ""
-#~ "إذا رأيت 0000 أو ffff ، هناك شيء خاطئ:\n"
-#~ "* تحقق من الأسلاك أولاً.\n"
-#~ "* ثم جرب وقت أساس أعلى ، على سبيل المثال مع `./cc_chipid -m 100`أو `./"
-#~ "cc_chipid -m 160` أو `./cc_chipid -m 300`.\n"
-#~ "* إذا لم ينجح أي من هذا ، فحاول إعادة التحويل البرمجي باستخدام `make`. (° "
-#~ "18 درجة)\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Pour enregistrer le contenu de la mémoire flash dans le fichier save."
-#~ "hex:\n"
-#~ msgstr "لحفظ محتويات ذاكرة الفلاش في ملف save.hex:\n"
-
-#, fuzzy
-#~ msgid "(dure environ 1 minute).\n"
-#~ msgstr "(تدوم حوالي دقيقة واحدة).\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez "
-#~ "vraiment ce que vous allez faire).\n"
-#~ msgstr ""
-#~ "**ملاحظة:** يجب عليك **** حذفها قبل الكتابة (ما لم تكن تعرف حقًا ما الذي "
-#~ "ستفعله).\n"
-
-#, fuzzy
-#~ msgid "(dure environ 3 minutes).\n"
-#~ msgstr "(تدوم حوالي 3 دقائق).\n"
-
-#, fuzzy
-#~ msgid "Uzu aliajn pinglojn"
-#~ msgstr "استخدم دبابيس أخرى"
-
-#, fuzzy
-#~ msgid ""
-#~ "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13: \n"
-#~ "Konektu la jenajn pinglojn de debughaveno al pordego _GPIO_:\n"
-#~ "1.pino 1 ( _GND_ ) ) -> pinglo 14 ( _GND_ )\n"
-#~ "2. pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
-#~ "4.pin 4 ( _DD_ ) -> pinglo 13 ( )_wPi 2, BCM27_ )\n"
-#~ msgstr ""
-#~ "على سبيل المثال ، إذا كنت تريد استخدام المسامير 3 و 11 و 13: \n"
-#~ "قم بتوصيل المسامير التالية من منفذ إلى منفذ _GPIO_:\n"
-#~ "1.pin 1 ( _GND_ )) ) -> دبوس 14 ( _GND_ )\n"
-#~ "2. دبوس 7 ( _reset_ ) -> دبوس 3 ( _wPi 8, BCM2_ )\n"
-#~ "3. دبوس 3 ( _DC_ ) -> دبوس 11 ( _wPi 0, BCM17_ )\n"
-#~ "4.pin 4 ( _DD_ ) -> دبوس 13 ( )_wPi 2 ، BCM27_ )\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ "
-#~ "puis compiler les programmes avec `make`.\n"
-#~ msgstr ""
-#~ "يمكنك أيضًا تغيير القيم الافتراضية في _CCDebugger.h_ ثم تجميع البرامج "
-#~ "باستخدام `make`.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "utilisez l'option -m pour augmenter les délais utilisés. Exemple:  \n"
-#~ msgstr "استخدم الخيار -m لزيادة الوقت المستخدم. مثال:  \n"
-
-#, fuzzy
-#~ msgid "recompilez le logiciel avec `make`.\n"
-#~ msgstr "أعد ترجمة البرنامج باستخدام `make`.\n"
+#~ msgid "Ĉi tiu projekto estas sub licenco GPL v3 \\(vidu _COPYING_).\n"
+#~ msgstr "هذا المشروع مُرخص بموجب GPL v3 \\((انظر 2 °).\n"

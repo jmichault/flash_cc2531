@@ -12,11 +12,11 @@ title: 'الشيء الرئيسي'
 
 ## المتطلبات الأساسية
 تحتاج إما _Raspberry_ أو _Odroid-c2_.  
-أنت بحاجة إلى ما لتوصيل منفذ التصحيح الخاص بالمفتاح بالمنافذ _GPIO_ من _Raspberry_، على سبيل المثال الكبل _CC_ وأربعة خطوط _Dupont_ (انظر أيضًا10 درجة).   
-[يجب تثبيت WiringPi](http://wiringpi.com/)  (إذا لم يكن مثبتًا مسبقًا ، يمكنك عادةً تثبيته بـ `sudo apt install wiringpi`، وإلا انظر موقع الويب [ _Gordon_](http://wiringpi.com/) أو [هذا الموقع البديل](https://github.com/WiringPi/WiringPi)).  
+أنت بحاجة إلى ما لتوصيل منفذ التصحيح الخاص بالمفتاح بالمنافذ _GPIO_ من _Raspberry_، على سبيل المثال كابل واحد _CC_ وأربعة خطوط _Dupont_ (انظر أيضًا).   
+[ _WiringPi_ ](http://wiringpi.com/) يجب تثبيتها (إذا لم تكن مثبتة مسبقًا ، يمكنك عادةً تثبيتها بـ `sudo apt install wiringpi`)، وإلا انظر [موقع _Gordon_ ](http://wiringpi.com/) أو [هذا الموقع البديل](https://github.com/WiringPi/WiringPi)). (° 28 درجة)  
 
 لقد توقعت _flash\_cc2531_ على _Raspberry Pi 3_ مع _raspbian_، لكن تم الإبلاغ عن برمجة ناجحة في الطرز الأخرى:  
- * على pi 4 ، ستحتاج إلى الإصدار 2.52 من _wiringpi_ :  [تثبيت _الأسلاك Pi_ 2.52 من _موقع Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)(° 9 درجات)
+ * في pi 4 ، ستحتاج إلى الإصدار 2.52 من _wiringpi_ :  [تثبيت _wiringPi_ 2.52 من _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)موقع ويب
 
 
 
@@ -29,7 +29,7 @@ title: 'الشيء الرئيسي'
 
 ## أعدت
 
-تنزيل _flash\_cc2531_ إلى _raspberry_:
+تنزيل _flash\_cc2531_ إلى _raspberry_ :
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
@@ -51,9 +51,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 
 وأدخل مفتاح USB في المنفذ.
 
-تحميل كابل _CC_ و 4 خطوط _Dupont_ أنثى إلى أنثى مثالية لهذا الغرض:
-![صورة المفتاح و _التوت_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)
-هذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، فيمكنك أيضًا لحام الكابلات مباشرة _Dupont_ على المفتاح: انظر على سبيل المثال موقع الويب [ )_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) أو [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+تحميل الكابل _CC_ و 4 خطوط _Dupont_ للإناث للإناث مثالية لهذا الغرض:
+![صورة المفتاح و _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
+هذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، فيمكنك أيضًا لحام الكابلات مباشرة _Dupont_ على المفتاح: انظر على سبيل المثال موقع الويب [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) أو [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 جرب هذا:
@@ -96,7 +96,8 @@ cd flash_cc2531
 ```
 (تدوم حوالي 3 دقائق).
 
-<معرف ="استخدم_aliajn_دبابيس"></ a>
+<a id="uzi_aliajn_pinglojn"></a>
+تدوم حوالي 3 دقائق"._
 ## استخدم دبابيس أخرى
 
 تقبل جميع الأوامر الوسيطات التالية:
@@ -114,7 +115,7 @@ cd flash_cc2531
 
 
 
-رقم التعريف الشخصي المستخدم هو _wiringPi_. استخدم `gpio readall` للحصول على التخطيط في العمود _Raspberry_ ( _wPi_).
+رقم التعريف الشخصي المستخدم هو _wiringPi_. استخدم `gpio readall` للحصول على التخطيط في العمود _Raspberry_ ( _wPi_ ).
 
 على سبيل المثال ، إذا كنت تريد استخدام المسامير 3 و 11 و 13:  
 قم بتوصيل المسامير التالية من منفذ التصحيح بالباب _GPIO_:
@@ -140,29 +141,29 @@ cd flash_cc2531
 ./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex
 ```
 
-يمكنك أيضًا تغيير القيم الافتراضية في _CCDebugger.h_ وتجميع البرامج بـ `make`.
+يمكنك أيضًا تغيير القيم الافتراضية إلى _CCDebugger.h_ وتجميع البرامج باستخدام `make`.
 
 ## ماذا لو لم يعمل؟
 
 1. وقف جميع البرامج الأخرى.
 
 
-2. اضبط سرعة المعالج قبل البرمجة. مثال:  
+2. اضبط سرعة المعالج قبل البرمجة. مثال:
 
 
-```bash
-sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-3. استخدم الخيار -m لزيادة الحدود الزمنية المستخدمة. مثال:  
+   ```bash
+   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+   ```
+3. استخدم الخيار -m لزيادة الحدود الزمنية المستخدمة. مثال:
 
 
-```bash
-./cc_write -m 300 CC2531ZNP-Prod.hex
-```
+   ```bash
+   ./cc_write -m 300 CC2531ZNP-Prod.hex
+   ```
 4. أعد ترجمة البرنامج باستخدام `make`.
 
 
 
 ## رخصة
 
-هذا المشروع مُرخص بموجب GPL v3 ((انظر 2 °).
+هذا المشروع مُرخص بموجب GPL v3 ( انظر _COPYING_ ).

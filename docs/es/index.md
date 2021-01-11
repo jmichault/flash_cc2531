@@ -12,11 +12,11 @@ title: 'Lo esencial'
 
 ## Prerrequisitos
 Necesita _Raspberry_ o _Odroid-c2_.  
-Necesita qué conectar el puerto de depuración de la llave a los puertos _GPIO_ de _Raspberry_, por ejemplo, cable _CC_ y cuatro líneas _Dupont_ (ver más adelante).   
-[WiringPi](http://wiringpi.com/) debe estar instalado (si no está preinstalado, generalmente puede instalarlo con `sudo apt install wiringpi`, de lo contrario, consulte el sitio web [ _Gordon_](http://wiringpi.com/) o [este sitio alternativo](https://github.com/WiringPi/WiringPi)).  
+Necesita qué conectar el puerto de depuración de la llave a los puertos _GPIO_ de _Raspberry_, por ejemplo, un cable _CC_ y cuatro líneas _Dupont_ (ver más adelante).   
+[ _WiringPi_ ](http://wiringpi.com/) debe instalarse (si no está preinstalado, normalmente puede instalarlo con `sudo apt install wiringpi`); de lo contrario, consulte [el sitio de _Gordon_ ](http://wiringpi.com/) o [este sitio alternativo](https://github.com/WiringPi/WiringPi)).  
 
 Proyecté _flash\_cc2531_ en _Raspberry Pi 3_ con _raspbian_, pero se informó una programación exitosa en otros modelos:  
- * en pi 4 necesitará la versión 2.52 de _wiringpi_ :  [instalar _cableado Pi_ 2.52 de _sitio web de Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
+ * en pi 4 necesitará la versión 2.52 de _wiringpi_ :  [instalar _wiringPi_ 2.52 de _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)sitio web
 
 
 
@@ -29,7 +29,7 @@ Proyecté _flash\_cc2531_ en _Raspberry Pi 3_ con _raspbian_, pero se informó u
 
 ## Preparado
 
-Descarga _flash\_cc2531_ a tu _raspberry_:
+Descarga _flash\_cc2531_ a tu _raspberry_ :
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
@@ -51,9 +51,9 @@ Conecte los siguientes pines del puerto de depuración al puerto GPIO:
 
 e inserte la llave USB en un puerto.
 
-Cable de descarga _CC_ y 4 líneas _Dupont_ Hembra a Hembra son perfectos para este propósito:
-![foto de la llave y la _frambuesa_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)
-Esta es mi opción favorita, pero si no tiene un cable _CC_ también puede soldar directamente los cables _Dupont_ en la llave: consulte, por ejemplo, el sitio web [ )_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) o [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+El cable de descarga _CC_ y 4 líneas _Dupont_ hembra a hembra son perfectos para este propósito:
+![foto de la llave y la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
+Esta es mi opción favorita, pero si no tiene un cable _CC_ también puede soldar directamente los cables _Dupont_ en la llave: consulte, por ejemplo, el sitio web [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) o [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 prueba esto:
@@ -96,7 +96,8 @@ Para programar el archivo en la llave _CC2531_:
 ```
 (dura aproximadamente 3 minutos).
 
-<a id ="use_aliajn_pines"></ a>
+<a id="uzi_aliajn_pinglojn"></a>
+dura aproximadamente 3 minutos"._
 ## Usa otros pines
 
 todos los comandos aceptan los siguientes argumentos:
@@ -114,7 +115,7 @@ todos los comandos aceptan los siguientes argumentos:
 
 
 
-la numeración de pines utilizada es la de _wiringPi_. Utilice `gpio readall` para tener el diseño en su columna _Raspberry_ ( _wPi_).
+la numeración de pines utilizada es la de _wiringPi_. Utilice `gpio readall` para tener el diseño en su columna _Raspberry_ ( _wPi_ ).
 
 Por ejemplo, si desea utilizar los pines 3, 11 y 13:  
 Conecte los siguientes pines desde un puerto de depuración a una puerta _GPIO_:
@@ -140,29 +141,29 @@ y ahora puede leer ID, guardar, borrar y escribir memoria flash con los siguient
 ./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex
 ```
 
-También puede cambiar los valores predeterminados en _CCDebugger.h_ y compilar los programas con `make`.
+También puede cambiar los valores predeterminados a _CCDebugger.h_ y compilar los programas con `make`.
 
 ## ¿y si no funciona?
 
 1. detenga todos los demás programas.
 
 
-2. establezca la velocidad del procesador antes de programar. Ejemplo:  
+2. establezca la velocidad del procesador antes de programar. Ejemplo:
 
 
-```bash
-sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-3. utilice la opción -m para aumentar los límites de tiempo utilizados. Ejemplo:  
+   ```bash
+   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+   ```
+3. utilice la opción -m para aumentar los límites de tiempo utilizados. Ejemplo:
 
 
-```bash
-./cc_write -m 300 CC2531ZNP-Prod.hex
-```
+   ```bash
+   ./cc_write -m 300 CC2531ZNP-Prod.hex
+   ```
 4. recompile el programa con `make`.
 
 
 
 ## Licencia
 
-Este proyecto tiene la licencia GPL v3 ((ver 2 °).
+Este proyecto tiene la licencia GPL v3 ( ver _COPYING_ ).

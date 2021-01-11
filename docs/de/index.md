@@ -12,11 +12,11 @@ Mit _flash\_cc2531_ können Sie Ihren CC2531-USB-Stick von Ihrem _Raspberry_aus 
 
 ## Voraussetzungen
 Sie benötigen entweder _Raspberry_ oder _Odroid-c2_.  
-Sie benötigen, um den Debug-Port des Schlüssels mit den Ports _GPIO_ von _Raspberry_zu verbinden, z. B. Kabel _CC_ und vier Leitungen _Dupont_ (, siehe weiter10 °).   
-[WiringPi](http://wiringpi.com/) muss installiert sein (Wenn es nicht vorinstalliert ist, können Sie es normalerweise mit `sudo apt install wiringpi`installieren, andernfalls siehe Website [ _Gordon_](http://wiringpi.com/) oder [diese alternative Stelle](https://github.com/WiringPi/WiringPi)).  
+Sie benötigen, um den Debug-Port des Schlüssels mit den Ports _GPIO_ von _Raspberry_zu verbinden, z. B. ein Kabel _CC_ und vier Leitungen _Dupont_ (, siehe weiter).   
+[ _WiringPi_ ](http://wiringpi.com/) muss installiert werden (Wenn es nicht vorinstalliert ist, können Sie es normalerweise mit `sudo apt install wiringpi`)installieren, andernfalls siehe [die Stelle von _Gordon_ ](http://wiringpi.com/) oder [dieser alternativen Stelle](https://github.com/WiringPi/WiringPi)).  
 
 Ich habe _flash\_cc2531_ auf _Raspberry Pi 3_ mit _raspbian_projiziert, aber bei anderen Modellen wurde über erfolgreiche Programmierung berichtet:  
- * Auf Pi 4 benötigen Sie Version 2.52 von _wiringpi_ :  [Installieren Sie _Verkabelung Pi_ 2.52 von _Gordons Website_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
+ * auf pi 4 benötigen sie version 2.52 von _wiringpi_ :  [install _wiringPi_ 2.52 von _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)website
 
 
 
@@ -29,7 +29,7 @@ Ich habe _flash\_cc2531_ auf _Raspberry Pi 3_ mit _raspbian_projiziert, aber bei
 
 ## Bereit
 
-Laden Sie _flash\_cc2531_ auf Ihre _raspberry_herunter:
+Laden Sie _flash\_cc2531_ auf Ihre _raspberry_ herunter:
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
@@ -51,9 +51,9 @@ Verbinden Sie die folgenden Pins vom Debug-Port mit dem GPIO-Port:
 
 und stecken Sie den USB-Stick in einen Anschluss.
 
-Download-Kabel _CC_ und 4 Leitungen _Dupont_ von Frau zu Frau sind perfekt für diesen Zweck:
-![Foto des Schlüssels und der _Himbeere_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)
-Dies ist meine Lieblingswahl, aber wenn Sie kein Kabel haben _CC_ , können Sie die Kabel _Dupont_ auch direkt auf den Schlüssel löten: siehe zum Beispiel die Website [ )_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) oder [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Das Download-Kabel _CC_ und 4 Leitungen _Dupont_ von Buchse zu Buchse sind für diesen Zweck perfekt geeignet:
+![Foto des Schlüssels und des _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
+Dies ist meine Lieblingsoption, aber wenn Sie kein Kabel _CC_ haben, können Sie die Kabel _Dupont_ auch direkt auf den Schlüssel löten: siehe zum Beispiel die Website [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) oder [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 versuchen Sie dies:
@@ -96,7 +96,8 @@ So programmieren Sie die Datei auf der Taste _CC2531_:
 ```
 (dauert ca. 3 Minuten).
 
-<a id ="Verwenden Sie_aliajn_Stifte"></ a>
+<a id="uzi_aliajn_pinglojn"></a>
+dauert ca. 3 Minuten"._
 ## Verwenden Sie andere Stifte
 
 Alle Befehle akzeptieren die folgenden Argumente:
@@ -114,7 +115,7 @@ Alle Befehle akzeptieren die folgenden Argumente:
 
 
 
-Die verwendete Pin-Nummerierung ist die von _wiringPi_. Verwenden Sie `gpio readall` , um das Layout in Ihrer Spalte _Raspberry_ ( _wPi_)anzuzeigen.
+Die verwendete Pin-Nummerierung ist die von _wiringPi_. Verwenden Sie `gpio readall` , um das Layout in Ihrer Spalte _Raspberry_ ( _wPi_ )anzuzeigen.
 
 Wenn Sie beispielsweise die Stifte 3, 11 und 13 verwenden möchten:  
 Verbinden Sie die folgenden Stifte von einem Debug-Port mit einer Tür _GPIO_:
@@ -140,29 +141,29 @@ und jetzt können Sie ID lesen, speichern, löschen und Flash-Speicher mit den f
 ./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex
 ```
 
-Sie können auch die Standardwerte in _CCDebugger.h_ ändern und die Programme mit `make`kompilieren.
+Sie können auch die Standardwerte auf _CCDebugger.h_ ändern und die Programme mit `make`kompilieren.
 
 ## Was ist, wenn es nicht funktioniert?
 
 1. Stoppen Sie alle anderen Programme.
 
 
-2. Stellen Sie die Prozessorgeschwindigkeit vor dem Programmieren ein. Beispiel:  
+2. Stellen Sie die Prozessorgeschwindigkeit vor dem Programmieren ein. Beispiel:
 
 
-```bash
-sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-3. Verwenden Sie die Option -m, um die verwendeten Zeitlimits zu erhöhen. Beispiel:  
+   ```bash
+   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+   ```
+3. Verwenden Sie die Option -m, um die verwendeten Zeitlimits zu erhöhen. Beispiel:
 
 
-```bash
-./cc_write -m 300 CC2531ZNP-Prod.hex
-```
+   ```bash
+   ./cc_write -m 300 CC2531ZNP-Prod.hex
+   ```
 4. Kompilieren Sie das Programm erneut mit `make`.
 
 
 
 ## Lizenz
 
-Dieses Projekt ist unter der GPL v3 (lizenziert (siehe 2 °).
+Dieses Projekt ist unter der GPL v3 ( lizenziert, siehe _COPYING_ ).

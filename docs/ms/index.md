@@ -12,11 +12,11 @@ title: 'Perkara utama'
 
 ## Prasyarat
 Anda memerlukan _Raspberry_ atau _Odroid-c2_.  
-Anda memerlukan apa yang menghubungkan port debug kunci ke port _GPIO_  _Raspberry_, misalnya kabel _CC_ dan empat baris _Dupont_ (lihat lebih jauh).   
-[WiringPi](http://wiringpi.com/) mesti dipasang (jika tidak dipasang sebelumnya, anda biasanya boleh memasangnya dengan `sudo apt install wiringpi`, jika tidak, lihat laman web [ _Gordon_](http://wiringpi.com/) atau [laman alternatif ini](https://github.com/WiringPi/WiringPi)).  
+Anda memerlukan apa yang hendak menghubungkan port debug kunci ke port _GPIO_  _Raspberry_, contohnya satu kabel _CC_ dan empat baris _Dupont_ (lihat lebih jauh).   
+[ _WiringPi_ ](http://wiringpi.com/) mesti dipasang (jika tidak dipasang sebelumnya, anda biasanya boleh memasangnya dengan `sudo apt install wiringpi`), jika tidak, lihat [tapak _Gordon_ ](http://wiringpi.com/) atau [tapak alternatif ini](https://github.com/WiringPi/WiringPi)).  
 
 Saya mengunjurkan _flash\_cc2531_ pada _Raspberry Pi 3_ dengan _raspbian_, tetapi pengaturcaraan yang berjaya dilaporkan pada model lain:  
- * pada pi 4 anda memerlukan versi 2.52 dari _wiringpi_ :  [memasang _pendawaian Pi_ 2.52 dari _laman web Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
+ * pada pi 4 anda memerlukan versi 2.52 dari _wiringpi_ :  [memasang _wiringPi_ 2.52 dari _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)laman web
 
 
 
@@ -29,7 +29,7 @@ Saya mengunjurkan _flash\_cc2531_ pada _Raspberry Pi 3_ dengan _raspbian_, tetap
 
 ## Bersedia
 
-Muat turun _flash\_cc2531_ ke _raspberry_:
+Muat turun _flash\_cc2531_ ke _raspberry_ anda:
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
@@ -51,9 +51,9 @@ Sambungkan pin berikut dari port debug ke port GPIO:
 
 dan masukkan kekunci USB ke dalam port.
 
-Muat turun kabel _CC_ dan 4 baris _Dupont_ Perempuan ke Wanita sangat sesuai untuk tujuan ini:
-![foto kunci dan raspberry __](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)
-Ini adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai kabel _CC_ anda juga boleh menyolder kabel secara langsung _Dupont_ pada kunci: lihat contohnya laman web [ )_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) atau [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Muat turun kabel _CC_ dan 4 baris _Dupont_ wanita ke wanita sangat sesuai untuk tujuan ini:
+![foto kunci dan _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
+Ini adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai kabel _CC_ , anda juga boleh menyolder kabel secara langsung _Dupont_ pada kunci: lihat misalnya laman web [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) atau [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 cuba ini:
@@ -96,7 +96,8 @@ Untuk memprogram fail pada kekunci _CC2531_:
 ```
 (berlangsung sekitar 3 minit).
 
-<a id ="menggunakan_aliajn_pin"></ a>
+<a id="uzi_aliajn_pinglojn"></a>
+berlangsung sekitar 3 minit"._
 ## Gunakan pin lain
 
 semua arahan menerima hujah berikut:
@@ -114,7 +115,7 @@ semua arahan menerima hujah berikut:
 
 
 
-penomboran pin yang digunakan ialah _wiringPi_. Gunakan `gpio readall` untuk mempunyai susun atur di ruangan _Raspberry_ ( _wPi_).
+penomboran pin yang digunakan ialah _wiringPi_. Gunakan `gpio readall` untuk mempunyai susun atur di ruangan _Raspberry_ ( _wPi_ ).
 
 Contohnya, jika anda ingin menggunakan pin 3, 11 dan 13:  
 Sambungkan pin berikut dari port debug ke pintu _GPIO_:
@@ -147,22 +148,22 @@ Anda juga boleh menukar nilai lalai ke _CCDebugger.h_ dan menyusun program denga
 1. hentikan semua program lain.
 
 
-2. tetapkan kelajuan pemproses sebelum pengaturcaraan. Contoh:  
+2. tetapkan kelajuan pemproses sebelum pengaturcaraan. Contoh:
 
 
-```bash
-sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-3. gunakan pilihan -m untuk meningkatkan had masa yang digunakan. Contoh:  
+   ```bash
+   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+   ```
+3. gunakan pilihan -m untuk meningkatkan had masa yang digunakan. Contoh:
 
 
-```bash
-./cc_write -m 300 CC2531ZNP-Prod.hex
-```
+   ```bash
+   ./cc_write -m 300 CC2531ZNP-Prod.hex
+   ```
 4. menyusun semula program dengan `make`.
 
 
 
 ## Lesen
 
-Projek ini dilesenkan di bawah GPL v3 ((lihat 2 °).
+Projek ini dilesenkan di bawah GPL v3 ( lihat _COPYING_ ).

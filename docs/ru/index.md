@@ -12,11 +12,11 @@ title: Главное
 
 ## Предпосылки
 Вам нужно либо _Raspberry_ , либо _Odroid-c2_.  
-Вам нужно, что подключить порт отладки ключа к портам _GPIO_ из _Raspberry_, например кабель _CC_ и четыре линии _Dupont_ (см. Далее).   
-[WiringPi](http://wiringpi.com/) должен быть установлен (, если он не установлен предварительно, обычно вы можете установить его с помощью `sudo apt install wiringpi`, в противном случае см. Веб-сайт [ _Гордон_](http://wiringpi.com/) или [это альтернативное место](https://github.com/WiringPi/WiringPi)).  
+Вам нужно, что подключить порт отладки ключа к портам _GPIO_ из _Raspberry_, например один кабель _CC_ и четыре линии _Dupont_ (см. Далее).   
+[ _WiringPi_ ](http://wiringpi.com/) должен быть установлен (, если он не установлен предварительно, обычно вы можете установить его с помощью `sudo apt install wiringpi`), в противном случае см. [место _Gordon_ ](http://wiringpi.com/) или [этого альтернативного места](https://github.com/WiringPi/WiringPi)).  
 
 Я проецировал _flash\_cc2531_ на _Raspberry Pi 3_ с помощью _raspbian_, но сообщалось об успешном программировании на других моделях:  
- * на Pi 4 вам понадобится версия 2.52 _wiringpi_ :  [установить _проводку Pi_ 2,52 _веб-сайт Гордона_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
+ * на Pi 4 вам понадобится версия 2.52 из _wiringpi_ :  [установить _wiringPi_ 2,52 из _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)веб-сайт
 
 
 
@@ -29,7 +29,7 @@ title: Главное
 
 ## Подготовлено
 
-Загрузите _flash\_cc2531_ в ваш _raspberry_:
+Загрузите _flash\_cc2531_ в ваш _raspberry_ :
 ```bash
 git clone https://github.com/jmichault/flash_cc2531.git
 ```
@@ -51,9 +51,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 
 и вставьте USB-ключ в порт.
 
-Кабель для скачивания _CC_ и 4 линии _Dupont_ между гнездом и гнездом идеально подходят для этой цели:
-![фотография ключа и _малиновый_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)°)
-Это мой любимый выбор, но если у вас нет кабеля _CC_ , вы также можете напрямую припаять кабели _Dupont_ к ключу: см., Например, веб-сайт [ )_lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) или [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Загрузочный кабель _CC_ и 4 линии _Dupont_ гнездо-гнездо идеально подходят для этой цели:
+![фотография ключа и _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
+Это мой любимый вариант, но если у вас нет кабеля _CC_ , вы также можете напрямую припаять кабели _Dupont_ к ключу: см., Например, веб-сайт [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) или [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
 
 
 попробуйте это:
@@ -96,7 +96,8 @@ cd flash_cc2531
 ```
 (длится около 3 минут).
 
-<a id ="использовать_aliajn_штифты"></ a>
+<a id="uzi_aliajn_pinglojn"></a>
+длится около 3 минут"._
 ## Используйте другие булавки
 
 все команды принимают следующие аргументы:
@@ -114,7 +115,7 @@ cd flash_cc2531
 
 
 
-используется нумерация штифтов _wiringPi_. Используйте `gpio readall` , чтобы разместить макет в столбце _Raspberry_ ( _wPi_).
+используется нумерация штифтов _wiringPi_. Используйте `gpio readall` , чтобы разместить макет в столбце _Raspberry_ ( _wPi_ ).
 
 Например, если вы хотите использовать контакты 3, 11 и 13:  
 Подключите следующие контакты от порта отладки к двери _GPIO_:
@@ -140,29 +141,29 @@ cd flash_cc2531
 ./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex
 ```
 
-Вы также можете изменить значения по умолчанию на _CCDebugger.h_ и скомпилировать программы с `make`.
+Вы также можете изменить значения по умолчанию в _CCDebugger.h_ и компилировать программы с `make`.
 
 ## что если это не сработает?
 
 1. остановите все другие программы.
 
 
-2. перед программированием установите скорость процессора. Пример:  
+2. перед программированием установите скорость процессора. Пример:
 
 
-```bash
-sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-3. используйте опцию -m, чтобы увеличить используемые временные ограничения. Пример:  
+   ```bash
+   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+   ```
+3. используйте опцию -m, чтобы увеличить используемые временные ограничения. Пример:
 
 
-```bash
-./cc_write -m 300 CC2531ZNP-Prod.hex
-```
+   ```bash
+   ./cc_write -m 300 CC2531ZNP-Prod.hex
+   ```
 4. перекомпилируйте программу с помощью `make`.
 
 
 
 ## Лицензия
 
-Этот проект находится под лицензией GPL v3 ((см. 2 °).
+Этот проект находится под лицензией GPL v3 ( см. _COPYING_ ).

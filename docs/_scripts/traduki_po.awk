@@ -98,7 +98,7 @@ BEGIN {
         printf("msgstr \"");
 	#  anstataŭigi markdown-etikedojn per markoj
         ##print ( "MSGSTR="MSGSTR);	##
-        split(MSGSTR,MSGS,"^[ \t]*|[ \t]*\\\\\\\\.|[ \t]*\\\\.|[ \t]*!\\[[ \t]*|[ \t]*[_\\*`<>\\[\\]\\(\\)~]+[ \t]*",SEPS);
+        split(MSGSTR,MSGS,"^<a *id *=|</a>|^[ \t]*|[ \t]*\\\\\\\\.|[ \t]*\\\\.|[ \t]*!\\[[ \t]*|[ \t]*[_\\*`<>\\[\\]\\(\\)~]+[ \t]*",SEPS);
 	MSG0 = "";
 	MSGSLEN = length(MSGS);
         ##print ("MSGSLEN="MSGSLEN); ##
@@ -112,8 +112,18 @@ BEGIN {
 	  if (SEPS[x] != "")
 	  {
 	    MSG0 = MSG0 " " MARK1 x MARK2 " ";
+	    if( match(SEPS[ x ] ,"^<a *id *=") == 1 )
+	    { # ne traduku «<a» HTML-etikedo
+	      x0 = x ;
+	      do
+              {
+                x++;
+                SEPS[x0] = SEPS[x0] MSGS[x] SEPS[x];
+              }
+              while( x<=MSGSLEN && ! match(SEPS[x] ,"</a>"));
+	    }
 	    # ne traduku hiperligon, kodon, kursivigita kun "_"
-	    if( match(SEPS[ x ] ,"^ *`") == 1 )
+	    else if( match(SEPS[ x ] ,"^ *`") == 1 )
 	    { # kodo : ne traduku.
 	      x0 = x ;
 	      do
@@ -133,15 +143,24 @@ BEGIN {
               } while( (x <= MSGSLEN) && (match(SEPS[x] ,"^_[ \t]*")==0));
 	    }
 	    else if( match(SEPS[ x ] ,"[ \t]*!?\\[[ \t]*") == 1 )
-	    { # hiperligo : traduku teksto,ne traduku linko.
+	    { # hiperligo : traduku teksto,ne traduku ligo.
               ## print ("teksto hiperligo :" SEPS[ x ]);	##
 	      x0 = x ;
 	      do
               {
                 x++;
-		# FARENDA : prilabori la _ inter la [
 	        MSG0 = MSG0 MSGS[x] ;
 	        MSG0 = MSG0 " " MARK1 x MARK2 " ";
+		# FARENDA prilabori la _ inter la [
+	        if( match(SEPS[ x ] ,"^ *_$") == 1 )
+	        { # kursivigita kun "_" : ne traduku
+	          x1 = x ;
+	          do
+                  {
+                    x++;
+                    SEPS[x1] = SEPS[x1] MSGS[x] SEPS[x];
+                  } while( (x <= MSGSLEN) && (match(SEPS[x] ,"^_[ \t]*")==0));
+	        }
               }
               while( x<=MSGSLEN && ! match(SEPS[x] ," *\\] *"));
               ## print ("teksto hiperligo endo :" SEPS[ x ]);	##
