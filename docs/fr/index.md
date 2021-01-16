@@ -10,7 +10,7 @@ title: "L'essentiel"
 # _flash\_cc2531_
  _flash\_cc2531_ vous permet de programmer votre clé USB CC2531 à partir de votre _Raspberry_, sans avoir besoin d'un _Arduino_ ou d'un _CC Debugger_.
 
-## Conditions préalables
+## Prérequis
 Vous avez besoin d'un _Raspberry_ ou d'un _Odroid-c2_.  
 Vous avez besoin de quoi connecter le port de débogage de la clé aux ports _GPIO_ du _Raspberry_, par exemple un câble _CC_ et quatre lignes _Dupont_ (voir plus loin).   
 [ _WiringPi_ ](http://wiringpi.com/) doit être installé (s'il n'est pas pré-installé, vous pouvez généralement l'installer avec `sudo apt install wiringpi`, sinon voir [le site Web de _Gordon_ ](http://wiringpi.com/) ou [ce site alternatif](https://github.com/WiringPi/WiringPi)).  
@@ -70,7 +70,7 @@ Pour effacer la mémoire flash:
 ```
 **Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).
 
-Pour programmer le fichier sur la clé _CC2531_:
+Pour programmer le fichier _CC2531ZNP-Prod.hex_ sur la clé _CC2531_:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```
