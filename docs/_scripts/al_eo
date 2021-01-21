@@ -4,10 +4,13 @@ lang0=$1
 BASEDIR=`dirname $0`
 cd $lang0
 
-#for FIC in pri.md
-#for FIC in `find . -type f ! -name "_*"`
-for FIC in "$2"
-do
+FIC="$2"
+
+if [ -f ../_locale/${lang0}/${FIC}.po ]
+then
+  rm -f ../_locale/${lang0}/${FIC}.po
+fi
+
   if [ ! -f ../_locale/${lang0}/${FIC}.pot ]
   then
     po4a-gettextize -f text -m ${FIC} --master-charset "UTF-8" --option markdown -o neverwrap --po ../_locale/${lang0}/${FIC}.pot 
@@ -57,7 +60,6 @@ do
       rm ../_locale/temp$$.po
     fi
   done
-done
 
 
 

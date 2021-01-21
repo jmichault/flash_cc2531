@@ -2,7 +2,7 @@
 cd eo
 
 #for FIC in pri.md
-for FIC in `find . -type f ! -name "_*"`
+for FIC in `find . -type f ! -name "_*"|grep -v "/_drafts/"`
 do
   if [ ! -f ../_locale/${FIC}.pot ]
   then

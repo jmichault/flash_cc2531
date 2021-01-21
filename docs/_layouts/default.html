@@ -2,12 +2,36 @@
 <html lang="{{ page.lang }}">
 
   {% include head.html %}
+  <script>
+  function openNav() {
+      document.getElementById("sideNavigation").style.width = "18rem";
+      document.getElementById("sideNavigation").style.paddingLeft = "1rem";
+      document.getElementById("sideNavigation").style.paddingRight = "1rem";
+      document.getElementById("main").style.marginLeft = "20rem";
+  }
+   
+  function closeNav() {
+      document.getElementById("sideNavigation").style.width = "0";
+      document.getElementById("sideNavigation").style.paddingLeft = "0";
+      document.getElementById("sideNavigation").style.paddingRight = "0";
+      document.getElementById("main").style.marginLeft = "0";
+  }
+  </script>
 
   <body class="theme-base-0c">
 
     {% include sidebar.html %}
+    <nav class="topnav">
+      <a href="#" onclick="openNav()">
+        <svg width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+        </svg>
+      </a>
+    </nav>
 
-    <div class="content container">
+    <div id="main" class="content container">
       {{ content }}
       {% include footer.html %}
     </div>

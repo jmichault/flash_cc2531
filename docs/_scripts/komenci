@@ -30,7 +30,7 @@ do
 done
 cat _data/translations.yml.0 >>_data/translations.yml
 
-for x in `grep "^..:$" _data/languages.yml|sed "s/:$//"|grep -v eo`
+for x in `grep "^..:$" _data/languages.yml|sed "s/:$//"`
 do
   mkdir -p $x/_posts _locale/$x _locale/$x/_posts
 done

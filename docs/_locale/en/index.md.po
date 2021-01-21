@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# jean, 2021.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2021-01-11 18:23+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-01-18 20:57+0200\n"
+"Last-Translator: jean <>\n"
+"Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Source-Language: eo\n"
 
 #. type: YAML Front Matter: lang
 #: index.md:1
@@ -42,7 +43,7 @@ msgstr "page"
 
 #. type: YAML Front Matter: slug
 #: index.md:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "La esenca!"
 msgstr "The essential!"
 
@@ -62,7 +63,9 @@ msgstr "_flash\\_cc2531_"
 #: index.md:12
 #, fuzzy, no-wrap
 msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
-msgstr " _flash\\_cc2531_ allows you to program your CC2531 USB stick from yours _Raspberry_, without the need for either _Arduino_ or _CC Debugger_.\n"
+msgstr ""
+" _flash\\_cc2531_ allows you to program your CC2531 USB stick from yours "
+"_Raspberry_, without the need for either _Arduino_ or _CC Debugger_.\n"
 
 #. type: Title ##
 #: index.md:13
@@ -167,12 +170,14 @@ msgstr "and insert the USB key into a port.\n"
 #. type: Plain text
 #: index.md:50
 #, no-wrap
-#, fuzzy
 msgid ""
 "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi tiu celo:\n"
 "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
 "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
-msgstr "Download cable _CC_ and 4 lines _Dupont_ female to female are perfect for this purpose:\n![photo of the key and the _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\nThis is my favorite option, but if you don't have a cable _CC_ you can also directly solder the cables _Dupont_ on the key: see for example the website [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) or [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+msgstr ""
+"Download cable _CC_ and 4 lines _Dupont_ female to female are perfect for this purpose:\n"
+"![photo of the key and the _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\n"
+"This is my favorite option, but if you don't have a cable _CC_ you can also directly solder the cables _Dupont_ on the key: see for example the website [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) or [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
 
 #. type: Plain text
 #: index.md:53
@@ -333,7 +338,6 @@ msgstr "_-m_ : change the delay multiplier, and therefore the base time (by defa
 #. type: Plain text
 #: index.md:104
 #, no-wrap
-#, fuzzy
 msgid "la pinglonumerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).\n"
 msgstr "the pin numbering used is that of _wiringPi_. Use `gpio readall` to have the layout in your _Raspberry_ (column _wPi_ ).\n"
 
@@ -414,7 +418,6 @@ msgstr "stop all other programs.\n"
 #. type: Bullet: '2. '
 #: index.md:132
 #, no-wrap
-#, fuzzy
 msgid "agordu la rapidon de la procesoro antaŭ programado. Ekzemplo:\n"
 msgstr "set the processor speed before programming. Example:\n"
 
@@ -427,7 +430,6 @@ msgstr "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_g
 #. type: Bullet: '3. '
 #: index.md:137
 #, no-wrap
-#, fuzzy
 msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:\n"
 msgstr "use the -m option to increase the time limits used. Example:\n"
 
@@ -488,48 +490,23 @@ msgstr "This project is licensed under the GPL v3 ( see _COPYING_ ).\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la "
-#~ "havenoj _GPIO_ de _Raspberry_, ekzemple unu kablo _CC_ kaj kvar linioj "
-#~ "_Dupont_ (vidu plu).   \n"
-#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas "
-#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
-#~ "wiringpi`, alie vidu [la retejo de _Gordon_ ](http://wiringpi.com/) aŭ "
-#~ "[ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
+#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple unu kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`, alie vidu [la retejo de _Gordon_ ](http://wiringpi.com/) aŭ [ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
 #~ msgstr ""
-#~ "You need what to connect the debug port of the key to the ports _GPIO_ of "
-#~ "_Raspberry_, for example one cable _CC_ and four lines _Dupont_ (see "
-#~ "further).   \n"
-#~ "[WiringPi](http://wiringpi.com/) must be installed (if it is not pre-"
-#~ "installed, you can usually install it with `sudo apt install wiringpi`, "
-#~ "otherwise see [the web of _Gordon_ ](http://wiringpi.com/) or [this "
-#~ "alternative web](https://github.com/WiringPi/WiringPi)).  \n"
+#~ "You need what to connect the debug port of the key to the ports _GPIO_ of _Raspberry_, for example one cable _CC_ and four lines _Dupont_ (see further).   \n"
+#~ "[WiringPi](http://wiringpi.com/) must be installed (if it is not pre-installed, you can usually install it with `sudo apt install wiringpi`, otherwise see [the web of _Gordon_ ](http://wiringpi.com/) or [this alternative web](https://github.com/WiringPi/WiringPi)).  \n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la "
-#~ "havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj "
-#~ "_Dupont_ (vidu plu).   \n"
-#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas "
-#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
-#~ "wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu "
-#~ "alternativa retejo](https://github.com/WiringPi/WiringPi) ).\n"
+#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi) ).\n"
 #~ msgstr ""
-#~ "You need what to connect the debug port of the key to the ports _GPIO_ of "
-#~ "_Raspberry_, for example cable _CC_ and four lines _Dupont_ (see "
-#~ "further).   \n"
-#~ "[WiringPi](http://wiringpi.com/) must be installed (if it is not pre-"
-#~ "installed, you can usually install it with `sudo apt install wiringpi`, "
-#~ "otherwise see website [ _Gordon_](or [this alternative site](https://"
-#~ "github.com/WiringPi/WiringPi) ).\n"
+#~ "You need what to connect the debug port of the key to the ports _GPIO_ of _Raspberry_, for example cable _CC_ and four lines _Dupont_ (see further).   \n"
+#~ "[WiringPi](http://wiringpi.com/) must be installed (if it is not pre-installed, you can usually install it with `sudo apt install wiringpi`, otherwise see website [ _Gordon_](or [this alternative site](https://github.com/WiringPi/WiringPi) ).\n"
 
 #, fuzzy
-#~ msgid ""
-#~ "sur pi 4 vi bezonos la version 2.52 de _wiringpi_ :  [instalu _drataron "
-#~ "Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-"
-#~ "to-2-52-for-the-raspberry-pi-4b/)\n"
-#~ msgstr ""
-#~ "on pi 4 you will need version 2.52 of _wiringpi_ :  [install _drataron "
-#~ "Pi_ 2.52 of _retejo de Gordon_](\n"
+#~ msgid "sur pi 4 vi bezonos la version 2.52 de _wiringpi_ :  [instalu _drataron Pi_ 2.52 de _retejo de Gordon_](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)\n"
+#~ msgstr "on pi 4 you will need version 2.52 of _wiringpi_ :  [install _drataron Pi_ 2.52 of _retejo de Gordon_](\n"
 
 #, fuzzy
 #~ msgid "Elŝutu _flash\\_cc2531_ al via _raspberry_:\n"
@@ -537,49 +514,25 @@ msgstr "This project is licensed under the GPL v3 ( see _COPYING_ ).\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi "
-#~ "tiu celo:\n"
-#~ "![foto de la ŝlosilo kaj la _frambo_](https://github.com/jmichault/files/"
-#~ "raw/master/Raspberry-CC2531.jpg)\n"
-#~ "Ĉi tiu estas mia plej ŝatata elekto, sed se vi ne havas kablon _CC_ vi "
-#~ "ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple "
-#~ "la retejo [ _lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-"
-#~ "flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ "
-#~ "[ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-"
-#~ "cc2531-without-cc-debugger/)\n"
+#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
+#~ "![foto de la ŝlosilo kaj la _frambo_](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
+#~ "Ĉi tiu estas mia plej ŝatata elekto, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejo [ _lemariva.com_](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
 #~ msgstr ""
-#~ "Download cable _CC_ and 4 lines _Dupont_ Female to Female are perfect for "
-#~ "this purpose:\n"
+#~ "Download cable _CC_ and 4 lines _Dupont_ Female to Female are perfect for this purpose:\n"
 #~ "![photo of the key and the _frambo_](\n"
-#~ ") This is my favorite choice, but if you don't have a cable _CC_ you can "
-#~ "also directly solder the cables _Dupont_ on the key: see for example the "
-#~ "website [ _lemariva.com_](or [ _notenoughtech.com_](\n"
+#~ ") This is my favorite choice, but if you don't have a cable _CC_ you can also directly solder the cables _Dupont_ on the key: see for example the website [ _lemariva.com_](or [ _notenoughtech.com_](\n"
+
+#, fuzzy
+#~ msgid "la numerado de pingloj uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
+#~ msgstr "the pin numbering used is that of _wiringPi_. Use `gpio readall` to have the layout in your _Raspberry_ (column _wPi_).\n"
 
 #, fuzzy
 #~ msgid ""
-#~ "la numerado de pingloj uzata estas tiu de _wiringPi_. Uzu `gpio readall` "
-#~ "por havi la aranĝon en via _Raspberry_ (kolumno _wPi_).\n"
+#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj _Dupont_ (vidu plu).   \n"
+#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
 #~ msgstr ""
-#~ "the pin numbering used is that of _wiringPi_. Use `gpio readall` to have "
-#~ "the layout in your _Raspberry_ (column _wPi_).\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Vi bezonas kion por konekti la elpurigan havenon de la ŝlosilo al la "
-#~ "havenoj _GPIO_ de _Raspberry_, ekzemple kablo _CC_ kaj kvar linioj "
-#~ "_Dupont_ (vidu plu).   \n"
-#~ "[WiringPi](http://wiringpi.com/) devas esti instalita (se ĝi ne estas "
-#~ "antaŭinstalita, vi kutime povas instali ĝin per `sudo apt install "
-#~ "wiringpi`, alie vidu retejon [ _Gordon_](http://wiringpi.com/) aŭ [ĉi tiu "
-#~ "alternativa retejo](https://github.com/WiringPi/WiringPi)).  \n"
-#~ msgstr ""
-#~ "You need what to connect the debug port of the key to the ports _GPIO_ of "
-#~ "_Raspberry_, for example cable _CC_ and four lines _Dupont_ (see "
-#~ "further).   \n"
-#~ "[WiringPi](http://wiringpi.com/) must be installed (if it is not pre-"
-#~ "installed, you can usually install it with `sudo apt install wiringpi`, "
-#~ "otherwise see website [ _Gordon_](or [this alternative site](https://"
-#~ "github.com/WiringPi/WiringPi)).  \n"
+#~ "You need what to connect the debug port of the key to the ports _GPIO_ of _Raspberry_, for example cable _CC_ and four lines _Dupont_ (see further).   \n"
+#~ "[WiringPi](http://wiringpi.com/) must be installed (if it is not pre-installed, you can usually install it with `sudo apt install wiringpi`, otherwise see website [ _Gordon_](or [this alternative site](https://github.com/WiringPi/WiringPi)).  \n"
 
 #, fuzzy
 #~ msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 (vidu _COPYING_ ).\n"
