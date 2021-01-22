@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-22 22:00+0100\n"
+"POT-Creation-Date: 2021-01-22 23:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,13 +55,13 @@ msgstr ""
 #. type: Title #
 #: index.md:10
 #, no-wrap
-msgid "_flash\\_cc2531_"
+msgid "[ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531)"
 msgstr ""
 
 #. type: Plain text
 #: index.md:12
 #, no-wrap
-msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
+msgid " [ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531) permesas programi vian CC2531 USB-ŝlosilon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
 msgstr ""
 
 #. type: Title ##
@@ -177,11 +177,17 @@ msgstr ""
 #. type: Plain text
 #: index.md:53
 #, no-wrap
+msgid "La pinglo-aranĝo de _raspberry_ haveblas ĉi tie: <https://pinout.xyz/>\n"
+msgstr ""
+
+#. type: Plain text
+#: index.md:55
+#, no-wrap
 msgid "kaj enmetu la USB-ŝlosilon en havenon.\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:57
+#: index.md:59
 #, no-wrap
 msgid ""
 "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
@@ -190,13 +196,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md:60
+#: index.md:62
 #, no-wrap
 msgid "provu per ĉi tio:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:60
+#: index.md:62
 #, no-wrap
 msgid ""
 "cd flash_cc2531\n"
@@ -204,193 +210,193 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md:65
+#: index.md:67
 #, no-wrap
 msgid "Ĝi devas reveni:\n"
 msgstr ""
 
 #. type: Fenced code block
-#: index.md:65
+#: index.md:67
 #, no-wrap
 msgid "  ID = b524.\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:68
+#: index.md:70
 #, no-wrap
 msgid "Se vi vidas 0000 aŭ ffff io fiaskas:  \n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:70
+#: index.md:72
 #, no-wrap
 msgid "unue kontrolu vian kabligon.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:72
+#: index.md:74
 #, no-wrap
 msgid "tiam provu pli altan bazan tempon, ekzemple kun `./cc_chipid -m 100`, aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:74
+#: index.md:76
 #, no-wrap
 msgid "se neniu el tio funkcias, provu rekompili kun `make`.\n"
 msgstr ""
 
 #. type: Title ##
-#: index.md:77
+#: index.md:79
 #, no-wrap
 msgid "uzado"
 msgstr ""
 
 #. type: Plain text
-#: index.md:79
+#: index.md:81
 #, no-wrap
 msgid "Por konservi la enhavon de la fulmmemoro en la dosiero save.hex:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:79
+#: index.md:81
 #, no-wrap
 msgid "./cc_read save.hex\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:83
+#: index.md:85
 #, no-wrap
 msgid "(daŭras ĉirkaŭ 1 minuton).\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:85
+#: index.md:87
 #, no-wrap
 msgid "Por viŝi fulmmemoron:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:85
+#: index.md:87
 #, no-wrap
 msgid "./cc_erase\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:89
+#: index.md:91
 #, no-wrap
 msgid "**Noto:** Vi **devas** forviŝi antaŭ skribado (krom se vi vere scias, kion vi faros).\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:91
+#: index.md:93
 #, no-wrap
 msgid "Por programi la dosieron _CC2531ZNP-Prod.hex_ sur la klavo _CC2531_:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:91
+#: index.md:93
 #, no-wrap
 msgid "./cc_write CC2531ZNP-Prod.hex\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:95
+#: index.md:97
 #, no-wrap
 msgid "(daŭras ĉirkaŭ 3 minutojn).\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:97
+#: index.md:99
 #, no-wrap
 msgid "<a id=\"uzi_aliajn_pinglojn\"></a>\n"
 msgstr ""
 
 #. type: Title ##
-#: index.md:97
+#: index.md:99
 #, no-wrap
 msgid "Uzi aliajn pinglojn"
 msgstr ""
 
 #. type: Plain text
-#: index.md:100
+#: index.md:102
 #, no-wrap
 msgid "ĉiuj ordonoj akceptas la jenajn argumentojn:\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:102
+#: index.md:104
 #, no-wrap
 msgid "_-c_ pinglo: ŝanĝu la pinglon _DC_ (defaŭlte 27)\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:104
+#: index.md:106
 #, no-wrap
 msgid "_-d_ pinglo: ŝanĝu la pinglon _DD_ (defaŭlte 28)\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:106
+#: index.md:108
 #, no-wrap
 msgid "_-r_ pinglo: ŝanĝu la pinglon _reset_ (defaŭlte 24)\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:108
+#: index.md:110
 #, no-wrap
 msgid "_-m_ : ŝanĝu la prokrastan multiplikaton, kaj do la bazan tempon (defaŭlte: aŭtomata ĝustigo)\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:111
+#: index.md:113
 #, no-wrap
 msgid "la pinglonumerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:112
+#: index.md:114
 #, no-wrap
 msgid "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13:  \n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:114
+#: index.md:116
 #, no-wrap
 msgid "Konekti la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:\n"
 msgstr ""
 
 #. type: Bullet: ' 1. '
-#: index.md:116
+#: index.md:118
 #, no-wrap
 msgid "pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
 msgstr ""
 
 #. type: Bullet: ' 2. '
-#: index.md:118
+#: index.md:120
 #, no-wrap
 msgid "pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
 msgstr ""
 
 #. type: Bullet: ' 3. '
-#: index.md:120
+#: index.md:122
 #, no-wrap
 msgid "pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
 msgstr ""
 
 #. type: Bullet: ' 4. '
-#: index.md:122
+#: index.md:124
 #, no-wrap
 msgid "pinglo 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:125
+#: index.md:127
 #, no-wrap
 msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi fulmmemoron per la jenaj komandoj:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:125
+#: index.md:127
 #, no-wrap
 msgid ""
 "./cc_chipid -r 8 -c 0 -d 2\n"
@@ -400,61 +406,73 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md:133
+#: index.md:135
 #, no-wrap
 msgid "Vi ankaŭ povas ŝanĝi la defaŭltajn valorojn en _CCDebugger.h_ kaj kompili la programojn per `make`.\n"
 msgstr ""
 
 #. type: Title ##
-#: index.md:134
+#: index.md:136
 #, no-wrap
 msgid "kio se ĝi ne funkcias?"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md:137
+#: index.md:139
 #, no-wrap
 msgid "ĉesu ĉiujn aliajn programojn.\n"
 msgstr ""
 
 #. type: Bullet: '2. '
-#: index.md:139
+#: index.md:141
 #, no-wrap
 msgid "agordu la rapidon de la procesoro antaŭ programado. Ekzemplo:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:140
+#: index.md:143
 #, no-wrap
 msgid "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 msgstr ""
 
 #. type: Bullet: '3. '
-#: index.md:144
+#: index.md:147
 #, no-wrap
 msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:145
+#: index.md:149
 #, no-wrap
 msgid "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 msgstr ""
 
 #. type: Bullet: '4. '
-#: index.md:149
+#: index.md:153
 #, no-wrap
 msgid "rekompili la programon per `make`.\n"
 msgstr ""
 
+#. type: Bullet: '5. '
+#: index.md:156
+#, no-wrap
+msgid "serĉu solvon [en la demandoj jam faritaj ĉe github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)\n"
+msgstr ""
+
+#. type: Bullet: '6. '
+#: index.md:159
+#, no-wrap
+msgid "Demandu vian propran demandon pri [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).\n"
+msgstr ""
+
 #. type: Title ##
-#: index.md:151
+#: index.md:161
 #, no-wrap
 msgid "Permesilo"
 msgstr ""
 
 #. type: Plain text
-#: index.md:153
+#: index.md:163
 #, no-wrap
 msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 ( vidu _COPYING_ ).\n"
 msgstr ""

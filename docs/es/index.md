@@ -7,8 +7,8 @@ slug: '¡Lo esencial!'
 title: 'Lo esencial'
 ---
 
-# _flash\_cc2531_
- _flash\_cc2531_ le permite programar su memoria USB CC2531 desde la suya _Raspberry_, sin la necesidad de _Arduino_ o _CC Debugger_.
+# [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531)
+ [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531) le permite programar su llave USB CC2531 desde su _Raspberry_, sin la necesidad de _Arduino_ o _CC Debugger_.
 
 ## Requisito previo
 Necesita _Raspberry_ o _Odroid-c2_.  
@@ -57,6 +57,8 @@ Conecte los siguientes pines del puerto de depuración al puerto GPIO:
  4. pin 4 ( _DD_ ) -> pin 38 ( _wPi 28, BCM20_ )
 
 
+
+El diseño de los pines de _raspberry_ está disponible aquí: <https://pinout.xyz/>
 
 e inserte la llave USB en un puerto.
 
@@ -160,16 +162,26 @@ También puede cambiar los valores predeterminados a _CCDebugger.h_ y compilar l
 2. establezca la velocidad del procesador antes de programar. Ejemplo:
 
 
+
    ```bash
    sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    ```
 3. utilice la opción -m para aumentar los límites de tiempo utilizados. Ejemplo:
 
 
+
    ```bash
    ./cc_write -m 300 CC2531ZNP-Prod.hex
    ```
 4. recompile el programa con `make`.
+
+
+
+5. busque una solución [en las preguntas ya formuladas en github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)
+
+
+
+6. Haga su propia pregunta sobre [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).
 
 
 

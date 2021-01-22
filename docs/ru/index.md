@@ -7,8 +7,8 @@ slug: Жизненноважный!
 title: Главное
 ---
 
-# _flash\_cc2531_
- _flash\_cc2531_ позволяет программировать USB-накопитель CC2531 с вашего _Raspberry_, без необходимости в _Arduino_ или _CC Debugger_.
+# [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531)
+ [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531) позволяет программировать USB-ключ CC2531 с вашего _Raspberry_, без необходимости _Arduino_ или _CC Debugger_.
 
 ## Предпосылка
 Вам нужно либо _Raspberry_ , либо _Odroid-c2_.  
@@ -57,6 +57,8 @@ git clone https://github.com/jmichault/flash_cc2531.git
  4. штифт 4 ( _DD_ ) -> штифт 38 ( _wPi 28, BCM20_ )
 
 
+
+Расположение выводов _raspberry_ доступно здесь: <https://pinout.xyz/>
 
 и вставьте USB-ключ в порт.
 
@@ -160,16 +162,26 @@ cd flash_cc2531
 2. перед программированием установите скорость процессора. Пример:
 
 
+
    ```bash
    sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    ```
 3. используйте опцию -m, чтобы увеличить используемые временные ограничения. Пример:
 
 
+
    ```bash
    ./cc_write -m 300 CC2531ZNP-Prod.hex
    ```
 4. перекомпилируйте программу с помощью `make`.
+
+
+
+5. ищите решение [в уже заданных вопросах на github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)
+
+
+
+6. Задайте свой вопрос о [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).
 
 
 

@@ -7,8 +7,8 @@ slug: الأساسي!
 title: 'الشيء الرئيسي'
 ---
 
-# _flash\_cc2531_
- _flash\_cc2531_ يسمح لك ببرمجة CC2531 USB stick الخاص بك _Raspberry_، دون الحاجة إلى _Arduino_ أو _CC Debugger_.
+# [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531)
+يسمح لك [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531) ببرمجة مفتاح CC2531 USB الخاص بك من _Raspberry_، دون الحاجة إلى _Arduino_ أو _CC Debugger_.
 
 ## المتطلبات المسبقة
 تحتاج إما _Raspberry_ أو _Odroid-c2_.  
@@ -57,6 +57,8 @@ git clone https://github.com/jmichault/flash_cc2531.git
  4. دبوس 4 ( _DD_ ) -> دبوس 38 ( _wPi 28, BCM20_ )
 
 
+
+تخطيط دبوس _raspberry_ متاح هنا: <https://pinout.xyz/>
 
 وأدخل مفتاح USB في المنفذ.
 
@@ -160,16 +162,26 @@ cd flash_cc2531
 2. اضبط سرعة المعالج قبل البرمجة. مثال:
 
 
+
    ```bash
    sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    ```
 3. استخدم الخيار -m لزيادة الحدود الزمنية المستخدمة. مثال:
 
 
+
    ```bash
    ./cc_write -m 300 CC2531ZNP-Prod.hex
    ```
 4. أعد ترجمة البرنامج باستخدام `make`.
+
+
+
+5. ابحث عن حل [في الأسئلة المطروحة بالفعل على github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)
+
+
+
+6. اطرح سؤالك الخاص حول [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).
 
 
 

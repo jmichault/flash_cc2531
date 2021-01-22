@@ -7,8 +7,8 @@ slug: 重要的！
 title: 最主要的
 ---
 
-# _flash\_cc2531_
- _flash\_cc2531_ 使您可以从 _Raspberry_编程CC2531 USB记忆棒，而无需 _Arduino_ 或 _CC Debugger_。
+# [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531)
+ [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531) 允许您从 _Raspberry_对CC2531 USB钥匙进行编程，而无需 _Arduino_ 或 _CC Debugger_。
 
 ## 先决条件
 您需要 _Raspberry_ 或 _Odroid-c2_。  
@@ -57,6 +57,8 @@ git clone https://github.com/jmichault/flash_cc2531.git
  4. 针脚4 ( _DD_ ) -> 针脚38 ( _wPi 28, BCM20_ )
 
 
+
+ _raspberry_ 的引脚布局可在此处获得： <https://pinout.xyz/>
 
 并将USB密钥插入端口。
 
@@ -160,16 +162,26 @@ cd flash_cc2531
 2. 在编程之前设置处理器速度。示例：
 
 
+
    ```bash
    sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    ```
 3. 使用-m选项可以增加使用的时间限制。示例：
 
 
+
    ```bash
    ./cc_write -m 300 CC2531ZNP-Prod.hex
    ```
 4. 用 `make`重新编译程序。
+
+
+
+5. 在github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)已经提出的问题中寻找解决方案 [
+
+
+
+6. 询问关于 [github](https://github.com/jmichault/flash_cc2531/issues/new/choose)的问题。
 
 
 

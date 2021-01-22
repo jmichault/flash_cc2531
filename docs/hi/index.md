@@ -7,8 +7,8 @@ slug: आवश्यक!
 title: 'सबसे ज़रूरी चीज़'
 ---
 
-# _flash\_cc2531_
- _flash\_cc2531_ आपको या तो _Arduino_ या _CC Debugger_की आवश्यकता के बिना, आपके _Raspberry_से अपने CC2531 USB स्टिक को प्रोग्राम करने की अनुमति देता है।
+# [ (° २ °) (° ५ °)
+ [ _flash\_cc2531_ (° ५ °) आपको (° १० °) या (° १२ °) की आवश्यकता के बिना आपके (USB ° °) से अपने CC2531 USB कुंजी को प्रोग्राम करने की अनुमति देता है।
 
 ## शर्त
 आपको या तो _Raspberry_ या _Odroid-c2_की आवश्यकता है।  
@@ -57,6 +57,8 @@ git clone https://github.com/jmichault/flash_cc2531.git
  4. पिन 4 ( _DD_ ) -> pin 38 ( _wPi 28, BCM20_ )
 
 
+
+ _raspberry_ का पिन लेआउट यहां उपलब्ध है: <https://pinout.xyz/>
 
 और USB कुंजी को एक पोर्ट में डालें।
 
@@ -160,16 +162,26 @@ Save.hex फ़ाइल में फ्लैश मेमोरी की स
 2. प्रोग्रामिंग से पहले प्रोसेसर की गति निर्धारित करें। उदाहरण:
 
 
+
    ```bash
    sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    ```
 3. उपयोग की गई समय सीमा बढ़ाने के लिए -m विकल्प का उपयोग करें। उदाहरण:
 
 
+
    ```bash
    ./cc_write -m 300 CC2531ZNP-Prod.hex
    ```
 4.  `make`के साथ कार्यक्रम को पुन: व्यवस्थित करें।
+
+
+
+5. पहले से गिथब](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)पर पूछे गए प्रश्नों में हल [देखें
+
+
+
+6.  [गितुब](https://github.com/jmichault/flash_cc2531/issues/new/choose)के बारे में अपना प्रश्न पूछें।
 
 
 

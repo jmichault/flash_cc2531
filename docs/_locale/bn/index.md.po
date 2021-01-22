@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-22 22:00+0100\n"
+"POT-Creation-Date: 2021-01-22 23:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,15 +54,17 @@ msgstr "প্রধান বিষয়"
 
 #. type: Title #
 #: index.md:10
-#, fuzzy, no-wrap
-msgid "_flash\\_cc2531_"
-msgstr "_flash\\_cc2531_"
+#, no-wrap
+#, fuzzy
+msgid "[ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531)"
+msgstr "[ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531)"
 
 #. type: Plain text
 #: index.md:12
-#, fuzzy, no-wrap
-msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
-msgstr " _flash\\_cc2531_ আপনাকে _Arduino_ বা _CC Debugger_প্রয়োজন ছাড়াই আপনার নিজের সিসি 2531 ইউএসবি স্টিকটি _Raspberry_প্রোগ্রাম করার অনুমতি দেয়।\n"
+#, no-wrap
+#, fuzzy
+msgid " [ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531) permesas programi vian CC2531 USB-ŝlosilon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
+msgstr " [ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531) আপনাকে _Arduino_ বা _CC Debugger_প্রয়োজন ছাড়াই আপনার _Raspberry_থেকে আপনার সিসি 2531 ইউএসবি কী প্রোগ্রাম করার অনুমতি দেয়।\n"
 
 #. type: Title ##
 #: index.md:13
@@ -178,28 +180,37 @@ msgstr "পিন 4 ( _DD_ ) -> পিন 38 ( _wPi 28, BCM20_ )\n"
 
 #. type: Plain text
 #: index.md:53
+#, no-wrap
+#, fuzzy
+msgid "La pinglo-aranĝo de _raspberry_ haveblas ĉi tie: <https://pinout.xyz/>\n"
+msgstr " _raspberry_ এর পিন লেআউটটি এখানে পাওয়া যায়: <https://pinout.xyz/>\n"
+
+#. type: Plain text
+#: index.md:55
 #, fuzzy, no-wrap
 msgid "kaj enmetu la USB-ŝlosilon en havenon.\n"
 msgstr "এবং একটি পোর্টে ইউএসবি কী sertোকান।\n"
 
 #. type: Plain text
-#: index.md:57
-#, no-wrap
-#, fuzzy
+#: index.md:59
+#, fuzzy, no-wrap
 msgid ""
 "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
 "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
 "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )\n"
-msgstr "ডাউনলোড কেবল _CC_ এবং 4 টি লাইন _Dupont_ মহিলা থেকে মহিলা এই উদ্দেশ্যে নিখুঁত:\n![কী এবং _raspberry_ এর ফটো](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\nএটি আমার প্রিয় বিকল্প, তবে আপনার যদি কেবল _CC_ না থাকে তবে আপনি কীগুলিতে সরাসরি তারের _Dupont_ সোল্ডার করতে পারেন: উদাহরণস্বরূপ ওয়েবসাইটটি দেখুন [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) বা [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )\n"
+msgstr ""
+"ডাউনলোড কেবল _CC_ এবং 4 টি লাইন _Dupont_ মহিলা থেকে মহিলা এই উদ্দেশ্যে নিখুঁত:\n"
+"![কী এবং _raspberry_ এর ফটো](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\n"
+"এটি আমার প্রিয় বিকল্প, তবে আপনার যদি কেবল _CC_ না থাকে তবে আপনি কীগুলিতে সরাসরি তারের _Dupont_ সোল্ডার করতে পারেন: উদাহরণস্বরূপ ওয়েবসাইটটি দেখুন [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) বা [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )\n"
 
 #. type: Plain text
-#: index.md:60
+#: index.md:62
 #, fuzzy, no-wrap
 msgid "provu per ĉi tio:\n"
 msgstr "এটি চেষ্টা করুন:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:60
+#: index.md:62
 #, no-wrap
 msgid ""
 "cd flash_cc2531\n"
@@ -209,103 +220,103 @@ msgstr ""
 "./cc_chipid\n"
 
 #. type: Plain text
-#: index.md:65
+#: index.md:67
 #, fuzzy, no-wrap
 msgid "Ĝi devas reveni:\n"
 msgstr "এটি অবশ্যই ফিরে আসতে হবে:\n"
 
 #. type: Fenced code block
-#: index.md:65
+#: index.md:67
 #, no-wrap
 msgid "  ID = b524.\n"
 msgstr "  ID = b524.\n"
 
 #. type: Plain text
-#: index.md:68
+#: index.md:70
 #, fuzzy, no-wrap
 msgid "Se vi vidas 0000 aŭ ffff io fiaskas:  \n"
 msgstr "যদি আপনি দেখতে পান 0000 বা ffff কিছু ব্যর্থ হয়:  \n"
 
 #. type: Bullet: ' * '
-#: index.md:70
+#: index.md:72
 #, fuzzy, no-wrap
 msgid "unue kontrolu vian kabligon.\n"
 msgstr "প্রথমে আপনার ওয়্যারিং পরীক্ষা করুন।\n"
 
 #. type: Bullet: ' * '
-#: index.md:72
+#: index.md:74
 #, fuzzy, no-wrap
 msgid "tiam provu pli altan bazan tempon, ekzemple kun `./cc_chipid -m 100`, aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
 msgstr "তারপরে একটি উচ্চতর বেস সময় চেষ্টা করুন, উদাহরণস্বরূপ `./cc_chipid -m 100`, বা `./cc_chipid -m 160` বা `./cc_chipid -m 300`দিয়ে।\n"
 
 #. type: Bullet: ' * '
-#: index.md:74
+#: index.md:76
 #, fuzzy, no-wrap
 msgid "se neniu el tio funkcias, provu rekompili kun `make`.\n"
 msgstr "যদি এর কোনওটিই কাজ না করে, `make`দিয়ে পুনরায় সংযোগের চেষ্টা করুন।\n"
 
 #. type: Title ##
-#: index.md:77
+#: index.md:79
 #, fuzzy, no-wrap
 msgid "uzado"
 msgstr "ব্যবহার"
 
 #. type: Plain text
-#: index.md:79
+#: index.md:81
 #, fuzzy, no-wrap
 msgid "Por konservi la enhavon de la fulmmemoro en la dosiero save.hex:\n"
 msgstr "Save.hex ফাইলটিতে ফ্ল্যাশ মেমরির বিষয়বস্তু সংরক্ষণ করতে:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:79
+#: index.md:81
 #, no-wrap
 msgid "./cc_read save.hex\n"
 msgstr "./cc_read save.hex\n"
 
 #. type: Plain text
-#: index.md:83
+#: index.md:85
 #, fuzzy, no-wrap
 msgid "(daŭras ĉirkaŭ 1 minuton).\n"
 msgstr "(প্রায় 1 মিনিট)স্থায়ী হয়।\n"
 
 #. type: Plain text
-#: index.md:85
+#: index.md:87
 #, fuzzy, no-wrap
 msgid "Por viŝi fulmmemoron:\n"
 msgstr "ফ্ল্যাশ মেমরি সাফ করার জন্য:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:85
+#: index.md:87
 #, no-wrap
 msgid "./cc_erase\n"
 msgstr "./cc_erase\n"
 
 #. type: Plain text
-#: index.md:89
+#: index.md:91
 #, fuzzy, no-wrap
 msgid "**Noto:** Vi **devas** forviŝi antaŭ skribado (krom se vi vere scias, kion vi faros).\n"
 msgstr "**দ্রষ্টব্য:** আপনার **অবশ্যই লিখতে হবে** মুছে ফেলতে হবে (যদি না আপনি সত্যিই জানেন যে আপনি কী করতে যাচ্ছেন)।\n"
 
 #. type: Plain text
-#: index.md:91
+#: index.md:93
 #, fuzzy, no-wrap
 msgid "Por programi la dosieron _CC2531ZNP-Prod.hex_ sur la klavo _CC2531_:\n"
 msgstr "কীতে ফাইল _CC2531ZNP-Prod.hex_ প্রোগ্রাম করতে _CC2531_:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:91
+#: index.md:93
 #, no-wrap
 msgid "./cc_write CC2531ZNP-Prod.hex\n"
 msgstr "./cc_write CC2531ZNP-Prod.hex\n"
 
 #. type: Plain text
-#: index.md:95
+#: index.md:97
 #, fuzzy, no-wrap
 msgid "(daŭras ĉirkaŭ 3 minutojn).\n"
 msgstr "(প্রায় 3 মিনিট)স্থায়ী হয়।\n"
 
 #. type: Plain text
-#: index.md:97
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "<a id=\"uzi_aliajn_pinglojn\"></a>\n"
 msgstr ""
@@ -313,91 +324,91 @@ msgstr ""
 "প্রায় 3 মিনিট\"স্থায়ী হয়।_\n"
 
 #. type: Title ##
-#: index.md:97
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Uzi aliajn pinglojn"
 msgstr "অন্যান্য পিন ব্যবহার করুন"
 
 #. type: Plain text
-#: index.md:100
+#: index.md:102
 #, fuzzy, no-wrap
 msgid "ĉiuj ordonoj akceptas la jenajn argumentojn:\n"
 msgstr "সমস্ত কমান্ড নিম্নলিখিত যুক্তিগুলি গ্রহণ করে:\n"
 
 #. type: Bullet: ' * '
-#: index.md:102
+#: index.md:104
 #, fuzzy, no-wrap
 msgid "_-c_ pinglo: ŝanĝu la pinglon _DC_ (defaŭlte 27)\n"
 msgstr "_-c_ পিন: ডিফল্ট 27)দ্বারা পিনটি _DC_ (পরিবর্তন করুন\n"
 
 #. type: Bullet: ' * '
-#: index.md:104
+#: index.md:106
 #, fuzzy, no-wrap
 msgid "_-d_ pinglo: ŝanĝu la pinglon _DD_ (defaŭlte 28)\n"
 msgstr "_-d_ পিন: ডিফল্ট 28)দ্বারা পিনটি _DD_ (পরিবর্তন করুন\n"
 
 #. type: Bullet: ' * '
-#: index.md:106
+#: index.md:108
 #, fuzzy, no-wrap
 msgid "_-r_ pinglo: ŝanĝu la pinglon _reset_ (defaŭlte 24)\n"
 msgstr "_-r_ পিন: ডিফল্ট 24)দ্বারা পিনটি _reset_ (পরিবর্তন করুন\n"
 
 #. type: Bullet: ' * '
-#: index.md:108
+#: index.md:110
 #, fuzzy, no-wrap
 msgid "_-m_ : ŝanĝu la prokrastan multiplikaton, kaj do la bazan tempon (defaŭlte: aŭtomata ĝustigo)\n"
 msgstr "_-m_ : বিলম্ব গুণক পরিবর্তন করুন, এবং তাই বেস সময় (ডিফল্ট অনুসারে: স্বয়ংক্রিয় সমন্বয়)\n"
 
 #. type: Plain text
-#: index.md:111
+#: index.md:113
 #, fuzzy, no-wrap
 msgid "la pinglonumerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).\n"
 msgstr "ব্যবহৃত পিন নম্বরটি হ'ল _wiringPi_। আপনার _Raspberry_ (কলামে _wPi_ )লেআউট থাকতে `gpio readall` ব্যবহার করুন।\n"
 
 #. type: Plain text
-#: index.md:112
+#: index.md:114
 #, fuzzy, no-wrap
 msgid "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13:  \n"
 msgstr "উদাহরণস্বরূপ, আপনি যদি পিন 3, 11 এবং 13 ব্যবহার করতে চান:  \n"
 
 #. type: Plain text
-#: index.md:114
+#: index.md:116
 #, fuzzy, no-wrap
 msgid "Konekti la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:\n"
 msgstr "একটি ডিবাগ বন্দর থেকে নিম্নলিখিত পিনগুলি একটি দরজার সাথে সংযুক্ত করুন _GPIO_:\n"
 
 #. type: Bullet: ' 1. '
-#: index.md:116
+#: index.md:118
 #, fuzzy, no-wrap
 msgid "pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
 msgstr "পিন 1 ( _GND_ ) -> পিন 14 ( _GND_ )\n"
 
 #. type: Bullet: ' 2. '
-#: index.md:118
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
 msgstr "পিন 7 ( _reset_ ) -> পিন 3 ( _wPi 8, BCM2_ )\n"
 
 #. type: Bullet: ' 3. '
-#: index.md:120
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
 msgstr "পিন 3 ( _DC_ ) -> পিন 11 ( _wPi 0, BCM17_ )\n"
 
 #. type: Bullet: ' 4. '
-#: index.md:122
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "pinglo 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
 msgstr "পিন 4 ( _DD_ ) -> পিন 13 ( _wPi 2, BCM27_ )\n"
 
 #. type: Plain text
-#: index.md:125
+#: index.md:127
 #, fuzzy, no-wrap
 msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi fulmmemoron per la jenaj komandoj:\n"
 msgstr "এবং এখন আপনি নিম্নলিখিত কমান্ডগুলি সহ আইডি পড়তে, সংরক্ষণ করতে, মুছতে এবং লিখতে পারেন:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:125
+#: index.md:127
 #, no-wrap
 msgid ""
 "./cc_chipid -r 8 -c 0 -d 2\n"
@@ -411,74 +422,110 @@ msgstr ""
 "./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex\n"
 
 #. type: Plain text
-#: index.md:133
+#: index.md:135
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas ŝanĝi la defaŭltajn valorojn en _CCDebugger.h_ kaj kompili la programojn per `make`.\n"
 msgstr "আপনি ডিফল্ট মানগুলিকে _CCDebugger.h_ এ পরিবর্তন করতে এবং প্রোগ্রামগুলি `make`দিয়ে সংকলন করতে পারেন।\n"
 
 #. type: Title ##
-#: index.md:134
+#: index.md:136
 #, fuzzy, no-wrap
 msgid "kio se ĝi ne funkcias?"
 msgstr "যদি এটি কাজ না করে?"
 
 #. type: Bullet: '1. '
-#: index.md:137
+#: index.md:139
 #, fuzzy, no-wrap
 msgid "ĉesu ĉiujn aliajn programojn.\n"
 msgstr "অন্যান্য সমস্ত প্রোগ্রাম বন্ধ করুন।\n"
 
 #. type: Bullet: '2. '
-#: index.md:139
+#: index.md:141
 #, fuzzy, no-wrap
 msgid "agordu la rapidon de la procesoro antaŭ programado. Ekzemplo:\n"
 msgstr "প্রোগ্রামিংয়ের আগে প্রসেসরের গতি সেট করুন। উদাহরণ:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:140
+#: index.md:143
 #, no-wrap
 msgid "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 msgstr "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 
 #. type: Bullet: '3. '
-#: index.md:144
+#: index.md:147
 #, fuzzy, no-wrap
 msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:\n"
 msgstr "ব্যবহৃত সময়সীমা বাড়ানোর জন্য -m বিকল্পটি ব্যবহার করুন। উদাহরণ:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:145
+#: index.md:149
 #, no-wrap
 msgid "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 msgstr "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 
 #. type: Bullet: '4. '
-#: index.md:149
+#: index.md:153
 #, fuzzy, no-wrap
 msgid "rekompili la programon per `make`.\n"
 msgstr " `make`দিয়ে প্রোগ্রামটি পুনরায় কম্পাইল করুন।\n"
 
+#. type: Bullet: '5. '
+#: index.md:156
+#, no-wrap
+#, fuzzy
+msgid "serĉu solvon [en la demandoj jam faritaj ĉe github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)\n"
+msgstr "গিথুব](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)এর উপর ইতিমধ্যে জিজ্ঞাসা করা প্রশ্নগুলির একটি সমাধান [সন্ধান করুন\n"
+
+#. type: Bullet: '6. '
+#: index.md:159
+#, no-wrap
+#, fuzzy
+msgid "Demandu vian propran demandon pri [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).\n"
+msgstr " [গিথুব](https://github.com/jmichault/flash_cc2531/issues/new/choose)সম্পর্কে আপনার নিজের প্রশ্ন জিজ্ঞাসা করুন।\n"
+
 #. type: Title ##
-#: index.md:151
+#: index.md:161
 #, fuzzy, no-wrap
 msgid "Permesilo"
 msgstr "লাইসেন্স"
 
 #. type: Plain text
-#: index.md:153
+#: index.md:163
 #, fuzzy, no-wrap
 msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 ( vidu _COPYING_ ).\n"
 msgstr "এই প্রকল্পটি জিপিএল ভি 3 ( দেখুন _COPYING_ )এর অধীনে লাইসেন্সযুক্ত।\n"
 
 #, fuzzy
+#~ msgid "_flash\\_cc2531_"
+#~ msgstr "_flash\\_cc2531_"
+
+#, fuzzy
+#~ msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
+#~ msgstr " _flash\\_cc2531_ আপনাকে _Arduino_ বা _CC Debugger_প্রয়োজন ছাড়াই আপনার নিজের সিসি 2531 ইউএসবি স্টিকটি _Raspberry_প্রোগ্রাম করার অনুমতি দেয়।\n"
+
+#, fuzzy
 #~ msgid ""
-#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi tiu celo:\n"
-#~ "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
-#~ "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi "
+#~ "tiu celo:\n"
+#~ "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/"
+#~ "files/raw/master/Raspberry-CC2531.jpg)\n"
+#~ "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi "
+#~ "ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple "
+#~ "la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-"
+#~ "flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ "
+#~ "[ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/"
+#~ "flashing-cc2531-without-cc-debugger/)\n"
 #~ msgstr ""
-#~ "ডাউনলোড কেবল _CC_ এবং 4 টি লাইন _Dupont_ মহিলা থেকে মহিলা এই উদ্দেশ্যে নিখুঁত:\n"
-#~ "![কী এবং _raspberry_ এর ফটো](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\n"
-#~ "এটি আমার প্রিয় বিকল্প, তবে আপনার যদি কেবল _CC_ না থাকে তবে আপনি কীগুলিতে সরাসরি তারের _Dupont_ সোল্ডার করতে পারেন: উদাহরণস্বরূপ ওয়েবসাইটটি দেখুন [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) বা [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ "ডাউনলোড কেবল _CC_ এবং 4 টি লাইন _Dupont_ মহিলা থেকে মহিলা এই উদ্দেশ্যে "
+#~ "নিখুঁত:\n"
+#~ "![কী এবং _raspberry_ এর ফটো](https://github.com/jmichault/files/raw/"
+#~ "master/Raspberry-CC2531.jpg))\n"
+#~ "এটি আমার প্রিয় বিকল্প, তবে আপনার যদি কেবল _CC_ না থাকে তবে আপনি কীগুলিতে "
+#~ "সরাসরি তারের _Dupont_ সোল্ডার করতে পারেন: উদাহরণস্বরূপ ওয়েবসাইটটি দেখুন "
+#~ "[ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-"
+#~ "cc2531-using-raspberry-pi-without-cc-debugger) বা [ _notenoughtech.com_ ]"
+#~ "(https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-"
+#~ "debugger/)\n"
 
 #, fuzzy
 #~ msgid ""

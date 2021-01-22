@@ -7,8 +7,8 @@ slug: "L'essenziale!"
 title: 'La stessa cosa'
 ---
 
-# _flash\_cc2531_
- _flash\_cc2531_ ti permette di programmare la tua chiavetta USB CC2531 dalla tua _Raspberry_, senza bisogno di _Arduino_ o _CC Debugger_.
+# [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531)
+ [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531) ti permette di programmare la tua chiavetta USB CC2531 dal tuo _Raspberry_, senza bisogno di _Arduino_ o _CC Debugger_.
 
 ## Prerequisito
 È necessario _Raspberry_ o _Odroid-c2_.  
@@ -57,6 +57,8 @@ Collega i seguenti pin dalla porta di debug alla porta GPIO:
  4. perno 4 ( _DD_ ) -> perno 38 ( _wPi 28, BCM20_ )
 
 
+
+La disposizione dei pin _raspberry_ è disponibile qui: <https://pinout.xyz/>
 
 e inserire la chiave USB in una porta.
 
@@ -160,16 +162,26 @@ e ora puoi leggere ID, salvare, cancellare e scrivere la memoria flash con i seg
 2. impostare la velocità del processore prima della programmazione. Esempio:
 
 
+
    ```bash
    sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    ```
 3. utilizzare l'opzione -m per aumentare i limiti di tempo utilizzati. Esempio:
 
 
+
    ```bash
    ./cc_write -m 300 CC2531ZNP-Prod.hex
    ```
 4. ricompilare il programma con `make`.
+
+
+
+5. cerca una soluzione [nelle domande già poste su github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)
+
+
+
+6. Fai la tua domanda su [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).
 
 
 

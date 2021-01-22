@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-22 21:59+0100\n"
+"POT-Creation-Date: 2021-01-22 23:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,13 +55,13 @@ msgstr ""
 #. type: Title #
 #: index.md:10
 #, no-wrap
-msgid "_flash\\_cc2531_"
+msgid "[ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531)"
 msgstr ""
 
 #. type: Plain text
 #: index.md:12
 #, no-wrap
-msgid " _flash\\_cc2531_ vous permet de programmer votre clé USB CC2531 à partir de votre _Raspberry_, sans avoir besoin d'un _Arduino_ ou d'un _CC Debugger_.\n"
+msgid " [ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531) vous permet de programmer votre clé USB CC2531 à partir de votre _Raspberry_, sans avoir besoin d'un _Arduino_ ou d'un _CC Debugger_.\n"
 msgstr ""
 
 #. type: Title ##
@@ -177,11 +177,17 @@ msgstr ""
 #. type: Plain text
 #: index.md:44
 #, no-wrap
+msgid "La disposition des broches du _raspberry_ est disponible ici : <https://pinout.xyz/>\n"
+msgstr ""
+
+#. type: Plain text
+#: index.md:46
+#, no-wrap
 msgid "et insérez la clé USB dans un port.\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:48
+#: index.md:50
 #, no-wrap
 msgid ""
 "Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet :\n"
@@ -190,13 +196,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md:51
+#: index.md:53
 #, no-wrap
 msgid "testez en exécutant ceci :\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:51
+#: index.md:53
 #, no-wrap
 msgid ""
 "cd flash_cc2531\n"
@@ -204,193 +210,193 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md:56
+#: index.md:58
 #, no-wrap
 msgid "Ça doit retourner:\n"
 msgstr ""
 
 #. type: Fenced code block
-#: index.md:56
+#: index.md:58
 #, no-wrap
 msgid "  ID = b524.\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:59
+#: index.md:61
 #, no-wrap
 msgid "Si vous voyez 0000 ou ffff quelque chose ne va pas:  \n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:63
+#: index.md:65
 #, no-wrap
 msgid "vérifiez d'abord votre câblage.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:63
+#: index.md:65
 #, no-wrap
 msgid "puis essayez un temps de base plus élevé, par exemple avec `./cc_chipid -m 100`, ou `./cc_chipid -m 160` ou `./cc_chipid -m 300`.\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:63
+#: index.md:65
 #, no-wrap
 msgid "si rien de tout cela ne fonctionne, essayez de recompiler avec `make`.\n"
 msgstr ""
 
 #. type: Title ##
-#: index.md:65
+#: index.md:67
 #, no-wrap
 msgid "utilisation"
 msgstr ""
 
 #. type: Plain text
-#: index.md:67
+#: index.md:69
 #, no-wrap
 msgid "Pour enregistrer le contenu de la mémoire flash dans le fichier save.hex:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:67
+#: index.md:69
 #, no-wrap
 msgid "./cc_read save.hex\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:71
+#: index.md:73
 #, no-wrap
 msgid "(dure environ 1 minute).\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:73
+#: index.md:75
 #, no-wrap
 msgid "Pour effacer la mémoire flash:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:73
+#: index.md:75
 #, no-wrap
 msgid "./cc_erase\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:77
+#: index.md:79
 #, no-wrap
 msgid "**Remarque:** Vous **devez** effacer avant d'écrire (sauf si vous savez vraiment ce que vous allez faire).\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:79
+#: index.md:81
 #, no-wrap
 msgid "Pour programmer le fichier _CC2531ZNP-Prod.hex_ sur la clé _CC2531_:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:79
+#: index.md:81
 #, no-wrap
 msgid "./cc_write CC2531ZNP-Prod.hex\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:83
+#: index.md:85
 #, no-wrap
 msgid "(dure environ 3 minutes).\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:85
+#: index.md:87
 #, no-wrap
 msgid "<a id=\"uzi_aliajn_pinglojn\"></a>\n"
 msgstr ""
 
 #. type: Title ##
-#: index.md:85
+#: index.md:87
 #, no-wrap
 msgid "Utiliser d'autres broches"
 msgstr ""
 
 #. type: Plain text
-#: index.md:88
+#: index.md:90
 #, no-wrap
 msgid "toutes les commandes acceptent les arguments suivants:\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:93
+#: index.md:95
 #, no-wrap
 msgid "_-c_ broche : change la broche _DC_ (par défaut 27)\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:93
+#: index.md:95
 #, no-wrap
 msgid "_-d_ broche : change la broche _DD_ (par défaut 28)\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:93
+#: index.md:95
 #, no-wrap
 msgid "_-r_ broche : change la broche _reset_ (par défaut 24)\n"
 msgstr ""
 
 #. type: Bullet: ' * '
-#: index.md:93
+#: index.md:95
 #, no-wrap
 msgid "_-m_ : change le multiplicateur du délai, et donc le temps de base (par défaut : ajustement automatique)\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:95
+#: index.md:97
 #, no-wrap
 msgid "la numérotation des broches utilisée est celle de _wiringPi_. Utilisez `gpio readall` pour avoir la disposition dans votre _Raspberry_ (colonne _wPi_ ).\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:96
+#: index.md:98
 #, no-wrap
 msgid "Par exemple, si vous souhaitez utiliser les broches 3, 11 et 13:  \n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:98
+#: index.md:100
 #, no-wrap
 msgid "Connectez les broches suivantes d'un port de débogage à une porte _GPIO_:\n"
 msgstr ""
 
 #. type: Bullet: ' 1. '
-#: index.md:103
+#: index.md:105
 #, no-wrap
 msgid "broche 1 ( _GND_ ) -> broche 14 ( _GND_ )\n"
 msgstr ""
 
 #. type: Bullet: ' 2. '
-#: index.md:103
+#: index.md:105
 #, no-wrap
 msgid "broche 7 ( _reset_ ) -> broche 3 ( _wPi 8, BCM2_ )\n"
 msgstr ""
 
 #. type: Bullet: ' 3. '
-#: index.md:103
+#: index.md:105
 #, no-wrap
 msgid "broche 3 ( _DC_ ) -> broche 11 ( _wPi 0, BCM17_ )\n"
 msgstr ""
 
 #. type: Bullet: ' 4. '
-#: index.md:103
+#: index.md:105
 #, no-wrap
 msgid "broche 4 ( _DD_ ) -> broche 13 ( _wPi 2, BCM27_ )\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md:105
+#: index.md:107
 #, no-wrap
 msgid "et maintenant vous pouvez lire l'ID, sauvegarder , effacer et écrire la mémoire flash avec les commandes suivantes:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:105
+#: index.md:107
 #, no-wrap
 msgid ""
 "./cc_chipid -r 8 -c 0 -d 2\n"
@@ -400,61 +406,73 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md:113
+#: index.md:115
 #, no-wrap
 msgid "Vous pouvez également changer les valeurs par défaut dans _CCDebugger.h_ puis compiler les programmes avec `make`.\n"
 msgstr ""
 
 #. type: Title ##
-#: index.md:114
+#: index.md:116
 #, no-wrap
 msgid "et si ça ne marche pas?"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md:118
+#: index.md:120
 #, no-wrap
 msgid "arrêtez tous les autres programmes.\n"
 msgstr ""
 
 #. type: Bullet: '2. '
-#: index.md:118
+#: index.md:120
 #, no-wrap
 msgid "fixez la vitesse du processeur avant la programmation. Exemple:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:118
+#: index.md:121
 #, no-wrap
 msgid "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 msgstr ""
 
 #. type: Bullet: '3. '
-#: index.md:122
+#: index.md:125
 #, no-wrap
 msgid "utilisez l'option -m pour augmenter les délais utilisés. Exemple:\n"
 msgstr ""
 
 #. type: Fenced code block (bash)
-#: index.md:122
+#: index.md:126
 #, no-wrap
 msgid "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 msgstr ""
 
 #. type: Bullet: '4. '
-#: index.md:126
+#: index.md:130
 #, no-wrap
 msgid "recompilez le logiciel avec `make`.\n"
 msgstr ""
 
+#. type: Bullet: '5. '
+#: index.md:132
+#, no-wrap
+msgid "cherchez une solution [dans les questions déjà posées sur github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)\n"
+msgstr ""
+
+#. type: Bullet: '6. '
+#: index.md:134
+#, no-wrap
+msgid "Posez votre propre question sur [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).\n"
+msgstr ""
+
 #. type: Title ##
-#: index.md:127
+#: index.md:135
 #, no-wrap
 msgid "Licence"
 msgstr ""
 
 #. type: Plain text
-#: index.md:129
+#: index.md:137
 #, no-wrap
 msgid "Ce projet est sous licence GPL v3 ( voir _COPYING_ ).\n"
 msgstr ""

@@ -7,8 +7,8 @@ slug: 'La esenca!'
 title: 'La ĉefa afero'
 ---
 
-# _flash\_cc2531_
- _flash\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.
+# [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531)
+ [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531) permesas programi vian CC2531 USB-ŝlosilon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.
 
 ## Antaŭkondiĉo
 Vi bezonas aŭ _Raspberry_ aŭ _Odroid-c2_.  
@@ -48,6 +48,8 @@ Konektu la jenajn pinglojn de la debug-haveno al la GPIO-haveno:
 
  4. pinglo 4 ( _DD_ ) -> pinglo 38 ( _wPi 28, BCM20_ )
 
+
+La pinglo-aranĝo de _raspberry_ haveblas ĉi tie: <https://pinout.xyz/>
 
 kaj enmetu la USB-ŝlosilon en havenon.
 
@@ -137,15 +139,23 @@ Vi ankaŭ povas ŝanĝi la defaŭltajn valorojn en _CCDebugger.h_ kaj kompili la
 
 2. agordu la rapidon de la procesoro antaŭ programado. Ekzemplo:
 
+
    ```bash
    sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    ```
 3. uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:
 
+
    ```bash
    ./cc_write -m 300 CC2531ZNP-Prod.hex
    ```
 4. rekompili la programon per `make`.
+
+
+5. serĉu solvon [en la demandoj jam faritaj ĉe github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)
+
+
+6. Demandu vian propran demandon pri [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).
 
 
 ## Permesilo

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-22 22:00+0100\n"
+"POT-Creation-Date: 2021-01-22 23:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,15 +54,17 @@ msgstr "Главное"
 
 #. type: Title #
 #: index.md:10
-#, fuzzy, no-wrap
-msgid "_flash\\_cc2531_"
-msgstr "_flash\\_cc2531_"
+#, no-wrap
+#, fuzzy
+msgid "[ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531)"
+msgstr "[ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531)"
 
 #. type: Plain text
 #: index.md:12
-#, fuzzy, no-wrap
-msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
-msgstr " _flash\\_cc2531_ позволяет программировать USB-накопитель CC2531 с вашего _Raspberry_, без необходимости в _Arduino_ или _CC Debugger_.\n"
+#, no-wrap
+#, fuzzy
+msgid " [ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531) permesas programi vian CC2531 USB-ŝlosilon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
+msgstr " [ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531) позволяет программировать USB-ключ CC2531 с вашего _Raspberry_, без необходимости _Arduino_ или _CC Debugger_.\n"
 
 #. type: Title ##
 #: index.md:13
@@ -178,28 +180,37 @@ msgstr "штифт 4 ( _DD_ ) -> штифт 38 ( _wPi 28, BCM20_ )\n"
 
 #. type: Plain text
 #: index.md:53
+#, no-wrap
+#, fuzzy
+msgid "La pinglo-aranĝo de _raspberry_ haveblas ĉi tie: <https://pinout.xyz/>\n"
+msgstr "Расположение выводов _raspberry_ доступно здесь: <https://pinout.xyz/>\n"
+
+#. type: Plain text
+#: index.md:55
 #, fuzzy, no-wrap
 msgid "kaj enmetu la USB-ŝlosilon en havenon.\n"
 msgstr "и вставьте USB-ключ в порт.\n"
 
 #. type: Plain text
-#: index.md:57
-#, no-wrap
-#, fuzzy
+#: index.md:59
+#, fuzzy, no-wrap
 msgid ""
 "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
 "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
 "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )\n"
-msgstr "Кабель для скачивания _CC_ и 4 линии _Dupont_ между гнездом и гнездом идеально подходят для этой цели:\n![фотография ключа и _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\nЭто мой любимый вариант, но если у вас нет кабеля _CC_ , вы также можете напрямую припаять кабели _Dupont_ к ключу: см., Например, веб-сайт [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) или [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )\n"
+msgstr ""
+"Кабель для скачивания _CC_ и 4 линии _Dupont_ между гнездом и гнездом идеально подходят для этой цели:\n"
+"![фотография ключа и _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\n"
+"Это мой любимый вариант, но если у вас нет кабеля _CC_ , вы также можете напрямую припаять кабели _Dupont_ к ключу: см., Например, веб-сайт [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) или [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )\n"
 
 #. type: Plain text
-#: index.md:60
+#: index.md:62
 #, fuzzy, no-wrap
 msgid "provu per ĉi tio:\n"
 msgstr "попробуйте это:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:60
+#: index.md:62
 #, no-wrap
 msgid ""
 "cd flash_cc2531\n"
@@ -209,103 +220,103 @@ msgstr ""
 "./cc_chipid\n"
 
 #. type: Plain text
-#: index.md:65
+#: index.md:67
 #, fuzzy, no-wrap
 msgid "Ĝi devas reveni:\n"
 msgstr "Он должен вернуться:\n"
 
 #. type: Fenced code block
-#: index.md:65
+#: index.md:67
 #, no-wrap
 msgid "  ID = b524.\n"
 msgstr "  ID = b524.\n"
 
 #. type: Plain text
-#: index.md:68
+#: index.md:70
 #, fuzzy, no-wrap
 msgid "Se vi vidas 0000 aŭ ffff io fiaskas:  \n"
 msgstr "Если вы видите 0000 или ffff, что-то не работает:  \n"
 
 #. type: Bullet: ' * '
-#: index.md:70
+#: index.md:72
 #, fuzzy, no-wrap
 msgid "unue kontrolu vian kabligon.\n"
 msgstr "сначала проверьте свою проводку.\n"
 
 #. type: Bullet: ' * '
-#: index.md:72
+#: index.md:74
 #, fuzzy, no-wrap
 msgid "tiam provu pli altan bazan tempon, ekzemple kun `./cc_chipid -m 100`, aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
 msgstr "затем попробуйте увеличить базовое время, например, с `./cc_chipid -m 100`, или `./cc_chipid -m 160` , или `./cc_chipid -m 300`.\n"
 
 #. type: Bullet: ' * '
-#: index.md:74
+#: index.md:76
 #, fuzzy, no-wrap
 msgid "se neniu el tio funkcias, provu rekompili kun `make`.\n"
 msgstr "если ничего из этого не работает, попробуйте перекомпилировать с `make`.\n"
 
 #. type: Title ##
-#: index.md:77
+#: index.md:79
 #, fuzzy, no-wrap
 msgid "uzado"
 msgstr "Применение"
 
 #. type: Plain text
-#: index.md:79
+#: index.md:81
 #, fuzzy, no-wrap
 msgid "Por konservi la enhavon de la fulmmemoro en la dosiero save.hex:\n"
 msgstr "Чтобы сохранить содержимое флэш-памяти в файл save.hex:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:79
+#: index.md:81
 #, no-wrap
 msgid "./cc_read save.hex\n"
 msgstr "./cc_read save.hex\n"
 
 #. type: Plain text
-#: index.md:83
+#: index.md:85
 #, fuzzy, no-wrap
 msgid "(daŭras ĉirkaŭ 1 minuton).\n"
 msgstr "(длится около 1 минуты).\n"
 
 #. type: Plain text
-#: index.md:85
+#: index.md:87
 #, fuzzy, no-wrap
 msgid "Por viŝi fulmmemoron:\n"
 msgstr "Чтобы очистить флэш-память:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:85
+#: index.md:87
 #, no-wrap
 msgid "./cc_erase\n"
 msgstr "./cc_erase\n"
 
 #. type: Plain text
-#: index.md:89
+#: index.md:91
 #, fuzzy, no-wrap
 msgid "**Noto:** Vi **devas** forviŝi antaŭ skribado (krom se vi vere scias, kion vi faros).\n"
 msgstr "**Примечание:** Вы **должны** удалить перед записью (, если вы действительно не знаете, что собираетесь делать).\n"
 
 #. type: Plain text
-#: index.md:91
+#: index.md:93
 #, fuzzy, no-wrap
 msgid "Por programi la dosieron _CC2531ZNP-Prod.hex_ sur la klavo _CC2531_:\n"
 msgstr "Чтобы запрограммировать файл _CC2531ZNP-Prod.hex_ на клавишу _CC2531_:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:91
+#: index.md:93
 #, no-wrap
 msgid "./cc_write CC2531ZNP-Prod.hex\n"
 msgstr "./cc_write CC2531ZNP-Prod.hex\n"
 
 #. type: Plain text
-#: index.md:95
+#: index.md:97
 #, fuzzy, no-wrap
 msgid "(daŭras ĉirkaŭ 3 minutojn).\n"
 msgstr "(длится около 3 минут).\n"
 
 #. type: Plain text
-#: index.md:97
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "<a id=\"uzi_aliajn_pinglojn\"></a>\n"
 msgstr ""
@@ -313,91 +324,91 @@ msgstr ""
 "длится около 3 минут\"._\n"
 
 #. type: Title ##
-#: index.md:97
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Uzi aliajn pinglojn"
 msgstr "Используйте другие булавки"
 
 #. type: Plain text
-#: index.md:100
+#: index.md:102
 #, fuzzy, no-wrap
 msgid "ĉiuj ordonoj akceptas la jenajn argumentojn:\n"
 msgstr "все команды принимают следующие аргументы:\n"
 
 #. type: Bullet: ' * '
-#: index.md:102
+#: index.md:104
 #, fuzzy, no-wrap
 msgid "_-c_ pinglo: ŝanĝu la pinglon _DC_ (defaŭlte 27)\n"
 msgstr "_-c_ штифт: измените штифт _DC_ (по умолчанию 27)\n"
 
 #. type: Bullet: ' * '
-#: index.md:104
+#: index.md:106
 #, fuzzy, no-wrap
 msgid "_-d_ pinglo: ŝanĝu la pinglon _DD_ (defaŭlte 28)\n"
 msgstr "_-d_ штифт: измените штифт _DD_ (по умолчанию 28)\n"
 
 #. type: Bullet: ' * '
-#: index.md:106
+#: index.md:108
 #, fuzzy, no-wrap
 msgid "_-r_ pinglo: ŝanĝu la pinglon _reset_ (defaŭlte 24)\n"
 msgstr "_-r_ штифт: измените штифт _reset_ (по умолчанию 24)\n"
 
 #. type: Bullet: ' * '
-#: index.md:108
+#: index.md:110
 #, fuzzy, no-wrap
 msgid "_-m_ : ŝanĝu la prokrastan multiplikaton, kaj do la bazan tempon (defaŭlte: aŭtomata ĝustigo)\n"
 msgstr "_-m_ : изменить множитель задержки и, следовательно, базовое время (по умолчанию: автоматическая регулировка)\n"
 
 #. type: Plain text
-#: index.md:111
+#: index.md:113
 #, fuzzy, no-wrap
 msgid "la pinglonumerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).\n"
 msgstr "используется нумерация штифтов _wiringPi_. Используйте `gpio readall` , чтобы разместить макет в столбце _Raspberry_ ( _wPi_ ).\n"
 
 #. type: Plain text
-#: index.md:112
+#: index.md:114
 #, fuzzy, no-wrap
 msgid "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13:  \n"
 msgstr "Например, если вы хотите использовать контакты 3, 11 и 13:  \n"
 
 #. type: Plain text
-#: index.md:114
+#: index.md:116
 #, fuzzy, no-wrap
 msgid "Konekti la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:\n"
 msgstr "Подключите следующие контакты от порта отладки к двери _GPIO_:\n"
 
 #. type: Bullet: ' 1. '
-#: index.md:116
+#: index.md:118
 #, fuzzy, no-wrap
 msgid "pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
 msgstr "штифт 1 ( _GND_ ) -> штифт 14 ( _GND_ )\n"
 
 #. type: Bullet: ' 2. '
-#: index.md:118
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
 msgstr "вывод 7 ( _reset_ ) -> вывод 3 ( _wPi 8, BCM2_ )\n"
 
 #. type: Bullet: ' 3. '
-#: index.md:120
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
 msgstr "штифт 3 ( _DC_ ) -> штифт 11 ( _wPi 0, BCM17_ )\n"
 
 #. type: Bullet: ' 4. '
-#: index.md:122
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "pinglo 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
 msgstr "штифт 4 ( _DD_ ) -> штифт 13 ( _wPi 2, BCM27_ )\n"
 
 #. type: Plain text
-#: index.md:125
+#: index.md:127
 #, fuzzy, no-wrap
 msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi fulmmemoron per la jenaj komandoj:\n"
 msgstr "и теперь вы можете читать ID, сохранять, удалять и записывать во флеш-память с помощью следующих команд:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:125
+#: index.md:127
 #, no-wrap
 msgid ""
 "./cc_chipid -r 8 -c 0 -d 2\n"
@@ -411,74 +422,110 @@ msgstr ""
 "./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex\n"
 
 #. type: Plain text
-#: index.md:133
+#: index.md:135
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas ŝanĝi la defaŭltajn valorojn en _CCDebugger.h_ kaj kompili la programojn per `make`.\n"
 msgstr "Вы также можете изменить значения по умолчанию в _CCDebugger.h_ и компилировать программы с `make`.\n"
 
 #. type: Title ##
-#: index.md:134
+#: index.md:136
 #, fuzzy, no-wrap
 msgid "kio se ĝi ne funkcias?"
 msgstr "что если это не сработает?"
 
 #. type: Bullet: '1. '
-#: index.md:137
+#: index.md:139
 #, fuzzy, no-wrap
 msgid "ĉesu ĉiujn aliajn programojn.\n"
 msgstr "остановите все другие программы.\n"
 
 #. type: Bullet: '2. '
-#: index.md:139
+#: index.md:141
 #, fuzzy, no-wrap
 msgid "agordu la rapidon de la procesoro antaŭ programado. Ekzemplo:\n"
 msgstr "перед программированием установите скорость процессора. Пример:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:140
+#: index.md:143
 #, no-wrap
 msgid "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 msgstr "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 
 #. type: Bullet: '3. '
-#: index.md:144
+#: index.md:147
 #, fuzzy, no-wrap
 msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:\n"
 msgstr "используйте опцию -m, чтобы увеличить используемые временные ограничения. Пример:\n"
 
 #. type: Fenced code block (bash)
-#: index.md:145
+#: index.md:149
 #, no-wrap
 msgid "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 msgstr "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 
 #. type: Bullet: '4. '
-#: index.md:149
+#: index.md:153
 #, fuzzy, no-wrap
 msgid "rekompili la programon per `make`.\n"
 msgstr "перекомпилируйте программу с помощью `make`.\n"
 
+#. type: Bullet: '5. '
+#: index.md:156
+#, no-wrap
+#, fuzzy
+msgid "serĉu solvon [en la demandoj jam faritaj ĉe github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)\n"
+msgstr "ищите решение [в уже заданных вопросах на github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)\n"
+
+#. type: Bullet: '6. '
+#: index.md:159
+#, no-wrap
+#, fuzzy
+msgid "Demandu vian propran demandon pri [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).\n"
+msgstr "Задайте свой вопрос о [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).\n"
+
 #. type: Title ##
-#: index.md:151
+#: index.md:161
 #, fuzzy, no-wrap
 msgid "Permesilo"
 msgstr "Лицензия"
 
 #. type: Plain text
-#: index.md:153
+#: index.md:163
 #, fuzzy, no-wrap
 msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 ( vidu _COPYING_ ).\n"
 msgstr "Этот проект находится под лицензией GPL v3 ( см. _COPYING_ ).\n"
 
 #, fuzzy
+#~ msgid "_flash\\_cc2531_"
+#~ msgstr "_flash\\_cc2531_"
+
+#, fuzzy
+#~ msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
+#~ msgstr " _flash\\_cc2531_ позволяет программировать USB-накопитель CC2531 с вашего _Raspberry_, без необходимости в _Arduino_ или _CC Debugger_.\n"
+
+#, fuzzy
 #~ msgid ""
-#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi tiu celo:\n"
-#~ "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
-#~ "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi "
+#~ "tiu celo:\n"
+#~ "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/"
+#~ "files/raw/master/Raspberry-CC2531.jpg)\n"
+#~ "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi "
+#~ "ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple "
+#~ "la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-"
+#~ "flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ "
+#~ "[ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/"
+#~ "flashing-cc2531-without-cc-debugger/)\n"
 #~ msgstr ""
-#~ "Загрузочный кабель _CC_ и 4 линии _Dupont_ гнездо-гнездо идеально подходят для этой цели:\n"
-#~ "![фотография ключа и _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))\n"
-#~ "Это мой любимый вариант, но если у вас нет кабеля _CC_ , вы также можете напрямую припаять кабели _Dupont_ к ключу: см., Например, веб-сайт [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) или [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ "Загрузочный кабель _CC_ и 4 линии _Dupont_ гнездо-гнездо идеально "
+#~ "подходят для этой цели:\n"
+#~ "![фотография ключа и _raspberry_ ](https://github.com/jmichault/files/raw/"
+#~ "master/Raspberry-CC2531.jpg))\n"
+#~ "Это мой любимый вариант, но если у вас нет кабеля _CC_ , вы также можете "
+#~ "напрямую припаять кабели _Dupont_ к ключу: см., Например, веб-сайт "
+#~ "[ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-"
+#~ "cc2531-using-raspberry-pi-without-cc-debugger) или [ _notenoughtech.com_ ]"
+#~ "(https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-"
+#~ "debugger/)\n"
 
 #, fuzzy
 #~ msgid ""

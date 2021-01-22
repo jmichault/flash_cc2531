@@ -21,7 +21,7 @@ priskribo:
   en: "flash CC2531 USB dongle from your Raspberry, without Arduino nor CC Debugger."
   eo: "flash CC2531 USB dongle from your Raspberry, without Arduino nor CC Debugger."
   es: "flash CC2531 dongle USB desde su Raspberry, sin Arduino ni CC Debugger."
-  fr: "flash CC2531 clé USB depuis votre Raspberry, sans Arduino ni CC Debugger."
+  fr: "flashez votre clé USB CC2531 depuis votre Raspberry, sans Arduino ni CC Debugger."
   hi: "अपने Raspberry से CC2531 USB डोंगल फ़्लैश करें, बिना Arduino और CC डिबगर के।"
   it: "flash CC2531 dongle USB dal tuo Raspberry, senza Arduino né CC Debugger."
   ja: "ArduinoもCCDebuggerも使用せずに、RaspberryからCC2531USBドングルをフラッシュします。"

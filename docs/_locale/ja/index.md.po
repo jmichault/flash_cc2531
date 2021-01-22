@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-22 22:00+0100\n"
+"POT-Creation-Date: 2021-01-22 23:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,15 +54,17 @@ msgstr "重要なこと"
 
 #. type: Title #
 #: index.md:10
-#, fuzzy, no-wrap
-msgid "_flash\\_cc2531_"
-msgstr "_flash\\_cc2531_"
+#, no-wrap
+#, fuzzy
+msgid "[ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531)"
+msgstr "[ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531)"
 
 #. type: Plain text
 #: index.md:12
-#, fuzzy, no-wrap
-msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
-msgstr " _flash\\_cc2531_ を使用すると、 _Arduino_ または _CC Debugger_を必要とせずに、CC2531 USBスティックを _Raspberry_からプログラムできます。\n"
+#, no-wrap
+#, fuzzy
+msgid " [ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531) permesas programi vian CC2531 USB-ŝlosilon de via _Raspberry_, sen bezono de _Arduino_ aŭ _CC Debugger_.\n"
+msgstr " [ _flash\\_cc2531_ ](https://github.com/jmichault/flash_cc2531) を使用すると、 _Arduino_ または _CC Debugger_を必要とせずに、 _Raspberry_からCC2531USBキーをプログラムできます。\n"
 
 #. type: Title ##
 #: index.md:13
@@ -178,28 +180,37 @@ msgstr "ピン4 ( _DD_ ) -> ピン38 ( _wPi 28, BCM20_ )\n"
 
 #. type: Plain text
 #: index.md:53
+#, no-wrap
+#, fuzzy
+msgid "La pinglo-aranĝo de _raspberry_ haveblas ĉi tie: <https://pinout.xyz/>\n"
+msgstr " _raspberry_ のピンレイアウトはこちらから入手できます： <https://pinout.xyz/>\n"
+
+#. type: Plain text
+#: index.md:55
 #, fuzzy, no-wrap
 msgid "kaj enmetu la USB-ŝlosilon en havenon.\n"
 msgstr "USBキーをポートに挿入します。\n"
 
 #. type: Plain text
-#: index.md:57
-#, no-wrap
-#, fuzzy
+#: index.md:59
+#, fuzzy, no-wrap
 msgid ""
 "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ Ino al Ino estas perfektaj por ĉi tiu celo:\n"
 "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
 "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )\n"
-msgstr "ダウンロードケーブル _CC_ と4本の線 _Dupont_ メスからメスはこの目的に最適です：\n![キーの写真と _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)）\nこれは私のお気に入りのオプションですが、ケーブル _CC_ がない場合は、キーにケーブル _Dupont_ を直接はんだ付けすることもできます。たとえば、Webサイト [ を参照してください。_lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) または [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )\n"
+msgstr ""
+"ダウンロードケーブル _CC_ と4本の線 _Dupont_ メスからメスはこの目的に最適です：\n"
+"![キーの写真と _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)）\n"
+"これは私のお気に入りのオプションですが、ケーブル _CC_ がない場合は、キーにケーブル _Dupont_ を直接はんだ付けすることもできます。たとえば、Webサイト [ を参照してください。_lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) または [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )\n"
 
 #. type: Plain text
-#: index.md:60
+#: index.md:62
 #, fuzzy, no-wrap
 msgid "provu per ĉi tio:\n"
 msgstr "これを試してください：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:60
+#: index.md:62
 #, no-wrap
 msgid ""
 "cd flash_cc2531\n"
@@ -209,103 +220,103 @@ msgstr ""
 "./cc_chipid\n"
 
 #. type: Plain text
-#: index.md:65
+#: index.md:67
 #, fuzzy, no-wrap
 msgid "Ĝi devas reveni:\n"
 msgstr "戻らなければなりません：\n"
 
 #. type: Fenced code block
-#: index.md:65
+#: index.md:67
 #, no-wrap
 msgid "  ID = b524.\n"
 msgstr "  ID = b524.\n"
 
 #. type: Plain text
-#: index.md:68
+#: index.md:70
 #, fuzzy, no-wrap
 msgid "Se vi vidas 0000 aŭ ffff io fiaskas:  \n"
 msgstr "0000またはffffが表示された場合、何かが失敗します：  \n"
 
 #. type: Bullet: ' * '
-#: index.md:70
+#: index.md:72
 #, fuzzy, no-wrap
 msgid "unue kontrolu vian kabligon.\n"
 msgstr "まず、配線を確認してください。\n"
 
 #. type: Bullet: ' * '
-#: index.md:72
+#: index.md:74
 #, fuzzy, no-wrap
 msgid "tiam provu pli altan bazan tempon, ekzemple kun `./cc_chipid -m 100`, aŭ `./cc_chipid -m 160` aŭ `./cc_chipid -m 300`.\n"
 msgstr "次に、たとえば `./cc_chipid -m 100`、 `./cc_chipid -m 160` 、または `./cc_chipid -m 300`を使用して、より高い基準時間を試してください。\n"
 
 #. type: Bullet: ' * '
-#: index.md:74
+#: index.md:76
 #, fuzzy, no-wrap
 msgid "se neniu el tio funkcias, provu rekompili kun `make`.\n"
 msgstr "これがうまくいかない場合は、 `make`で再コンパイルしてみてください。\n"
 
 #. type: Title ##
-#: index.md:77
+#: index.md:79
 #, fuzzy, no-wrap
 msgid "uzado"
 msgstr "使用法"
 
 #. type: Plain text
-#: index.md:79
+#: index.md:81
 #, fuzzy, no-wrap
 msgid "Por konservi la enhavon de la fulmmemoro en la dosiero save.hex:\n"
 msgstr "フラッシュメモリの内容をsave.hexファイルに保存するには：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:79
+#: index.md:81
 #, no-wrap
 msgid "./cc_read save.hex\n"
 msgstr "./cc_read save.hex\n"
 
 #. type: Plain text
-#: index.md:83
+#: index.md:85
 #, fuzzy, no-wrap
 msgid "(daŭras ĉirkaŭ 1 minuton).\n"
 msgstr "(は約1分)続きます。\n"
 
 #. type: Plain text
-#: index.md:85
+#: index.md:87
 #, fuzzy, no-wrap
 msgid "Por viŝi fulmmemoron:\n"
 msgstr "フラッシュメモリをクリアするには：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:85
+#: index.md:87
 #, no-wrap
 msgid "./cc_erase\n"
 msgstr "./cc_erase\n"
 
 #. type: Plain text
-#: index.md:89
+#: index.md:91
 #, fuzzy, no-wrap
 msgid "**Noto:** Vi **devas** forviŝi antaŭ skribado (krom se vi vere scias, kion vi faros).\n"
 msgstr "**注：** あなた **は、あなたが何をしようとしているのか)を本当に理解していない限り、書く前に** 削除する必要があります (。\n"
 
 #. type: Plain text
-#: index.md:91
+#: index.md:93
 #, fuzzy, no-wrap
 msgid "Por programi la dosieron _CC2531ZNP-Prod.hex_ sur la klavo _CC2531_:\n"
 msgstr "キー _CC2531_でファイル _CC2531ZNP-Prod.hex_ をプログラムするには：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:91
+#: index.md:93
 #, no-wrap
 msgid "./cc_write CC2531ZNP-Prod.hex\n"
 msgstr "./cc_write CC2531ZNP-Prod.hex\n"
 
 #. type: Plain text
-#: index.md:95
+#: index.md:97
 #, fuzzy, no-wrap
 msgid "(daŭras ĉirkaŭ 3 minutojn).\n"
 msgstr "(は約3分)続きます。\n"
 
 #. type: Plain text
-#: index.md:97
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "<a id=\"uzi_aliajn_pinglojn\"></a>\n"
 msgstr ""
@@ -313,91 +324,91 @@ msgstr ""
 "は約3分\"続きます。_\n"
 
 #. type: Title ##
-#: index.md:97
+#: index.md:99
 #, fuzzy, no-wrap
 msgid "Uzi aliajn pinglojn"
 msgstr "他のピンを使用する"
 
 #. type: Plain text
-#: index.md:100
+#: index.md:102
 #, fuzzy, no-wrap
 msgid "ĉiuj ordonoj akceptas la jenajn argumentojn:\n"
 msgstr "すべてのコマンドは次の引数を受け入れます：\n"
 
 #. type: Bullet: ' * '
-#: index.md:102
+#: index.md:104
 #, fuzzy, no-wrap
 msgid "_-c_ pinglo: ŝanĝu la pinglon _DC_ (defaŭlte 27)\n"
 msgstr "_-c_ ピン：デフォルトでピン _DC_ (を変更します27)\n"
 
 #. type: Bullet: ' * '
-#: index.md:104
+#: index.md:106
 #, fuzzy, no-wrap
 msgid "_-d_ pinglo: ŝanĝu la pinglon _DD_ (defaŭlte 28)\n"
 msgstr "_-d_ ピン：デフォルトでピン _DD_ (を変更します28)\n"
 
 #. type: Bullet: ' * '
-#: index.md:106
+#: index.md:108
 #, fuzzy, no-wrap
 msgid "_-r_ pinglo: ŝanĝu la pinglon _reset_ (defaŭlte 24)\n"
 msgstr "_-r_ ピン：デフォルトでピン _reset_ (を変更します24)\n"
 
 #. type: Bullet: ' * '
-#: index.md:108
+#: index.md:110
 #, fuzzy, no-wrap
 msgid "_-m_ : ŝanĝu la prokrastan multiplikaton, kaj do la bazan tempon (defaŭlte: aŭtomata ĝustigo)\n"
 msgstr "_-m_ ：遅延乗数を変更するため、デフォルトではベースタイム (：自動調整)\n"
 
 #. type: Plain text
-#: index.md:111
+#: index.md:113
 #, fuzzy, no-wrap
 msgid "la pinglonumerado uzata estas tiu de _wiringPi_. Uzu `gpio readall` por havi la aranĝon en via _Raspberry_ (kolumno _wPi_ ).\n"
 msgstr "使用されるピン番号は _wiringPi_の番号です。 `gpio readall` を使用して、 _Raspberry_ (列 _wPi_ )にレイアウトを配置します。\n"
 
 #. type: Plain text
-#: index.md:112
+#: index.md:114
 #, fuzzy, no-wrap
 msgid "Ekzemple, se vi volas uzi pinglojn 3, 11 kaj 13:  \n"
 msgstr "たとえば、ピン3、11、13を使用する場合：  \n"
 
 #. type: Plain text
-#: index.md:114
+#: index.md:116
 #, fuzzy, no-wrap
 msgid "Konekti la jenajn pinglojn de elpuriga haveno al pordo _GPIO_:\n"
 msgstr "次のピンをデバッグポートからドアに接続します _GPIO_:\n"
 
 #. type: Bullet: ' 1. '
-#: index.md:116
+#: index.md:118
 #, fuzzy, no-wrap
 msgid "pinglo 1 ( _GND_ ) -> pinglo 14 ( _GND_ )\n"
 msgstr "ピン1 ( _GND_ ) -> ピン14 ( _GND_ )\n"
 
 #. type: Bullet: ' 2. '
-#: index.md:118
+#: index.md:120
 #, fuzzy, no-wrap
 msgid "pinglo 7 ( _reset_ ) -> pinglo 3 ( _wPi 8, BCM2_ )\n"
 msgstr "ピン7 ( _reset_ ) -> ピン3 ( _wPi 8, BCM2_ )\n"
 
 #. type: Bullet: ' 3. '
-#: index.md:120
+#: index.md:122
 #, fuzzy, no-wrap
 msgid "pinglo 3 ( _DC_ ) -> pinglo 11 ( _wPi 0, BCM17_ )\n"
 msgstr "ピン3 ( _DC_ ) -> ピン11 ( _wPi 0, BCM17_ )\n"
 
 #. type: Bullet: ' 4. '
-#: index.md:122
+#: index.md:124
 #, fuzzy, no-wrap
 msgid "pinglo 4 ( _DD_ ) -> pinglo 13 ( _wPi 2, BCM27_ )\n"
 msgstr "ピン4 ( _DD_ ) -> ピン13 ( _wPi 2, BCM27_ )\n"
 
 #. type: Plain text
-#: index.md:125
+#: index.md:127
 #, fuzzy, no-wrap
 msgid "kaj nun vi povas legi identigilon, konservi, forigi kaj skribi fulmmemoron per la jenaj komandoj:\n"
 msgstr "これで、次のコマンドを使用して、IDの読み取り、保存、削除、およびフラッシュメモリの書き込みを行うことができます。\n"
 
 #. type: Fenced code block (bash)
-#: index.md:125
+#: index.md:127
 #, no-wrap
 msgid ""
 "./cc_chipid -r 8 -c 0 -d 2\n"
@@ -411,74 +422,110 @@ msgstr ""
 "./cc_write -r 8 -c 0 -d 2 CC2531ZNP-Prod.hex\n"
 
 #. type: Plain text
-#: index.md:133
+#: index.md:135
 #, fuzzy, no-wrap
 msgid "Vi ankaŭ povas ŝanĝi la defaŭltajn valorojn en _CCDebugger.h_ kaj kompili la programojn per `make`.\n"
 msgstr " _CCDebugger.h_ でデフォルト値を変更し、 `make`でプログラムをコンパイルすることもできます。\n"
 
 #. type: Title ##
-#: index.md:134
+#: index.md:136
 #, fuzzy, no-wrap
 msgid "kio se ĝi ne funkcias?"
 msgstr "それが機能しない場合はどうなりますか？"
 
 #. type: Bullet: '1. '
-#: index.md:137
+#: index.md:139
 #, fuzzy, no-wrap
 msgid "ĉesu ĉiujn aliajn programojn.\n"
 msgstr "他のすべてのプログラムを停止します。\n"
 
 #. type: Bullet: '2. '
-#: index.md:139
+#: index.md:141
 #, fuzzy, no-wrap
 msgid "agordu la rapidon de la procesoro antaŭ programado. Ekzemplo:\n"
 msgstr "プログラミングする前にプロセッサ速度を設定します。例：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:140
+#: index.md:143
 #, no-wrap
 msgid "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 msgstr "   sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n"
 
 #. type: Bullet: '3. '
-#: index.md:144
+#: index.md:147
 #, fuzzy, no-wrap
 msgid "uzu la opcion -m por pliigi la uzatajn tempolimojn. Ekzemplo:\n"
 msgstr "-mオプションを使用して、使用する制限時間を増やします。例：\n"
 
 #. type: Fenced code block (bash)
-#: index.md:145
+#: index.md:149
 #, no-wrap
 msgid "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 msgstr "   ./cc_write -m 300 CC2531ZNP-Prod.hex\n"
 
 #. type: Bullet: '4. '
-#: index.md:149
+#: index.md:153
 #, fuzzy, no-wrap
 msgid "rekompili la programon per `make`.\n"
 msgstr " `make`でプログラムを再コンパイルします。\n"
 
+#. type: Bullet: '5. '
+#: index.md:156
+#, no-wrap
+#, fuzzy
+msgid "serĉu solvon [en la demandoj jam faritaj ĉe github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)\n"
+msgstr "github](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)ですでに尋ねられた質問で解決策 [を探してください\n"
+
+#. type: Bullet: '6. '
+#: index.md:159
+#, no-wrap
+#, fuzzy
+msgid "Demandu vian propran demandon pri [github](https://github.com/jmichault/flash_cc2531/issues/new/choose).\n"
+msgstr " [github](https://github.com/jmichault/flash_cc2531/issues/new/choose)について独自の質問をしてください。\n"
+
 #. type: Title ##
-#: index.md:151
+#: index.md:161
 #, fuzzy, no-wrap
 msgid "Permesilo"
 msgstr "ライセンス"
 
 #. type: Plain text
-#: index.md:153
+#: index.md:163
 #, fuzzy, no-wrap
 msgid "Ĉi tiu projekto estas rajtigita laŭ GPL v3 ( vidu _COPYING_ ).\n"
 msgstr "このプロジェクトは、GPL v3 ( でライセンスされています _COPYING_ )を参照してください。\n"
 
 #, fuzzy
+#~ msgid "_flash\\_cc2531_"
+#~ msgstr "_flash\\_cc2531_"
+
+#, fuzzy
+#~ msgid " _flash\\_cc2531_ permesas al vi programi vian CC2531 USB-bastonon de via _Raspberry_, sen bezono aŭ de _Arduino_ aŭ de _CC Debugger_.\n"
+#~ msgstr " _flash\\_cc2531_ を使用すると、 _Arduino_ または _CC Debugger_を必要とせずに、CC2531 USBスティックを _Raspberry_からプログラムできます。\n"
+
+#, fuzzy
 #~ msgid ""
-#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi tiu celo:\n"
-#~ "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)\n"
-#~ "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ "Elŝuta kablo _CC_ kaj 4 linioj _Dupont_ ino al ino estas perfektaj por ĉi "
+#~ "tiu celo:\n"
+#~ "![foto de la ŝlosilo kaj la _raspberry_ ](https://github.com/jmichault/"
+#~ "files/raw/master/Raspberry-CC2531.jpg)\n"
+#~ "Ĉi tiu estas mia plej ŝatata opcio, sed se vi ne havas kablon _CC_ vi "
+#~ "ankaŭ povas rekte luti la kablojn _Dupont_ sur la ŝlosilo: vidu ekzemple "
+#~ "la retejon [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-"
+#~ "flashing-cc2531-using-raspberry-pi-without-cc-debugger) aŭ "
+#~ "[ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/"
+#~ "flashing-cc2531-without-cc-debugger/)\n"
 #~ msgstr ""
-#~ "ダウンロードケーブル _CC_ と4本の線 _Dupont_ のメスからメスはこの目的に最適です：\n"
-#~ "![キーの写真と _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)）\n"
-#~ "これは私のお気に入りのオプションですが、ケーブル _CC_ がない場合は、キーにケーブル _Dupont_ を直接はんだ付けすることもできます。たとえば、Webサイト [ を参照してください。_lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) または [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)\n"
+#~ "ダウンロードケーブル _CC_ と4本の線 _Dupont_ のメスからメスはこの目的に最"
+#~ "適です：\n"
+#~ "![キーの写真と _raspberry_ ](https://github.com/jmichault/files/raw/"
+#~ "master/Raspberry-CC2531.jpg)）\n"
+#~ "これは私のお気に入りのオプションですが、ケーブル _CC_ がない場合は、キーに"
+#~ "ケーブル _Dupont_ を直接はんだ付けすることもできます。たとえば、Webサイト "
+#~ "[ を参照してください。_lemariva.com_ ](https://lemariva.com/blog/2019/08/"
+#~ "zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) または "
+#~ "[ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/"
+#~ "flashing-cc2531-without-cc-debugger/)\n"
 
 #, fuzzy
 #~ msgid ""

@@ -7,8 +7,8 @@ slug: ਜ਼ਰੂਰੀ!
 title: 'ਮੁੱਖ ਗੱਲ'
 ---
 
-# _flash\_cc2531_
- _flash\_cc2531_ ਤੁਹਾਨੂੰ _Arduino_ ਜਾਂ _CC Debugger_ਦੀ ਜ਼ਰੂਰਤ ਤੋਂ ਬਗੈਰ, ਆਪਣੇ ਸੀਸੀ 2531 ਯੂ ਐਸ ਬੀ ਸਟਿਕਸ ਨੂੰ ਆਪਣੇ _Raspberry_ਤੋਂ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ.
+# [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531)
+ [ _flash\_cc2531_ ](https://github.com/jmichault/flash_cc2531) ਤੁਹਾਨੂੰ _Raspberry_ਤੋਂ _Arduino_ ਜਾਂ _CC Debugger_ਬਿਨਾਂ ਆਪਣੀ ਸੀਸੀ 2531 USB ਕੁੰਜੀ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ.
 
 ## ਜਰੂਰੀ
 ਤੁਹਾਨੂੰ ਜਾਂ ਤਾਂ _Raspberry_ ਜਾਂ _Odroid-c2_ਦੀ ਜ਼ਰੂਰਤ ਹੈ.  
@@ -57,6 +57,8 @@ git clone https://github.com/jmichault/flash_cc2531.git
  4. ਪਿੰਨ 4 ( _DD_ ) -> ਪਿੰਨ 38 ( _wPi 28, BCM20_ )
 
 
+
+ _raspberry_ ਦਾ ਪਿੰਨ ਲੇਆਉਟ ਇੱਥੇ ਉਪਲਬਧ ਹੈ: <https://pinout.xyz/>
 
 ਅਤੇ ਇੱਕ ਪੋਰਟ ਵਿੱਚ USB ਕੁੰਜੀ ਪਾਓ.
 
@@ -160,16 +162,26 @@ cd flash_cc2531
 2. ਪ੍ਰੋਗਰਾਮਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਪ੍ਰੋਸੈਸਰ ਦੀ ਗਤੀ ਨਿਰਧਾਰਤ ਕਰੋ. ਉਦਾਹਰਣ:
 
 
+
    ```bash
    sudo echo performance >/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    ```
 3. ਸਮੇਂ ਦੀ ਸੀਮਾ ਨੂੰ ਵਧਾਉਣ ਲਈ -m ਵਿਕਲਪ ਦੀ ਵਰਤੋਂ ਕਰੋ. ਉਦਾਹਰਣ:
 
 
+
    ```bash
    ./cc_write -m 300 CC2531ZNP-Prod.hex
    ```
 4. (rec 1 °) ਨਾਲ ਪ੍ਰੋਗਰਾਮ ਦੁਬਾਰਾ ਕੰਪਾਈਲ ਕਰੋ.
+
+
+
+5. ਗਿੱਥਬ](https://github.com/jmichault/flash_cc2531/issues?q=is%3Aissue)'ਤੇ ਪਹਿਲਾਂ ਤੋਂ ਪੁੱਛੇ ਗਏ ਪ੍ਰਸ਼ਨਾਂ ਦੇ ਹੱਲ [ਦੀ ਭਾਲ ਕਰੋ
+
+
+
+6.  [ਗਿੱਥਬ](https://github.com/jmichault/flash_cc2531/issues/new/choose)ਬਾਰੇ ਆਪਣਾ ਖੁਦ ਦਾ ਪ੍ਰਸ਼ਨ ਪੁੱਛੋ.
 
 
 
