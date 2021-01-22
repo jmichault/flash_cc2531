@@ -217,7 +217,7 @@ a svg{
 
 @media (min-width: 48em) {
   .content {
-    max-width: 58rem;
+    max-width: 100%;
     margin-left: 8rem;
     margin-right: 2rem;
   }

@@ -13,7 +13,12 @@ title: "L'essentiel"
 ## Prérequis
 Vous avez besoin d'un _Raspberry_ ou d'un _Odroid-c2_.  
 Vous avez besoin de quoi connecter le port de débogage de la clé aux ports _GPIO_ du _Raspberry_, par exemple un câble _CC_ et quatre lignes _Dupont_ (voir plus loin).   
-[ _WiringPi_ ](http://wiringpi.com/) doit être installé (s'il n'est pas pré-installé, vous pouvez généralement l'installer avec `sudo apt install wiringpi`, sinon voir [le site Web de _Gordon_ ](http://wiringpi.com/) ou [ce site alternatif](https://github.com/WiringPi/WiringPi)).  
+[ _WiringPi_ ](http://wiringpi.com/) doit être installé \(s'il n'est pas pré-installé, vous pouvez généralement l'installer avec `sudo apt install wiringpi`, sinon voir [le site Web de _Gordon_ ](http://wiringpi.com/) ou [ce site alternatif](https://github.com/WiringPi/WiringPi) \).  
+Enfin il vous faut le logiciel :
+
+* en général un coordinateur zigbee : [ version 1.2 (recommandée)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) ou [version 3.0](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+* ou alors un routeur zigbee : [routeur zigbee 1.2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
 
 J'ai conçu _flash\_cc2531_ sur un _Raspberry Pi 3_ avec _raspbian_, mais des programmations réussies ont été signalées sur d'autres modèles:  
  * sur pi 4, vous aurez besoin de la version 2.52 de _wiringpi_ :  [installer _wiringPi_ 2.52 depuis le site Web de _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)
@@ -39,7 +44,7 @@ et insérez la clé USB dans un port.
 
 Un câble de téléchargement _CC_ et 4 lignes _Dupont_ Femelle à Femelle sont parfaits à cet effet :
 ![photo de la clé et du _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)
-C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+C'est mon option préférée, mais si vous n'avez pas de câble _CC_ vous pouvez aussi souder directement les câbles _Dupont_ sur la clé : voir par exemple le site [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 testez en exécutant ceci :

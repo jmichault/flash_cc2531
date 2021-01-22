@@ -10,10 +10,19 @@ title: 'A coisa principal'
 # _flash\_cc2531_
  _flash\_cc2531_ permite programar o stick USB CC2531 a partir do seu _Raspberry_, sem a necessidade de _Arduino_ ou _CC Debugger_.
 
-## Pré-requisitos
+## Pré-requisito
 Você precisa de _Raspberry_ ou _Odroid-c2_.  
 Você precisa do que conectar a porta de depuração da chave às portas _GPIO_ de _Raspberry_, por exemplo, um cabo _CC_ e quatro linhas _Dupont_ (veja mais).   
-[ _WiringPi_ ](http://wiringpi.com/) deve ser instalado (se não estiver pré-instalado, normalmente você pode instalá-lo com `sudo apt install wiringpi`), caso contrário, consulte [o local _Gordon_ ](http://wiringpi.com/) ou [deste local alternativo](https://github.com/WiringPi/WiringPi)).  
+[ _WiringPi_ ](http://wiringpi.com/) deve ser instalado \(se não estiver pré-instalado, normalmente você pode instalá-lo com `sudo apt install wiringpi`), caso contrário, consulte [o local _Gordon_ ](http://wiringpi.com/) ou [deste local alternativo](https://github.com/WiringPi/WiringPi) \).  
+Finalmente você precisa do programa:
+
+* geralmente coordenador zigbee: [ versão 1.2 (recomendado)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) ou [versão 3.0](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+
+
+* ou roteador zigbee: [roteador zigbee 1,2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
+
+
 
 Projetei _flash\_cc2531_ em _Raspberry Pi 3_ com _raspbian_, mas a programação bem-sucedida foi relatada em outros modelos:  
  * no pi 4, você precisará da versão 2.52 de _wiringpi_ :  [instalar _wiringPi_ 2.52 de _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)site
@@ -51,9 +60,9 @@ Conecte os seguintes pinos da porta de depuração à porta GPIO:
 
 e insira a chave USB em uma porta.
 
-Cabo de download _CC_ e 4 linhas _Dupont_ fêmea para fêmea são perfeitos para esta finalidade:
+Cabo de download _CC_ e 4 linhas _Dupont_ Fêmea para Fêmea são perfeitos para esta finalidade:
 ![foto da chave e a _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
-Esta é a minha opção preferida, mas se você não tiver um cabo _CC_ você também pode soldar diretamente os cabos _Dupont_ na chave: veja por exemplo o site [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Esta é a minha opção preferida, mas se você não tem um cabo _CC_ você também pode soldar diretamente os cabos _Dupont_ na chave: veja por exemplo o site [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ou [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 tente isto:
@@ -90,7 +99,7 @@ Para limpar uma memória flash:
 ```
 **Nota:** Você **deve** deletar antes de escrever (a menos que você realmente saiba o que vai fazer).
 
-Para programar o arquivo na chave _CC2531_:
+Para programar o arquivo _CC2531ZNP-Prod.hex_ na chave _CC2531_:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```

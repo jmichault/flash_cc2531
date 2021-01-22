@@ -10,10 +10,19 @@ title: 'ਮੁੱਖ ਗੱਲ'
 # _flash\_cc2531_
  _flash\_cc2531_ ਤੁਹਾਨੂੰ _Arduino_ ਜਾਂ _CC Debugger_ਦੀ ਜ਼ਰੂਰਤ ਤੋਂ ਬਗੈਰ, ਆਪਣੇ ਸੀਸੀ 2531 ਯੂ ਐਸ ਬੀ ਸਟਿਕਸ ਨੂੰ ਆਪਣੇ _Raspberry_ਤੋਂ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ.
 
-## ਜਰੂਰੀ ਹੈ
+## ਜਰੂਰੀ
 ਤੁਹਾਨੂੰ ਜਾਂ ਤਾਂ _Raspberry_ ਜਾਂ _Odroid-c2_ਦੀ ਜ਼ਰੂਰਤ ਹੈ.  
 ਤੁਹਾਨੂੰ ਕੀ ਚਾਹੀਦਾ ਹੈ ਕਿ ਕੀ ਦੇ ਡੀਬੱਗ ਪੋਰਟ ਨੂੰ ( _Raspberry_ਦੇ ਪੋਰਟਾਂ _GPIO_ ਨਾਲ ਜੋੜਨਾ ਹੈ, ਉਦਾਹਰਣ ਲਈ ਇੱਕ ਕੇਬਲ _CC_ ਅਤੇ ਚਾਰ ਲਾਈਨਾਂ _Dupont_ (ਹੋਰ ਵੇਖੋ).   
-[ _WiringPi_ ](http://wiringpi.com/) ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ ਸਥਾਪਤ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ (ਜੇ ਇਹ ਪਹਿਲਾਂ ਤੋਂ ਸਥਾਪਤ ਨਹੀਂ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਆਮ ਤੌਰ' ਤੇ ਇਸ ਨੂੰ `sudo apt install wiringpi`)ਨਾਲ ਸਥਾਪਤ ਕਰ ਸਕਦੇ ਹੋ, ਨਹੀਂ ਤਾਂ [ _Gordon_ ](http://wiringpi.com/) ਜਾਂ [ਇਸ ਵਿਕਲਪਕ ਸਾਈਟ](https://github.com/WiringPi/WiringPi)).  
+[ _WiringPi_ ](http://wiringpi.com/) ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ ਸਥਾਪਤ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ \(ਜੇ ਇਹ ਪਹਿਲਾਂ ਤੋਂ ਸਥਾਪਤ ਨਹੀਂ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਆਮ ਤੌਰ' ਤੇ ਇਸ ਨੂੰ `sudo apt install wiringpi`)ਨਾਲ ਸਥਾਪਤ ਕਰ ਸਕਦੇ ਹੋ, ਨਹੀਂ ਤਾਂ [ _Gordon_ ](http://wiringpi.com/) ਜਾਂ [ਇਸ ਵਿਕਲਪਕ ਸਾਈਟ](https://github.com/WiringPi/WiringPi) \).  
+ਅੰਤ ਵਿੱਚ ਤੁਹਾਨੂੰ ਪ੍ਰੋਗਰਾਮ ਦੀ ਜ਼ਰੂਰਤ ਹੈ:
+
+* ਆਮ ਤੌਰ 'ਤੇ ਜਿਗਬੀ ਕੋਆਰਡੀਨੇਟਰ: [ ਵਰਜ਼ਨ 1.2 (ਸਿਫਾਰਿਸ਼ ਕੀਤੇ)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) ਜਾਂ [ਵਰਜ਼ਨ 3.0](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+
+
+* ਜਾਂ ਜ਼ਿੱਗੀ ਰਾ rouਟਰ: [ਜ਼ਿੱਗਬੀ ਰਾ rouਟਰ 1.2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
+
+
 
 ਮੈਂ _flash\_cc2531_  _Raspberry Pi 3_ ਤੇ _raspbian_ਦਾ ਅਨੁਮਾਨ ਲਗਾਇਆ, ਪਰ ਸਫਲ ਪ੍ਰੋਗ੍ਰਾਮਿੰਗ ਦੀ ਰਿਪੋਰਟ ਦੂਜੇ ਮਾਡਲਾਂ 'ਤੇ ਦਿੱਤੀ ਗਈ:  
  * ਪੀਆਈ 4 ਤੇ ਤੁਹਾਨੂੰ _wiringpi_ ਵਰਜ਼ਨ 2.52 ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ:  [ _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)ਵੈਬਸਾਈਟਦੇ 2.52 _wiringPi_ ਸਥਾਪਤ ਕਰੋ.
@@ -51,9 +60,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 
 ਅਤੇ ਇੱਕ ਪੋਰਟ ਵਿੱਚ USB ਕੁੰਜੀ ਪਾਓ.
 
-ਡਾਉਨਲੋਡ ਕੇਬਲ _CC_ ਅਤੇ 4 ਲਾਈਨਾਂ _Dupont_ toਰਤ ਤੋਂ femaleਰਤ ਇਸ ਮਕਸਦ ਲਈ ਸਹੀ ਹਨ:
-![ਕੁੰਜੀ ਦੀ ਫੋਟੋ ਅਤੇ _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
-ਇਹ ਮੇਰਾ ਮਨਪਸੰਦ ਵਿਕਲਪ ਹੈ, ਪਰ ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਕੇਬਲ _CC_ ਨਹੀਂ ਹੈ ਤਾਂ ਤੁਸੀਂ ਕੁੰਜੀ ਤੇ ਕੇਬਲ _Dupont_ ਨੂੰ ਸਿੱਧੇ ਤੌਰ 'ਤੇ ਵੀ ਸੌਂਡਰ ਕਰ ਸਕਦੇ ਹੋ: ਉਦਾਹਰਣ ਲਈ ਵੈਬਸਾਈਟ [ ਦੇਖੋ_lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ਜਾਂ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+ਡਾਉਨਲੋਡ ਕੇਬਲ _CC_ ਅਤੇ 4 ਲਾਈਨਾਂ _Dupont_ toਰਤ ਤੋਂ Femaleਰਤ ਇਸ ਮਕਸਦ ਲਈ ਸਹੀ ਹਨ:
+![ਕੁੰਜੀ ਦੀ ਫੋਟੋ ਅਤੇ (° 7 ()](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
+ਇਹ ਮੇਰਾ ਮਨਪਸੰਦ ਵਿਕਲਪ ਹੈ, ਪਰ ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਕੇਬਲ _CC_ ਨਹੀਂ ਹੈ ਤਾਂ ਤੁਸੀਂ ਕੁੰਜੀ ਤੇ ਕੇਬਲ _Dupont_ ਨੂੰ ਸਿੱਧੇ ਤੌਰ 'ਤੇ ਵੀ ਸੌਂਡਰ ਕਰ ਸਕਦੇ ਹੋ: ਉਦਾਹਰਣ ਲਈ ਵੈਬਸਾਈਟ [ ਦੇਖੋ_lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) ਜਾਂ [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 ਇਸਨੂੰ ਅਜ਼ਮਾਓ:
@@ -90,7 +99,7 @@ cd flash_cc2531
 ```
 **ਨੋਟ:** ਤੁਹਾਨੂੰ** ਲਾਜ਼ਮੀ ਤੌਰ 'ਤੇ** ਮਿਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ (ਜਦ ਤੱਕ ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ ਪਤਾ ਨਹੀਂ ਹੁੰਦਾ ਕਿ ਤੁਸੀਂ ਕੀ ਕਰਨ ਜਾ ਰਹੇ ਹੋ).
 
-ਕੁੰਜੀ ਉੱਤੇ ਫਾਈਲ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਲਈ (° 1 program):
+ਕੁੰਜੀ _CC2531_'ਤੇ ਫਾਈਲ _CC2531ZNP-Prod.hex_ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਕਰਨ ਲਈ:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```

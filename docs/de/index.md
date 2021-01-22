@@ -10,10 +10,19 @@ title: 'Die Hauptsache'
 # _flash\_cc2531_
 Mit _flash\_cc2531_ können Sie Ihren CC2531-USB-Stick von Ihrem _Raspberry_aus programmieren, ohne dass Sie _Arduino_ oder _CC Debugger_benötigen.
 
-## Voraussetzungen
+## Voraussetzung
 Sie benötigen entweder _Raspberry_ oder _Odroid-c2_.  
 Sie benötigen, um den Debug-Port des Schlüssels mit den Ports _GPIO_ von _Raspberry_zu verbinden, z. B. ein Kabel _CC_ und vier Leitungen _Dupont_ (, siehe weiter).   
-[ _WiringPi_ ](http://wiringpi.com/) muss installiert werden (Wenn es nicht vorinstalliert ist, können Sie es normalerweise mit `sudo apt install wiringpi`)installieren, andernfalls siehe [die Stelle von _Gordon_ ](http://wiringpi.com/) oder [dieser alternativen Stelle](https://github.com/WiringPi/WiringPi)).  
+[ _WiringPi_ ](http://wiringpi.com/) muss installiert werden \(Wenn es nicht vorinstalliert ist, können Sie es normalerweise mit `sudo apt install wiringpi`)installieren, andernfalls siehe [die Stelle von _Gordon_ ](http://wiringpi.com/) oder [dieser alternativen Stelle](https://github.com/WiringPi/WiringPi) \).  
+Schließlich benötigen Sie das Programm:
+
+* allgemein ZigBee-Koordinator: [ Version 1.2 (empfohlen)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) oder [Version 3.0](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+
+
+* oder ZigBee-Router: [ZigBee-Router 1,2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
+
+
 
 Ich habe _flash\_cc2531_ auf _Raspberry Pi 3_ mit _raspbian_projiziert, aber bei anderen Modellen wurde über erfolgreiche Programmierung berichtet:  
  * auf pi 4 benötigen sie version 2.52 von _wiringpi_ :  [install _wiringPi_ 2.52 von _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)website
@@ -51,9 +60,9 @@ Verbinden Sie die folgenden Pins vom Debug-Port mit dem GPIO-Port:
 
 und stecken Sie den USB-Stick in einen Anschluss.
 
-Das Download-Kabel _CC_ und 4 Leitungen _Dupont_ von Buchse zu Buchse sind für diesen Zweck perfekt geeignet:
+Download-Kabel _CC_ und 4 Leitungen _Dupont_ von Buchse zu Buchse eignen sich perfekt für diesen Zweck:
 ![Foto des Schlüssels und des _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
-Dies ist meine Lieblingsoption, aber wenn Sie kein Kabel _CC_ haben, können Sie die Kabel _Dupont_ auch direkt auf den Schlüssel löten: siehe zum Beispiel die Website [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) oder [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Dies ist meine Lieblingsoption, aber wenn Sie kein Kabel _CC_ haben, können Sie die Kabel _Dupont_ auch direkt auf den Schlüssel löten: siehe zum Beispiel die Website [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) oder [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 versuchen Sie dies:
@@ -90,7 +99,7 @@ So löschen Sie einen Flash-Speicher:
 ```
 **Hinweis:** Sie **müssen** vor dem Schreiben löschen (, es sei denn, Sie wissen wirklich, was Sie tun werden).
 
-So programmieren Sie die Datei auf der Taste _CC2531_:
+So programmieren Sie die Datei _CC2531ZNP-Prod.hex_ auf der Taste _CC2531_:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```

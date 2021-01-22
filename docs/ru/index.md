@@ -10,10 +10,19 @@ title: Главное
 # _flash\_cc2531_
  _flash\_cc2531_ позволяет программировать USB-накопитель CC2531 с вашего _Raspberry_, без необходимости в _Arduino_ или _CC Debugger_.
 
-## Предпосылки
+## Предпосылка
 Вам нужно либо _Raspberry_ , либо _Odroid-c2_.  
 Вам нужно, что подключить порт отладки ключа к портам _GPIO_ из _Raspberry_, например один кабель _CC_ и четыре линии _Dupont_ (см. Далее).   
-[ _WiringPi_ ](http://wiringpi.com/) должен быть установлен (, если он не установлен предварительно, обычно вы можете установить его с помощью `sudo apt install wiringpi`), в противном случае см. [место _Gordon_ ](http://wiringpi.com/) или [этого альтернативного места](https://github.com/WiringPi/WiringPi)).  
+[ _WiringPi_ ](http://wiringpi.com/) должен быть установлен \(, если он не установлен предварительно, обычно вы можете установить его с помощью `sudo apt install wiringpi`), в противном случае см. [место _Gordon_ ](http://wiringpi.com/) или [этого альтернативного места](https://github.com/WiringPi/WiringPi) \).  
+Наконец, вам нужна программа:
+
+* обычно координатор зигби: [ версия 1.2 (рекомендуется)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) или [версия 3.0](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+
+
+* или зигби-роутер: [зигби-роутер 1.2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
+
+
 
 Я проецировал _flash\_cc2531_ на _Raspberry Pi 3_ с помощью _raspbian_, но сообщалось об успешном программировании на других моделях:  
  * на Pi 4 вам понадобится версия 2.52 из _wiringpi_ :  [установить _wiringPi_ 2,52 из _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)веб-сайт
@@ -51,9 +60,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 
 и вставьте USB-ключ в порт.
 
-Загрузочный кабель _CC_ и 4 линии _Dupont_ гнездо-гнездо идеально подходят для этой цели:
+Кабель для скачивания _CC_ и 4 линии _Dupont_ между гнездом и гнездом идеально подходят для этой цели:
 ![фотография ключа и _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
-Это мой любимый вариант, но если у вас нет кабеля _CC_ , вы также можете напрямую припаять кабели _Dupont_ к ключу: см., Например, веб-сайт [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) или [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Это мой любимый вариант, но если у вас нет кабеля _CC_ , вы также можете напрямую припаять кабели _Dupont_ к ключу: см., Например, веб-сайт [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) или [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 попробуйте это:
@@ -90,7 +99,7 @@ cd flash_cc2531
 ```
 **Примечание:** Вы **должны** удалить перед записью (, если вы действительно не знаете, что собираетесь делать).
 
-Чтобы запрограммировать файл на клавишу _CC2531_:
+Чтобы запрограммировать файл _CC2531ZNP-Prod.hex_ на клавишу _CC2531_:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```

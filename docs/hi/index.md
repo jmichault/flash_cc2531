@@ -10,10 +10,19 @@ title: 'सबसे ज़रूरी चीज़'
 # _flash\_cc2531_
  _flash\_cc2531_ आपको या तो _Arduino_ या _CC Debugger_की आवश्यकता के बिना, आपके _Raspberry_से अपने CC2531 USB स्टिक को प्रोग्राम करने की अनुमति देता है।
 
-## आवश्यक शर्तें
+## शर्त
 आपको या तो _Raspberry_ या _Odroid-c2_की आवश्यकता है।  
 आपको कुंजी के डिबग पोर्ट _GPIO_ को _Raspberry_से जोड़ने की आवश्यकता है, उदाहरण के लिए एक केबल _CC_ और चार लाइनें _Dupont_ (आगे देखें)।   
-[ (° १३ °) (° १५ °) (° १५ °) अवश्य स्थापित होना चाहिए (° १) °) यदि यह पूर्व-स्थापित नहीं है, तो आप इसे आमतौर पर (° १) °) स्थापित कर सकते हैं, अन्यथा देखें [ _Gordon_ ](http://wiringpi.com/) या [इस वैकल्पिक स्थल](https://github.com/WiringPi/WiringPi))की साइट।  
+[ (° १३ °) (° १५ °) (° १५ °) अवश्य स्थापित होना चाहिए (° १) °) यदि यह पूर्व-स्थापित नहीं है, तो आप इसे आमतौर पर (° १) °) स्थापित कर सकते हैं, अन्यथा देखें [ _Gordon_ ](http://wiringpi.com/) या [इस वैकल्पिक स्थल](https://github.com/WiringPi/WiringPi) \)की साइट।  
+अंत में आपको कार्यक्रम की आवश्यकता है:
+
+* आम तौर पर zigbee समन्वयक: [ संस्करण 1.2 (अनुशंसित)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) या [संस्करण 3.0](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+
+
+* या zigbee राउटर: [zigbee राउटर 1.2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
+
+
 
 मैंने _raspbian_पर _Raspberry Pi 3_ के साथ अनुमान लगाया (सफल ° °), लेकिन सफल प्रोग्रामिंग अन्य मॉडलों पर बताया गया:  
  * पीआई 4 पर आपको संस्करण 2.52 _wiringpi_ की आवश्यकता होगी:  [स्थापित _wiringPi_ 2.52 of _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)वेबसाइट
@@ -51,9 +60,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 
 और USB कुंजी को एक पोर्ट में डालें।
 
-डाउनलोड केबल _CC_ और 4 लाइनें _Dupont_ मादा मादा इस उद्देश्य के लिए एकदम सही हैं:
-![कुंजी और _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)की फोटो )
-यह मेरा पसंदीदा विकल्प है, लेकिन अगर आपके पास केबल _CC_ नहीं है, तो आप सीधे केबल को भी मिला सकते हैं _Dupont_ कुंजी पर: उदाहरण के लिए वेबसाइट देखें [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) या [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+डाउनलोड केबल _CC_ और 4 लाइनें _Dupont_ महिला से महिला इस उद्देश्य के लिए एकदम सही हैं:
+![कुंजी की फोटो और _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
+यह मेरा पसंदीदा विकल्प है, लेकिन अगर आपके पास केबल _CC_ नहीं है, तो आप सीधे केबल को भी मिला सकते हैं _Dupont_ कुंजी पर: उदाहरण के लिए वेबसाइट देखें [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) या [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 इसे आज़माएं:
@@ -90,7 +99,7 @@ Save.hex फ़ाइल में फ्लैश मेमोरी की स
 ```
 **नोट:** आपको (° ३ °) लिखना होगा (° ४ °) लिखने से पहले हटा दें (° ५ °) जब तक आप वास्तव में नहीं जानते कि आप क्या करने जा रहे हैं (° ६ °)।
 
-कुंजी _CC2531_पर फ़ाइल को प्रोग्राम करने के लिए:
+कुंजी _CC2531_पर फ़ाइल _CC2531ZNP-Prod.hex_ को प्रोग्राम करने के लिए:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```

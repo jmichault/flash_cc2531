@@ -10,10 +10,19 @@ title: 'الشيء الرئيسي'
 # _flash\_cc2531_
  _flash\_cc2531_ يسمح لك ببرمجة CC2531 USB stick الخاص بك _Raspberry_، دون الحاجة إلى _Arduino_ أو _CC Debugger_.
 
-## المتطلبات الأساسية
+## المتطلبات المسبقة
 تحتاج إما _Raspberry_ أو _Odroid-c2_.  
-أنت بحاجة إلى ما لتوصيل منفذ التصحيح الخاص بالمفتاح بالمنافذ _GPIO_ من _Raspberry_، على سبيل المثال كابل واحد _CC_ وأربعة خطوط _Dupont_ (انظر أيضًا).   
-[ _WiringPi_ ](http://wiringpi.com/) يجب تثبيتها (إذا لم تكن مثبتة مسبقًا ، يمكنك عادةً تثبيتها بـ `sudo apt install wiringpi`)، وإلا انظر [موقع _Gordon_ ](http://wiringpi.com/) أو [هذا الموقع البديل](https://github.com/WiringPi/WiringPi)). (° 28 درجة)  
+أنت بحاجة إلى ما لتوصيل منفذ التصحيح الخاص بالمفتاح بالمنافذ _GPIO_ من _Raspberry_، على سبيل المثال كابل واحد _CC_ وأربعة خطوط _Dupont_ (انظر أيضًا). يجب تثبيت   
+[ _WiringPi_ ](http://wiringpi.com/)  \(إذا لم يكن مثبتًا مسبقًا ، يمكنك عادةً تثبيته بـ `sudo apt install wiringpi`)، وإلا انظر20 °) موقع _Gordon_ ](http://wiringpi.com/) أو [هذا الموقع البديل](https://github.com/WiringPi/WiringPi) \). (° 29 درجة)  
+أخيرًا تحتاج البرنامج:
+
+* بشكل عام منسق زيجبي: [ الإصدار 1.2 (موصى به)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) أو [الإصدار 3.0](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+
+
+* أو جهاز التوجيه zigbee: [zigbee router 1.2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
+
+
 
 لقد توقعت _flash\_cc2531_ على _Raspberry Pi 3_ مع _raspbian_، لكن تم الإبلاغ عن برمجة ناجحة في الطرز الأخرى:  
  * في pi 4 ، ستحتاج إلى الإصدار 2.52 من _wiringpi_ :  [تثبيت _wiringPi_ 2.52 من _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)موقع ويب
@@ -51,9 +60,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 
 وأدخل مفتاح USB في المنفذ.
 
-تحميل الكابل _CC_ و 4 خطوط _Dupont_ للإناث للإناث مثالية لهذا الغرض:
+تحميل كابل _CC_ و 4 خطوط _Dupont_ من أنثى إلى أنثى مثالية لهذا الغرض:
 ![صورة المفتاح و _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
-هذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، فيمكنك أيضًا لحام الكابلات مباشرة _Dupont_ على المفتاح: انظر على سبيل المثال موقع الويب [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) أو [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+هذا هو خياري المفضل ، ولكن إذا لم يكن لديك كابل _CC_ ، فيمكنك أيضًا لحام الكابلات مباشرة _Dupont_ على المفتاح: انظر على سبيل المثال موقع الويب [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) أو [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 جرب هذا:
@@ -90,7 +99,7 @@ cd flash_cc2531
 ```
 **ملاحظة:** يجب عليك **** حذفها قبل الكتابة (ما لم تكن تعرف حقًا ما الذي ستفعله).
 
-لبرمجة الملف على المفتاح _CC2531_:
+لبرمجة الملف _CC2531ZNP-Prod.hex_ على المفتاح _CC2531_:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```

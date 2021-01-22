@@ -12,8 +12,17 @@ title: 'Perkara utama'
 
 ## Prasyarat
 Anda memerlukan _Raspberry_ atau _Odroid-c2_.  
-Anda memerlukan apa yang hendak menghubungkan port debug kunci ke port _GPIO_  _Raspberry_, contohnya satu kabel _CC_ dan empat baris _Dupont_ (lihat lebih jauh).   
-[ _WiringPi_ ](http://wiringpi.com/) mesti dipasang (jika tidak dipasang sebelumnya, anda biasanya boleh memasangnya dengan `sudo apt install wiringpi`), jika tidak, lihat [tapak _Gordon_ ](http://wiringpi.com/) atau [tapak alternatif ini](https://github.com/WiringPi/WiringPi)).  
+Anda memerlukan apa yang hendak menghubungkan port debug kunci ke port _GPIO_  _Raspberry_, misalnya satu kabel _CC_ dan empat baris _Dupont_ (lihat lebih jauh).   
+[ _WiringPi_ ](http://wiringpi.com/) mesti dipasang \(jika tidak dipasang sebelumnya, anda biasanya boleh memasangnya dengan `sudo apt install wiringpi`), jika tidak, lihat [tapak _Gordon_ ](http://wiringpi.com/) atau [tapak alternatif ini](https://github.com/WiringPi/WiringPi) \).  
+Akhirnya anda memerlukan program:
+
+* umumnya koordinator zigbee: [ versi 1.2 (disyorkan)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) atau [versi 3.0](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+
+
+* atau penghala zigbee: [penghala zigbee 1.2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
+
+
 
 Saya mengunjurkan _flash\_cc2531_ pada _Raspberry Pi 3_ dengan _raspbian_, tetapi pengaturcaraan yang berjaya dilaporkan pada model lain:  
  * pada pi 4 anda memerlukan versi 2.52 dari _wiringpi_ :  [memasang _wiringPi_ 2.52 dari _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)laman web
@@ -51,9 +60,9 @@ Sambungkan pin berikut dari port debug ke port GPIO:
 
 dan masukkan kekunci USB ke dalam port.
 
-Muat turun kabel _CC_ dan 4 baris _Dupont_ wanita ke wanita sangat sesuai untuk tujuan ini:
+Muat turun kabel _CC_ dan 4 baris _Dupont_ Perempuan ke Perempuan sangat sesuai untuk tujuan ini:
 ![foto kunci dan _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg))
-Ini adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai kabel _CC_ , anda juga boleh menyolder kabel secara langsung _Dupont_ pada kunci: lihat misalnya laman web [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) atau [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+Ini adalah pilihan kegemaran saya, tetapi jika anda tidak mempunyai kabel _CC_ , anda juga boleh menyolder kabel secara langsung _Dupont_ pada kunci: lihat misalnya laman web [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) atau [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 cuba ini:
@@ -90,7 +99,7 @@ Untuk mengosongkan memori kilat:
 ```
 **Catatan:** Anda **mesti** hapus sebelum menulis (kecuali anda benar-benar tahu apa yang akan anda lakukan).
 
-Untuk memprogram fail pada kekunci _CC2531_:
+Untuk memprogram fail _CC2531ZNP-Prod.hex_ pada kekunci _CC2531_:
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```

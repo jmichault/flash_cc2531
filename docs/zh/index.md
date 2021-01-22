@@ -13,7 +13,16 @@ title: 最主要的
 ## 先决条件
 您需要 _Raspberry_ 或 _Odroid-c2_。  
 您需要将钥匙的调试端口连接到 _Raspberry_的端口 _GPIO_ 的工具，例如一根电缆 _CC_ 和四根线 _Dupont_ (，请参见)。如果未预先安装   
-[ _WiringPi_ ](http://wiringpi.com/)  (，通常可以将其安装为 `sudo apt install wiringpi`)，否则请参见（° _Gordon_ ](http://wiringpi.com/) 或 [这个替代位置](https://github.com/WiringPi/WiringPi))的位置。  
+[ _WiringPi_ ](http://wiringpi.com/)  \(，通常可以将其安装为 `sudo apt install wiringpi`)，否则请参见（° _Gordon_ ](http://wiringpi.com/) 或 [这个替代位置](https://github.com/WiringPi/WiringPi) \)的位置。  
+最后，您需要程序：
+
+* 通常是Zigbee协调器： [ 1.2版 (推荐)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) 或 [3.0版](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+
+
+* 或Zigbee路由器： [Zigbee路由器1.2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
+
+
 
 我将 _Raspberry Pi 3_ 与 _raspbian_投影在 _flash\_cc2531_ 上，但在其他型号上报告了成功的编程：  
  * 在pi 4上，您将需要版本2.52 _wiringpi_ ：  [安装 _wiringPi_ 2.52 of _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)网站
@@ -51,9 +60,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 
 并将USB密钥插入端口。
 
-下载电缆 _CC_ 和4线 _Dupont_ 母对母非常适合此目的：
+下载电缆 _CC_ 和4条线 _Dupont_ 母对母非常适合此目的：
 ![按键照片和 _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)）
-这是我最喜欢的选项，但是如果没有电缆 _CC_ ，也可以直接在键上焊接电缆 _Dupont_ ：例如，参见网站 [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) 或 [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+这是我最喜欢的选项，但是如果您没有电缆 _CC_ ，也可以直接在键上焊接电缆 _Dupont_ ：例如，参见网站 [ _lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) 或 [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 试试这个：
@@ -90,7 +99,7 @@ cd flash_cc2531
 ```
 **注：** 除非 (，否则 **必须** 删除，除非您真的知道要做什么)。
 
-要将文件编程在键上 _CC2531_：
+要在键 _CC2531_上对文件 _CC2531ZNP-Prod.hex_ 进行编程：
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```

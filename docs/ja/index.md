@@ -13,7 +13,16 @@ title: 重要なこと
 ## 前提条件
  _Raspberry_ または _Odroid-c2_のいずれかが必要です。  
 キーのデバッグポートを _Raspberry_のポート _GPIO_ に接続するものが必要です。たとえば、1本のケーブル _CC_ と4本の線 _Dupont_ (を参照してください(°10°）。   
-[ _WiringPi_ ](http://wiringpi.com/) が事前にインストールされていない場合はインストールする必要があります (、通常は `sudo apt install wiringpi`)でインストールできます。それ以外の場合は [ _Gordon_ ](http://wiringpi.com/) または [この代替サイト](https://github.com/WiringPi/WiringPi))のサイト。  
+[ _WiringPi_ ](http://wiringpi.com/) が事前にインストールされていない場合はインストールする必要があります \(、通常は `sudo apt install wiringpi`)でインストールできます。それ以外の場合は [ _Gordon_ ](http://wiringpi.com/) または [この代替サイト](https://github.com/WiringPi/WiringPi) \)のサイト。  
+最後に、プログラムが必要です：
+
+* 一般的にジグビーコーディネーター： [ バージョン1.2 (推奨)](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/) または [バージョン3.0](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.0.x/bin)
+
+
+* またはジグビールーター： [ジグビールーター1.2](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/CC2531/bin)
+
+
+
 
  _flash\_cc2531_ を _raspbian_で _Raspberry Pi 3_ に投影しましたが、他のモデルでプログラミングの成功が報告されました：  
  * pi 4では、バージョン2.52の _wiringpi_ が必要になります：  [インストール _wiringPi_ 2.52の _Gordon_ ](http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/)ウェブサイト
@@ -51,9 +60,9 @@ git clone https://github.com/jmichault/flash_cc2531.git
 
 USBキーをポートに挿入します。
 
-ダウンロードケーブル _CC_ と4本の線 _Dupont_ のメスからメスはこの目的に最適です：
+ダウンロードケーブル _CC_ と4本の線 _Dupont_ メスからメスはこの目的に最適です：
 ![キーの写真と _raspberry_ ](https://github.com/jmichault/files/raw/master/Raspberry-CC2531.jpg)）
-これは私のお気に入りのオプションですが、ケーブル _CC_ がない場合は、キーにケーブル _Dupont_ を直接はんだ付けすることもできます。たとえば、Webサイト [ を参照してください。_lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) または [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/)
+これは私のお気に入りのオプションですが、ケーブル _CC_ がない場合は、キーにケーブル _Dupont_ を直接はんだ付けすることもできます。たとえば、Webサイト [ を参照してください。_lemariva.com_ ](https://lemariva.com/blog/2019/08/zigbee-flashing-cc2531-using-raspberry-pi-without-cc-debugger) または [ _notenoughtech.com_ ](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger )
 
 
 これを試してください：
@@ -90,7 +99,7 @@ cd flash_cc2531
 ```
 **注：** あなた **は、あなたが何をしようとしているのか)を本当に理解していない限り、書く前に** 削除する必要があります (。
 
-キーにファイルをプログラムするには _CC2531_:
+キー _CC2531_でファイル _CC2531ZNP-Prod.hex_ をプログラムするには：
 ```bash
 ./cc_write CC2531ZNP-Prod.hex
 ```

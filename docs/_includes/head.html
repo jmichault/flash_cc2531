@@ -8,9 +8,9 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.data.translations['titolo'][page.lang] }} &middot; {{ site.tagline }}
+      {{ site.data.translations['titolo'][page.lang] | replace: "_", "" }} &middot; {{ site.tagline }}
     {% else %}
-      {{ page.title }} &middot; {{ site.data.translations['titolo'][page.lang] }}
+      {{ page.title | replace: "_", "" }} &middot; {{ site.data.translations['titolo'][page.lang] | replace: "_", "" }}
     {% endif %}
   </title>
 

@@ -21,6 +21,8 @@
       </header>
     </div>
     {% endif %}
+
+    {% if site.ne_googlesearch != "true" %}
     <div>
       <header class="lang-options">
       <form method="get" action="http://www.google.com/search" target="_blank">
@@ -30,6 +32,7 @@
       </header>
     </div>
     <br>
+    {% endif %}
 
     <div class="sidebar-about">
       <h1>
@@ -40,6 +43,9 @@
       <p class="lead">{{ site.data.translations['priskribo'][page.lang] | markdownify }}</p>
     </div>
 
+    {% if site.ne_afisxoj != "true" %}
+        <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{site.baseurl}}/{{ page.lang }}">{{ site.data.translations['cxiujAfisxoj'][page.lang] }}</a>
+    {% endif %}
     {% assign page_indekso = site.pages | where:"lang", page.lang | where:"lang-ref", "indekso" %}
     {% for node in pages_list %}
       {% if node.layout == "index" %}
