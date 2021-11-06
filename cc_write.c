@@ -24,6 +24,8 @@
 
 #include "CCDebugger.h"
 
+int vorte=0;
+
 uint8_t buffer[601];
 uint8_t data[260];
 uint8_t buf1[1024];
@@ -83,16 +85,11 @@ uint8_t verif2[2048];
 
 int verifPage(int page)
 {
-  do
-  {
-    readPage(page,verif1);
-    readPage(page,verif2);
-  } while (memcmp(verif1,verif2,2048));
   for(int i=Pages[page].minoffset ; i<=Pages[page].maxoffset ;i++)
   {
     if(verif1[i] != Pages[page].datas[i])
     {
-      printf("\nerror at 0x%x, 0x%x instead of 0x%x\n",i,verif1[i],Pages[page].datas[i]);
+      if(vorte) fprintf(stderr,"\nerror at 0x%x, 0x%x instead of 0x%x\n",i,verif1[i],Pages[page].datas[i]);
       return 1;
     }
   }
@@ -201,9 +198,16 @@ int writePage(int page)
   res |= 2;
   writeXDATA(0x6270, &res, 1);
   // wait DMA end :
+  int provo=0;
   do
   {
     sleep(1);
+    provo++;
+    if(provo >10)
+    {
+      fprintf(stderr,"\nflash error... Have you erased before write ?\n");
+      exit(1);
+    }
     res = cc_exec2(0xE5, 0xD1);
     res &= 2;
   } while (res==0);
@@ -211,7 +215,7 @@ int writePage(int page)
   readXDATA(0x6270, &res, 1);
   if (res&0x20)
   {
-    fprintf(stderr," flash error !!!\n");
+    fprintf(stderr,"\n flash error !!!\n");
     exit(1);
   }
   
@@ -233,7 +237,7 @@ int main(int argc,char *argv[])
   int dcPin=27;
   int ddPin=28;
   int setMult=-1;
-  while( (opt=getopt(argc,argv,"m:d:c:r:h?")) != -1)
+  while( (opt=getopt(argc,argv,"vm:d:c:r:h?")) != -1)
   {
     switch(opt)
     {
@@ -249,6 +253,9 @@ int main(int argc,char *argv[])
      case 'r' : // restarigi pinglo
       rePin=atoi(optarg);
       break;
+     case 'v' : // vorte
+      vorte++;
+      break;
      case 'h' : // helpo
      case '?' : // helpo
       helpo();
@@ -261,7 +268,11 @@ int main(int argc,char *argv[])
   if(!ficin) { fprintf(stderr," Can't open file %s.\n",argv[optind]); exit(1); }
   // on initialise les ports GPIO et le debugger
   cc_init(rePin,dcPin,ddPin);
-  if(setMult>0) cc_setmult(setMult);
+  if(vorte) fprintf(stderr," auto mult selected : %d\n", cc_getmult());
+  if(setMult>0)
+    cc_setmult(setMult);
+  else // for write, higher mult is better
+    cc_setmult((cc_getmult()*3)/2);
   // entrée en mode debug
   cc_enter();
   // envoi de la commande getChipID :
@@ -344,29 +355,46 @@ int main(int argc,char *argv[])
   uint8_t conf=cc_getConfig();
   conf &= ~0x4;
   cc_setConfig(conf);
-
+  int provo=0;
   for (int page=0 ; page <= maxpage ; page++)
   {
+    provo++;
     if(Pages[page].maxoffset<Pages[page].minoffset) continue;
     printf("\rwriting page %3d/%3d.",page+1,maxpage+1);
     fflush(stdout);
     writePage(page);
+    // lire les données et les vérifier
+    memset(verif1,0xff,2048);
+    readPage(page,verif1);
+    if(verifPage(page))
+    {
+      printf(".");
+      memset(verif2,0xff,2048);
+      readPage(page,verif2);
+      if(memcmp(verif1,verif2,2048))
+      {
+	// increase mult
+        int mult=cc_getmult();
+	mult= mult+mult/10+1;
+        cc_setmult(mult);
+        if(vorte) fprintf(stderr,"increase mult\n");
+	memcpy(verif1,verif2,2048);
+	if(verifPage(page)) page--;
+      }
+      else
+        page--;
+      if(provo>10)
+      {
+        fprintf(stderr,"verification error... Have you erased before write ?\n");
+	exit(1);
+      }
+    }
+    else
+     provo=0;
   }
   printf("\n");
-  // lire les données et les vérifier
-  int badPage=0;
-  for (int page=0 ; page <= maxpage ; page++)
-  {
-    if(Pages[page].maxoffset<Pages[page].minoffset) continue;
-    printf("\rverifying page %3d/%3d.",page+1,maxpage+1);
-    fflush(stdout);
-    badPage += verifPage(page);
-  }
-  printf("\n");
-  if (!badPage)
-    printf(" flash OK.\n");
-  else
-    printf(" Errors found in %d pages.\n",badPage);
+  if(vorte) fprintf(stderr,"\n final mult : %d\n",cc_getmult());
+  printf(" flash OK.\n");
 
   // sortie du mode debug et désactivation :
   cc_setActive(false);

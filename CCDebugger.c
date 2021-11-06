@@ -186,7 +186,15 @@ void cc_delay( unsigned int d )
 
 void cc_setmult(int mult)
 {
-  cc_delay_mult=mult;
+  if(mult>0)
+    cc_delay_mult=mult;
+  else
+    cc_delay_mult=cc_delay_mult+cc_delay_mult/10+1;
+}
+
+int cc_getmult()
+{
+  return cc_delay_mult;
 }
 
 /* provas konsideri la rapidecon de la procesoro */
@@ -199,7 +207,7 @@ void cc_delay_calibrate( )
   cc_delay(200);
   cc_delay(200);
   long time1=micros();
-  cc_delay_mult=cc_delay_mult*400/(time1-time0);
+  cc_delay_mult=cc_delay_mult*600/(time1-time0);
 }
 
 /**

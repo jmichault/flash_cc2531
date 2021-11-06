@@ -23,6 +23,7 @@
   int cc_init( int pinRST, int pinDC, int pinDD );
   void cc_delay( unsigned int d );
   void cc_setmult(int mult);
+  int cc_getmult();
 
   uint8_t cc_error();
 
